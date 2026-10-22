@@ -90,7 +90,7 @@ function suggestions(nombre = 8) {
       const der = derniereFois(g);
       if (der && !n && ecartJours(der, auj()) < 21) score -= 3;
       else if (der && ecartJours(der, auj()) > 365 && rejouer >= 3) { score += 1; raisons.push("Pas joué depuis plus d'un an"); }
-      if (ui.aDeux && g.aDeux === "meilleur") { score += 0.5; raisons.push("Très bien à 2"); }
+      if (ui.aDeux && g.aDeux === "meilleur") { score += 0.5; raisons.push("Top à 2"); }
       if (!ui.aDeux && ideal(g).plus) { score += 1; raisons.push("Mieux à 3+"); }
       return { g, score, raisons };
     })
@@ -119,6 +119,7 @@ function badges(g) {
   const n = enApprentissage(g);
   if (n) b.push(`<span class="badge chaud">À rejouer</span>`);
   else if (aDecouvrir(g)) b.push(`<span class="badge neuf">À découvrir</span>`);
+  if (g.aDeux === "meilleur") b.push(`<span class="badge deux">Top à 2</span>`);
   if (ideal(g).plus && !ideal(g).deux) b.push(`<span class="badge plus">Mieux à 3+</span>`);
   const r = rang(g.id);
   if (r) b.push(`<span class="badge prevu">${r === 1 ? "▶ Prochain jeu" : `▶ N° ${r}`}</span>`);
@@ -224,6 +225,7 @@ const FILTRES = {
   prete: ["Prêtés", g => !!st.prets[g.id]],
   decouvrir: ["À découvrir", g => aDecouvrir(g)],
   deux: ["Bien à 2", g => ideal(g).deux],
+  top2: ["Top à 2", g => g.aDeux === "meilleur"],
   plus: ["Mieux à 3+", g => ideal(g).plus],
   court: ["≤ 45 min", g => (g.duree.max || g.duree.min || 0) <= 45],
   envie: ["Envie ≥ 4", g => PERS.some(p => avis(g, p).envie >= 4)],
@@ -310,7 +312,7 @@ function vueFiche(id) {
         ${g.nomOriginal !== g.nom ? `<p class="sous">${esc(g.nomOriginal)}</p>` : ""}
         <p class="resume-grand">${esc(g.resume)}</p>
         <dl class="infos">
-          <div><dt>Joueurs</dt><dd>${esc(joueursTxt(g))}</dd></div>
+          <div><dt>Joueurs</dt><dd>${esc(joueursTxt(g))}${g.aDeux === "meilleur" ? " <span class='badge deux'>Top à 2</span>" : ""}</dd></div>
           <div><dt>Durée</dt><dd>${esc(dureeTxt(g))}</dd></div>
           ${g.age ? `<div><dt>Âge</dt><dd>${g.age}+</dd></div>` : ""}
           ${g.difficulte ? `<div><dt>Difficulté</dt><dd>${niveau(g.difficulte)} <small>(${String(g.difficulte).replace(".", ",")}/5)</small></dd></div>` : ""}
@@ -331,7 +333,7 @@ function vueFiche(id) {
       <div class="ideal"><span>À combien ?</span>
         ${[["deux", "Bien à 2"], ["plus", "Mieux à 3+"]].map(([v, l]) =>
           `<button class="chip${ideal(g)[v] ? " on" : ""}" data-action="ideal" data-jeu="${g.id}" data-v="${v}" aria-pressed="${ideal(g)[v]}" ${besoinJoueur()}>${ideal(g)[v] ? "✓ " : ""}${l}</button>`).join("")}
-        ${idealChoisi(g) ? "" : `<small>avis BGG${g.aDeux === "meilleur" ? " : excellent à 2" : ""}</small>`}</div>
+        ${idealChoisi(g) ? "" : `<small>avis BGG</small>`}</div>
       <table class="avis">
         <thead><tr><th></th>${PERS.map(p => `<th class="${p === st.joueur ? "moi-col" : ""}">${JOUEURS[p].nom}</th>`).join("")}</tr></thead>
         <tbody>
