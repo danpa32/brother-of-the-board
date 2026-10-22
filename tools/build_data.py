@@ -66,6 +66,8 @@ def genres(e, nom_fr):
 
 # Jeux qu'on considère « Top à 2 » même si l'avis BGG ne le dit pas (nom BG Stats ou nom FR).
 top2 = set(json.load(open("tools/top2.json")))
+# « Bien à 2 » / « Mieux à 3+ » par défaut, quand on n'est pas d'accord avec BGG : { nom: {deux, plus} }.
+joueurs = json.load(open("tools/joueurs.json"))
 
 games = []
 for key, ent in entries.items():
@@ -80,6 +82,7 @@ for key, ent in entries.items():
         "vignette": e.get("thumb"),
         "joueurs": {"min": e.get("minPlayers") or info.get("minPlayers"),
                     "max": e.get("maxPlayers") or info.get("maxPlayers")},
+        "ideal": joueurs.get(e["name"]) or joueurs.get(t.get("nomFr")),
         "aDeux": "meilleur" if {e["name"], t.get("nomFr")} & top2 else best_at_two(e.get("polls")),
         "duree": {"min": e.get("minTime") or info.get("minTime"),
                   "max": e.get("maxTime") or info.get("maxTime")},

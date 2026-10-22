@@ -1,0 +1,34 @@
+{
+ "Clank!: A Deck-Building Adventure": {
+  "deux": false,
+  "plus": true
+ },
+ "Outlive": {
+  "deux": false,
+  "plus": true
+ },
+ "Terror Below": {
+  "deux": false,
+  "plus": true
+ },
+ "Bunny Kingdom": {
+  "deux": false,
+  "plus": true
+ },
+ "Twilight Inscription": {
+  "deux": true,
+  "plus": true
+ },
+ "Cartographers": {
+  "deux": true,
+  "plus": true
+ },
+ "Dune: Imperium": {
+  "deux": true,
+  "plus": true
+ },
+ "Galaxy Trucker (Second Edition)": {
+  "deux": true,
+  "plus": true
+ }
+}

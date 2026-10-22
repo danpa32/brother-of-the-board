@@ -28,7 +28,7 @@ function niveau(w) {
   return w < 1.8 ? "Facile" : w < 2.6 ? "Moyen" : w < 3.4 ? "Exigeant" : "Expert";
 }
 // { deux: bien à 2, plus: mieux à 3+ }, les deux peuvent être vrais. Notre choix, sinon l'avis des joueurs BGG.
-const idealBgg = g => ({ deux: !!g.aDeux, plus: (g.joueurs.max || 0) >= 3 && g.aDeux !== "meilleur" });
+const idealBgg = g => g.ideal || { deux: !!g.aDeux, plus: (g.joueurs.max || 0) >= 3 && g.aDeux !== "meilleur" };
 const idealChoisi = g => typeof st.avis[g.id]?.ideal === "object";
 const ideal = g => idealChoisi(g) ? st.avis[g.id].ideal : idealBgg(g);
 const jouableADeux = g => !g.joueurs.min || (g.joueurs.min <= 2 && (g.joueurs.max || 9) >= 2);
@@ -333,7 +333,7 @@ function vueFiche(id) {
       <div class="ideal"><span>À combien ?</span>
         ${[["deux", "Bien à 2"], ["plus", "Mieux à 3+"]].map(([v, l]) =>
           `<button class="chip${ideal(g)[v] ? " on" : ""}" data-action="ideal" data-jeu="${g.id}" data-v="${v}" aria-pressed="${ideal(g)[v]}" ${besoinJoueur()}>${ideal(g)[v] ? "✓ " : ""}${l}</button>`).join("")}
-        ${idealChoisi(g) ? "" : `<small>avis BGG</small>`}</div>
+        ${idealChoisi(g) ? "" : `<small>${g.ideal ? "par défaut" : "avis BGG"}</small>`}</div>
       <table class="avis">
         <thead><tr><th></th>${PERS.map(p => `<th class="${p === st.joueur ? "moi-col" : ""}">${JOUEURS[p].nom}</th>`).join("")}</tr></thead>
         <tbody>
@@ -573,7 +573,7 @@ document.addEventListener("change", e => {
 window.addEventListener("hashchange", rendre);
 
 /* ---------- démarrage ---------- */
-jeux = await fetch("data/games.json?v=7").then(r => r.json());
+jeux = await fetch("data/games.json?v=8").then(r => r.json());
 parId = Object.fromEntries(jeux.map(g => [g.id, g]));
 $("#listeJeux").innerHTML = jeux.map(g => `<option value="${esc(g.nom)}">`).join("");
 store.ecouter(s => { st = s; rendre(); });
