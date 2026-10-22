@@ -1,5 +1,5 @@
 import { JOUEURS } from "./config.js?v=3";
-import * as store from "./store.js?v=10";
+import * as store from "./store.js?v=11";
 
 const PERS = Object.keys(JOUEURS);           // ["daniel", "mathieu"]
 const JOURS_APPRENTISSAGE = 75;              // un nouveau jeu reste « à se remettre en tête » ce temps-là…
@@ -385,15 +385,20 @@ function rendreMoi() {
   const el = $("#moi");
   if (st.joueur) {
     el.innerHTML = `<span class="qui">${JOUEURS[st.joueur].nom}</span><button class="lien" data-action="deco">${store.modeLocal ? "changer" : "déconnexion"}</button>`;
-  } else if (store.modeLocal) {
-    el.innerHTML = `<span class="qui-label">Je suis</span>${PERS.map(p => `<button class="btn petit ghost" data-action="co" data-p="${p}">${JOUEURS[p].nom}</button>`).join("")}`;
+  } else if (store.modeLocal || st.choixRequis) {
+    const action = store.modeLocal ? "co" : "choisir";
+    el.innerHTML = `<span class="qui-label">Je suis</span>${PERS.map(p => `<button class="btn petit ghost" data-action="${action}" data-p="${p}">${JOUEURS[p].nom}</button>`).join("")}`;
+  } else if (st.refuse) {
+    el.innerHTML = `<button class="lien" data-action="deco">déconnexion</button>`;
   } else {
     el.innerHTML = `<button class="btn petit" data-action="co">Se connecter</button>`;
   }
   const bandeau = $("#bandeau");
   const msg = store.modeLocal
     ? "Mode local : les notes et le planning sont enregistrés seulement dans ce navigateur, tant que Firebase n'est pas configuré."
-    : st.emailInconnu ? `Le compte ${st.emailInconnu} n'est pas autorisé à modifier. Ajoute-le dans js/config.js et firestore.rules.` : "";
+    : st.refuse ? "Ce compte Google n'a pas accès à nos notes et à notre planning."
+    : st.choixRequis ? "Première connexion : indique en haut à droite qui tu es (une seule fois)."
+    : !st.joueur ? "Connecte-toi pour voir nos notes, notre planning et nos prêts." : "";
   bandeau.hidden = !msg;
   bandeau.textContent = msg;
 }
@@ -533,6 +538,7 @@ document.addEventListener("click", async e => {
     else if (action === "adeux") { ui.aDeux = el.dataset.v === "1"; rendre(); }
     else if (action === "decouvrir") await store.majAvis(jeu, st.joueur, { decouvrir: !avis(parId[jeu], st.joueur).decouvrir });
     else if (action === "co") await store.connexion(el.dataset.p);
+    else if (action === "choisir") await store.choisirJoueur(el.dataset.p);
     else if (action === "deco") await store.deconnexion();
   } catch (err) {
     alert("Oups : " + err.message);

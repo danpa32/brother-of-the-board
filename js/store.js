@@ -1,6 +1,6 @@
 // Données partagées : avis (notes par jeu et par joueur) et soirées planifiées.
 // Deux implémentations avec la même interface : Firebase (partagé) ou local (navigateur).
-import { JOUEURS, FIREBASE } from "./config.js?v=3";
+import { FIREBASE } from "./config.js?v=3";
 
 const SDK = "https://www.gstatic.com/firebasejs/10.12.2";
 
@@ -36,31 +36,42 @@ async function demarrerFirebase() {
   const app = initializeApp(FIREBASE);
   fb = { db: fs.getFirestore(app), auth: au.getAuth(app), fs, au };
 
-  fs.onSnapshot(fs.collection(fb.db, "avis"), snap => {
-    etat.avis = {};
-    snap.forEach(d => { etat.avis[d.id] = d.data(); });
-    etat.pret = true; notifier();
-  }, err => console.error("avis", err));
-
-  fs.onSnapshot(fs.collection(fb.db, "soirees"), snap => {
-    etat.soirees = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-    notifier();
-  }, err => console.error("soirees", err));
-
-  // Les prêts contiennent des numéros de téléphone : lisibles seulement une fois connecté.
-  let arreterPrets = null;
-  au.onAuthStateChanged(fb.auth, user => {
-    const email = user?.email?.toLowerCase();
-    etat.joueur = Object.keys(JOUEURS).find(k => JOUEURS[k].email.toLowerCase() === email) || null;
-    etat.emailInconnu = user && !etat.joueur ? user.email : null;
-    arreterPrets?.(); arreterPrets = null; etat.prets = {};
-    if (etat.joueur) {
-      arreterPrets = fs.onSnapshot(fs.collection(fb.db, "prets"), snap => {
+  // Toutes les données (avis, soirées, prêts) ne sont lisibles qu'une fois connecté avec
+  // l'un de nos deux comptes ; un visiteur ne voit que la liste des jeux.
+  let arrets = [];
+  const ecouterTout = () => {
+    arrets = [
+      fs.onSnapshot(fs.collection(fb.db, "avis"), snap => {
+        etat.avis = {};
+        snap.forEach(d => { etat.avis[d.id] = d.data(); });
+        notifier();
+      }, err => console.error("avis", err)),
+      fs.onSnapshot(fs.collection(fb.db, "soirees"), snap => {
+        etat.soirees = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+        notifier();
+      }, err => console.error("soirees", err)),
+      fs.onSnapshot(fs.collection(fb.db, "prets"), snap => {
         etat.prets = {};
         snap.forEach(d => { etat.prets[d.id] = d.data(); });
         notifier();
-      }, err => console.error("prets", err));
+      }, err => console.error("prets", err)),
+    ];
+  };
+
+  au.onAuthStateChanged(fb.auth, async user => {
+    arrets.forEach(f => f()); arrets = [];
+    Object.assign(etat, { avis: {}, soirees: [], prets: {}, joueur: null, choixRequis: false, refuse: false });
+    if (user) {
+      // membres/{uid} dit qui est qui ; la lecture échoue si le compte n'est pas autorisé.
+      try {
+        const m = await fs.getDoc(fs.doc(fb.db, "membres", user.uid));
+        if (m.exists()) { etat.joueur = m.data().joueur; ecouterTout(); }
+        else etat.choixRequis = true;
+      } catch {
+        etat.refuse = true;
+      }
     }
+    etat.pret = true;
     notifier();
   });
 }
@@ -79,6 +90,14 @@ export async function demarrer() {
 export async function connexion(joueur) {
   if (modeLocal) { etat.joueur = joueur; ecrireLocal(); notifier(); return; }
   await fb.au.signInWithPopup(fb.auth, new fb.au.GoogleAuthProvider());
+}
+
+// Première connexion d'un compte autorisé : il dit une fois pour toutes qui il est.
+export async function choisirJoueur(joueur) {
+  await fb.fs.setDoc(fb.fs.doc(fb.db, "membres", fb.auth.currentUser.uid), { joueur });
+  etat.joueur = joueur; etat.choixRequis = false;
+  // Recharger l'état complet via l'écouteur de connexion.
+  location.reload();
 }
 export async function deconnexion() {
   if (modeLocal) { etat.joueur = null; ecrireLocal(); notifier(); return; }

@@ -1,10 +1,10 @@
 /* ============ À PERSONNALISER ============ */
 
-// Les deux joueurs. `email` = adresse du compte Google utilisé pour se connecter
-// (doit aussi figurer dans firestore.rules).
+// Les deux joueurs. Aucune adresse e-mail ici : les comptes autorisés sont listés
+// uniquement dans les règles Firestore, collées dans la console Firebase.
 export const JOUEURS = {
-  daniel:  { nom: "Daniel",  email: "" },
-  mathieu: { nom: "Mathieu", email: "" },
+  daniel:  { nom: "Daniel" },
+  mathieu: { nom: "Mathieu" },
 };
 
 // Configuration Firebase (console Firebase → Paramètres du projet → Vos applications → Web).

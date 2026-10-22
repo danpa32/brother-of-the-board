@@ -1,24 +1,22 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Les deux comptes Google autorisés à modifier (mêmes adresses que dans js/config.js).
+    // MODÈLE : remplacer les deux adresses UNIQUEMENT dans la console Firebase
+    // (Firestore → Règles). Ne jamais mettre les vraies adresses dans ce fichier.
     function estMembre() {
       return request.auth != null
         && request.auth.token.email_verified
-        && request.auth.token.email.lower() in ['EMAIL_DANIEL@gmail.com', 'EMAIL_MATHIEU@gmail.com'];
+        && request.auth.token.email.lower() in ['ADRESSE_DANIEL', 'ADRESSE_MATHIEU'];
     }
-    // Tout le monde peut voir le site ; seuls Daniel et Mathieu modifient.
-    match /avis/{jeu} {
-      allow read: if true;
-      allow write: if estMembre();
+    // Qui est qui : chacun crée une fois sa fiche à la première connexion.
+    match /membres/{uid} {
+      allow read: if estMembre() && request.auth.uid == uid;
+      allow create: if estMembre() && request.auth.uid == uid
+        && request.resource.data.joueur in ['daniel', 'mathieu'];
     }
-    match /soirees/{id} {
-      allow read: if true;
-      allow write: if estMembre();
-    }
-    // Prêts : noms et numéros de téléphone, visibles seulement par nous deux.
-    match /prets/{jeu} {
-      allow read, write: if estMembre();
+    // Tout le reste est privé : lecture et écriture réservées à nous deux.
+    match /{collection}/{doc} {
+      allow read, write: if estMembre() && collection in ['avis', 'soirees', 'prets'];
     }
   }
 }

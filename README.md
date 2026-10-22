@@ -10,10 +10,13 @@ Site statique publié sur GitHub Pages ; notes et planning partagés via Firebas
 3. **Build → Authentication → Commencer → Google** : activer.
    Dans **Paramètres → Domaines autorisés**, ajouter `danpa32.github.io`.
 4. **Paramètres du projet → Vos applications → Web (`</>`)** : enregistrer une appli, copier
-   `apiKey`, `authDomain`, `projectId`, `appId` dans `js/config.js`.
-5. Dans `js/config.js`, mettre l'adresse Gmail de Daniel et de Mathieu.
-6. **Firestore → Règles** : coller `firestore.rules` en remplaçant les deux adresses, puis **Publier**.
+   `apiKey`, `authDomain`, `projectId`, `appId` dans `js/config.js` (ces valeurs ne sont pas secrètes).
+5. **Firestore → Règles** : coller `firestore.rules`, remplacer `ADRESSE_DANIEL` et `ADRESSE_MATHIEU`
+   par nos deux adresses Google **dans la console seulement**, puis **Publier**.
+6. Sur le site, chacun se connecte avec Google et clique une fois sur « Je suis Daniel / Mathieu ».
 
+Nos adresses n'apparaissent nulle part dans ce repo. Sans connexion avec l'un de nos deux comptes,
+le site montre seulement la liste des jeux : ni notes, ni planning, ni prêts, et aucune modification possible.
 Tant que `apiKey` est vide, le site tourne en « mode local » (données dans le navigateur seulement).
 
 ## Données des jeux
