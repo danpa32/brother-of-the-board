@@ -1,0 +1,163 @@
+{
+ "63": {
+  "nomFr": "5-Minute Dungeon",
+  "resume": "Un jeu coopératif en temps réel : vous avez cinq minutes chrono pour vaincre monstres et boss et sortir du donjon.",
+  "description": "Vous incarnez l'un des dix héros d'une équipe lancée dans un donjon tiré au hasard. Le sablier est lancé : vous avez cinq minutes, pas une de plus, pour en venir à bout.\n\nTous jouent en même temps. Chaque carte monstre ou obstacle montre des symboles à défausser : on joue ses cartes de la main, on s'écrie des ordres, on s'entraide et on enchaîne les salles jusqu'au boss final.\n\nC'est rapide, bruyant et chaotique, avec de belles montées d'adrénaline. Impossible de planifier : la communication et le sang-froid font la différence.",
+  "expansions": {},
+  "regles": []
+ },
+ "48": {
+  "nomFr": "After Us",
+  "resume": "Menez votre tribu de singes vers l'intelligence collective dans un deckbuilding original, dans un monde où l'humanité a disparu.",
+  "description": "En 2083, l'humanité s'est éteinte et les singes ont pris le relais. À la tête d'une tribu, vous cherchez à l'élever vers l'intelligence collective en maîtrisant les objets laissés par les humains.\n\nC'est un jeu de deckbuilding et de gestion de ressources : à chaque tour, vous piochez des cartes, les assemblez en combinaisons et résolvez leurs effets pour recruter, explorer et progresser.\n\nLe premier à développer suffisamment sa tribu l'emporte. Le plaisir vient des combos à construire et de la progression de votre deck.",
+  "expansions": {},
+  "regles": []
+ },
+ "118": {
+  "nomFr": "Black Stories : L'Interrogatoire",
+  "resume": "Un jeu d'enquête où chacun a interrogé un suspect et doit recouper les indices pour résoudre le meurtre.",
+  "description": "Un meurtre a été commis et vous êtes les enquêteurs. Chacun a interrogé un suspect, et il est temps de mettre les informations en commun.\n\nÀ tour de rôle, chaque joueur rapporte aux autres ce qu'il a appris. Il faut écouter attentivement : le moindre détail peut être le chaînon manquant.\n\nL'enquêteur qui a le mieux mené sa mission et récolté le plus de points est désigné meilleur détective. Un jeu de déduction et de discussion.",
+  "expansions": {},
+  "regles": []
+ },
+ "105": {
+  "nomFr": "Cash 'n Guns",
+  "resume": "Un bluff à l'américaine : un butin à partager et des pistolets en mousse braqués sur tout le monde.",
+  "description": "Dans un entrepôt abandonné, un gang se partage le butin, mais personne ne s'entend sur le partage. Les armes vont parler et bientôt tout le monde se vise.\n\nÀ chaque tour, on choisit en secret une balle ou un cran de sécurité, puis, au signal, chacun braque quelqu'un. On peut se dégonfler, mais alors on rate sa part du butin ! Ceux qui tiennent bon se partagent le magot, les blessés trinquent.\n\nLe plus riche gangster encore debout à la fin gagne. Bluff, négociation et rigolade garanties.",
+  "expansions": {},
+  "regles": []
+ },
+ "18": {
+  "nomFr": "Challengers!",
+  "resume": "Un jeu de gestion de deck en tournoi : formez votre équipe, affrontez un adversaire par tour et capturez le drapeau.",
+  "description": "Challengers! est un jeu de gestion de deck de 1 à 8 joueurs, en 45 minutes quel que soit le nombre de participants. C'est un tournoi : à chaque manche, vous rencontrez un nouvel adversaire.\n\nDurant la phase de deck, vous recrutez de nouveaux personnages (sorcier, alien, chat, gangster, kraken...) parmi 75 persos aux effets variés. Vous affrontez ensuite votre adversaire du tour en jouant vos cartes.\n\nLe but : capturer le drapeau et le garder pour remporter le tournoi.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/challengers_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "101": {
+  "nomFr": "Cortex Challenge (démo Print & Play)",
+  "resume": "Un défi de réflexion, de mémoire et de rapidité à travers huit épreuves variées.",
+  "description": "Cette démo à imprimer de Cortex Challenge ne contient que huit cartes, publiées pendant le confinement de 2020.\n\nChaque carte propose une épreuve différente : doublons, tests de toucher, séries logiques, labyrinthes, puzzles de couleurs... Tous les joueurs s'affrontent pour la résoudre le plus vite possible.\n\nOn fait travailler sa réflexion, sa mémoire et sa rapidité dans une ambiance de défi.",
+  "expansions": {},
+  "regles": []
+ },
+ "43": {
+  "nomFr": "Dice Throne Adventures",
+  "resume": "Une extension coopérative qui lance vos héros de Dice Throne dans une campagne jusqu'au trône du Roi Fou.",
+  "description": "Dice Throne Adventures est une extension coopérative pour 1 à 4 joueurs qui réutilise vos héros de Dice Throne d'une toute nouvelle manière. Au fil de plusieurs parties, vous voyagez des Sables cramoisis jusqu'à la salle du trône du Roi Fou.\n\nVous explorez, ramassez de l'or et des trésors, combattez des sbires et des boss, et améliorez vos héros de façon permanente. Une marchande, Rosella, vous attend entre deux combats.\n\nOn y retrouve les lancers de dés de Dice Throne dans un mode aventure qui se joue en campagne.",
+  "expansions": {},
+  "regles": []
+ },
+ "21": {
+  "nomFr": "District Noir",
+  "resume": "Un duel à deux dans l'ambiance film noir : ramassez les bonnes cartes au bon moment pour dominer la ville.",
+  "description": "Dans une ville dominée par la pègre, deux joueurs se disputent des soutiens. Quelques cartes sont posées en ligne, et chacun reçoit cinq cartes en main pour chaque manche.\n\nÀ votre tour, vous posez une carte au bout de la ligne ou, une seule fois par manche, vous ramassez les cartes de la ligne. Tout est dans le timing : certaines cartes rapportent, d'autres coûtent des points, et il faut avoir la majorité pour marquer.\n\nBluff et collection de cartes se mêlent dans un duel tendu en une quinzaine de minutes.",
+  "expansions": {},
+  "regles": []
+ },
+ "13": {
+  "nomFr": "Dune : Imperium",
+  "resume": "Placement d'ouvriers et deckbuilding dans l'univers de Dune, où influence, intrigue et combat décident du sort de l'Imperium.",
+  "description": "Vous dirigez l'une des Grandes Maisons du Landsraad. La guerre approche, et l'épice, ressource la plus précieuse de l'univers, est au cœur de toutes les convoitises.\n\nÀ votre tour, vous jouez une carte de votre main pour envoyer un agent sur un lieu du plateau, puis vous renforcez votre deck en recrutant de nouvelles cartes. On gagne en influence auprès des factions, on accumule de l'eau et de l'épice et on envoie ses troupes au combat.\n\nLe mélange d'informations cachées (votre main) et de placement d'ouvriers rend chaque partie tendue et riche en choix.",
+  "expansions": {},
+  "regles": []
+ },
+ "96": {
+  "nomFr": "Faraway",
+  "resume": "Explorez le continent d'Alula en posant huit cartes de région et en enchaînant les combos, puis comptez vos points à rebours.",
+  "description": "Bienvenue à Alula, un continent mystérieux dont la géographie change au gré des saisons. Vous le parcourez pour percer ses secrets et rencontrer ses habitants.\n\nPendant huit tours, chacun choisit une carte de sa main en secret et la pose à droite de son voyage. Ensuite, les cartes se résolvent à l'envers, de la dernière à la première, ce qui donne de jolis casse-tête de combos entre régions et sanctuaires.\n\nLe plus célèbre voyageur gagne. Rapide (environ 25 minutes), accessible et très malin.",
+  "expansions": {},
+  "regles": []
+ },
+ "113": {
+  "nomFr": "Galèrapagos",
+  "resume": "Naufragés sur une île déserte, vous devez bâtir un radeau pour fuir avant l'ouragan, mais tout le monde ne s'en sortira pas.",
+  "description": "Après un naufrage, un groupe de survivants se retrouve sur une île déserte. Le cadre est paradisiaque, mais l'eau et le poisson se font rares, et il va falloir construire un radeau ensemble.\n\nÀ chaque tour, on s'entend, on négocie et on se trahit. Les joueurs distribuent les ressources, votent et négocient, tout en cherchant à se préserver.\n\nC'est un jeu de coopétition et de discussion très ambiance, jusqu'à douze joueurs. Tout le monde ne survivra pas.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/galerapagos_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "50": {
+  "nomFr": "Kariba",
+  "resume": "Un jeu de cartes ultra-rapide où les animaux se font fuir au point d'eau : qui fera déguerpir le plus de bêtes ?",
+  "description": "Après une longue journée dans la savane, tous les animaux ont soif et chacun veut boire le premier. Mais attention : l'éléphant effraie le rhinocéros, le rhinocéros l'autruche, l'autruche le zèbre, et même la souris peut faire fuir l'éléphant !\n\nChaque joueur reçoit cinq cartes. À votre tour, vous posez des animaux au point d'eau pour en chasser d'autres, puis vous piochez.\n\nLe joueur qui fait fuir le plus d'animaux l'emporte. Une partie dure environ 15 minutes.",
+  "expansions": {},
+  "regles": []
+ },
+ "58": {
+  "nomFr": "Les Ruines perdues de Narak : La Mission disparue",
+  "resume": "Une extension qui suit la piste du professeur Kutil avec deux nouveaux chefs, deux nouvelles pistes de recherche et des cartes inédites.",
+  "description": "Cette extension pour Les Ruines perdues de Narak vous lance sur la trace du professeur Kutil et d'autres explorateurs disparus.\n\nVous testez de nouvelles stratégies avec deux nouveaux chefs d'expédition, vous explorez deux nouvelles pistes de recherche et vous étoffez votre équipe grâce à de nouveaux artefacts, objets et assistants.\n\nElle s'ajoute simplement au jeu de base, avec une campagne jouable en solo ou à deux.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu de base (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/les_ruines_perdues_de_narak_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – La Mission disparue",
+    "url": "https://media.play-in.com/pdf/rules_games/les_ruines_perdues_de_narak_-_extension_la_mission_disparue_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "27": {
+  "nomFr": "Nidavellir",
+  "resume": "Misez des pièces dans les tavernes pour recruter les meilleurs nains et bâtir l'armée qui affrontera le dragon Fafnir.",
+  "description": "Le royaume des nains, Nidavellir, est menacé par le dragon Fafnir. Vous avez pour mission de rassembler l'armée la plus redoutable.\n\nÀ chaque tour, vous placez des pièces face cachée sur les tavernes. Puis, tavernes après tavernes, les enchères sont révélées et chacun recrute un nain pour sa troupe. Chaque classe de nains rapporte des points à sa façon.\n\nIl faut anticiper les mises de ses adversaires et optimiser sa bourse. Un jeu d'enchères malin, sur un tour accessible.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/nidavellir_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "34": {
+  "nomFr": "Skyjo",
+  "resume": "Retournez vos cartes, échangez-les et gardez le moins de points possible : le premier à 100 points a perdu.",
+  "description": "Chaque joueur dispose devant lui de 12 cartes face cachée, en grille 3x4. Deux sont retournées au départ.\n\nÀ votre tour, vous prenez la carte du dessus de la pioche ou de la défausse et vous l'échangez avec l'une de vos cartes, cachée ou visible. La manche s'arrête quand un joueur a toutes ses cartes visibles. On additionne alors les valeurs : plus le total est bas, mieux c'est.\n\nLa partie se termine quand quelqu'un atteint 100 points, et le plus petit score gagne. Simple, rapide et plein de retournements.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/skyjo_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "109": {
+  "nomFr": "The Game",
+  "resume": "Un jeu coopératif où il faut défausser les 98 cartes sur quatre piles, en ordre croissant et décroissant, sans révéler sa main.",
+  "description": "Ensemble, vous devez poser toutes les cartes de la pioche sur quatre piles : deux qui montent à partir de 1, deux qui descendent à partir de 100.\n\nÀ votre tour, vous devez jouer au moins deux cartes de votre main. Vous pouvez donner des indications, mais interdiction de dire les valeurs exactes. Certaines astuces, comme jouer une carte dix points à l'envers, permettent de se rattraper.\n\nLa partie dure environ 20 minutes et on enchaîne les tentatives pour battre le jeu.",
+  "expansions": {},
+  "regles": []
+ },
+ "16": {
+  "nomFr": "Très Futé !",
+  "resume": "Choisissez vos dés avec malice pour remplir votre feuille de score et enchaîner les bonus.",
+  "description": "Dans Très Futé !, vous choisissez des dés pour les inscrire dans les zones colorées correspondantes de votre feuille de score, en cherchant à enchaîner les combos et les bonus.\n\nÀ votre tour, vous lancez les dés et en prenez quelques-uns. Les dés non choisis comptent aussi : ceux de valeur inférieure peuvent être utilisés par les autres joueurs, ce qui garde tout le monde dans la partie.\n\nLa partie dure 4 à 6 manches. Un très bon jeu de dés, rapide et addictif.",
+  "expansions": {},
+  "regles": []
+ },
+ "45": {
+  "nomFr": "Valeria : Le Royaume",
+  "resume": "Lancez les dés, recrutez des citoyens et terrassez les monstres pour bâtir le plus grand royaume.",
+  "description": "Le pays de Valeria est assiégé par des hordes de monstres. Vous êtes un duc chargé de recruter des citoyens et d'acheter des domaines pour développer votre royaume.\n\nÀ votre tour, vous lancez deux dés, et les cartes dont le numéro correspond rapportent des ressources, y compris pendant le tour des autres. Vous achetez ensuite de nouvelles cartes et affrontez des monstres.\n\nC'est un jeu de construction de tableau qui rappelle le deckbuilding, pour 1 à 5 joueurs.",
+  "expansions": {},
+  "regles": []
+ }
+}

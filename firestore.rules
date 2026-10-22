@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Les deux comptes Google autorisés à modifier (mêmes adresses que dans js/config.js).
+    function estMembre() {
+      return request.auth != null
+        && request.auth.token.email_verified
+        && request.auth.token.email.lower() in ['EMAIL_DANIEL@gmail.com', 'EMAIL_MATHIEU@gmail.com'];
+    }
+    // Tout le monde peut voir le site ; seuls Daniel et Mathieu modifient.
+    match /avis/{jeu} {
+      allow read: if true;
+      allow write: if estMembre();
+    }
+    match /soirees/{id} {
+      allow read: if true;
+      allow write: if estMembre();
+    }
+  }
+}

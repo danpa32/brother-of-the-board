@@ -1,0 +1,213 @@
+{
+ "4": {
+  "nomFr": "50 Missions : 5 missions bien difficiles !",
+  "resume": "Cinq missions très corsées pour pimenter vos parties de The Crew.",
+  "description": "Cette mini-extension propose cinq missions supplémentaires, nettement plus ardues, pour The Crew (La Quête de la Planète Neuf). Il faut donc posséder The Crew pour y jouer.\n\nComme dans le jeu de base, l'équipe doit remporter des plis de façon coopérative, sans parler de sa main, en accomplissant des objectifs précis. Ici, les contraintes de communication et de timing sont resserrées.\n\nPour les équipages rodés qui veulent un vrai défi.",
+  "expansions": {},
+  "regles": []
+ },
+ "36": {
+  "nomFr": "Akropolis",
+  "resume": "Bâtissez votre cité grecque sur plusieurs niveaux et placez vos quartiers au mieux.",
+  "description": "Vous construisez votre cité antique en plaçant des tuiles hexagonales de quartiers (habitations, marchés, casernes, temples, jardins) qui peuvent s'empiler sur plusieurs niveaux.\n\nÀ votre tour, vous choisissez une tuile parmi celles proposées, en payant éventuellement des pierres, puis vous la posez. Plus un quartier est haut, plus il rapporte, et chaque type a ses propres conditions de points.\n\nUn jeu de placement fluide et malin, où chaque pose compte, avec peu de règles et beaucoup de réflexion.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/akropolis_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "110": {
+  "nomFr": "Bohnanza",
+  "resume": "Plantez, récoltez et négociez vos haricots dans ce classique du marchandage.",
+  "description": "Chaque joueur est fermier et cultive des haricots de différentes variétés. Le piège : on ne peut jamais changer l'ordre des cartes en main !\n\nÀ son tour, on plante une ou deux cartes, puis on pioche des cartes que l'on peut échanger avec les autres joueurs, par troc ou en les offrant. On récolte ensuite ses champs pour les transformer en pièces d'or.\n\nUn jeu d'ambiance, de négociation et de bluff, vif et plein de rires autour de la table.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/bohnanza_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "30": {
+  "nomFr": "Canvas",
+  "resume": "Superposez des cartes transparentes pour composer le plus beau tableau.",
+  "description": "Vous créez une œuvre d'art en superposant des cartes transparentes illustrées, puis vous cherchez à la rendre la plus harmonieuse possible.\n\nÀ votre tour, vous piochez ou jouez des cartes pour construire votre toile, en vous appuyant sur des critères de composition (couleurs, éléments, rubans) qui rapportent des points selon des objectifs communs et personnels.\n\nUn jeu familial très esthétique, calme et réfléchi, où l'on prend plaisir à voir sa peinture évoluer.",
+  "expansions": {},
+  "regles": []
+ },
+ "76": {
+  "nomFr": "Challengers! Beach Cup",
+  "resume": "Un jeu de duel et de capture de drapeau sur la plage, à base de deck-building rapide.",
+  "description": "Chaque joueur dirige une équipe sur la plage avec pour but de capturer le drapeau et de le conserver pour remporter le tournoi.\n\nÀ chaque tour, on joue des cartes de sa main pour déplacer ses joueurs, attaquer ou protéger le drapeau, et on se renouvelle un petit paquet. Les parties sont rapides et très interactives.\n\nUn jeu tactique et nerveux, parfait pour des duels entre amis.",
+  "expansions": {},
+  "regles": []
+ },
+ "7": {
+  "nomFr": "Croak !",
+  "resume": "Mangez les autres grenouilles, mais protégez votre reine !",
+  "description": "Chaque joueur dirige une colonie de grenouilles sur un étang et doit protéger sa reine, qui ne doit surtout pas se faire manger.\n\nÀ son tour, on déplace ses grenouilles pour attaquer celles des adversaires. Le plus gros mange le plus petit, ce qui ouvre de petits coups tactiques. Un joueur dont la reine est mangée est éliminé.\n\nUn jeu d'affrontement rapide et malin, avec des règles simples et une bonne dose de mauvaise foi.",
+  "expansions": {},
+  "regles": []
+ },
+ "10": {
+  "nomFr": "Dice Town",
+  "resume": "Lancez vos dés de poker pour décrocher les meilleurs lieux de la ville.",
+  "description": "Au Far West, chaque joueur lance cinq dés de poker, puis relance ceux qu'il veut dans un tour de poker amélioré par des dés posés.\n\nLes figures obtenues déterminent quels lieux de la ville (banque, saloon, prison, magasin général…) vous rapportent des cartes, de l'or ou des ennuis. Des bonus de personnages viennent pimenter la partie.\n\nUn jeu de dés rapide, malin et bien chargé en bluff, qui se joue en moins d'une heure.",
+  "expansions": {
+   "80": {
+    "nomFr": "Dice Town : Wild West",
+    "resume": "Double les actions possibles dans votre ville du Far West."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_town_edition_2017_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "102": {
+  "nomFr": "Dixit",
+  "resume": "Donnez l'indice parfait : ni trop clair, ni trop obscur, pour que presque tous trouvent votre carte.",
+  "description": "Chaque joueur a en main des cartes illustrées de scènes oniriques. Le conteur choisit l'une d'elles et énonce un mot, une phrase ou un son pour la décrire.\n\nLes autres jouent une carte qui correspond à l'indice, puis tout le monde vote pour retrouver la carte du conteur. Celui-ci marque des points si certains, mais pas tous, la trouvent. Les autres gagnent des points s'ils sont choisis.\n\nUn jeu d'imagination et de psychologie, très convivial.",
+  "expansions": {
+   "104": {
+    "nomFr": "Dixit 3 : Journey",
+    "resume": "Un nouveau jeu de cartes illustrées pour renouveler Dixit."
+   },
+   "103": {
+    "nomFr": "Dixit : Quest",
+    "resume": "Une nouvelle série de cartes illustrées à mélanger avec Dixit."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/dixit_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "44": {
+  "nomFr": "Dungeons, Dice & Danger",
+  "resume": "Plongez dans un donjon et vaincez les monstres à coups de dés.",
+  "description": "Chaque joueur incarne un aventurier qui descend dans un donjon rempli de monstres et de butin.\n\nÀ son tour, on lance des dés et on les utilise pour attaquer, se défendre ou ouvrir des salles, en décidant quand tenter sa chance pour avancer plus profondément. Les trouvailles améliorent votre héros.\n\nUn jeu de dés rapide, à la fois tactique et chanceux, avec l'ambiance classique du jeu de rôle.",
+  "expansions": {},
+  "regles": []
+ },
+ "107": {
+  "nomFr": "For Sale",
+  "resume": "Enchérissez sur des propriétés, puis revendez-les au meilleur prix.",
+  "description": "Le jeu se déroule en deux phases. D'abord, les joueurs enchérissent pour acquérir des propriétés, des cabanes aux palaces.\n\nEnsuite, ils revendent ces biens en choisissant des chèques de valeurs différentes, sans savoir lesquels les autres vont viser. Il faut savoir doser et anticiper.\n\nUn petit jeu d'enchères et de bluff très rapide et malin, qui se joue en une demi-heure.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/for_sale_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "26": {
+  "nomFr": "It's a Wonderful World",
+  "resume": "Draftez les meilleurs projets pour bâtir votre empire.",
+  "description": "Vous dirigez un empire en pleine construction. À chaque manche, vous draftez des cartes, puis vous choisissez de les recycler en ressources ou de les construire.\n\nLa phase de production vous fournit les ressources nécessaires, que vous répartissez entre vos différents projets : chaque carte construite rapporte des points ou des bonus. Le tout se joue en quatre manches.\n\nUn jeu de draft et de gestion fluide, avec un bon équilibre entre stratégie et rapidité.",
+  "expansions": {
+   "51": {
+    "nomFr": "It's a Wonderful World : Guerre ou Paix",
+    "resume": "Entrez dans l'histoire comme belliciste ou comme pacifiste, avec de nouvelles cartes et de nouveaux objectifs."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/its_a_wonderful_world_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "93": {
+  "nomFr": "L'Île des Chats",
+  "resume": "Sauvez un maximum de chats avant l'arrivée du maléfique Lord Vesh.",
+  "description": "Vous partez en bateau sauver des chats d'une île menacée par Lord Vesh. Chaque chat est représenté par une tuile de forme variée à placer dans votre navire.\n\nÀ chaque manche, vous choisissez des cartes pour partir à l'aventure ou vous préparer, puis vous remplissez la cale avec adresse en respectant les objectifs et les quêtes.\n\nUn jeu de placement mignon, avec une pointe de stratégie, accessible à toute la famille.",
+  "expansions": {
+   "42": {
+    "nomFr": "L'Île des Chats : Derniers Arrivants",
+    "resume": "Ajoute de nouveaux chats et permet de jouer à davantage de joueurs."
+   }
+  },
+  "regles": []
+ },
+ "1": {
+  "nomFr": "Living Forest",
+  "resume": "Utilisez les pouvoirs de vos gardiens animaux pour protéger la forêt.",
+  "description": "Dans cette forêt enchantée, un esprit maléfique menace les arbres. Vous incarnez un esprit gardien qui joue avec des cartes pour protéger la forêt.\n\nÀ votre tour, vous piochez des cartes une à une en poussant votre chance, puis vous utilisez les ressources pour planter des arbres, des animaux ou des objets, tout en faisant avancer votre pion sur la piste de la forêt.\n\nUn jeu de deck-building et de course avec de belles illustrations et un côté push-your-luck bien dosé.",
+  "expansions": {},
+  "regles": []
+ },
+ "59": {
+  "nomFr": "Outlive",
+  "resume": "Placez votre équipe d'apocalypse pour sécuriser vivres et événements.",
+  "description": "Après l'apocalypse, chaque joueur doit assurer la survie de son clan et construire sa base.\n\nÀ chaque tour, on place ses survivants sur les lieux du plateau pour récupérer des ressources, des objets et affronter des événements. On améliore ensuite sa base pour mieux résister aux crises à venir.\n\nUn jeu de placement d'ouvriers dans une ambiance post-apocalyptique, avec une bonne tension.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/outlive_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "38": {
+  "nomFr": "Stay Cool",
+  "resume": "Épelez vos réponses tandis que le temps file.",
+  "description": "Dans ce jeu d'ambiance, chacun répond à des questions simples, mais en épelant la réponse, lettre après lettre, pendant que le chrono tourne.\n\nPlus on réfléchit, plus la pression monte : il faut rester calme pour ne pas se tromper de lettre ni oublier le sujet !\n\nUn jeu d'ambiance rapide et rigolo, qui se joue en famille ou entre amis.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/stay_cool_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "28": {
+  "nomFr": "The LOOP",
+  "resume": "Faites équipe pour déjouer le Dr Faux et sauver la ligne temporelle.",
+  "description": "Vous incarnez des agents voyageant dans le temps pour empêcher le Dr Faux de détruire la chronologie.\n\nÀ chaque tour, vous déplacez vos agents d'époque en époque, jouez des cartes pour accomplir des missions et faites des « boucles » pour réutiliser vos pouvoirs. Dr Faux agit ensuite, aggravant la situation.\n\nUn jeu coopératif de deck-building à la fois tendu et malin, avec une identité visuelle forte.",
+  "expansions": {},
+  "regles": []
+ },
+ "31": {
+  "nomFr": "Twilight Inscription",
+  "resume": "Lancez les dés dans l'univers de Twilight Imperium.",
+  "description": "Dans cet univers de science-fiction, chaque joueur dirige une faction et lance des dés pour étendre son empire sur sa propre feuille de jeu.\n\nÀ chaque manche, un joueur actif lance les dés, puis tous les joueurs choisissent comment placer leurs résultats pour construire, explorer et gagner des points avant la fin de la partie.\n\nUn jeu de type roll-and-write rapide et interactif, pour retrouver l'ambiance de Twilight Imperium en moins d'une heure.",
+  "expansions": {},
+  "regles": []
+ },
+ "85": {
+  "nomFr": "Wanted ! Dead or Alive",
+  "resume": "Un jeu de cartes à la BANG ! où le shérif tient les rênes.",
+  "description": "Dans le Far West, des hors-la-loi, des adjoints et un shérif s'affrontent avec des rôles cachés, comme dans BANG !.\n\nÀ son tour, on joue des cartes pour attaquer, se défendre ou aider. L'objectif dépend de votre identité secrète, que vous cherchez à dissimuler le plus longtemps possible.\n\nUn jeu d'ambiance et de bluff plein de coups tordus, parfait à plusieurs.",
+  "expansions": {
+   "88": {
+    "nomFr": "Wanted ! A Fistful of Cards",
+    "resume": "Le shérif gère un paquet de cartes qui introduisent de nouvelles règles déjantées."
+   },
+   "87": {
+    "nomFr": "Wanted ! Dodge City",
+    "resume": "Une extension qui ajoute de nouveaux personnages et de nouvelles cartes."
+   },
+   "86": {
+    "nomFr": "Wanted ! High Noon",
+    "resume": "Le shérif gère un paquet de cartes qui introduisent de nouvelles règles déjantées."
+   }
+  },
+  "regles": []
+ }
+}

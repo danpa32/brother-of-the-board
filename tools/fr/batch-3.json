@@ -1,0 +1,172 @@
+{
+ "100": {
+  "nomFr": "6 qui Surprend",
+  "resume": "Choisissez une carte en secret, puis évitez de poser la sixième carte d'une rangée !",
+  "description": "Chaque joueur choisit en secret une carte de sa main. Toutes les cartes sont révélées en même temps, puis posées une à une, dans l'ordre croissant, au bout de l'une des rangées de la table.\n\nCelui qui pose la sixième carte d'une rangée doit ramasser les cinq autres, et chaque carte ramassée coûte des points. Le but est donc d'en récolter le moins possible.\n\nRapide, malin et plein de coups tordus, c'est un jeu d'ambiance où l'on rit beaucoup de ses propres malheurs.",
+  "expansions": {},
+  "regles": []
+ },
+ "40": {
+  "nomFr": "Ark Nova",
+  "resume": "Concevez et gérez un zoo moderne tout en finançant des projets de conservation des espèces.",
+  "description": "Vous dirigez un zoo et devez l'agrandir, accueillir de nouveaux animaux et soutenir des projets de conservation à travers le monde.\n\nÀ votre tour, vous choisissez l'une des cinq cartes d'action, dont la puissance dépend de sa position dans votre tableau : construire des enclos, jouer des animaux, des sponsors, des associations ou lancer des projets de conservation.\n\nLe jeu est dense, riche en combos et très rejouable : il faut optimiser son moteur pour attirer les visiteurs tout en faisant progresser la conservation.",
+  "expansions": {
+   "52": {
+    "nomFr": "Ark Nova : Mondes marins",
+    "resume": "Ajoute des animaux marins, de nouvelles cartes et de nouveaux objectifs pour enrichir votre zoo."
+   }
+  },
+  "regles": []
+ },
+ "119": {
+  "nomFr": "Boonlake",
+  "resume": "Bâtissez, élevez du bétail et explorez une région fictive de l'Ouest américain.",
+  "description": "Dans un Far West fictif, vous développez votre ranch en construisant des bâtiments, en élevant du bétail et en explorant de nouveaux territoires.\n\nÀ chaque tour, vous jouez des cartes et activez vos bâtiments pour produire des ressources, gagner de l'argent ou avancer vos objectifs. Le temps est compté : les manches s'enchaînent et il faut bien planifier ses actions.\n\nUn jeu de gestion et de combos où chaque décision compte pour finir en tête.",
+  "expansions": {},
+  "regles": []
+ },
+ "91": {
+  "nomFr": "Captain Sonar",
+  "resume": "Torpilles en avant ! Traquez le sous-marin adverse dans ce jeu d'équipe en temps réel.",
+  "description": "Deux équipes s'affrontent à bord de leur sous-marin. Chaque joueur a un rôle précis : capitaine, officier radio, mécanicien ou second, et doit collaborer avec ses coéquipiers.\n\nLe capitaine annonce les déplacements, l'officier radio tente de deviner la position de l'ennemi, tandis que le mécanicien et le second gèrent les pannes et les systèmes d'armes. Le jeu se joue en temps réel ou au tour par tour.\n\nStress, communication et bluff garantissent des parties intenses et très bruyantes.",
+  "expansions": {},
+  "regles": []
+ },
+ "47": {
+  "nomFr": "Citadelles",
+  "resume": "Voleur, roi ou condottiere ? Choisissez le bon personnage pour bâtir la plus belle cité.",
+  "description": "Chaque joueur construit sa cité en posant des quartiers devant lui. Au début de chaque manche, les joueurs choisissent secrètement un personnage aux pouvoirs particuliers : assassin, voleur, magicien, roi, évêque, marchand, architecte ou condottiere.\n\nPuis les personnages jouent dans l'ordre. On prend de l'or ou des cartes, puis on construit, tout en essayant de deviner les choix des adversaires pour les contrer.\n\nUn grand classique de bluff et de déduction, simple à expliquer et toujours aussi malin.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Mémo des règles (FR)",
+    "url": "https://www.regles.com/fiches/citadelles-memo.pdf",
+    "source": "regles.com"
+   }
+  ]
+ },
+ "2": {
+  "nomFr": "Dice Forge",
+  "resume": "Maîtrisez le hasard : forgez vos dés ou accomplissez des quêtes pour gagner des récompenses.",
+  "description": "Des demi-dieux s'affrontent pour gagner la faveur des dieux. Ici, les dés ne sont pas figés : vous remplacez leurs faces pour les améliorer au fil de la partie.\n\nÀ votre tour, vous lancez vos dés pour obtenir des ressources, puis vous pouvez les dépenser à la forge pour acheter de nouvelles faces, ou accomplir des exploits qui rapportent des points de gloire.\n\nLe plaisir de voir ses dés évoluer rend le jeu très addictif, avec une bonne part de chance bien maîtrisée.",
+  "expansions": {
+   "39": {
+    "nomFr": "Dice Forge : Rébellion",
+    "resume": "Ajoute de nouvelles faces de dés, de nouvelles cartes et de nouveaux effets pour varier les parties."
+   }
+  },
+  "regles": []
+ },
+ "6": {
+  "nomFr": "Dig Your Way Out",
+  "resume": "Fabriquez des outils, faites chanter vos codétenus et soyez le premier à vous évader de prison.",
+  "description": "Vous êtes prisonnier et vous voulez vous évader avant les autres. Il faudra pour cela creuser un tunnel, fabriquer des outils et vous procurer des objets en secret.\n\nÀ votre tour, vous jouez des cartes pour agir : échanger, voler, faire chanter vos voisins ou avancer vos préparatifs. Mais attention aux gardiens et aux autres détenus, qui ne vous veulent pas que du bien.\n\nUn jeu de cartes malin, plein de coups bas et de négociations.",
+  "expansions": {
+   "62": {
+    "nomFr": "Dig Your Way Out : Dig In",
+    "resume": "Ajoute de nouvelles cartes et de nouveaux outils pour renouveler vos tentatives d'évasion."
+   }
+  },
+  "regles": []
+ },
+ "99": {
+  "nomFr": "Dobble",
+  "resume": "Vite ! Trouvez le symbole commun à deux cartes avant tout le monde.",
+  "description": "Chaque carte comporte plusieurs symboles, et deux cartes quelconques n'ont toujours qu'un seul symbole en commun. Il faut le repérer et le nommer le plus vite possible.\n\nLa boîte propose plusieurs mini-jeux : selon le cas, on cherche à se débarrasser de ses cartes ou à en ramasser le plus possible.\n\nOn y joue en quelques minutes, à tous les âges, et les fous rires sont garantis.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Mémo des règles (FR)",
+    "url": "https://www.regles.com/fiches/dobble-memo.pdf",
+    "source": "regles.com"
+   }
+  ]
+ },
+ "94": {
+  "nomFr": "Exit : Calendrier de l'Avent – La Grotte Glacée",
+  "resume": "Résolvez des énigmes pour percer le mystère de la Grotte Glacée.",
+  "description": "Ce calendrier de l'Avent vous propose 24 énigmes, une par jour, à résoudre en coopération ou en solo. Chaque jour vous ouvrez un nouveau petit paquet qui révèle une partie de l'aventure.\n\nVous observez, manipulez, associez les indices, et pouvez même découper ou plier le matériel. Chaque énigme résolue vous fait avancer dans l'histoire et vous rapproche du mystère de la grotte.\n\nUne façon originale de patienter jusqu'à Noël.",
+  "expansions": {},
+  "regles": []
+ },
+ "108": {
+  "nomFr": "Fuji Flush",
+  "resume": "Soyez le premier à vous débarrasser de vos cartes en formant des équipes plus fortes que celles des autres.",
+  "description": "Fuji Flush est un jeu de défausse où l'on joue des cartes de même valeur, seules ou en groupe, pour battre les cartes posées par l'adversaire précédent.\n\nÀ chaque tour, vous devez jouer plus fort que le joueur précédent ou passer. Des cartes spéciales viennent pimenter la partie. Le premier à vider sa main gagne la manche.\n\nSimple, rapide et sympa, il se joue en quelques minutes et convient aux familles.",
+  "expansions": {},
+  "regles": []
+ },
+ "115": {
+  "nomFr": "Jungle Speed",
+  "resume": "Retournez une carte, ouvrez l'œil et soyez le plus rapide à saisir le totem.",
+  "description": "Chacun à son tour retourne la carte du dessus de sa pile. Si deux symboles identiques apparaissent, les joueurs concernés se précipitent pour attraper le totem au centre de la table.\n\nCelui qui s'en empare le premier donne ses cartes à son adversaire. Le but est de se débarrasser de toutes ses cartes avant les autres.\n\nIl faut avoir de bons réflexes et un bon sens de l'observation, dans une ambiance toujours très animée.",
+  "expansions": {
+   "117": {
+    "nomFr": "Jungle Speed : Extension Extreme",
+    "resume": "Ajoute de nouvelles cartes et de nouvelles règles pour rendre les parties encore plus nerveuses."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Mémo des règles (FR)",
+    "url": "https://www.regles.com/fiches/jungle-speed-memo.pdf",
+    "source": "regles.com"
+   }
+  ]
+ },
+ "32": {
+  "nomFr": "La Guilde des Expéditions Marchandes",
+  "resume": "Explorez des terres inconnues, tracez des routes commerciales et partez à la chasse aux trésors.",
+  "description": "Vous incarnez le chef d'une guilde d'explorateurs-marchands. Votre but est de découvrir de nouvelles contrées, y établir des comptoirs et lier des routes commerciales.\n\nÀ chaque manche, tous les joueurs choisissent une carte parmi celles proposées et dessinent simultanément sur leur propre carte. Vous devez planifier vos explorations pour remplir vos objectifs.\n\nUn jeu de dessin sur plateau malin et fluide, qui se joue en solo ou à plusieurs.",
+  "expansions": {},
+  "regles": []
+ },
+ "55": {
+  "nomFr": "Maracaibo",
+  "resume": "Partez à l'aventure dans les Caraïbes du XVIIe siècle pour gagner richesse et renommée.",
+  "description": "Vous voguez dans les Caraïbes du XVIIe siècle pour gagner l'influence de plusieurs nations. En quatre manches, il vous faudra explorer, livrer des marchandises et remplir des quêtes.\n\nÀ votre tour, vous déplacez votre bateau d'une à sept cases, vous effectuez l'action de la case d'arrivée, puis vous complétez votre main de cartes. L'interaction se joue surtout sur le placement et le choix du bon moment.\n\nUn jeu de stratégie riche et profond, qui récompense la planification.",
+  "expansions": {},
+  "regles": []
+ },
+ "114": {
+  "nomFr": "Saboteur",
+  "resume": "Vous êtes des nains qui creusent des tunnels pour trouver de l'or, mais l'un d'entre vous est un traître.",
+  "description": "Chaque joueur reçoit en secret un rôle : chercheur d'or ou saboteur. Ensemble, on pose des cartes tunnel pour atteindre le trésor caché au bout du réseau.\n\nÀ son tour, on pose un tunnel, on bloque le pic d'un autre joueur, on le répare ou on joue une carte spéciale. Les saboteurs, eux, cherchent à empêcher les mineurs d'atteindre l'or sans se faire repérer.\n\nBluff et déduction pour un jeu d'ambiance accessible à tous.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Mémo des règles (FR)",
+    "url": "https://www.regles.com/fiches/saboteur-memo.pdf",
+    "source": "regles.com"
+   }
+  ]
+ },
+ "22": {
+  "nomFr": "Super Mega Lucky Box",
+  "resume": "Remplissez les grilles de vos cartes pour décrocher bonus et points.",
+  "description": "Chaque joueur dispose de sa propre carte de grilles à remplir. À chaque tour, on tire des nombres et chacun les inscrit dans l'une de ses grilles, selon ses envies.\n\nLes cases bien placées rapportent des bonus et des points supplémentaires. Il faut donc faire de bons choix pour optimiser ses combinaisons malgré le hasard.\n\nUn jeu de type roll-and-write rapide et facile d'accès.",
+  "expansions": {},
+  "regles": []
+ },
+ "112": {
+  "nomFr": "Time's Up! Family",
+  "resume": "Faites deviner des personnages à votre équipe en trois manches de plus en plus délirantes.",
+  "description": "Deux équipes s'affrontent. Chaque joueur reçoit des cartes et on les mélange en un seul tas. Chaque équipe doit faire deviner un maximum de personnages en temps limité.\n\nDans la première manche, on peut parler librement. Dans la deuxième, un seul mot. Dans la troisième, on mime uniquement. Les cartes sont les mêmes, ce qui donne des situations hilarantes.\n\nLa version Family est adaptée aux plus jeunes, avec des personnages plus accessibles.",
+  "expansions": {},
+  "regles": []
+ },
+ "111": {
+  "nomFr": "UNDO : Prisonnier du Passé",
+  "resume": "Remontez le temps pour innocenter un homme et empêcher une erreur judiciaire.",
+  "description": "Dans ce jeu d'enquête coopératif, vous devez découvrir ce qui s'est vraiment passé la nuit d'un crime, pour innocenter un prisonnier.\n\nVous disposez d'un nombre limité de retours en arrière dans le temps, et à chaque fois il faut décider quelle action empêcher ou modifier pour changer le cours de l'histoire.\n\nUne enquête originale, courte et immersive, à partager entre amis.",
+  "expansions": {},
+  "regles": []
+ },
+ "61": {
+  "nomFr": "Welcome to the Moon",
+  "resume": "Fuyez la Terre et planifiez le voyage de l'humanité vers la Lune pour la sauver.",
+  "description": "Le jeu se déroule dans l'espace, avec une mission : amener l'humanité sur la Lune. Chaque joueur dispose d'une feuille sur laquelle il construit sa fusée et son plan de vol.\n\nÀ chaque manche, on retourne des cartes qui forment trois combinaisons de numéro et d'action. Tous les joueurs choisissent la même combinaison et la notent sur leur feuille.\n\nUn jeu de feuilles de score rapide, avec une campagne et un mode solo.",
+  "expansions": {},
+  "regles": []
+ }
+}

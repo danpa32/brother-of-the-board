@@ -1,0 +1,294 @@
+{
+ "97": {
+  "nomFr": "Kosmopoli:t",
+  "resume": "Un jeu coopératif et chaotique où serveuse, maître d'hôtel et cuisiniers servent des clients du monde entier en six minutes.",
+  "description": "Vous gérez le service du soir du restaurant le plus cosmopolite du monde, en six minutes chrono. À 4 à 8 joueurs, il y a toujours une serveuse, un maître d'hôtel et des cuisiniers.\n\nLa serveuse, casque sur les oreilles, prend les commandes via l'application et les transmet aux cuisiniers et au maître d'hôtel. Problème : les clients viennent des quatre coins du globe et commandent dans leur langue !\n\nLa communication est la clé : il faut se comprendre, deviner et improviser. Les fous rires sont garantis.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/kosmopolit_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "23": {
+  "nomFr": "Black DOG",
+  "resume": "Une variante du jeu DOG où un chien noir peut écraser vos pions avant qu'ils n'arrivent à la maison.",
+  "description": "Black DOG s'inspire de DOG, de la famille des jeux de petits chevaux. On joue des cartes pour faire avancer ses pions autour du plateau jusqu'à la maison.\n\nLa nouveauté : un pion de chien noir rôde sur le parcours et peut renvoyer vos pions au départ avant qu'ils soient en sécurité.\n\nIl faut donc bien choisir ses cartes, anticiper les coups des autres et savoir se mettre à l'abri au bon moment.",
+  "expansions": {},
+  "regles": []
+ },
+ "12": {
+  "nomFr": "Bunny Kingdom",
+  "resume": "Des lapins bâtisseurs se partagent un royaume en drafting de cartes, pour fonder des villes et récolter des carottes.",
+  "description": "La paix règne enfin sur le royaume des lapins. À la tête de votre clan, vous étendez vos terres sur un plateau de 100 cases.\n\nÀ chaque manche, vous draftez des cartes, puis les jouez pour placer vos terriers, construire des villes et produire des ressources : carottes, bois, champignons, eau, etc. Certaines cartes révèlent des objectifs secrets de fin de partie.\n\nLe décompte final récompense les territoires riches et bien connectés. Un jeu mignon, mais à l'esprit stratégique bien affûté.",
+  "expansions": {
+   "54": {
+    "nomFr": "Bunny Kingdom : Bunny Express",
+    "resume": "Ajoute des chemins de fer à votre royaume pour relier vos territoires et gagner de nouveaux points."
+   },
+   "53": {
+    "nomFr": "Bunny Kingdom : In the Sky",
+    "resume": "Étendez votre royaume dans les nuages avec de nouvelles ressources et des châteaux célestes."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles – In the Sky",
+    "url": "https://media.play-in.com/pdf/rules_games/in_the_sky_-_extension_bunny_kingdom_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "19": {
+  "nomFr": "Cartographers : Un conte de Roll Player",
+  "resume": "Dessinez la carte du royaume pour la reine en respectant ses édits, tout en contrant les Draguls.",
+  "description": "La reine Gimnax vous charge de cartographier les terres du Nord. Chaque saison, des édits royaux dictent les territoires qu'elle apprécie, et vous gagnez en réputation en les respectant.\n\nÀ chaque tour, une carte est révélée : tout le monde dessine simultanément la forme indiquée sur sa propre carte, en choisissant le type de terrain. Mais attention, certaines cartes d'embuscade des Draguls viennent vous gâcher la vie.\n\nUn jeu de dessin accessible, rapide, avec une vraie réflexion sur l'agencement.",
+  "expansions": {},
+  "regles": []
+ },
+ "25": {
+  "nomFr": "Clank! Aventure Deck-Building",
+  "resume": "Volez des trésors dans le repaire d'un dragon grâce à un deck-building, sans faire trop de bruit.",
+  "description": "Vous vous glissez dans la montagne d'un dragon pour dérober de précieux artefacts. Chaque tour, vous jouez vos cartes pour gagner des ressources, vous déplacer, vous battre ou acheter de meilleures cartes.\n\nMais chaque geste maladroit produit du CLANK : des cubes de bruit sont ajoutés à un sac. Quand le dragon attaque, il en pioche quelques-uns, et ceux qui ont fait trop de bruit en subissent les dégâts.\n\nIl faut s'enfoncer assez profondément pour ramasser un gros butin, puis ressortir vivant. Course, prise de risque et un brin de malchance.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/clank_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "41": {
+  "nomFr": "Dice Throne",
+  "resume": "Un jeu de duel de dés rapide où chaque héros possède son propre style et ses propres pouvoirs.",
+  "description": "Dice Throne est un jeu de combat pour 2 à 6 joueurs, en duel, en équipe ou chacun pour soi. Chaque héros a ses cinq dés, son plateau et son deck de cartes, pour un style de jeu unique.\n\nÀ votre tour, vous lancez vos dés jusqu'à trois fois pour tenter de réaliser une combinaison et d'activer une capacité d'attaque ou de défense. Des cartes permettent de jouer des coups bas, d'améliorer votre héros ou de perturber l'adversaire.\n\nLes parties sont courtes, tendues et très variées selon les héros. Un bon jeu de confrontation sans trop de règles.",
+  "expansions": {
+   "64": {
+    "nomFr": "Dice Throne : Père Noël vs Krampus",
+    "resume": "Le Père Noël affronte Krampus dans un duel festif pour savoir qui a été sage ou méchant."
+   },
+   "68": {
+    "nomFr": "Dice Throne Saison 1 : Barbare vs Elfe lunaire",
+    "resume": "Le Barbare, brute qui encaisse les gros coups, affronte l'Elfe lunaire, archère aux flèches explosives."
+   },
+   "73": {
+    "nomFr": "Dice Throne Saison 1 : Moine vs Paladin",
+    "resume": "Le Moine, maître du combat à mains nues, affronte le Paladin, guerrier sacré qui protège et soigne."
+   },
+   "72": {
+    "nomFr": "Dice Throne Saison 1 : Pyromancienne vs Voleur de l'ombre",
+    "resume": "La Pyromancienne, qui joue avec le feu, affronte le Voleur de l'ombre, maître du poison et des coups sournois."
+   },
+   "71": {
+    "nomFr": "Dice Throne Saison 1 : Tréant vs Ninja",
+    "resume": "Le Tréant, géant de la forêt, affronte le Ninja, rapide et insaisissable."
+   },
+   "65": {
+    "nomFr": "Dice Throne Saison 2 : Pirate maudite vs Artificier",
+    "resume": "La Pirate maudite et ses sorts affrontent l'Artificier, bricoleur d'explosifs et de gadgets."
+   },
+   "66": {
+    "nomFr": "Dice Throne Saison 2 : As de la gâchette vs Samouraï",
+    "resume": "L'As de la gâchette, tireuse rapide, affronte le Samouraï et son sabre."
+   },
+   "67": {
+    "nomFr": "Dice Throne Saison 2 : Séraphine vs Reine vampire",
+    "resume": "Séraphine, être céleste, affronte la Reine vampire dans un duel entre lumière et ténèbres."
+   },
+   "70": {
+    "nomFr": "Dice Throne Saison 2 : Tacticien vs Chasseresse",
+    "resume": "Le Tacticien, stratège militaire, affronte la Chasseresse, élevée par un tigre à dents de sabre."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles – Barbare vs Elfe lunaire",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s1_-_barbare_vs_elfe_lunaire_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Moine vs Paladin",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s1_-_moine_vs_paladin_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Pyromancienne vs Voleur de l'ombre",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s1_-_pyromancienne_vs_voleur_de_lombre_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Pirate maudite vs Artificier",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s2_-_pirate_maudite_vs_artificier_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – As de la gâchette vs Samouraï",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s2_-_as_de_la_gachette_vs_samourai_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Séraphine vs Reine vampire",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s2_-_seraphine_vs_reine_vampire_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Tacticien vs Chasseresse",
+    "url": "https://media.play-in.com/pdf/rules_games/dice_throne_s2_-_tacticien_vs_chasseresse_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "95": {
+  "nomFr": "dimoi",
+  "resume": "Jeu de cartes à questions et défis pour mieux se connaître (infos à compléter).",
+  "description": "Dimoi est une gamme de jeux de cartes de l'éditeur Tailemi, déclinée en plusieurs éditions (couples, amis, familles, enfants...).\n\nLe principe : piocher des cartes de questions ou de défis pour échanger, se raconter et apprendre à mieux se connaître. Il n'y a ni points ni vainqueur, l'objectif est de briser la glace et de favoriser l'écoute.",
+  "expansions": {},
+  "regles": []
+ },
+ "14": {
+  "nomFr": "Draftosaurus",
+  "resume": "Draftez des dinosaures et placez-les dans votre parc pour attirer un maximum de visiteurs.",
+  "description": "Vous aménagez un parc de dinosaures pour attirer les visiteurs. Chaque joueur dispose de figurines de dinosaures de six espèces, qu'il garde cachées dans sa main.\n\nÀ chaque tour, vous en choisissez un, posez-le dans un enclos de votre parc, puis passez les autres à votre voisin. Un dé impose une contrainte de placement aux autres joueurs, pas à celui qui le lance.\n\nChaque enclos a sa règle de score : paire, trio, espèce unique... Rapide, léger et accessible dès 7 ans, c'est un excellent jeu familial.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/draftosaurus_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "37": {
+  "nomFr": "Exploding Kittens",
+  "resume": "Tirez des cartes, évitez le chaton explosif et sabotez vos amis : une roulette russe féline.",
+  "description": "Exploding Kittens est une sorte de roulette russe version chatons. À tour de rôle, on pioche une carte, et celui qui tombe sur un chaton explosif est éliminé, à moins d'avoir de quoi le désamorcer.\n\nAvant de piocher, on peut jouer des cartes d'action : regarder la pioche, la mélanger, voler une carte, ou forcer un adversaire à piocher à votre place.\n\nPlus la pioche diminue, plus la tension monte. Rapide, drôle et un peu vache, le dernier joueur en lice l'emporte.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/exploding_kittens__regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "24": {
+  "nomFr": "Galaxy Trucker (seconde édition)",
+  "resume": "Construisez un vaisseau de bric et de broc en temps réel, puis survivez au voyage.",
+  "description": "Dans Galaxy Trucker, vous êtes un camionneur de l'espace. La première phase est un grand rush : tout le monde fouille la réserve commune en même temps pour assembler le meilleur vaisseau possible, en temps réel.\n\nLa seconde phase est le vol : des cartes dévoilent des météorites, des pirates, des planètes à piller et d'autres joyeusetés. Chaque dégât retire des morceaux de votre vaisseau, et parfois il n'en reste plus grand-chose.\n\nLe but : arriver avec le plus de crédits. Un jeu de bricolage chaotique et très drôle.",
+  "expansions": {},
+  "regles": []
+ },
+ "116": {
+  "nomFr": "Jungle Speed Rabbids",
+  "resume": "Jungle Speed dans l'univers des Lapins Crétins : restez attentif et attrapez le totem avant les autres.",
+  "description": "Chaque joueur reçoit une pile de cartes. À tour de rôle, on retourne une carte devant soi. Dès que deux cartes face visible sont identiques, les deux joueurs concernés se jettent sur le totem au centre de la table.\n\nLe plus rapide donne ses cartes à son adversaire. Le premier à se débarrasser de toutes ses cartes gagne.\n\nCette version Rabbids ajoute des cartes spéciales et un Lapin Crétin sur le totem, pour encore plus de chaos.",
+  "expansions": {},
+  "regles": []
+ },
+ "9": {
+  "nomFr": "Les Ruines Perdues de Narak",
+  "resume": "Explorez une île mystérieuse en mêlant deck-building et placement d'ouvriers.",
+  "description": "Vous menez une expédition d'archéologues sur une île inconnue, à la recherche des vestiges d'une civilisation disparue. Le jeu combine deck-building et placement d'ouvriers.\n\nÀ chaque tour, vous jouez des cartes pour obtenir des ressources ou pour poser vos explorateurs sur le plateau. Vous pouvez aussi explorer de nouveaux sites, affronter des gardiens et acheter des artefacts pour améliorer votre pioche.\n\nAprès cinq manches, le plus de prestige l'emporte. Un jeu riche et très fluide.",
+  "expansions": {
+   "57": {
+    "nomFr": "Les Ruines Perdues de Narak : Chefs d'Expédition",
+    "resume": "Six chefs d'expédition aux pouvoirs uniques pour varier les parties."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/les_ruines_perdues_de_narak_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Chefs d'Expédition",
+    "url": "https://media.play-in.com/pdf/rules_games/les_ruines_perdues_de_narak_-_extension_chefs_dexpedition_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "17": {
+  "nomFr": "Munchkin",
+  "resume": "Tuez des monstres, volez des trésors et trahissez vos amis dans ce jeu de cartes parodique.",
+  "description": "Munchkin parodie les jeux de rôle et leurs donjons. Le but est d'être le premier à atteindre le niveau 10.\n\nÀ votre tour, vous ouvrez une porte : un monstre à combattre, une malédiction, ou une carte à garder. Vous pouvez demander de l'aide à un autre joueur, mais les adversaires peuvent aussi vous mettre des bâtons dans les roues en renforçant le monstre.\n\nLes trésors récupérés vous donnent des armes et des bonus. L'humour est omniprésent, les alliances sont éphémères et les trahisons très fréquentes.",
+  "expansions": {
+   "77": {
+    "nomFr": "Munchkin 2 : Hachement Mieux",
+    "resume": "Une extension avec de nouvelles cartes Donjon et Trésor pour pimenter vos parties."
+   },
+   "78": {
+    "nomFr": "Munchkin 3 : Clerical Errors",
+    "resume": "Des cartes supplémentaires sur le thème des clercs, avec de nouveaux monstres et objets."
+   },
+   "81": {
+    "nomFr": "Munchkin 4 : The Need for Steed",
+    "resume": "Ajoute des montures et de nouvelles cartes Donjon et Trésor."
+   },
+   "82": {
+    "nomFr": "Munchkin 5 : On Zeu Rode Again",
+    "resume": "Une extension de nouvelles cartes, avec des montures et une bonne dose d'humour."
+   },
+   "83": {
+    "nomFr": "Munchkin 6 : Le Donjon de la Farce",
+    "resume": "Des cartes supplémentaires pour des donjons encore plus déjantés."
+   },
+   "84": {
+    "nomFr": "Munchkin 7 : Oh le Gros Tricheur !",
+    "resume": "Une extension tournée vers la triche, avec de nouvelles cartes pour tromper vos amis."
+   },
+   "89": {
+    "nomFr": "Munchkin 8 : Half Horse, Will Travel",
+    "resume": "De nouvelles cartes pour vos aventures, avec des centaures et des montures."
+   },
+   "90": {
+    "nomFr": "Munchkin Christmas Lite",
+    "resume": "Une version festive de Munchkin avec des cartes de Noël."
+   }
+  },
+  "regles": []
+ },
+ "20": {
+  "nomFr": "Sea Salt & Paper",
+  "resume": "Un jeu de cartes origami à l'ambiance marine : formez des combinaisons et choisissez le bon moment pour arrêter la manche.",
+  "description": "Sea Salt & Paper est un jeu de cartes aux illustrations en origami. À votre tour, vous piochez deux cartes ou prenez la carte visible d'une défausse, puis vous pouvez poser des paires aux effets spéciaux.\n\nVous devez ensuite décider d'arrêter la manche ou de laisser les autres jouer un tour de plus. Si vous vous trompez sur votre avance, vous le payez cher.\n\nLa partie se termine quand quelqu'un atteint 30, 35 ou 40 points, selon le nombre de joueurs. Rapide, tendu et très joli.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/sea_salt_et_paper_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "35": {
+  "nomFr": "Terror Below",
+  "resume": "Récoltez des oeufs de vers géants dans le désert du Nevada sans les réveiller.",
+  "description": "Une expérience gouvernementale a mal tourné dans le désert du Nevada : des vers géants rôdent sous le sable. Plus vous bougez vite, plus vous faites de vibrations, et plus les vers sont attirés.\n\nÀ votre tour, vous jouez une carte véhicule et effectuez trois actions : vous déplacer, récupérer des oeufs, ramasser des objets ou des armes. Puis les vers réagissent aux vibrations.\n\nLivrez les oeufs aux bons endroits pour gagner des primes. Le premier à 20 points de victoire l'emporte.",
+  "expansions": {},
+  "regles": []
+ },
+ "98": {
+  "nomFr": "Trucs !",
+  "resume": "Courez dans la maison pour trouver des objets correspondant à vos cartes, puis convainquez les autres.",
+  "description": "Il n'y a pas de tours, et on ne reste pas assis autour de la table : tous les joueurs courent en même temps dans la maison pour trouver des objets qui répondent aux critères de leurs cartes (une forme, une lettre, une couleur).\n\nQuand l'un de vous a terminé son paquet, la partie s'arrête. Mais pour marquer des points, il faut ensuite convaincre les autres que chaque objet correspond bien à la carte.\n\nUn jeu d'ambiance rigolo, plein de négociation de mauvaise foi.",
+  "expansions": {},
+  "regles": []
+ },
+ "29": {
+  "nomFr": "Vaalbara",
+  "resume": "Chefs de clan néolithiques, jouez vos cartes en secret pour conquérir des territoires.",
+  "description": "À l'ère néolithique, vous dirigez un clan qui explore de nouveaux territoires pour y fonder des villages. Chaque joueur dispose de cartes de personnages, qui représentent les membres de sa tribu et leurs talents.\n\nÀ chaque manche, tout le monde joue une carte en secret, puis les révèle. Le timing est crucial pour s'emparer des territoires et collectionner les bonnes séries.\n\nLe vainqueur est celui qui a le plus de points au terme de neuf manches. Rapide, malin et très interactif.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/vaalbara_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ }
+}

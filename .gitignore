@@ -1,0 +1,4 @@
+# Export BG Stats complet : contient les noms d'autres joueurs et une adresse e-mail
+tools/bgstats-export.json
+tools/in/
+__pycache__/

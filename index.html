@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brother of the board</title>
+<meta name="description" content="Nos jeux de société, nos envies et nos prochaines soirées jeux.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='8' y='8' width='84' height='84' rx='18' fill='%23b4532a'/><g fill='%23fff8ee'><circle cx='32' cy='32' r='9'/><circle cx='68' cy='68' r='9'/><circle cx='68' cy='32' r='9'/><circle cx='32' cy='68' r='9'/></g></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#/planning">
+    <span class="dice" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span>Brother <em>of the</em> board</span>
+  </a>
+  <nav class="tabs">
+    <a href="#/planning" data-tab="planning">Planning</a>
+    <a href="#/jeux" data-tab="jeux">Ludothèque</a>
+  </nav>
+  <div class="moi" id="moi"></div>
+</header>
+
+<div class="bandeau" id="bandeau" hidden></div>
+
+<main id="vue"></main>
+
+<dialog id="dlgSoiree" class="dlg">
+  <form method="dialog" id="formSoiree">
+    <h2 id="dlgTitre">Planifier une soirée</h2>
+    <label>Date
+      <input type="date" name="date" required>
+    </label>
+    <label>Jeu
+      <input type="text" name="jeu" list="listeJeux" required autocomplete="off" placeholder="Tape le nom du jeu…">
+      <datalist id="listeJeux"></datalist>
+    </label>
+    <label>Note <small>(facultatif)</small>
+      <input type="text" name="note" maxlength="120" placeholder="ex. avec l'extension, chez Mathieu…">
+    </label>
+    <p class="erreur" id="dlgErreur"></p>
+    <div class="actions">
+      <button type="button" class="btn ghost" value="annuler" id="dlgAnnuler">Annuler</button>
+      <button type="submit" class="btn" value="ok">Enregistrer</button>
+    </div>
+  </form>
+</dialog>
+
+<script type="module" src="js/app.js?v=1"></script>
+</body>
+</html>
