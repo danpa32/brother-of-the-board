@@ -288,9 +288,6 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
 .genres-fiche { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .badge.genre { background: var(--or-clair); border-color: transparent; font-size: .78rem; padding: 3px 10px; }
 .badge.plus { background: var(--bleu-clair); color: var(--bleu); border-color: transparent; }
-.ideal { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
-.ideal > span { font-weight: 500; }
-.ideal small { color: var(--texte-doux); }
 .seg button:disabled { cursor: not-allowed; }
 .badge.prete { background: var(--texte); color: var(--fond); border-color: transparent; }
 .pret { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;

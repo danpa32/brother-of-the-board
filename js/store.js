@@ -114,12 +114,6 @@ export async function majSoiree(id, patch) {
   await fb.fs.updateDoc(fb.fs.doc(fb.db, "soirees", id), patch);
 }
 
-// Nombre de joueurs idéal, commun à nous deux : { deux: bien à 2, plus: mieux à 3+ } (les deux possibles).
-export async function majIdeal(jeu, ideal) {
-  if (modeLocal) { etat.avis[jeu] = { ...etat.avis[jeu], ideal }; ecrireLocal(); notifier(); return; }
-  await fb.fs.setDoc(fb.fs.doc(fb.db, "avis", jeu), { ideal }, { merge: true });
-}
-
 // pret = { prenom, nom, tel, depuis } ; un seul prêt en cours par jeu.
 export async function preter(jeu, pret) {
   const p = { ...pret, par: etat.joueur };

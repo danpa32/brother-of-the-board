@@ -1,5 +1,5 @@
 import { JOUEURS } from "./config.js?v=3";
-import * as store from "./store.js?v=3";
+import * as store from "./store.js?v=10";
 
 const PERS = Object.keys(JOUEURS);           // ["daniel", "mathieu"]
 const JOURS_APPRENTISSAGE = 75;              // un nouveau jeu reste « à se remettre en tête » ce temps-là…
@@ -29,8 +29,10 @@ function niveau(w) {
 }
 // { deux: bien à 2, plus: mieux à 3+ }, les deux peuvent être vrais. Notre choix, sinon l'avis des joueurs BGG.
 const idealBgg = g => g.ideal || { deux: !!g.aDeux, plus: (g.joueurs.max || 0) >= 3 && g.aDeux !== "meilleur" };
-const idealChoisi = g => typeof st.avis[g.id]?.ideal === "object";
-const ideal = g => idealChoisi(g) ? st.avis[g.id].ideal : idealBgg(g);
+// Avis de chacun (par défaut celui de BGG / tools/joueurs.json) ; pour les filtres et
+// les idées, un jeu est « bien à 2 » (ou « mieux à 3+ ») si au moins l'un de nous le pense.
+const idealDe = (g, p) => st.avis[g.id]?.[p]?.ideal || idealBgg(g);
+const ideal = g => ({ deux: PERS.some(p => idealDe(g, p).deux), plus: PERS.some(p => idealDe(g, p).plus) });
 const jouableADeux = g => !g.joueurs.min || (g.joueurs.min <= 2 && (g.joueurs.max || 9) >= 2);
 
 /* ---------- avis & historique ---------- */
@@ -301,6 +303,12 @@ function vueFiche(id) {
   if (!g) { vue.innerHTML = `<p class="vide-txt">Jeu introuvable. <a href="#/jeux">Retour à la ludothèque</a></p>`; return; }
   const lie = g.lie && parId[g.lie];
   const histo = jouees(g.id);
+  const ligneOuiNon = (titre, valeur, action, v = "") => `<tr><th>${titre}</th>${PERS.map(p => {
+    const on = valeur(p);
+    return `<td>${p === st.joueur
+      ? `<button class="toggle${on ? " on" : ""}" data-action="${action}" data-jeu="${g.id}" data-v="${v}" aria-pressed="${on}">${on ? "Oui" : "Non"}</button>`
+      : `<span class="etat">${on ? "Oui" : "Non"}</span>`}</td>`;
+  }).join("")}</tr>`;
   const ligne = (titre, cle) => `<tr><th>${titre}</th>${PERS.map(p => `<td>${pastilles(avis(g, p)[cle], { p, jeu: g.id, cle })}</td>`).join("")}</tr>`;
 
   vue.innerHTML = `<article class="fiche">
@@ -330,21 +338,14 @@ function vueFiche(id) {
     <section class="bloc">
       <h2>Nos avis</h2>
       ${st.joueur ? "" : `<p class="aide">Identifie-toi en haut à droite pour noter.</p>`}
-      <div class="ideal"><span>À combien ?</span>
-        ${[["deux", "Bien à 2"], ["plus", "Mieux à 3+"]].map(([v, l]) =>
-          `<button class="chip${ideal(g)[v] ? " on" : ""}" data-action="ideal" data-jeu="${g.id}" data-v="${v}" aria-pressed="${ideal(g)[v]}" ${besoinJoueur()}>${ideal(g)[v] ? "✓ " : ""}${l}</button>`).join("")}
-        ${idealChoisi(g) ? "" : `<small>${g.ideal ? "par défaut" : "avis BGG"}</small>`}</div>
       <table class="avis">
         <thead><tr><th></th>${PERS.map(p => `<th class="${p === st.joueur ? "moi-col" : ""}">${JOUEURS[p].nom}</th>`).join("")}</tr></thead>
         <tbody>
           ${ligne("Envie d'y jouer bientôt", "envie")}
           ${ligne("Plaisir à y rejouer", "rejouer")}
-          <tr><th>À découvrir <small>(pas encore joué)</small></th>${PERS.map(p => {
-            const v = avis(g, p).decouvrir;
-            return `<td>${p === st.joueur
-              ? `<button class="toggle${v ? " on" : ""}" data-action="decouvrir" data-jeu="${g.id}" aria-pressed="${v}">${v ? "Oui" : "Non"}</button>`
-              : `<span class="etat">${v ? "Oui" : "Non"}</span>`}</td>`;
-          }).join("")}</tr>
+          ${ligneOuiNon("Bien à 2", p => idealDe(g, p).deux, "ideal", "deux")}
+          ${ligneOuiNon("Mieux à 3+", p => idealDe(g, p).plus, "ideal", "plus")}
+          ${ligneOuiNon("À découvrir <small>(pas encore joué)</small>", p => avis(g, p).decouvrir, "decouvrir")}
         </tbody>
       </table>
     </section>
@@ -517,8 +518,8 @@ document.addEventListener("click", async e => {
     }
     else if (action === "rendu") await store.rendu(jeu);
     else if (action === "ideal") {
-      const actuel = ideal(parId[jeu]);
-      await store.majIdeal(jeu, { ...actuel, [el.dataset.v]: !actuel[el.dataset.v] });
+      const actuel = idealDe(parId[jeu], st.joueur);
+      await store.majAvis(jeu, st.joueur, { ideal: { ...actuel, [el.dataset.v]: !actuel[el.dataset.v] } });
     }
     else if (action === "modifier") ouvrirDialogue({ soiree: st.soirees.find(s => s.id === id) });
     else if (action === "supprimer") await store.supprimerSoiree(id);
