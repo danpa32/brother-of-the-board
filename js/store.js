@@ -1,6 +1,6 @@
 // Données partagées : avis (notes par jeu et par joueur) et soirées planifiées.
 // Deux implémentations avec la même interface : Firebase (partagé) ou local (navigateur).
-import { FIREBASE } from "./config.js?v=3";
+import { FIREBASE } from "./config.js?v=12";
 
 const SDK = "https://www.gstatic.com/firebasejs/10.12.2";
 

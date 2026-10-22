@@ -1,5 +1,5 @@
-import { JOUEURS } from "./config.js?v=3";
-import * as store from "./store.js?v=11";
+import { JOUEURS } from "./config.js?v=12";
+import * as store from "./store.js?v=12";
 
 const PERS = Object.keys(JOUEURS);           // ["daniel", "mathieu"]
 const JOURS_APPRENTISSAGE = 75;              // un nouveau jeu reste « à se remettre en tête » ce temps-là…
