@@ -64,6 +64,9 @@ def genres(e, nom_fr):
     return g or ["Familial & léger"]
 
 
+# Jeux qu'on considère « Top à 2 » même si l'avis BGG ne le dit pas (nom BG Stats ou nom FR).
+top2 = set(json.load(open("tools/top2.json")))
+
 games = []
 for key, ent in entries.items():
     e, t = raw[key], fr.get(key, {})
@@ -77,7 +80,7 @@ for key, ent in entries.items():
         "vignette": e.get("thumb"),
         "joueurs": {"min": e.get("minPlayers") or info.get("minPlayers"),
                     "max": e.get("maxPlayers") or info.get("maxPlayers")},
-        "aDeux": best_at_two(e.get("polls")),
+        "aDeux": "meilleur" if {e["name"], t.get("nomFr")} & top2 else best_at_two(e.get("polls")),
         "duree": {"min": e.get("minTime") or info.get("minTime"),
                   "max": e.get("maxTime") or info.get("maxTime")},
         "age": e.get("minAge") or info.get("minAge"),
