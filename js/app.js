@@ -1,5 +1,5 @@
-import { JOUEURS } from "./config.js";
-import * as store from "./store.js";
+import { JOUEURS } from "./config.js?v=2";
+import * as store from "./store.js?v=2";
 
 const PERS = Object.keys(JOUEURS);           // ["daniel", "mathieu"]
 const JOURS_APPRENTISSAGE = 75;              // un nouveau jeu reste « à se remettre en tête » ce temps-là…
@@ -7,7 +7,8 @@ const PARTIES_APPRENTISSAGE = 3;             // …jusqu'à ce nombre de parties
 const RAPPEL_JOURS = 21;                     // 2e partie proposée 3 semaines après la première
 
 let jeux = [], parId = {}, st = { avis: {}, soirees: [], joueur: null };
-const ui = { q: "", style: "", tri: "envie", filtres: new Set(), aDeux: true, proposition: null };
+const GENRES = ["Coopératif", "Réflexion & stratégie", "Ambiance & déconnade", "Familial & léger"];
+const ui = { q: "", genre: "", tri: "envie", filtres: new Set(), aDeux: true, proposition: null };
 const $ = (s, el = document) => el.querySelector(s);
 const vue = $("#vue");
 
@@ -16,6 +17,7 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": 
 const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const auj = () => new Date().toISOString().slice(0, 10);
 const plusJours = (iso, n) => { const d = new Date(iso + "T12:00"); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
+const plusMois = iso => { const d = new Date(iso + "T12:00"); d.setMonth(d.getMonth() + 1); return d.toISOString().slice(0, 10); };
 const ecartJours = (a, b) => Math.round((new Date(b + "T12:00") - new Date(a + "T12:00")) / 864e5);
 const fmtDate = (iso, opts = { weekday: "short", day: "numeric", month: "short" }) =>
   new Intl.DateTimeFormat("fr-CH", opts).format(new Date(iso + "T12:00"));
@@ -33,7 +35,7 @@ const jouableADeux = g => !g.joueurs.min || (g.joueurs.min <= 2 && (g.joueurs.ma
 /* ---------- avis & historique ---------- */
 function avis(g, p) {
   const a = st.avis[g.id]?.[p] || {};
-  return { envie: a.envie || 0, rejouer: a.rejouer || 0, decouvrir: a.decouvrir ?? (g.parties[p] === 0) };
+  return { envie: a.envie || 0, rejouer: a.rejouer || 0, decouvrir: !!a.decouvrir };
 }
 const aDecouvrir = g => PERS.some(p => avis(g, p).decouvrir);
 const moyenne = (g, cle) => {
@@ -43,22 +45,26 @@ const moyenne = (g, cle) => {
 const jouees = id => st.soirees.filter(s => s.jeu === id && s.statut === "jouee").sort((a, b) => a.date.localeCompare(b.date));
 const prevues = () => st.soirees.filter(s => s.statut !== "jouee").sort((a, b) => a.date.localeCompare(b.date));
 const prochaine = id => prevues().find(s => s.jeu === id);
+// Les dates BG Stats ne sont plus à jour : seules les soirées du site comptent.
 function derniereFois(g) {
   const j = jouees(g.id).at(-1)?.date;
-  return [j, g.derniereFois].filter(Boolean).sort().at(-1) || null;
+  return j || null;
 }
-// Un jeu découvert récemment qu'on veut rejouer pour bien l'assimiler.
+// Un jeu découvert récemment (soirée marquée « decouverte ») qu'on veut rejouer pour bien l'assimiler.
+// Renvoie le nombre de parties depuis la découverte, ou 0.
 function enApprentissage(g) {
   const j = jouees(g.id);
-  return j.length > 0 && j.length < PARTIES_APPRENTISSAGE && ecartJours(j[0].date, auj()) <= JOURS_APPRENTISSAGE
-    && g.parties.daniel + g.parties.mathieu === 0 ? j.length : 0;
+  const debut = j.findLastIndex(s => s.decouverte);
+  if (debut < 0) return 0;
+  const n = j.length - debut;
+  return n < PARTIES_APPRENTISSAGE && ecartJours(j[debut].date, auj()) <= JOURS_APPRENTISSAGE ? n : 0;
 }
 
 /* ---------- suggestions ---------- */
-function suggestions() {
+function suggestions(nombre = 8) {
   const dejaPrevus = new Set(prevues().map(s => s.jeu));
   return jeux
-    .filter(g => !dejaPrevus.has(g.id) && (!ui.aDeux || jouableADeux(g)))
+    .filter(g => !dejaPrevus.has(g.id) && !st.prets[g.id] && (!ui.aDeux || jouableADeux(g)))
     .map(g => {
       const raisons = [];
       const envie = moyenne(g, "envie"), rejouer = moyenne(g, "rejouer");
@@ -76,7 +82,7 @@ function suggestions() {
       return { g, score, raisons };
     })
     .sort((a, b) => b.score - a.score)
-    .slice(0, 8);
+    .slice(0, nombre);
 }
 
 /* ---------- petits composants ---------- */
@@ -103,8 +109,12 @@ function badges(g) {
   if (g.aDeux === "meilleur") b.push(`<span class="badge deux">Top à 2</span>`);
   const pr = prochaine(g.id);
   if (pr) b.push(`<span class="badge prevu">📅 ${esc(fmtDate(pr.date))}</span>`);
+  if (st.prets[g.id]) b.push(`<span class="badge prete">Prêté</span>`);
   return b.join("");
 }
+
+const telLien = tel => `<a href="tel:${esc(tel.replace(/[^\d+]/g, ""))}">${esc(tel)}</a>`;
+const avecExt = s => s.extensions?.length ? `avec ${s.extensions.join(", ")}` : "";
 
 const besoinJoueur = () => st.joueur ? "" : `disabled title="Identifie-toi en haut à droite"`;
 
@@ -122,7 +132,11 @@ function vuePlanning() {
   }
 
   html += `<section class="bloc"><div class="bloc-tete"><h1>Prochaines soirées</h1>
-    <button class="btn" data-action="planifier" ${besoinJoueur()}>+ Planifier</button></div>`;
+    <div class="boutons">
+      <button class="btn" data-action="planifier" ${besoinJoueur()}>+ Planifier</button>
+      <button class="btn ghost" data-action="serie" ${besoinJoueur()}>Planifier plusieurs</button>
+      ${liste.length ? `<button class="btn ghost" data-action="tout-effacer" ${besoinJoueur()}>Tout effacer</button>` : ""}
+    </div></div>`;
   if (!liste.length) {
     html += `<p class="vide-txt">Rien de prévu pour l'instant. Choisis une idée ci-dessous ou planifie un jeu depuis la ludothèque.</p>`;
   } else {
@@ -136,9 +150,10 @@ function vuePlanning() {
       html += `<div class="soiree${passe ? " passee" : ""}">
         <div class="date"><b>${new Date(s.date + "T12:00").getDate()}</b><span>${esc(fmtDate(s.date, { weekday: "short" }))}</span></div>
         <a href="#/jeu/${g.id}" class="soiree-jeu">${vignette(g)}<span><b>${esc(g.nom)}</b>
-          <small>${esc(joueursTxt(g))} · ${esc(dureeTxt(g))}${s.note ? ` · ${esc(s.note)}` : ""}</small></span></a>
+          <small>${esc(joueursTxt(g))} · ${esc(dureeTxt(g))}${s.extensions?.length ? ` · ${esc(avecExt(s))}` : ""}${s.note ? ` · ${esc(s.note)}` : ""}</small></span></a>
         <div class="soiree-act">
           <button class="btn petit" data-action="jouee" data-id="${s.id}" ${besoinJoueur()}>Jouée ✓</button>
+          <button class="btn petit ghost" data-action="changer" data-id="${s.id}" ${besoinJoueur()} title="Remplacer par une autre idée" aria-label="Changer de jeu">↻</button>
           <button class="btn petit ghost" data-action="modifier" data-id="${s.id}" ${besoinJoueur()} aria-label="Modifier">✎</button>
           <button class="btn petit ghost" data-action="supprimer" data-id="${s.id}" ${besoinJoueur()} aria-label="Supprimer">✕</button>
         </div></div>`;
@@ -165,12 +180,22 @@ function vuePlanning() {
   }
   html += `</div></section>`;
 
+  const prets = Object.entries(st.prets).filter(([id]) => parId[id]);
+  if (prets.length) {
+    html += `<section class="bloc"><h2>Jeux prêtés (${prets.length})</h2><ul class="histo">`;
+    for (const [id, p] of prets) {
+      html += `<li><a href="#/jeu/${id}">${esc(parId[id].nom)}</a> → ${esc(p.prenom)} ${esc(p.nom)}${p.tel ? ` · ${telLien(p.tel)}` : ""}
+        <small>depuis le ${esc(fmtDate(p.depuis, { day: "numeric", month: "short", year: "numeric" }))}</small></li>`;
+    }
+    html += `</ul></section>`;
+  }
+
   const histo = st.soirees.filter(s => s.statut === "jouee").sort((a, b) => b.date.localeCompare(a.date));
   if (histo.length) {
     html += `<section class="bloc"><details><summary><h2>Soirées passées (${histo.length})</h2></summary><ul class="histo">`;
     for (const s of histo) {
       const g = parId[s.jeu];
-      if (g) html += `<li><span>${esc(fmtDate(s.date, { day: "numeric", month: "short", year: "numeric" }))}</span> <a href="#/jeu/${g.id}">${esc(g.nom)}</a>${s.note ? ` <small>${esc(s.note)}</small>` : ""}</li>`;
+      if (g) html += `<li><span>${esc(fmtDate(s.date, { day: "numeric", month: "short", year: "numeric" }))}</span> <a href="#/jeu/${g.id}">${esc(g.nom)}</a> <small>${esc(avecExt(s))}${s.note ? ` ${esc(s.note)}` : ""}</small></li>`;
     }
     html += `</ul></details></section>`;
   }
@@ -178,7 +203,13 @@ function vuePlanning() {
 }
 
 /* ---------- vue : ludothèque ---------- */
+// Aucun avis donné (ni envie, ni plaisir, ni « à découvrir ») : par moi si je suis identifié, sinon par l'un de nous.
+const sansAvis = (g, p) => { const a = st.avis[g.id]?.[p] || {}; return !a.envie && !a.rejouer && !a.decouvrir; };
+const aNoter = g => st.joueur ? sansAvis(g, st.joueur) : PERS.some(p => sansAvis(g, p));
+
 const FILTRES = {
+  anoter: ["À noter", aNoter],
+  prete: ["Prêtés", g => !!st.prets[g.id]],
   decouvrir: ["À découvrir", g => aDecouvrir(g)],
   deux: ["Jouable à 2", g => jouableADeux(g)],
   top2: ["Top à 2", g => g.aDeux === "meilleur"],
@@ -195,25 +226,28 @@ const TRIS = {
 
 function vueJeux() {
   if (!$("#grille")) {
-    const styles = [...new Set(jeux.flatMap(g => g.categories))].sort((a, b) => a.localeCompare(b, "fr"));
     vue.innerHTML = `<section class="bloc">
       <div class="outils">
-        <input type="search" id="q" placeholder="Rechercher un jeu, un style, une mécanique…" value="${esc(ui.q)}" autocomplete="off">
-        <select id="style" aria-label="Style"><option value="">Tous les styles</option>
-          ${styles.map(s => `<option ${s === ui.style ? "selected" : ""}>${esc(s)}</option>`).join("")}</select>
+        <input type="search" id="q" placeholder="Rechercher un jeu, une mécanique…" value="${esc(ui.q)}" autocomplete="off">
         <select id="tri" aria-label="Trier par">${Object.entries(TRIS).map(([k, [l]]) => `<option value="${k}" ${k === ui.tri ? "selected" : ""}>Tri : ${l}</option>`).join("")}</select>
       </div>
-      <div class="chips">${Object.entries(FILTRES).map(([k, [l]]) => `<button class="chip${ui.filtres.has(k) ? " on" : ""}" data-filtre="${k}">${l}</button>`).join("")}</div>
+      <div class="genres" role="group" aria-label="Catégorie">${["", ...GENRES].map(x =>
+        `<button class="genre${x === ui.genre ? " on" : ""}" data-genre="${esc(x)}">${esc(x || "Tous")}</button>`).join("")}</div>
+      <div class="chips">${Object.entries(FILTRES).map(([k, [l]]) => `<button class="chip${ui.filtres.has(k) ? " on" : ""}" data-filtre="${k}">${l}${k === "anoter" ? ` <span class="nb" id="nbANoter"></span>` : ""}</button>`).join("")}</div>
       <p class="compte" id="compte"></p>
       <div class="grille" id="grille"></div></section>`;
   }
   const q = norm(ui.q);
   const liste = jeux.filter(g =>
-    (!q || norm([g.nom, g.nomOriginal, g.resume, ...g.categories, ...g.mecaniques, ...g.extensions.map(x => x.nom)].join(" ")).includes(q)) &&
-    (!ui.style || g.categories.includes(ui.style)) &&
+    (!q || norm([g.nom, g.nomOriginal, g.resume, ...g.genres, ...g.categories, ...g.mecaniques, ...g.extensions.map(x => x.nom)].join(" ")).includes(q)) &&
+    (!ui.genre || g.genres.includes(ui.genre)) &&
     [...ui.filtres].every(f => FILTRES[f][1](g))
   ).sort(TRIS[ui.tri][1]);
 
+  $("#nbANoter").textContent = jeux.filter(aNoter).length;
+  $("[data-filtre=anoter]").title = st.joueur
+    ? `Jeux que ${JOUEURS[st.joueur].nom} n'a pas encore notés ni mis « à découvrir »`
+    : "Jeux que l'un de vous n'a pas encore notés ni mis « à découvrir »";
   $("#compte").textContent = `${liste.length} jeu${liste.length > 1 ? "x" : ""}`;
   $("#grille").innerHTML = liste.map(g => `
     <a class="carte" href="#/jeu/${g.id}">
@@ -222,12 +256,32 @@ function vueJeux() {
       <div class="carte-txt">
         <h3>${esc(g.nom)}</h3>
         <p class="meta">${esc(joueursTxt(g))} · ${esc(dureeTxt(g))}${niveau(g.difficulte) ? " · " + niveau(g.difficulte) : ""}</p>
+        <div class="carte-badges-txt">${badges(g)}</div>
         <p class="resume">${esc(g.resume)}</p>
         <div class="envies">${PERS.map(p => `<span title="Envie de ${JOUEURS[p].nom}">${JOUEURS[p].nom[0]} ${pastilles(avis(g, p).envie)}</span>`).join("")}</div>
       </div></a>`).join("") || `<p class="vide-txt">Aucun jeu ne correspond.</p>`;
 }
 
 /* ---------- vue : fiche jeu ---------- */
+function blocPret(g) {
+  let corps;
+  const p = st.prets[g.id];
+  if (!store.modeLocal && !st.joueur) {
+    corps = `<p class="aide">Connecte-toi pour voir et noter les prêts.</p>`;
+  } else if (p) {
+    corps = `<div class="pret"><p>Prêté à <b>${esc(p.prenom)} ${esc(p.nom)}</b>${p.tel ? ` · ${telLien(p.tel)}` : ""}
+      <small>depuis le ${esc(fmtDate(p.depuis, { day: "numeric", month: "long", year: "numeric" }))}</small></p>
+      <button class="btn petit" data-action="rendu" data-jeu="${g.id}" ${besoinJoueur()}>Rendu ✓</button></div>`;
+  } else {
+    corps = `<form class="form-pret" data-jeu="${g.id}">
+      <input name="prenom" placeholder="Prénom" required autocomplete="off">
+      <input name="nom" placeholder="Nom" autocomplete="off">
+      <input name="tel" type="tel" placeholder="Téléphone" autocomplete="off">
+      <button class="btn petit" ${besoinJoueur()}>Prêter</button></form>`;
+  }
+  return `<section class="bloc"><h2>Prêt</h2>${corps}</section>`;
+}
+
 function vueFiche(id) {
   const g = parId[id];
   if (!g) { vue.innerHTML = `<p class="vide-txt">Jeu introuvable. <a href="#/jeux">Retour à la ludothèque</a></p>`; return; }
@@ -251,6 +305,7 @@ function vueFiche(id) {
           ${g.noteBgg ? `<div><dt>Note BGG</dt><dd>${String(g.noteBgg).replace(".", ",")}/10</dd></div>` : ""}
           ${g.annee ? `<div><dt>Année</dt><dd>${g.annee}</dd></div>` : ""}
         </dl>
+        <div class="genres-fiche">${g.genres.map(x => `<a class="badge genre" href="#/jeux" data-genre="${esc(x)}">${esc(x)}</a>`).join("")}</div>
         <div class="fiche-act">
           <button class="btn" data-action="planifier" data-jeu="${g.id}" ${besoinJoueur()}>📅 Planifier</button>
           ${badges(g)}
@@ -266,28 +321,31 @@ function vueFiche(id) {
         <tbody>
           ${ligne("Envie d'y jouer bientôt", "envie")}
           ${ligne("Plaisir à y rejouer", "rejouer")}
-          <tr><th>Pas encore joué</th>${PERS.map(p => {
+          <tr><th>À découvrir <small>(pas encore joué)</small></th>${PERS.map(p => {
             const v = avis(g, p).decouvrir;
             return `<td>${p === st.joueur
-              ? `<button class="toggle${v ? " on" : ""}" data-action="decouvrir" data-jeu="${g.id}" aria-pressed="${v}">${v ? "À découvrir" : "Déjà joué"}</button>`
-              : `<span class="etat">${v ? "À découvrir" : "Déjà joué"}</span>`}</td>`;
+              ? `<button class="toggle${v ? " on" : ""}" data-action="decouvrir" data-jeu="${g.id}" aria-pressed="${v}">${v ? "Oui" : "Non"}</button>`
+              : `<span class="etat">${v ? "Oui" : "Non"}</span>`}</td>`;
           }).join("")}</tr>
         </tbody>
       </table>
     </section>
+
+    ${blocPret(g)}
 
     <section class="bloc">
       <h2>Le jeu</h2>
       ${lie ? `<p class="aide">Se joue avec <a href="#/jeu/${lie.id}">${esc(lie.nom)}</a>.</p>` : ""}
       <div class="texte">${(g.description || "Description à venir.").split(/\n\n+/).map(p => `<p>${esc(p)}</p>`).join("")}</div>
       ${g.categories.length || g.mecaniques.length ? `<h3>Style</h3><div class="tags">
-        ${g.categories.map(c => `<a class="tag" href="#/jeux" data-style="${esc(c)}">${esc(c)}</a>`).join("")}
+        ${g.categories.map(c => `<span class="tag">${esc(c)}</span>`).join("")}
         ${g.mecaniques.map(m => `<span class="tag meca">${esc(m)}</span>`).join("")}</div>` : ""}
       ${g.auteurs.length ? `<p class="credits">Auteurs : ${esc(g.auteurs.join(", "))}${g.editeurs.length ? ` · Éditeurs : ${esc(g.editeurs.join(", "))}` : ""}</p>` : ""}
     </section>
 
     ${g.extensions.length ? `<section class="bloc"><h2>Extensions (${g.extensions.length})</h2><ul class="extensions">
-      ${g.extensions.map(x => `<li>${x.vignette ? `<img src="${esc(x.vignette)}" alt="" loading="lazy">` : ""}<div><b>${esc(x.nom)}</b><p>${esc(x.resume)}</p></div></li>`).join("")}
+      ${g.extensions.map(x => `<li>${x.vignette ? `<img src="${esc(x.vignette)}" alt="" loading="lazy">` : ""}<div><b>${esc(x.nom)}</b><p>${esc(x.resume)}</p></div>
+        <button class="btn petit ghost" data-action="planifier" data-jeu="${g.id}" data-ext="${esc(x.nom)}" ${besoinJoueur()}>Planifier avec</button></li>`).join("")}
     </ul></section>` : ""}
 
     <section class="bloc"><h2>Règles</h2>
@@ -297,8 +355,8 @@ function vueFiche(id) {
     </section>
 
     <section class="bloc"><h2>Historique</h2>
-      <p>Parties enregistrées dans BG Stats : Daniel ${g.parties.daniel}, Mathieu ${g.parties.mathieu}${g.derniereFois ? ` · dernière le ${esc(fmtDate(g.derniereFois, { day: "numeric", month: "long", year: "numeric" }))}` : ""}.</p>
-      ${histo.length ? `<ul class="histo">${histo.map(s => `<li><span>${esc(fmtDate(s.date, { day: "numeric", month: "short", year: "numeric" }))}</span> Soirée jouée${s.note ? ` <small>${esc(s.note)}</small>` : ""}</li>`).join("")}</ul>` : ""}
+      ${histo.length ? `<ul class="histo">${histo.map(s => `<li><span>${esc(fmtDate(s.date, { day: "numeric", month: "short", year: "numeric" }))}</span> Soirée jouée <small>${esc(avecExt(s))}${s.note ? ` ${esc(s.note)}` : ""}</small></li>`).join("")}</ul>`
+        : `<p class="aide">Aucune soirée jouée pour l'instant.</p>`}
     </section>
   </article>`;
 }
@@ -346,7 +404,19 @@ function prochainVendrediLibre() {
   while (new Date(d + "T12:00").getDay() !== 5 || pris.has(d)) d = plusJours(d, 1);
   return d;
 }
-function ouvrirDialogue({ jeu, soiree } = {}) {
+// Cases à cocher des extensions du jeu choisi dans le dialogue.
+function rendreExtDialogue(g, coches = []) {
+  const p = g && st.prets[g.id];
+  $("#dlgInfo").textContent = p ? `⚠ Ce jeu est actuellement prêté à ${p.prenom} ${p.nom}.` : "";
+  const box = $("#dlgExt");
+  box.hidden = !g?.extensions.length;
+  $("div", box).innerHTML = (g?.extensions || []).map(x =>
+    `<label class="case"><input type="checkbox" value="${esc(x.nom)}" ${coches.includes(x.nom) ? "checked" : ""}> ${esc(x.nom)}</label>`).join("");
+}
+const jeuSaisi = () => jeux.find(x => norm(x.nom) === norm(form.jeu.value.trim()));
+form.jeu.addEventListener("input", () => rendreExtDialogue(jeuSaisi()));
+
+function ouvrirDialogue({ jeu, soiree, ext } = {}) {
   form.reset();
   $("#dlgErreur").textContent = "";
   $("#dlgTitre").textContent = soiree ? "Modifier la soirée" : "Planifier une soirée";
@@ -354,15 +424,17 @@ function ouvrirDialogue({ jeu, soiree } = {}) {
   form.date.value = soiree?.date || prochainVendrediLibre();
   form.jeu.value = parId[soiree?.jeu || jeu]?.nom || "";
   form.note.value = soiree?.note || "";
+  rendreExtDialogue(parId[soiree?.jeu || jeu], soiree?.extensions || (ext ? [ext] : []));
   dlg.showModal();
   if (!form.jeu.value) form.jeu.focus();
 }
 $("#dlgAnnuler").onclick = () => dlg.close();
 form.addEventListener("submit", async e => {
   e.preventDefault();
-  const g = jeux.find(x => norm(x.nom) === norm(form.jeu.value.trim()));
+  const g = jeuSaisi();
   if (!g) { $("#dlgErreur").textContent = "Choisis un jeu de la liste."; return; }
-  const data = { date: form.date.value, jeu: g.id, note: form.note.value.trim() };
+  const extensions = [...form.querySelectorAll("#dlgExt input:checked")].map(c => c.value);
+  const data = { date: form.date.value, jeu: g.id, extensions, note: form.note.value.trim() };
   try {
     if (form.dataset.id) await store.majSoiree(form.dataset.id, data);
     else await store.ajouterSoiree(data);
@@ -376,8 +448,8 @@ form.addEventListener("submit", async e => {
 async function marquerJouee(id) {
   const s = st.soirees.find(x => x.id === id);
   const g = parId[s.jeu];
-  const premiere = jouees(g.id).length === 0 && aDecouvrir(g);
-  await store.majSoiree(id, { statut: "jouee" });
+  const premiere = aDecouvrir(g);
+  await store.majSoiree(id, { statut: "jouee", decouverte: premiere });
   for (const p of PERS) if (avis(g, p).decouvrir) await store.majAvis(g.id, p, { decouvrir: false });
   if (premiere) ui.proposition = { jeu: g.id, date: plusJours(s.date < auj() ? auj() : s.date, RAPPEL_JOURS) };
   rendre();
@@ -391,8 +463,15 @@ document.addEventListener("click", async e => {
     await store.majAvis(box.dataset.jeu, st.joueur, { [box.dataset.cle]: actuel === v ? 0 : v });
     return;
   }
-  const tag = e.target.closest("[data-style]");
-  if (tag) { ui.style = tag.dataset.style; ui.q = ""; return; }   // le lien mène ensuite à #/jeux
+  const genre = e.target.closest("[data-genre]");
+  if (genre) {   // depuis une fiche, le lien mène ensuite à #/jeux
+    ui.genre = genre.dataset.genre;
+    if ($("#grille")) {
+      document.querySelectorAll(".genres [data-genre]").forEach(b => b.classList.toggle("on", b.dataset.genre === ui.genre));
+      vueJeux();
+    }
+    return;
+  }
   const chip = e.target.closest("[data-filtre]");
   if (chip) {
     const f = chip.dataset.filtre;
@@ -405,7 +484,18 @@ document.addEventListener("click", async e => {
   if (!el) return;
   const { action, id, jeu } = el.dataset;
   try {
-    if (action === "planifier") ouvrirDialogue({ jeu });
+    if (action === "planifier") ouvrirDialogue({ jeu, ext: el.dataset.ext });
+    else if (action === "serie") ouvrirSerie();
+    else if (action === "tout-effacer") {
+      const liste = prevues();
+      if (confirm(`Supprimer les ${liste.length} soirées prévues ? Les soirées jouées sont gardées.`))
+        for (const s of liste) await store.supprimerSoiree(s.id);
+    }
+    else if (action === "changer") {
+      const autre = suggestions(1)[0];
+      if (autre) await store.majSoiree(id, { jeu: autre.g.id, extensions: [], note: "" });
+    }
+    else if (action === "rendu") await store.rendu(jeu);
     else if (action === "modifier") ouvrirDialogue({ soiree: st.soirees.find(s => s.id === id) });
     else if (action === "supprimer") { if (confirm("Supprimer cette soirée ?")) await store.supprimerSoiree(id); }
     else if (action === "jouee") await marquerJouee(id);
@@ -424,17 +514,50 @@ document.addEventListener("click", async e => {
   }
 });
 
+document.addEventListener("submit", async e => {
+  const f = e.target.closest(".form-pret");
+  if (!f) return;
+  e.preventDefault();
+  const d = Object.fromEntries(new FormData(f));
+  await store.preter(f.dataset.jeu, { prenom: d.prenom.trim(), nom: d.nom.trim(), tel: d.tel.trim(), depuis: auj() });
+});
+
+/* ---------- dialogue : plusieurs soirées ---------- */
+const dlgSerie = $("#dlgSerie"), formSerie = $("#formSerie");
+function ouvrirSerie() {
+  $("#serieErreur").textContent = "";
+  formSerie.debut.value = prochainVendrediLibre();
+  dlgSerie.showModal();
+}
+$("#serieAnnuler").onclick = () => dlgSerie.close();
+formSerie.addEventListener("submit", async e => {
+  e.preventDefault();
+  const n = Number(formSerie.nombre.value), pas = Number(formSerie.rythme.value);
+  const idees = suggestions(n);
+  const prises = new Set(st.soirees.map(s => s.date));
+  let date = formSerie.debut.value;
+  try {
+    for (const { g } of idees) {
+      while (prises.has(date)) date = pas === 30 ? plusMois(date) : plusJours(date, pas);
+      await store.ajouterSoiree({ date, jeu: g.id });
+      prises.add(date);
+    }
+    dlgSerie.close();
+  } catch (err) {
+    $("#serieErreur").textContent = "Enregistrement impossible : " + err.message;
+  }
+});
+
 document.addEventListener("input", e => {
   if (e.target.id === "q") { ui.q = e.target.value; vueJeux(); }
 });
 document.addEventListener("change", e => {
-  if (e.target.id === "style") { ui.style = e.target.value; vueJeux(); }
   if (e.target.id === "tri") { ui.tri = e.target.value; vueJeux(); }
 });
 window.addEventListener("hashchange", rendre);
 
 /* ---------- démarrage ---------- */
-jeux = await fetch("data/games.json?v=1").then(r => r.json());
+jeux = await fetch("data/games.json?v=2").then(r => r.json());
 parId = Object.fromEntries(jeux.map(g => [g.id, g]));
 $("#listeJeux").innerHTML = jeux.map(g => `<option value="${esc(g.nom)}">`).join("");
 store.ecouter(s => { st = s; rendre(); });

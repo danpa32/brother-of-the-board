@@ -7,11 +7,17 @@ from collections import Counter
 
 raw = json.load(open("tools/bgg-raw.json"))
 export = json.load(open("tools/bgstats-export.json"))
+achats = json.load(open("tools/achats.json"))
 DANIEL, MATHIEU = 4, 1   # ids des joueurs dans BG Stats (Mathieu = propriétaire du compte BG Stats)
 
 by_name = {e["name"]: k for k, e in raw.items()}
 by_bgg = {e["bggId"]: k for k, e in raw.items() if e["bggId"]}
 
+# Jeux possédés qu'on ne veut pas voir sur le site.
+EXCLUS = {
+    "Exit: Calendrier de l'Avent – La Grotte Glacée",
+    "UNDO: Prisonnier du Passé",
+}
 # Extensions qui forment presque un jeu à part : gardées comme fiche séparée,
 # avec un lien vers le jeu de base.
 STANDALONE = {"Les Ruines Perdues de Narak: La Mission Disparue", "Dice Throne Adventures"}
@@ -27,7 +33,12 @@ MANUAL_PARENT = {
 # Les boîtes Dice Throne sont toutes des héros pour le même jeu.
 DICE_THRONE_BOXES = [n for n in by_name if n.startswith("Dice Throne:")]
 
+# Rattachements donnés dans achats.json (bggId du jeu de base).
+PARENT_ACHAT = {a["bggId"]: a["parent"] for a in achats if a.get("parent")}
+
 def parent_of(e):
+    if e["bggId"] in PARENT_ACHAT:
+        return by_bgg[PARENT_ACHAT[e["bggId"]]]
     if e["name"] in STANDALONE:
         return None
     if e["name"] in MANUAL_PARENT:
@@ -49,6 +60,10 @@ for p in export["plays"]:
             last[p["gameRefId"]] = max(last.get(p["gameRefId"], ""), p["playDate"][:10])
 
 entries = {}
+raw = {k: e for k, e in raw.items() if e["name"] not in EXCLUS}
+by_name = {e["name"]: k for k, e in raw.items()}
+by_bgg = {e["bggId"]: k for k, e in raw.items() if e["bggId"]}
+
 for k, e in raw.items():
     if parent_of(e) is None:
         entries[k] = {"key": k, "expansions": [], "relatedTo": None}
@@ -63,10 +78,10 @@ for name in STANDALONE:
 for k, ent in entries.items():
     members = [k] + ent["expansions"]
     ent["plays"] = {
-        "daniel": sum(plays[(int(m), DANIEL)] for m in members),
-        "mathieu": sum(plays[(int(m), MATHIEU)] for m in members),
+        "daniel": sum(plays[(raw[m]["bgstatsId"], DANIEL)] for m in members),
+        "mathieu": sum(plays[(raw[m]["bgstatsId"], MATHIEU)] for m in members),
     }
-    ent["lastPlayed"] = max((last.get(int(m), "") for m in members), default="")
+    ent["lastPlayed"] = max((last.get(raw[m]["bgstatsId"], "") for m in members), default="")
 
 json.dump(entries, open("tools/entries.json", "w"), ensure_ascii=False, indent=1)
 for k, ent in sorted(entries.items(), key=lambda x: raw[x[0]]["name"].lower()):

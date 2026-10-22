@@ -1,0 +1,187 @@
+{
+ "122": {
+  "nomFr": "5-Minute Mystery",
+  "resume": "Enquête coopérative en temps réel : fouillez le musée, recoupez les indices et démasquez le voleur en cinq minutes.",
+  "description": "Le Musée de Tout Ce Qui Existe vient de se faire voler sa pièce maîtresse, et il faut retrouver le coupable parmi une rangée de suspects.\n\nEn équipe et contre la montre, vous cherchez des symboles cachés dans chaque pièce du musée, puis les retrouvez dans le codex. Chaque pièce complétée débloque un indice sur le coupable : il suffit de comparer le code-barres de l'indice avec les tuiles suspects pour en éliminer.\n\nLa pression du chrono et la déduction collective rendent chaque partie intense et très courte.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-400266": {
+  "nomFr": "Boréal",
+  "resume": "Un duel de draft de cartes pour deux explorateurs en quête du savoir des ruines d'un monde ancien.",
+  "description": "Deux aventurières explorent les ruines d'un ancien monde pour y glaner un maximum de savoir.\n\nÀ votre tour, vous choisissez une carte dans la rivière commune ou en réservez une. Vos ressources limitent les cartes auxquelles vous avez accès : parfois toutes, parfois très peu.\n\nLa partie s'arrête quand l'un des joueurs (ou les deux) a réuni dix cartes ; celui qui a accumulé le plus de savoir l'emporte. Un jeu rapide et tendu, taillé pour le duel.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-380135": {
+  "nomFr": "Dead Cells : Le jeu de société Rogue-Lite",
+  "resume": "Adaptation coopérative du jeu vidéo culte : explorez, tuez, mourez, mutez et recommencez.",
+  "description": "Adapté du jeu vidéo Dead Cells, ce jeu de société reprend le principe du rogue-lite : vous incarnez un prisonnier qui se réveille sans cesse dans un château rempli de monstres.\n\nÀ chaque run, vous explorez des salles, combattez, ramassez armes et mutations, puis affrontez les boss. Mourir n'est pas la fin : vous recommencez plus fort, avec de nouveaux pouvoirs débloqués.\n\nLe plaisir vient de la progression d'une partie à l'autre et des combinaisons d'équipements, fidèles à l'esprit du jeu vidéo.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-367150": {
+  "nomFr": "Dune : La Guerre sur Arrakis",
+  "resume": "Affrontez-vous pour le contrôle d'Arrakis et de l'Épice dans ce jeu de conquête et de figurines.",
+  "description": "Dans l'univers de Dune, les grandes maisons se disputent la planète désertique Arrakis et son précieux Mélange.\n\nÀ tour de rôle, vous déployez des troupes, déplacez vos armées, récoltez l'Épice et livrez bataille. Chaque faction dispose de capacités propres qui bouleversent l'équilibre des forces.\n\nEntre contrôle du territoire, gestion de l'Épice et combats, il faut sans cesse choisir entre expansion et sécurité pour dominer le désert.",
+  "expansions": {},
+  "regles": []
+ },
+ "129": {
+  "nomFr": "Everdell",
+  "resume": "Bâtissez la cité de vos petits animaux de la forêt en récoltant des ressources et en jouant des cartes.",
+  "description": "Au fil des quatre saisons, vous développez une cité animale harmonieuse au cœur de la forêt d'Everdell, avec vos ouvriers, vos constructions et vos habitants.\n\nÀ votre tour, vous placez un ouvrier pour récolter des ressources ou jouer une carte de Constructions ou de Créatures, qui s'ajoutent à votre cité et offrent des pouvoirs. Quand vous n'avez plus d'ouvrier, vous passez à la saison suivante.\n\nLa partie est superbe visuellement, et les combos entre cartes sont très gratifiants.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://ammd.ch/pdfregles/everdell.pdf",
+    "source": "via AMMD"
+   }
+  ]
+ },
+ "bgg-414317": {
+  "nomFr": "Harmonies",
+  "resume": "Composez un paysage en empilant des jetons pour attirer des animaux et marquer des points.",
+  "description": "Vous construisez votre propre paysage en plaçant des jetons de terrain colorés sur votre plateau personnel : arbres, montagnes, champs, rivières.\n\nÀ votre tour, vous prenez trois jetons, les placez sur votre plateau, puis déposez éventuellement des cubes animaux qui correspondent aux motifs que vous avez formés.\n\nC'est un jeu zen, accessible et très joli, où l'on optimise son paysage pour accueillir un maximum d'animaux.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/harmonies_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "bgg-70323": {
+  "nomFr": "King of Tokyo",
+  "resume": "Incarnez un monstre géant et détruisez Tokyo, ou soyez le dernier survivant.",
+  "description": "Vous êtes un monstre mutant, un robot géant ou un alien, et vous vous battez pour devenir le roi de Tokyo.\n\nÀ votre tour, vous lancez six dés jusqu'à trois fois pour obtenir de l'attaque, des soins, de l'énergie ou des points de victoire. Le monstre qui occupe Tokyo inflige des dégâts à tous les autres, mais subit leurs coups en retour.\n\nOn gagne en atteignant 20 points ou en étant le dernier debout. Léger, rapide et plein de rebondissements.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://iello.fr/wp-content/uploads/2022/07/regles_KOTv2.pdf",
+    "source": "Iello"
+   }
+  ]
+ },
+ "bgg-410991": {
+  "nomFr": "Looot",
+  "resume": "Récoltez des ressources et capturez des bâtiments pour développer votre fjord viking.",
+  "description": "Vous êtes un chef viking qui développe son fjord et espère être couronné Jarl.\n\nLe jeu fonctionne avec un double placement : sur le plateau commun, vous récupérez des tuiles de ressources, de bâtiments et d'objectifs ; sur votre plateau personnel, vous les placez pour construire votre village et débloquer des points.\n\nIl faut optimiser les combinaisons, remplir ses drakkars et terminer ses chantiers avant les autres.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/looot_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "bgg-443297": {
+  "nomFr": "Map Masters",
+  "resume": "Un jeu de cartes de donjon où l'on trace son chemin salle après salle, en solo, en coopération ou en compétition.",
+  "description": "Vous construisez votre donjon avec cinq cartes, puis tracez un chemin à travers ses salles pour récolter un maximum de découvertes.\n\nÀ chaque manche, un objectif principal et un objectif secondaire déterminent quelles découvertes rapportent des points de victoire. Vous gagnez aussi des pièces pour acheter de nouvelles cartes.\n\nLe jeu se joue en versus, en coopération ou en solo, avec un plaisir de cartographe très tactique.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://ammd.ch/pdfregles/mapmasters.pdf",
+    "source": "via AMMD"
+   }
+  ]
+ },
+ "133": {
+  "nomFr": "Mindbug : Premier Contact",
+  "resume": "Un duel de cartes de créatures où l'on peut prendre le contrôle de la meilleure créature adverse.",
+  "description": "Dans ce jeu de cartes à deux, vous invoquez des créatures pour réduire les points de vie de votre adversaire à zéro.\n\nLa particularité : chaque joueur dispose de deux Mindbugs. Quand l'adversaire joue une créature, vous pouvez dépenser un Mindbug pour la prendre à votre service.\n\nCela oblige à bluffer et à bien choisir le moment de jouer ses meilleures cartes. Les parties sont courtes et très tactiques.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://iello.fr/wp-content/uploads/2023/01/Mindbug_Rulebook_FR.pdf",
+    "source": "Iello"
+   }
+  ]
+ },
+ "bgg-397385": {
+  "nomFr": "Pirates de Maracaibo",
+  "resume": "Écumez les Caraïbes pour piller, explorer et bâtir votre fortune de pirate.",
+  "description": "Dans les Caraïbes du XVIIe siècle, vous incarnez un capitaine qui cherche gloire et richesses en livrant des raids.\n\nChaque tour, vous jouez une carte pour effectuer une action, avancer sur les pistes, recruter de l'équipage, piller des villes ou accomplir des quêtes. Plus vous avancez, plus vos actions sont puissantes.\n\nLe jeu mêle gestion de cartes et optimisation de points, avec un mode solo et un thème pirate très immersif.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://ammd.ch/pdfregles/piratesdemaracaibo.pdf",
+    "source": "via AMMD"
+   }
+  ]
+ },
+ "bgg-417197": {
+  "nomFr": "Rebirth",
+  "resume": "Reconstruisez l'Écosse en posant des tuiles dans ce jeu de Reiner Knizia.",
+  "description": "Après une série de catastrophes, les clans d'Écosse se disputent la reconstruction de leurs terres et de leurs châteaux, en harmonie avec la nature.\n\nÀ votre tour, vous piochez une tuile de votre réserve et la placez astucieusement sur le plateau, ce qui permet de gagner des ressources et de prendre le contrôle de zones.\n\nUn eurogame fluide et élégant, qui renouvelle le jeu de pose de tuiles de Knizia.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://ammd.ch/pdfregles/rebirth.pdf",
+    "source": "via AMMD"
+   }
+  ]
+ },
+ "bgg-377470": {
+  "nomFr": "Sail",
+  "resume": "Un jeu de plis coopératif à deux pour piloter un navire pirate et éviter le Kraken.",
+  "description": "Deux joueurs naviguent ensemble sur une mer agitée, avec pour but d'atteindre l'arrivée sans que le Kraken n'endommage le navire.\n\nAvant chaque manche, vous échangez des cartes puis jouez une série de plis. Le gagnant de chaque pli déclenche des actions, selon ses pouvoirs de personnage.\n\nLe vacarme des flots vous interdit de parler tactique : il faut se comprendre à demi-mot pour s'en sortir.",
+  "expansions": {},
+  "regles": []
+ },
+ "128": {
+  "nomFr": "Sky Team",
+  "resume": "Pilotez un avion à deux, en silence, et posez-le sans encombre malgré les complications.",
+  "description": "Vous êtes pilote et copilote, et vous devez faire atterrir un avion de ligne ensemble.\n\nChaque manche, chacun lance ses dés en secret, puis les place à tour de rôle sur les commandes : axe, vitesse, volets, train d'atterrissage, radio. Vous ne pouvez pas discuter de vos valeurs.\n\nLes aéroports deviennent de plus en plus difficiles, et il faut s'entendre sans mots. Coopération tendue, rapide et très efficace.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://ammd.ch/pdfregles/skyteam.pdf",
+    "source": "via AMMD"
+   }
+  ]
+ },
+ "bgg-434906": {
+  "nomFr": "Tag Team",
+  "resume": "Un jeu de combat d'arcade en duos, mêlant combat automatique et construction de deck.",
+  "description": "Inspiré des jeux de combat d'arcade, Tag Team vous fait former une équipe de deux combattants parmi douze, chacun avec ses techniques et ses coups spéciaux.\n\nVous débutez avec deux cartes seulement : le combat se déroule seul, en retournant les cartes une à une. À la fin de chaque manche, vous ajoutez une nouvelle carte, sans pouvoir réorganiser les précédentes.\n\nTout l'intérêt est de programmer son deck et de créer des combos redoutables.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-300905": {
+  "nomFr": "Top Ten",
+  "resume": "Répondez à une question selon votre numéro secret pour que le Cap'ten remette tout le monde dans l'ordre.",
+  "description": "Chaque joueur reçoit un numéro secret de 1 à 10, et une question à thème est posée à tous, comme « Les aliments les plus dégoûtants ».\n\nSelon son numéro, on donne une réponse : un 1 donne une réponse très faible, un 10 une réponse extrême. Le Cap'ten doit ensuite remettre les réponses dans l'ordre, en devinant les numéros.\n\nLe jeu coopératif est drôle, bavard et accessible à tous, avec beaucoup de fous rires.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/top_ten_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "bgg-400366": {
+  "nomFr": "Wondrous Creatures",
+  "resume": "Créez la meilleure réserve de créatures fantastiques du monde.",
+  "description": "Vous êtes un passionné de créatures, bien décidé à bâtir la réserve la plus harmonieuse du monde.\n\nAvec vos ouvriers, vous collectez des cartes créatures et des œufs, chacune ayant son propre pouvoir. Le placement des ouvriers prend la forme d'un puzzle hexagonal.\n\nIl faut choisir des créatures qui se combinent bien et remplir les objectifs plus vite que les adversaires.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://ammd.ch/pdfregles/wondrouscreatures.pdf",
+    "source": "via AMMD"
+   }
+  ]
+ }
+}

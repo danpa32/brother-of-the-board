@@ -1,12 +1,12 @@
 // Données partagées : avis (notes par jeu et par joueur) et soirées planifiées.
 // Deux implémentations avec la même interface : Firebase (partagé) ou local (navigateur).
-import { JOUEURS, FIREBASE } from "./config.js";
+import { JOUEURS, FIREBASE } from "./config.js?v=2";
 
 const SDK = "https://www.gstatic.com/firebasejs/10.12.2";
 
 export const modeLocal = !FIREBASE.apiKey;
 
-const etat = { avis: {}, soirees: [], joueur: null, pret: false };
+const etat = { avis: {}, soirees: [], prets: {}, joueur: null, pret: false };
 let ecouteur = () => {};
 const notifier = () => ecouteur({ ...etat });
 
@@ -20,7 +20,7 @@ function lireLocal() {
 }
 function ecrireLocal() {
   try {
-    localStorage.setItem(CLE, JSON.stringify({ avis: etat.avis, soirees: etat.soirees, joueur: etat.joueur }));
+    localStorage.setItem(CLE, JSON.stringify({ avis: etat.avis, soirees: etat.soirees, prets: etat.prets, joueur: etat.joueur }));
   } catch { /* stockage indisponible : on garde en mémoire */ }
 }
 
@@ -47,10 +47,20 @@ async function demarrerFirebase() {
     notifier();
   }, err => console.error("soirees", err));
 
+  // Les prêts contiennent des numéros de téléphone : lisibles seulement une fois connecté.
+  let arreterPrets = null;
   au.onAuthStateChanged(fb.auth, user => {
     const email = user?.email?.toLowerCase();
     etat.joueur = Object.keys(JOUEURS).find(k => JOUEURS[k].email.toLowerCase() === email) || null;
     etat.emailInconnu = user && !etat.joueur ? user.email : null;
+    arreterPrets?.(); arreterPrets = null; etat.prets = {};
+    if (etat.joueur) {
+      arreterPrets = fs.onSnapshot(fs.collection(fb.db, "prets"), snap => {
+        etat.prets = {};
+        snap.forEach(d => { etat.prets[d.id] = d.data(); });
+        notifier();
+      }, err => console.error("prets", err));
+    }
     notifier();
   });
 }
@@ -58,7 +68,7 @@ async function demarrerFirebase() {
 export async function demarrer() {
   if (modeLocal) {
     const l = lireLocal();
-    Object.assign(etat, { avis: l.avis || {}, soirees: l.soirees || [], joueur: l.joueur || null, pret: true });
+    Object.assign(etat, { avis: l.avis || {}, soirees: l.soirees || [], prets: l.prets || {}, joueur: l.joueur || null, pret: true });
     notifier();
   } else {
     await demarrerFirebase();
@@ -102,6 +112,18 @@ export async function majSoiree(id, patch) {
     ecrireLocal(); notifier(); return;
   }
   await fb.fs.updateDoc(fb.fs.doc(fb.db, "soirees", id), patch);
+}
+
+// pret = { prenom, nom, tel, depuis } ; un seul prêt en cours par jeu.
+export async function preter(jeu, pret) {
+  const p = { ...pret, par: etat.joueur };
+  if (modeLocal) { etat.prets[jeu] = p; ecrireLocal(); notifier(); return; }
+  await fb.fs.setDoc(fb.fs.doc(fb.db, "prets", jeu), p);
+}
+
+export async function rendu(jeu) {
+  if (modeLocal) { delete etat.prets[jeu]; ecrireLocal(); notifier(); return; }
+  await fb.fs.deleteDoc(fb.fs.doc(fb.db, "prets", jeu));
 }
 
 export async function supprimerSoiree(id) {

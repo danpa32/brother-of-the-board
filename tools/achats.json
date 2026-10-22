@@ -1,0 +1,247 @@
+[
+ {
+  "bggId": 400266,
+  "nom": "Boreal",
+  "parent": null
+ },
+ {
+  "bggId": 410991,
+  "nom": "Looot",
+  "parent": null
+ },
+ {
+  "bggId": 187049,
+  "nom": "Munchkin : Trésors cachés",
+  "parent": 1927
+ },
+ {
+  "bggId": 360153,
+  "nom": "Dice Throne Marvel – Scarlet Witch, Thor, Loki, Spider-Man",
+  "parent": 268201
+ },
+ {
+  "bggId": 418801,
+  "nom": "Dice Throne Marvel – Black Panther, Captain Marvel, Black Widow, Dr Strange",
+  "parent": 268201
+ },
+ {
+  "bggId": 373288,
+  "nom": "Dice Throne Adventures – L'Atelier du Père Noël",
+  "parent": 281332
+ },
+ {
+  "bggId": 253170,
+  "nom": "5 Minutes Donjon – Malédiction ! Encore raté !",
+  "parent": 207830
+ },
+ {
+  "bggId": 318009,
+  "nom": "Dinosaur Island : Rawr 'n Write",
+  "parent": null
+ },
+ {
+  "bggId": 300905,
+  "nom": "Top Ten",
+  "parent": null
+ },
+ {
+  "bggId": 245377,
+  "nom": "Clank! – La Malédiction de la Momie",
+  "parent": 201808
+ },
+ {
+  "bggId": 446519,
+  "nom": "Miams",
+  "parent": null
+ },
+ {
+  "bggId": 204583,
+  "nom": "Kingdomino",
+  "parent": null
+ },
+ {
+  "bggId": 458424,
+  "nom": "Captain Flip – Isla Bomba",
+  "parent": 393325
+ },
+ {
+  "bggId": 218103,
+  "nom": "Clank! – Trésors engloutis",
+  "parent": 201808
+ },
+ {
+  "bggId": 443297,
+  "nom": "Map Masters",
+  "parent": null
+ },
+ {
+  "bggId": 414317,
+  "nom": "Harmonies",
+  "parent": null
+ },
+ {
+  "bggId": 369258,
+  "nom": "Isle of Skye – Big Box",
+  "parent": null
+ },
+ {
+  "bggId": 413556,
+  "nom": "Captain Flip – Dans la gueule du Kraken",
+  "parent": 393325
+ },
+ {
+  "bggId": 396545,
+  "nom": "Sea Salt & Paper – Extra Salt",
+  "parent": 367220
+ },
+ {
+  "bggId": 448906,
+  "nom": "Osmosis",
+  "parent": null
+ },
+ {
+  "bggId": 446231,
+  "nom": "7 Wonders Dice",
+  "parent": null
+ },
+ {
+  "bggId": 440540,
+  "nom": "Take Time",
+  "parent": null
+ },
+ {
+  "bggId": 434906,
+  "nom": "Tag Team",
+  "parent": null
+ },
+ {
+  "bggId": 417197,
+  "nom": "Rebirth",
+  "parent": null
+ },
+ {
+  "bggId": 424219,
+  "nom": "Zenith",
+  "parent": null
+ },
+ {
+  "bggId": 400366,
+  "nom": "Wondrous Creatures",
+  "parent": null
+ },
+ {
+  "bggId": 442250,
+  "nom": "Sea Salt & Paper – Extra Pepper",
+  "parent": 367220
+ },
+ {
+  "bggId": 441696,
+  "nom": "Sanctuary",
+  "parent": null
+ },
+ {
+  "bggId": 367150,
+  "nom": "Dune : La Guerre sur Arrakis",
+  "parent": null
+ },
+ {
+  "bggId": 245064,
+  "nom": "Dice Town – Pour une poignée de cartes",
+  "parent": 40793
+ },
+ {
+  "bggId": 434654,
+  "nom": "Toy Battle",
+  "parent": null
+ },
+ {
+  "bggId": 377470,
+  "nom": "Sail",
+  "parent": null
+ },
+ {
+  "bggId": 320777,
+  "nom": "Draftosaurus – Marina",
+  "parent": 264055
+ },
+ {
+  "bggId": 320778,
+  "nom": "Draftosaurus – Aerial Show",
+  "parent": 264055
+ },
+ {
+  "bggId": 386368,
+  "nom": "Esdras et Néhémie",
+  "parent": null
+ },
+ {
+  "bggId": 397385,
+  "nom": "Pirates de Maracaibo",
+  "parent": null
+ },
+ {
+  "bggId": 380135,
+  "nom": "Dead Cells",
+  "parent": null
+ },
+ {
+  "bggId": 70323,
+  "nom": "King of Tokyo",
+  "parent": null
+ },
+ {
+  "bggId": 368158,
+  "nom": "Ark Nova – Plateaux recto verso (Zoo Map Pack 1)",
+  "parent": 342942
+ },
+ {
+  "bggId": 363289,
+  "nom": "Fantasy Realms – Deluxe",
+  "parent": null
+ },
+ {
+  "bggId": 148228,
+  "nom": "Splendor",
+  "parent": null
+ },
+ {
+  "bggId": 129622,
+  "nom": "Love Letter",
+  "parent": null
+ },
+ {
+  "bggId": 307002,
+  "nom": "Regicide",
+  "parent": null
+ },
+ {
+  "bggId": 393325,
+  "nom": "Captain Flip",
+  "parent": null
+ },
+ {
+  "bggId": 373106,
+  "nom": "Sky Team",
+  "parent": null
+ },
+ {
+  "bggId": 345584,
+  "nom": "Mindbug",
+  "parent": null
+ },
+ {
+  "bggId": 258779,
+  "nom": "Planet Unknown",
+  "parent": null
+ },
+ {
+  "bggId": 294514,
+  "nom": "5 Minutes Mystère",
+  "parent": null
+ },
+ {
+  "bggId": 199792,
+  "nom": "Everdell (2e édition)",
+  "parent": null
+ }
+]

@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -39,9 +39,14 @@
       <input type="text" name="jeu" list="listeJeux" required autocomplete="off" placeholder="Tape le nom du jeu…">
       <datalist id="listeJeux"></datalist>
     </label>
+    <fieldset class="dlg-ext" id="dlgExt" hidden>
+      <legend>Avec les extensions</legend>
+      <div></div>
+    </fieldset>
     <label>Note <small>(facultatif)</small>
-      <input type="text" name="note" maxlength="120" placeholder="ex. avec l'extension, chez Mathieu…">
+      <input type="text" name="note" maxlength="120" placeholder="ex. chez Mathieu, variante solo…">
     </label>
+    <p class="info" id="dlgInfo"></p>
     <p class="erreur" id="dlgErreur"></p>
     <div class="actions">
       <button type="button" class="btn ghost" value="annuler" id="dlgAnnuler">Annuler</button>
@@ -50,6 +55,31 @@
   </form>
 </dialog>
 
-<script type="module" src="js/app.js?v=1"></script>
+<dialog id="dlgSerie" class="dlg">
+  <form method="dialog" id="formSerie">
+    <h2>Planifier plusieurs soirées</h2>
+    <p class="aide">Les dates sont remplies avec les meilleures idées du moment. Tu pourras ensuite changer (↻) ou supprimer (✕) chaque soirée.</p>
+    <label>Nombre de soirées
+      <input type="number" name="nombre" min="1" max="12" value="4" required>
+    </label>
+    <label>Première soirée
+      <input type="date" name="debut" required>
+    </label>
+    <label>Rythme
+      <select name="rythme">
+        <option value="7">Chaque semaine</option>
+        <option value="14">Toutes les 2 semaines</option>
+        <option value="30">Une fois par mois</option>
+      </select>
+    </label>
+    <p class="erreur" id="serieErreur"></p>
+    <div class="actions">
+      <button type="button" class="btn ghost" id="serieAnnuler">Annuler</button>
+      <button type="submit" class="btn">Planifier</button>
+    </div>
+  </form>
+</dialog>
+
+<script type="module" src="js/app.js?v=2"></script>
 </body>
 </html>

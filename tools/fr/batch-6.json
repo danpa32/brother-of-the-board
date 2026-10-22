@@ -1,0 +1,208 @@
+{
+ "bgg-446231": {
+  "nomFr": "7 Wonders Dice",
+  "resume": "Un jeu de dés rapide où l'on bâtit sa cité antique et sa merveille en gérant or et ressources.",
+  "description": "Vous dirigez l'une des sept plus grandes cités de l'Antiquité et cherchez à la faire prospérer : construire une merveille, progresser en science, développer le commerce et gérer vos ressources, sans perdre de vue vos voisines.\n\nLa partie se déroule en plusieurs tours. À chaque manche, on secoue la boîte pour révéler les coûts des dés, puis chacun choisit un dé simultanément, paie son coût en or et construit le bâtiment correspondant.\n\nLe jeu reprend l'esprit de 7 Wonders dans un format plus court et dynamique, où l'on surveille ses voisins car les ignorer coûte cher. À la fin, le plus de points l'emporte.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/7-wonders-dice/rulebooks/7dice-fr01-rules-mkt-1757940335soKpF.pdf",
+    "source": "Repos Production"
+   }
+  ]
+ },
+ "123": {
+  "nomFr": "Captain Flip",
+  "resume": "Piochez une tuile, gardez-la ou retournez-la, et composez le meilleur équipage pour remplir votre coffre d'or.",
+  "description": "Capitaine, hissez votre pavillon et recrutez un équipage haut en couleur pour remplir vos coffres de pièces d'or. Les règles s'expliquent en une minute.\n\nÀ votre tour, piochez une tuile dans le sac. Elle vous plaît ? Gardez-la. Sinon, retournez-la, puis placez-la sur votre plateau pour former votre équipage.\n\nAvec ses neuf personnages et ses quatre plateaux aux tactiques différentes, Captain Flip offre une expérience immédiate, drôle et plus subtile qu'il n'y paraît.",
+  "expansions": {
+   "bgg-458424": {
+    "nomFr": "Captain Flip – Isla Bomba",
+    "resume": "Une extension sans nouvelle règle, qui apporte de la variété et de la rejouabilité."
+   },
+   "bgg-413556": {
+    "nomFr": "Captain Flip – Dans la gueule du Kraken",
+    "resume": "Affrontez la fureur du Kraken avec de nouveaux plateaux et un mode solo."
+   }
+  },
+  "regles": []
+ },
+ "bgg-318009": {
+  "nomFr": "Dinosaur Island : Rawr 'n Write",
+  "resume": "Version roll-and-write de Dinosaur Island : dessinez le parc à dinosaures le plus spectaculaire.",
+  "description": "Vous gérez un parc d'attractions peuplé de dinosaures. Le jeu mêle un draft de dés et une phase de placement d'ouvriers, les dés choisis servant d'ouvriers.\n\nVous remplissez ensuite votre plateau en dessinant des polyominos : attractions, bâtiments et dinosaures doivent tenir dans votre parc, tout en reliant routes et chemins vers les sorties pour gagner des bonus.\n\nÀ la fin de la partie, celui qui a le plus de points de victoire l'emporte.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/dinosaur_island_rawr_n_write_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "bgg-386368": {
+  "nomFr": "Esdras et Néhémie",
+  "resume": "Reconstruisez les murailles et le temple de Jérusalem pour les exilés de retour de Babylone.",
+  "description": "Inspiré du récit biblique du retour d'exil, le jeu vous place dans la Jérusalem antique, où il faut rebâtir le temple et les remparts de la ville pour les exilés qui reviennent.\n\nChaque joueur gère ses ressources et ses actions pour contribuer à la reconstruction, en choisissant où investir ses efforts et son équipe.\n\nLa partie se joue en optimisant ses choix pour accumuler le plus de points à la fin.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-363289": {
+  "nomFr": "Fantasy Realms – Deluxe",
+  "resume": "Piochez et défaussez des cartes pour bâtir en main le royaume fantastique le plus prospère.",
+  "description": "Chaque joueur dirige un royaume fantastique représenté par une main de sept cartes : magiciens, armées, bêtes, artefacts et autres merveilles.\n\nÀ votre tour, vous piochez une carte puis en défaussez une, en cherchant à créer des combos. Chaque carte offre des bonus ou des malus selon les autres cartes de votre main.\n\nLa manche s'arrête quand la table des défausses déborde, puis on compte les points. Cette édition Deluxe refait l'illustration et le graphisme de toutes les cartes et inclut l'extension Le Trésor maudit.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://www.dontpanicgames.com/static/FANTASY_REALM_Rulebook_FR.pdf",
+    "source": "Don't Panic Games (règle du jeu de base)"
+   }
+  ]
+ },
+ "bgg-369258": {
+  "nomFr": "Isle of Skye – Big Box",
+  "resume": "Posez des tuiles pour bâtir votre royaume écossais et devenir le chef du clan le plus prospère.",
+  "description": "Chaque joueur incarne un chef de clan écossais qui construit son petit royaume en posant des tuiles de paysage, pour gagner un maximum de points de victoire.\n\nÀ chaque tour, on achète des tuiles à un prix fixé par soi-même : un prix trop élevé fait gagner de l'argent mais risque de laisser la tuile aux autres, trop bas, on la paie cher. On les place ensuite dans son royaume, selon les objectifs de la partie qui varient à chaque fois.\n\nCette Big Box contient le jeu de base, l'extension Druides et des tuiles supplémentaires.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-204583": {
+  "nomFr": "Kingdomino",
+  "resume": "Placez des dominos de paysages pour former le plus beau royaume dans ce jeu familial rapide.",
+  "description": "Vous incarnez un seigneur à la recherche de nouvelles terres : champs de blé, lacs, forêts, prairies, marais et mines à explorer pour agrandir votre royaume.\n\nÀ chaque tour, vous placez le domino choisi au tour précédent, en le connectant à un paysage identique ou à votre château, dans une grille de 5 × 5 maximum. Vous choisissez ensuite un nouveau domino, dont la valeur détermine l'ordre de jeu suivant.\n\nLes couronnes multiplient la valeur de chaque territoire : il faut donc bien planifier.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://blueorangegames.eu/wp-content/uploads/2025/01/Kingdomino_Nouvelle_Edition-rules-FR.pdf",
+    "source": "Blue Orange"
+   }
+  ]
+ },
+ "bgg-129622": {
+  "nomFr": "Love Letter",
+  "resume": "Faites parvenir votre lettre à la princesse ou éliminez vos rivaux dans ce micro-jeu de déduction.",
+  "description": "Tous les prétendants du royaume veulent séduire la princesse, enfermée dans son palais : à vous de faire porter votre lettre jusqu'à elle avant les autres.\n\nLe jeu se joue avec seize cartes. Chacun a une carte en main ; à son tour, on en pioche une, puis on en joue une pour appliquer son effet : deviner, comparer, protéger ou éliminer un adversaire.\n\nÀ la fin de la manche, le dernier joueur en lice, ou celui qui détient la plus forte carte, remporte la faveur de la princesse. Des parties très rapides.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://www.letempledujeu.fr/IMG/pdf/love_letter_french_rules_v2.pdf",
+    "source": "Le Temple du Jeu (traduction)"
+   }
+  ]
+ },
+ "bgg-446519": {
+  "nomFr": "Miams",
+  "resume": "Lancez vos dés pour composer les plus belles brochettes de fruits et remplir votre jauge de cœurs.",
+  "description": "Vous lancez des dés pour composer de jolies brochettes de fruits. Le premier à remplir sa piste de cœurs l'emporte.\n\nÀ votre tour, vous lancez les dés, tentez de réaliser les brochettes demandées et gagnez des cœurs. Les cartes Yums, aux pouvoirs puissants, vous permettent de tordre les probabilités à votre avantage.\n\nChaque partie crée des situations différentes grâce à la combinaison de ces cartes.",
+  "expansions": {},
+  "regles": []
+ },
+ "bgg-448906": {
+  "nomFr": "Osmosis",
+  "resume": "Un jeu coopératif d'associations d'idées où l'on parle (presque) librement pour être sur la même longueur d'onde.",
+  "description": "Ensemble, vous discutez des combinaisons de cartes que vous pensez former. Chacun a le droit de décrire son association ou les liens entre les cartes, mais sans désigner clairement une ou plusieurs cartes précises.\n\nChaque joueur fait ensuite ses choix en secret, puis tout le monde les révèle simultanément. Si la majorité est en phase, la manche est gagnée.\n\nLe plaisir vient des surprises et des décalages d'interprétation au sein du groupe.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://www.jeux-opla.fr/wp-content/uploads/livret-Osmosis.pdf",
+    "source": "Jeux Opla"
+   }
+  ]
+ },
+ "120": {
+  "nomFr": "Planet Unknown",
+  "resume": "Développez et colonisez votre planète avec des polyominos servis par un plateau rotatif.",
+  "description": "Votre planète n'a plus de ressources et vous devez en trouver une autre. Vos rovers ont testé plusieurs planètes ; à vous de développer la meilleure.\n\nÀ chaque manche, chaque joueur place sur sa planète une tuile polyomino à deux ressources prise sur un plateau rotatif. Chaque ressource représente une infrastructure nécessaire à la vie : il faut les agencer avec soin.\n\nPlanètes et corporations asymétriques, objectifs et modes solo ou jusqu'à six joueurs donnent beaucoup de rejouabilité.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/planet_unknown_-_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "bgg-307002": {
+  "nomFr": "Regicide",
+  "resume": "Un jeu coopératif avec un jeu de cartes classique : unissez vos forces pour vaincre la monarchie corrompue.",
+  "description": "Jusqu'à quatre joueurs coopèrent avec un simple jeu de cartes pour vaincre douze puissants ennemis : Valets, Dames et Rois.\n\nÀ votre tour, vous jouez une carte pour attaquer l'ennemi courant. Quand les dégâts suffisent, il est vaincu. Sinon il riposte : les joueurs doivent défausser des cartes pour encaisser les dégâts, et si ce n'est pas possible, tout le monde perd.\n\nLes pouvoirs des couleurs et les combos demandent une vraie coordination, malgré une communication limitée.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://iello.fr/wp-content/uploads/2025/01/Regicide_RuleBook_FR_V1.pdf",
+    "source": "Iello"
+   }
+  ]
+ },
+ "bgg-441696": {
+  "nomFr": "Sanctuary",
+  "resume": "Concevez un zoo moderne et atteignez vos objectifs de conservation des espèces.",
+  "description": "Vous planifiez et construisez un zoo moderne, géré de façon scientifique, pour ses animaux et ses visiteurs. Parmi 135 tuiles uniques (animaux, bâtiments, projets), il faut trouver chaque partie le meilleur mélange.\n\nChaque joueur dispose de quatre cartes Action pour rythmer son tour, et les effets des tuiles servent à remplir des objectifs de conservation et à augmenter l'attrait du zoo.\n\nUn jeu de gestion et d'optimisation dans l'univers d'Ark Nova.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://www.supermeeple.com/wp-content/uploads/2015/02/Sanctuary_Rules_Print_Partners_FR-comp.pdf",
+    "source": "Super Meeple"
+   }
+  ]
+ },
+ "bgg-148228": {
+  "nomFr": "Splendor",
+  "resume": "Marchands de la Renaissance, collectez des gemmes, achetez des cartes et attirez les nobles.",
+  "description": "Vous êtes un riche marchand de la Renaissance et utilisez vos jetons de gemmes pour acquérir mines, moyens de transport et boutiques qui rapportent du prestige.\n\nÀ votre tour, vous faites une seule action : prendre trois jetons de couleurs différentes ou deux de la même, acheter une carte, ou en réserver une. Les cartes achetées produisent des gemmes permanentes, qui réduisent le coût des suivantes.\n\nAvec assez de cartes, vous recevez la visite d'un noble. Premier à 15 points de prestige.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/splendor_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "bgg-440540": {
+  "nomFr": "Take Time",
+  "resume": "Un jeu coopératif où l'on place 12 cartes face cachée autour d'une horloge pour réussir 40 épreuves.",
+  "description": "Le temps lui-même vous met à l'épreuve : ensemble, vous relevez les défis d'horloges issues de différents univers.\n\nPour réussir chaque épreuve, il faut placer 12 cartes face cachée autour d'une horloge en suivant les règles propres à cette épreuve, avec une communication limitée.\n\nOn gagne ou on perd tous ensemble, et on peut enchaîner les 40 épreuves à son rythme.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://cdn.svc.asmodee.net/production-libellud/uploads/2025/09/TT_RULES_PRINT_MASTER_FR.pdf",
+    "source": "Libellud"
+   }
+  ]
+ },
+ "bgg-434654": {
+  "nomFr": "Toy Battle",
+  "resume": "Envoyez une armée de jouets conquérir des territoires, par terre, par mer ou dans l'espace.",
+  "description": "Des batailles opposent des jouets sur terre, sur mer, dans les nuages et même dans l'espace. Votre mission : atteindre le QG ennemi en premier ou contrôler le plus de territoires.\n\nÀ votre tour, vous piochez deux troupes de jouets ou en placez une sur le plateau pour en appliquer l'effet. On peut la poser sur une base vide, sur une base que l'on contrôle ou sur celle d'un ennemi plus faible.\n\nDes parties courtes et tactiques pour deux joueurs.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://cdn.svc.asmodee.net/production-rprod/storage/games/toy_battle/rules/toy-fr01-rules-1744030098Pk1fi.pdf",
+    "source": "Repos Production"
+   }
+  ]
+ },
+ "bgg-424219": {
+  "nomFr": "Zenith",
+  "resume": "Deux peuples, un système solaire : gagnez l'influence sur les cinq planètes pour contrôler le sénat.",
+  "description": "Dans un futur lointain, le système solaire est habité par trois peuples : Humains, Robots et Animods. Leur énergie, le Zénithium, est propre et renouvelable, mais la cohabitation est tendue.\n\nVous cherchez à gagner de l'influence sur cinq planètes, de Mercure à Jupiter, représentée par des disques de couleur.\n\nTrois conditions de victoire coexistent, et la partie s'arrête dès que l'une est remplie. Se joue à deux ou à quatre en équipes.",
+  "expansions": {},
+  "regles": [
+   {
+    "titre": "Règles du jeu (FR)",
+    "url": "https://media.play-in.com/pdf/rules_games/zenith_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ }
+}

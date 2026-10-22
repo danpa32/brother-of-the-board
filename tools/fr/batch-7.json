@@ -1,0 +1,116 @@
+{
+ "63": {
+  "expansions": {
+   "bgg-253170": {
+    "nomFr": "5 Minutes Donjon – Malédiction ! Encore raté !",
+    "resume": "Cette extension ajoute de nouveaux héros, de nouveaux donjons et des cartes de malédiction qui compliquent la course contre la montre. Il faut toujours s'entraider, mais les pièges sont plus vicieux."
+   }
+  },
+  "regles": []
+ },
+ "40": {
+  "expansions": {
+   "bgg-368158": {
+    "nomFr": "Ark Nova – Plateaux recto verso (Zoo Map Pack 1)",
+    "resume": "Un pack de plateaux de zoo recto verso supplémentaires, qui offrent des cartes de zoo aux configurations et capacités différentes pour varier les parties."
+   }
+  },
+  "regles": []
+ },
+ "25": {
+  "expansions": {
+   "bgg-245377": {
+    "nomFr": "Clank ! – La Malédiction de la Momie",
+    "resume": "Cette extension plonge les joueurs dans une pyramide avec un nouveau plateau recto verso, de nouvelles cartes, des jetons de malédiction et un dé pyramide. Une momie rôde et rend l'exploration encore plus risquée."
+   },
+   "bgg-218103": {
+    "nomFr": "Clank ! – Trésors engloutis",
+    "resume": "Cette extension apporte un nouveau plateau recto verso et 36 cartes pour explorer des salles inondées. Il faut s'équiper de combinaisons de plongée ou gérer ses bottes pour éviter de perdre de la santé."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles – Clank ! La Malédiction de la Momie",
+    "url": "https://ludovox.fr/wp-content/uploads/ressources/RExClankMaledictionMomieFR.pdf",
+    "source": "Ludovox"
+   }
+  ]
+ },
+ "41": {
+  "expansions": {
+   "bgg-360153": {
+    "nomFr": "Dice Throne Marvel – Scarlet Witch, Thor, Loki, Spider-Man",
+    "resume": "Une boîte de quatre héros Marvel (Scarlet Witch, Thor, Loki et Spider-Man) avec leurs dés, plateaux et cartes, compatible avec les autres boîtes Dice Throne pour des duels à quatre."
+   },
+   "bgg-418801": {
+    "nomFr": "Dice Throne Marvel – Black Panther, Captain Marvel, Black Widow, Dr Strange",
+    "resume": "Une boîte de quatre héros Marvel (Black Panther, Captain Marvel, Black Widow et Doctor Strange) avec leurs dés, plateaux et cartes, compatible avec les autres boîtes Dice Throne."
+   }
+  },
+  "regles": []
+ },
+ "43": {
+  "expansions": {
+   "bgg-373288": {
+    "nomFr": "Dice Throne Adventures – L'Atelier du Père Noël",
+    "resume": "Un pack promo festif sur le thème de l'atelier du Père Noël, qui ajoute du contenu spécial à Dice Throne Adventures."
+   }
+  },
+  "regles": []
+ },
+ "10": {
+  "expansions": {
+   "bgg-245064": {
+    "nomFr": "Dice Town – Pour une poignée de cartes",
+    "resume": "Cette extension ajoute des cartes au jeu de dés western, qui offrent de nouvelles actions et pouvoirs pour varier les manches et les duels."
+   }
+  },
+  "regles": []
+ },
+ "14": {
+  "expansions": {
+   "bgg-320777": {
+    "nomFr": "Draftosaurus – Marina",
+    "resume": "Cette extension ajoute des plateaux marins recto verso et des plésiosaures à draft, pour agrandir le zoo avec un parc aquatique et de nouvelles règles de placement."
+   },
+   "bgg-320778": {
+    "nomFr": "Draftosaurus – Aerial Show",
+    "resume": "Cette extension ajoute des plateaux de volière recto verso et des ptérodactyles, à placer au-dessus du zoo avec de nouvelles règles de placement."
+   }
+  },
+  "regles": [
+   {
+    "titre": "Règles – Draftosaurus Marina",
+    "url": "https://media.play-in.com/pdf/rules_games/draftosaurus_-_extension_marina_regles_fr.pdf",
+    "source": "via Play-in"
+   },
+   {
+    "titre": "Règles – Draftosaurus Aerial Show",
+    "url": "https://media.play-in.com/pdf/rules_games/draftosaurus_-_extension_aerial_show_regles_fr.pdf",
+    "source": "via Play-in"
+   }
+  ]
+ },
+ "17": {
+  "expansions": {
+   "bgg-187049": {
+    "nomFr": "Munchkin : Trésors cachés",
+    "resume": "Une extension de cartes Donjon et Trésor qui apporte de nouveaux monstres, objets et malédictions à mélanger au jeu de base."
+   }
+  },
+  "regles": []
+ },
+ "20": {
+  "expansions": {
+   "bgg-396545": {
+    "nomFr": "Sea Salt & Paper – Extra Salt",
+    "resume": "Huit cartes supplémentaires aux effets inédits, à mélanger à la pioche principale pour renouveler les combinaisons."
+   },
+   "bgg-442250": {
+    "nomFr": "Sea Salt & Paper – Extra Pepper",
+    "resume": "Un paquet de 12 cartes événement, mélangé à part, qui introduit des règles spéciales pour pimenter la partie."
+   }
+  },
+  "regles": []
+ }
+}

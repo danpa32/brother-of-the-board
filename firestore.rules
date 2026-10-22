@@ -16,5 +16,9 @@ service cloud.firestore {
       allow read: if true;
       allow write: if estMembre();
     }
+    // Prêts : noms et numéros de téléphone, visibles seulement par nous deux.
+    match /prets/{jeu} {
+      allow read, write: if estMembre();
+    }
   }
 }

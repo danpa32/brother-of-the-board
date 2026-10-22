@@ -6110,5 +6110,3024 @@
    "totalvotes": "153"
   },
   "languageDependence": "No necessary in-game text"
+ },
+ "122": {
+  "bgstatsId": 122,
+  "name": "5-Minute Mystery",
+  "bggId": 294514,
+  "isExpansion": false,
+  "bggName": "5-Minute Mystery",
+  "year": 2020,
+  "minPlayers": 1,
+  "maxPlayers": 6,
+  "minTime": 5,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "A real-time, co-op, mystery game.",
+  "description": "<p>5-Minute Mystery is a high-intensity, deductive, mystery game in which players work together to find a culprit hidden in a line-up of suspects.</p>\n\n<p>Just moments before the Museum of Everything was set to unveil its newest exhibit, the priceless MacGuffin, some criminal snuck in and stole it! Now it's up to you, a team of detectives, to crack the case, find the culprit, and recover the missing MacGuffin.</p>\n\n<p>Start by searching for hidden symbols in each room of the museum and find the matching symbols on the codex. Once you've found all of the symbols in the room, you&rsquo;ll unlock a clue about the culprit.</p>\n\n<p>Match the barcode of the clue tile against the culprit tile to discover valuable information about the crook. Does the miscreant have an umbrella? No? Well, that eliminates the shifty Mr. Braxton, doesn&rsquo;t it? Quickly sort through the suspect cards in your hand to narrow down who the criminal can be.</p>\n\n<p>You&rsquo;ll have to make it through as many rooms as it takes to figure out exactly who is responsible for stealing the MacGuffin, but remember, time is not on your side!</p>\n\n<p>Case files change the rules to each time you play, making every game a new challenge.</p>\n\n<p>Do you have what it takes to be the detective to crack the case and solve this five-minute mystery? Only time will tell!</p>\n\n",
+  "categories": [
+   "Murder / Mystery",
+   "Party Game"
+  ],
+  "mechanics": [
+   "Cooperative Game",
+   "Deduction",
+   "Real-Time"
+  ],
+  "designers": [
+   "Connor Reid"
+  ],
+  "publishers": [
+   "Wiggles 3D",
+   "DV Games",
+   "Game Factory",
+   "Korea Boardgames",
+   "Rebel Sp. z o.o."
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/lVXcyP_YIcG4EtzjAQXIVg__itemrep/img/6KcS2f43tyeSIQ3dknQNFXWwiAk=/fit-in/246x300/filters:strip_icc()/pic9745239.png",
+  "thumb": "https://cf.geekdo-images.com/227j91odzi4v2S2pbxcscg__thumb/img/WnOChlK7te8FoCGy-yDGDCAacOo=/fit-in/200x150/filters:strip_icc()/pic7486281.jpg",
+  "rating": 6.9537,
+  "weight": 1.2157,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "57"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "123": {
+  "bgstatsId": 123,
+  "name": "Captain Flip",
+  "bggId": 393325,
+  "isExpansion": false,
+  "bggName": "Captain Flip",
+  "year": 2024,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Hoist your flag, recruit a colorful crew, and earn as many gold coins as you can.",
+  "description": "<p>Ahoy, Captain! <br />\nHoist your flag, recruit a crew, and fill your coffers with shiny, gold coins.</p>\n\n<p><em><strong>Captain Flip</strong></em> is a game of obvious simplicity explained in less time than a cannonball shot. On your turn, draw a tile from the bag. You like it? Keep it! You don't like it? Flip it! Then place it on your board to form your crew.</p>\n\n<p>With its nine characters and four boards with different tactics, <em>Captain Flip</em> offers an immediate, fun, and subtle gaming experience.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Nautical",
+   "Pirates"
+  ],
+  "mechanics": [
+   "Advantage Token",
+   "End Game Bonuses",
+   "Grid Coverage",
+   "Memory",
+   "Push Your Luck",
+   "Tile Placement",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Remo Conzadori",
+   "Paolo Mori"
+  ],
+  "publishers": [
+   "PlayPunk"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__itemrep/img/pAxG8Eg5SkFZqzqeW2XhYoGFZTc=/fit-in/246x300/filters:strip_icc()/pic7784394.png",
+  "thumb": "https://cf.geekdo-images.com/7vSkMR7exNsU7ZfRgJKodQ__thumb/img/SzzzJKDO1wvj9YWfCg-mOnjC_lQ=/fit-in/200x150/filters:strip_icc()/pic7784394.png",
+  "rating": 7.15509,
+  "weight": 1.2087,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "164"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "129": {
+  "bgstatsId": 129,
+  "name": "Everdell",
+  "bggId": 199792,
+  "isExpansion": false,
+  "bggName": "Everdell",
+  "year": 2018,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 40,
+  "maxTime": 80,
+  "minAge": 10,
+  "shortDescription": "Gather resources to develop a harmonious village of woodland critters and structures.",
+  "description": "<p>Within the charming valley of Everdell, beneath the boughs of towering trees, among meandering streams and mossy hollows, a civilization of forest critters is thriving and expanding. From Everfrost to Bellsong, many a year have come and gone, but the time has come for new territories to be settled and new cities established. You will be the leader of a group of critters intent on just such a task. There are buildings to construct, lively characters to meet, events to host&mdash;you have a busy year ahead of yourself. Will the sun shine brightest on your city before the winter moon rises?</p>\n\n<p>Everdell is a game of dynamic tableau building and worker placement.</p>\n\n<p>On their turn a player can take one of three actions:</p>\n\n<p>a) Place a Worker: Each player has a collection of Worker pieces. These are placed on the board locations, events, and on Destination cards. Workers perform various actions to further the development of a player's tableau: gathering resources, drawing cards, and taking other special actions.</p>\n\n<p>b) Play a Card: Each player is building and populating a city; a tableau of up to 15 Construction and Critter cards. There are five types of cards: Travelers, Production, Destination, Governance, and Prosperity. Cards generate resources (twigs, resin, pebbles, and berries), grant abilities, and ultimately score points. The interactions of the cards reveal numerous strategies and a near infinite variety of working cities.</p>\n\n<p>c) Prepare for the next Season: Workers are returned to the players supply and new workers are added. The game is played from Winter through to the onset of the following winter, at which point the player with the city with the most points wins.</p>\n\n",
+  "categories": [
+   "Animals",
+   "Card Game",
+   "City Building",
+   "Fantasy"
+  ],
+  "mechanics": [
+   "Contracts",
+   "End Game Bonuses",
+   "Hand Management",
+   "Income",
+   "Open Drafting",
+   "Ownership",
+   "Set Collection",
+   "Solo / Solitaire Game",
+   "Tags",
+   "Variable Set-up",
+   "Worker Placement"
+  ],
+  "designers": [
+   "James A. Wilson"
+  ],
+  "publishers": [
+   "Starling Games (II)",
+   "Abraxas",
+   "Arclight Games",
+   "asmodee",
+   "CMON Global Limited"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__itemrep/img/nyVhVuXdmw-1sigbocTKG81UInM=/fit-in/246x300/filters:strip_icc()/pic3918905.png",
+  "thumb": "https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__thumb/img/Cf_mYxR_VvdjTEPXseSurni2JNI=/fit-in/200x150/filters:strip_icc()/pic3918905.png",
+  "rating": 7.97161,
+  "weight": 2.8355,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "1142"
+  },
+  "languageDependence": "Extensive use of text - massive conversion needed to be playable"
+ },
+ "133": {
+  "bgstatsId": 133,
+  "name": "Mindbug: First Contact",
+  "bggId": 345584,
+  "isExpansion": false,
+  "bggName": "Mindbug: First Contact",
+  "year": 2022,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 15,
+  "maxTime": 25,
+  "minAge": 8,
+  "shortDescription": "Serve the Mindbug, summon hybrids, and mind-control your opponent's best cards.",
+  "description": "<p>In <em><strong>Mindbug</strong></em>, you summon hybrid creatures and send them to battle against your opponent &mdash; but when you summon a creature, the opponent may use one of their Mindbugs to take control of it. Outwit your opponent in a fascinating tactical duel in which having the best cards and playing them at the wrong time can be deadly for yourself.</p>\n\n<p>Cards in <em>Mindbug</em> represent weird creatures that all come with unique and powerful abilities such as a Compost Dragon, a Snail Hydra, or a Kangasaurus Rex. Each player starts the game with ten creature cards (five in hand and five in a draw pile) and tries to use them to reduce the opponent's life total to zero. In addition, every player receives two Mindbug cards that can be used to mind control an opposing creature when it is played. This innovative Mindbug mechanism is the core of the game and leads to a unique decision-making process that makes <em>Mindbug</em> feel utterly different from any other card game.</p>\n\n<p>Playing a card doesn't require any resources in <em>Mindbug</em>. As a result, the game has no ramp-up phase (such as gathering resources) and doesn't require weak cards. Since there is also no deck-building, you can start playing right away from a single deck. There is also no unfair advantage as players draw cards from the same deck and always get the chance to mind control the strongest opposing cards. In the end, it all comes down to your own decisions, making the game extremely fair and competitive at the same time.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Fantasy",
+   "Fighting",
+   "Science Fiction"
+  ],
+  "mechanics": [
+   "Hand Management",
+   "Take That"
+  ],
+  "designers": [
+   "Skaff Elias",
+   "Richard Garfield",
+   "Marvin Hegen",
+   "Christian Kudahl"
+  ],
+  "publishers": [
+   "Nerdlab Games",
+   "Devir",
+   "GaGa Games",
+   "Game Harbor",
+   "Gémklub"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/b8gl6w-BqUVgBURdyFcFZg__itemrep/img/hXU2gTNyvVJF2Fu3-YG6ZhTSrSg=/fit-in/246x300/filters:strip_icc()/pic7646386.png",
+  "thumb": "https://cf.geekdo-images.com/b8gl6w-BqUVgBURdyFcFZg__thumb/img/dCGADcFu3CrjHeao9JKibUHYUik=/fit-in/200x150/filters:strip_icc()/pic7646386.png",
+  "rating": 7.54079,
+  "weight": 1.9316,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "114"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "120": {
+  "bgstatsId": 120,
+  "name": "Planet Unknown",
+  "bggId": 258779,
+  "isExpansion": false,
+  "bggName": "Planet Unknown",
+  "year": 2022,
+  "minPlayers": 1,
+  "maxPlayers": 6,
+  "minTime": 60,
+  "maxTime": 80,
+  "minAge": 10,
+  "shortDescription": "Develop and colonize your planet with oddly shaped tiles served on a rotating tray.",
+  "description": "<p>Our planet has run out of resources, and we are forced to move. We have discovered a series of planets and sent our rovers to test their environment with the hope of colonization. Our rovers have confirmed 1-6 viable colonization options.</p>\n\n<p><em><strong>Planet Unknown</strong></em> is a competitive game for 1-6 players in which players attempt to develop the best planet. Each round, each player places one polyomino-shaped, dual-resource tile on their planet. Each resource represents the infrastructure needed to support life on the planet. Every tile placement is important to cover your planet efficiently and also to build up your planet's engine. After placing the tile, players do two actions associated with the two infrastructure types on the tile. Some tile placements trigger &quot;meteors&quot; that make all planets harder to develop and prevent them from scoring points in the meteor's row and column.</p>\n\n<p><em>Planet Unknown</em> innovates on the popular polyomino trend by allowing simultaneous, yet strategic turn-based play via the Lazy S.U.S.A.N. space station in the center of the table.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "City Building",
+   "Industry / Manufacturing",
+   "Puzzle",
+   "Science Fiction",
+   "Space Exploration",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "End Game Bonuses",
+   "Events",
+   "Grid Coverage",
+   "Grid Movement",
+   "Hidden Victory Points",
+   "Map Addition",
+   "Neighbor Scope",
+   "Network and Route Building",
+   "Open Drafting",
+   "Pattern Building",
+   "Rondel",
+   "Simultaneous Action Selection",
+   "Solo / Solitaire Game",
+   "Square Grid",
+   "Sudden Death Ending",
+   "Tags",
+   "Tech Trees / Tech Tracks",
+   "Tile Placement",
+   "Turn Order: Progressive",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Ryan Lambert",
+   "Adam Rehberg"
+  ],
+  "publishers": [
+   "Adam's Apple Games, LLC",
+   "Boardgame Mall",
+   "CrowD Games",
+   "Engames",
+   "Fox in the Box"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__itemrep/img/WE_jrFpy57ekZuiIKFIMpNfXIXQ=/fit-in/246x300/filters:strip_icc()/pic4843622.jpg",
+  "thumb": "https://cf.geekdo-images.com/3HkjDovk8Yr2wMumcSUGog__thumb/img/4pF1oDpvn1VR3rbvW88xLK86xmA=/fit-in/200x150/filters:strip_icc()/pic4843622.jpg",
+  "rating": 7.75226,
+  "weight": 2.2527,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 6
+    }
+   ],
+   "totalvotes": "287"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "128": {
+  "bgstatsId": 128,
+  "name": "Sky Team",
+  "bggId": 373106,
+  "isExpansion": false,
+  "bggName": "Sky Team",
+  "year": 2023,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 10,
+  "shortDescription": "Work together silently to land a plane under increasingly challenging circumstances.",
+  "description": "<p><em><strong>Sky Team</strong></em> is a co-operative game, exclusively for two players, in which you play a pilot and co-pilot at the controls of an airliner. Your goal is to work together as a team to land your airplane in different airports around the world.</p>\n\n<p>To land your plane, you need to silently assign your dice to the correct spaces in your cockpit to balance the axis of your plane, control its speed, deploy the flaps, extend the landing gear, contact the control tower to clear your path, and even have a little coffee to improve your concentration enough to change the value of your dice.</p>\n\n<p>If the aircraft tilts too much and stalls, overshoots the airport, or collides with another aircraft, you lose the game...and your pilot's license...and probably your life.</p>\n\n<p>From Montreal to Tokyo, each airport offers its own set of challenges. Watch out for the turbulence as this could end up being a bumpy ride!</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Aviation / Flight",
+   "Dice"
+  ],
+  "mechanics": [
+   "Communication Limits",
+   "Cooperative Game",
+   "Dice Rolling",
+   "Scenario / Mission / Campaign Game",
+   "Turn Order: Progressive",
+   "Variable Player Powers",
+   "Variable Set-up",
+   "Worker Placement with Dice Workers"
+  ],
+  "designers": [
+   "Luc Rémond"
+  ],
+  "publishers": [
+   "Scorpion Masqué",
+   "999 Games",
+   "ADC Blackfire Entertainment",
+   "asmodee",
+   "Brädspel.se"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__itemrep/img/oaw-LYEIaB20e79Y568JgyHZ5NQ=/fit-in/246x300/filters:strip_icc()/pic7398904.jpg",
+  "thumb": "https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__thumb/img/WyPClajMWU9lV5BdCXiZnqdZgmU=/fit-in/200x150/filters:strip_icc()/pic7398904.jpg",
+  "rating": 8.1077,
+  "weight": 2.04,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "456"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-400266": {
+  "bgstatsId": null,
+  "name": "Boreal",
+  "bggId": 400266,
+  "isExpansion": false,
+  "bggName": "Boreal",
+  "year": 2024,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 15,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Two adventurous women explore the ruins of the Ancient world in search of knowledge.",
+  "description": "<p>In <em><strong>Boreal</strong></em>, two adventurous women explore the ruins of the ancient world in search of knowledge.</p>\n\n<p>On their turn, players draft cards from a common river (or reserve a card) to try to get the ruins cards that bring the most knowledge. Depending on how many resources players have, they will have access to a limited number of cards, possibly all of them.</p>\n\n<p>After one or both players have reached ten cards, the game ends, and whoever has the most knowledge wins.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Environmental",
+   "Exploration",
+   "Territory Building",
+   "Travel"
+  ],
+  "mechanics": [
+   "Open Drafting",
+   "Set Collection",
+   "Tile Placement"
+  ],
+  "designers": [
+   "Masafumi Mizuno"
+  ],
+  "publishers": [
+   "Spiral Éditions",
+   "Evrikus",
+   "Game Factory",
+   "GateOnGames",
+   "Gémklub"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/OiTPkkZeO5rQ4iykJBQGuQ__itemrep/img/qDRmkNgMxoJ35qALrEllb2vDgL8=/fit-in/246x300/filters:strip_icc()/pic7950668.jpg",
+  "thumb": "https://cf.geekdo-images.com/OiTPkkZeO5rQ4iykJBQGuQ__small/img/R6RIcU5uKpS_PuQpJLkNQSvjGEY=/fit-in/200x150/filters:strip_icc()/pic7950668.jpg",
+  "rating": 6.55498,
+  "weight": 1.3846,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "8"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-410991": {
+  "bgstatsId": null,
+  "name": "Looot",
+  "bggId": 410991,
+  "isExpansion": false,
+  "bggName": "Looot",
+  "year": 2024,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 35,
+  "maxTime": 35,
+  "minAge": 10,
+  "shortDescription": "Gather resources and capture buildings to develop your fjord.",
+  "description": "<p>In <em><strong>Looot</strong></em>, you need to gather resources and capture buildings to develop your fjord. Fill your longships and complete your construction sites in order to rack up your victory points. Store up the most riches, and you&rsquo;ll be crowned Jarl of the Vikings!</p>\n\n<p>Looot is a clever management game, using a double placement mechanism.</p>\n\n<p>On the Common board Players are Viking conquering a new territory, which allows you to recover resource/building/objective tiles.</p>\n\n<p>On your Personal board: You build your village with the tiles previously recovered from the Common board to unlock victory points.</p>\n\n<p>It will call upon your optimization logic, favoring the best combinations for this race for victory points.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Adventure",
+   "Exploration",
+   "Puzzle",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "Contracts",
+   "Modular Board",
+   "Network and Route Building",
+   "Once-Per-Game Abilities",
+   "Tile Placement",
+   "Worker Placement"
+  ],
+  "designers": [
+   "Charles Chevallier",
+   "Laurent Escoffier"
+  ],
+  "publishers": [
+   "Gigamic",
+   "999 Games",
+   "Broadway Toys LTD",
+   "Devir",
+   "Game Factory"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/8SdHEMhje07oT9_AlqmGPg__itemrep/img/tdO_3B10NkVLnMvJHayFUUkJins=/fit-in/246x300/filters:strip_icc()/pic7963549.jpg",
+  "thumb": "https://cf.geekdo-images.com/8SdHEMhje07oT9_AlqmGPg__small/img/5V_VoyrToqBy1qlMvHGB5p0m6kU=/fit-in/200x150/filters:strip_icc()/pic7963549.jpg",
+  "rating": 7.06143,
+  "weight": 2.0741,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "59"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-187049": {
+  "bgstatsId": null,
+  "name": "Munchkin : Trésors cachés",
+  "bggId": 187049,
+  "isExpansion": true,
+  "bggName": "Munchkin Hidden Treasures",
+  "year": 2015,
+  "minPlayers": 3,
+  "maxPlayers": 6,
+  "minTime": 60,
+  "maxTime": 120,
+  "minAge": 10,
+  "shortDescription": "",
+  "description": "<p><em><strong>Munchkin Hidden Treasures</strong></em> consists of around 78 individual cards for use in a variety of <em>Munchkin</em> games, with all of these cards previously being available solely in annual booster packs sold via Warehouse 23, the Steve Jackson Games online store. Sample cards include:</p>\n\n<ul>\n    <li>Can of Worms from <em><a  href=\"/boardgame/1927/munchkin\"   >Munchkin</a></em></li>\n    <li>Great Caesar's Ghost from <em><a  href=\"/boardgame/12194/munchkin-bites\"   >Munchkin Bites!</a></em></li>\n    <li>Iron Chef R'Lyeh from <em><a  href=\"/boardgame/25071/munchkin-cthulhu\"   >Munchkin Cthulhu</a></em></li>\n    <li>Mr. Spork from <em><a  href=\"/boardgame/4095/star-munchkin\"   >Star Munchkin</a></em></li>\n</ul>\n\n<p>A few odd-sized cards from previous Warehouse 23 boosters are not included in <em>Munchkin Hidden Treasures</em>.</p>\n\n<p>The specific cards included vary depending on the edition, because not all expansions have been translated. The French, for example, includes 65 cards. See the details of each edition.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Expansion for Base-game"
+  ],
+  "mechanics": [],
+  "designers": [
+   "Andrew Hackard",
+   "Steve Jackson (I)"
+  ],
+  "publishers": [
+   "Edge Entertainment",
+   "Pegasus Spiele",
+   "Steve Jackson Games"
+  ],
+  "expands": [
+   30166,
+   1927,
+   112869,
+   12194,
+   31920,
+   25071,
+   6607,
+   22948,
+   144325,
+   86955,
+   4095,
+   16933
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/GTxHc18E1Vp5SFe7yO1tkA__itemrep/img/gtgW8d90Dmn6Dj-ldtRPsd8rdmU=/fit-in/246x300/filters:strip_icc()/pic2726803.jpg",
+  "thumb": "https://cf.geekdo-images.com/GTxHc18E1Vp5SFe7yO1tkA__small/img/plN1HGQ1Nr3oA9UB3riuAYfRcMs=/fit-in/200x150/filters:strip_icc()/pic2726803.jpg",
+  "rating": 6.63796,
+  "weight": 2.0,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 6
+    }
+   ],
+   "totalvotes": "1"
+  },
+  "languageDependence": "(no votes)"
+ },
+ "bgg-360153": {
+  "bgstatsId": null,
+  "name": "Dice Throne Marvel – Scarlet Witch, Thor, Loki, Spider-Man",
+  "bggId": 360153,
+  "isExpansion": true,
+  "bggName": "Marvel Dice Throne: Scarlet Witch v. Thor v. Loki v. Spider-Man",
+  "year": 2022,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 20,
+  "maxTime": 40,
+  "minAge": 0,
+  "shortDescription": "Marvel Dice Throne is a competitive or team-based dice-rolling combat game.",
+  "description": "<p>In <em><strong>Marvel Dice Throne</strong></em> , you become one of eight of Marvel's most famous heroes, including Black Panther, Captain Marvel, Black Widow, Scarlet Witch, Loki, Thor, Doctor Strange, and Miles Morales Spider-man! Every Marvel Dice Throne hero was painstakingly designed and balanced to provide the most thematic experience possible, allowing you to truly embody your favorite heroes like no other game. Featuring all-new mechanisms and asymmetrical designs, these are our most innovative and exciting heroes yet.</p>\n\n<p><em>Marvel Dice Throne</em> is a heart-pumping, fast-playing game of skilled card play and dice manipulation supporting multiple modes of play, including 1v1, 2v2, 3v3, 2v2v2, or free-for-all.</p>\n\n<p>Attack your opponents and activate abilities by rolling your hero's unique set of five dice. Accumulate combat points and spend them on cards that have a large range of effects, such as granting permanent hero upgrades, applying status effects, and manipulating dice directly (yours, your teammate's, or even your opponent's).</p>\n\n<p>All 8 heroes are compatible with the entire Dice Throne ecosystem<br />\nUse upgrade cards to improve your hero abilities as the game progresses<br />\nPlay action cards strategically to manipulate dice and surprise your foe<br />\nFeatures a deluxe, highly functional, Battle Chest storage system<br />\nEach hero in the Battle Chest has their own beautiful set of custom swirl dice</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Comic Book / Strip",
+   "Dice",
+   "Fighting"
+  ],
+  "mechanics": [
+   "Dice Rolling"
+  ],
+  "designers": [
+   "Gavan Brown",
+   "Nate Chatellier",
+   "Manny Trembley"
+  ],
+  "publishers": [
+   "The Op Games",
+   "Roxley",
+   "Delirium Games",
+   "Grimspire",
+   "Lucky Duck Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/y7tqtzOjrzoP4-M3Tb4v2w__itemrep/img/yid9rWn4nMs5U7bIznl_Ygi69nY=/fit-in/246x300/filters:strip_icc()/pic6937962.jpg",
+  "thumb": "https://cf.geekdo-images.com/y7tqtzOjrzoP4-M3Tb4v2w__small/img/wluY2ZNI5lST9S_yV7VPk-dRlhA=/fit-in/200x150/filters:strip_icc()/pic6937962.jpg",
+  "rating": 7.63161,
+  "weight": 2.4286,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "21"
+  },
+  "languageDependence": "(no votes)"
+ },
+ "bgg-418801": {
+  "bgstatsId": null,
+  "name": "Dice Throne Marvel – Black Panther, Captain Marvel, Black Widow, Dr Strange",
+  "bggId": 418801,
+  "isExpansion": true,
+  "bggName": "Marvel Dice Throne: Captain Marvel v. Black Panther v. Doctor Strange v. Black Widow",
+  "year": 2024,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 20,
+  "maxTime": 40,
+  "minAge": 8,
+  "shortDescription": "Become one of Marvel's most famous heroes.",
+  "description": "<p>In <em><strong>Marvel Dice Throne</strong></em>, you become one of eight of Marvel's most famous heroes, including Black Panther, Captain Marvel, Black Widow, and Doctor Strange! Every Marvel Dice Throne hero was painstakingly designed and balanced to provide the most thematic experience possible, allowing you to truly embody your favorite heroes like no other game. Featuring all-new mechanisms and asymmetrical designs, these are our most innovative and exciting heroes yet.</p>\n\n<p><em>Marvel Dice Throne</em> is a heart-pumping, fast-playing game of skilled card play and dice manipulation supporting multiple modes of play, including 1v1, 2v2, 3v3, 2v2v2, or free-for-all.</p>\n\n<p>Attack your opponents and activate abilities by rolling your hero's unique set of five dice. Accumulate combat points and spend them on cards that have a large range of effects, such as granting permanent hero upgrades, applying status effects, and manipulating dice directly (yours, your teammate's, or even your opponent's).</p>\n\n<p>All 4 heroes are compatible with the entire Dice Throne ecosystem.<br />\nUse upgrade cards to improve your hero abilities as the game progresses.<br />\nPlay action cards strategically to manipulate dice and surprise your foe.<br />\nFeatures a deluxe, highly functional, Battle Chest storage system.<br />\nEach hero in the Battle Chest has their own beautiful set of custom swirl dice.<br />\n<em>&mdash;description from the publisher</em></p>\n\n<p>Dice Throne to szybka gra karciano-kościana, kt&oacute;ra sprawi, że twoje serce zabije mocniej. Gra opiera się na mechanice bestsellerowej serii &bdquo;Dice Throne&rdquo; i pozwala wcielić się w bohater&oacute;w Marvela: Czarną Panterę, Kapitan Marvel, Czarną Wdowę, Doktora Strange'a. Każdy bohater ma sw&oacute;j zestaw kości, talię i planszę. Rzucaj kośćmi, aktywuj potężne zdolności i atakuj przeciwnik&oacute;w. Zdobywaj punkty walki i wydawaj je na ulepszenia lub karty akcji.</p>\n\n<p>Szybująca wśr&oacute;d gwiazd Kapitan Marvel rozbłyska na niebie niczym supernowa. Przewagę w grze zyskuje dzięki kosmicznej energii, kt&oacute;ra wykorzystuje do zadawania przeciwnikom obrażeń. Niech mają się na baczności ci, kt&oacute;rzy wejdą jej w drogę, gdy będzie w trybie Binary!</p>\n\n<p>T&rsquo;Challa, jak na kr&oacute;la Wakandy przystało, walczy z honorem! Jego kombinezon z vibranium nie tylko pochłania obrażenia, ale przekształca je w energie. Dlatego zastan&oacute;w się dwa razy, zanim podniesiesz rękę na Czarną Panterę &ndash; odda mocniej.</p>\n\n<p>Mistrz Magii posługuje się zręcznie swoją księgą zaklęć, a dzięki mistycznemu przeczuciu tworzy swoją rękę kart lepiej niż inni wojownicy. Jeśli to nie pomoże, Doktor Strange zawsze może cofnąć czas, wybierając pewniejszą drogę do zwycięstwa.</p>\n\n<p>Czarna Wdowa jest specjalistką od planowania tajnych operacji. Krok po kroku realizuje sw&oacute;j plan, stajać się silniejsza z każdym ulepszeniem. Jeśli usłyszysz tykanie bomby zegarowej&hellip; może być już za p&oacute;źno!</p>\n\n<p><em>&mdash;description from the publisher (Polish)</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Comic Book / Strip",
+   "Dice",
+   "Fighting"
+  ],
+  "mechanics": [
+   "Dice Rolling"
+  ],
+  "designers": [
+   "Gavan Brown",
+   "Nate Chatellier",
+   "Manny Trembley"
+  ],
+  "publishers": [
+   "Lucky Duck Games",
+   "Delirium Games",
+   "Grimspire",
+   "Rexhry",
+   "Roxley"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/YfmaHoELS6vpc0E-ceoCJw__itemrep/img/z5RzG7qyCktNmfl-jBnnjI1_Kik=/fit-in/246x300/filters:strip_icc()/pic8136250.jpg",
+  "thumb": "https://cf.geekdo-images.com/YfmaHoELS6vpc0E-ceoCJw__small/img/qMEJcwpecL8RCSCmXZQh1-QX2yw=/fit-in/200x150/filters:strip_icc()/pic8136250.jpg",
+  "rating": 7.66212,
+  "weight": 2.625,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "4"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-373288": {
+  "bgstatsId": null,
+  "name": "Dice Throne Adventures – L'Atelier du Père Noël",
+  "bggId": 373288,
+  "isExpansion": true,
+  "bggName": "Dice Throne: Santa's Workshop Promo Pack",
+  "year": 2022,
+  "minPlayers": 0,
+  "maxPlayers": 0,
+  "minTime": 0,
+  "maxTime": 0,
+  "minAge": 0,
+  "shortDescription": "New Holiday Content for Dice Throne Adventures",
+  "description": "<p>22 cards for holiday content for Dice Throne Adventures.<br />\n4x Minion cards Level III<br />\n3x Minion cards Level IV (foiled)<br />\n1x Nice Throne difficulty card<br />\n2x Loot cards Common<br />\n4x Loot cards Rare<br />\n3x Loot cards Epic<br />\n5x Loot cards Legendary (foiled)</p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Card Game",
+   "Dice",
+   "Fantasy",
+   "Fighting"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Take That",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Gavan Brown",
+   "Nate Chatellier",
+   "Manny Trembley"
+  ],
+  "publishers": [
+   "Roxley",
+   "Grimspire",
+   "Lucky Duck Games"
+  ],
+  "expands": [
+   268201,
+   281332,
+   366310
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/fBX2hxA1Ic_Y70uI_TgjhQ__itemrep/img/K4aOwfs-Vr3zH3WxS73slE_BY_Q=/fit-in/246x300/filters:strip_icc()/pic7212055.jpg",
+  "thumb": "https://cf.geekdo-images.com/fBX2hxA1Ic_Y70uI_TgjhQ__small/img/zQTDhc_Y2AaFWt7YIGfjH2SGkOk=/fit-in/200x150/filters:strip_icc()/pic7212055.jpg",
+  "rating": 8.06452,
+  "weight": 2.0,
+  "polls": {
+   "best": [
+    {
+     "min": 1,
+     "max": null
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": null
+    }
+   ],
+   "totalvotes": "1"
+  },
+  "languageDependence": "(no votes)"
+ },
+ "bgg-253170": {
+  "bgstatsId": null,
+  "name": "5 Minutes Donjon – Malédiction ! Encore raté !",
+  "bggId": 253170,
+  "isExpansion": true,
+  "bggName": "5-Minute Dungeon: Curses! Foiled Again!",
+  "year": 2018,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "minTime": 5,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "Explore a dungeon, kill monsters, and defeat a boss...all in 5 minutes!",
+  "description": "<p>In <em><strong>Curses! Foiled Again!</strong></em> the Dungeon Master has unearthed a book of magical curses, and unleashed terrifying new threats to haunt the heroes.</p>\n\n<p><em>Curses! Foiled Again!</em> is an expansion for 5-Minute Dungeon that brings new challenges and abilities to the party in their quest to defeat the Dungeon Master. The expansion adds Boss Cards to the Dungeon, two new heroes (Druid and Shaman), and powerful Artifacts that can be activated once per dungeon to help the party. This expansion also adds support for up to 6 players.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Expansion for Base-game",
+   "Fantasy",
+   "Real-time"
+  ],
+  "mechanics": [
+   "Cooperative Game",
+   "Hand Management",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Connor Reid"
+  ],
+  "publishers": [
+   "Wiggles 3D",
+   "KOSMOS"
+  ],
+  "expands": [
+   207830
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/aNf7qtwV7SuZOpW8kwXNJg__itemrep/img/UIwdAzhXAjmBs1xw2d1swXPO5TU=/fit-in/246x300/filters:strip_icc()/pic7472626.jpg",
+  "thumb": "https://cf.geekdo-images.com/aNf7qtwV7SuZOpW8kwXNJg__small/img/WYOCWWGHozJn-gNVLB51nytz3VI=/fit-in/200x150/filters:strip_icc()/pic7472626.jpg",
+  "rating": 7.2815,
+  "weight": 1.3333,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 6
+    }
+   ],
+   "totalvotes": "9"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-318009": {
+  "bgstatsId": null,
+  "name": "Dinosaur Island : Rawr 'n Write",
+  "bggId": 318009,
+  "isExpansion": false,
+  "bggName": "Dinosaur Island: Rawr 'n Write",
+  "year": 2021,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 45,
+  "minAge": 10,
+  "shortDescription": "Draw the most exciting dinosaur theme park known to humankind.",
+  "description": "<p><em><strong>Dinosaur Island: Rawr 'n Write</strong></em> is a roll-and-write version of the critically-acclaimed game <em>Dinosaur Island</em>.</p>\n\n<p>Dinosaur Island: Rawr &lsquo;n Write is a unique game in which players draft dice and then use those drafted dice as workers in a worker placement phase. Then, a fun polyomino puzzle ensues as you try and fit all your attractions and Dinosaurs into your park while buildings roads and routes to the exits for bonus points. At the end of the game, have more victory points than your opponents to win!</p>\n\n",
+  "categories": [
+   "Animals",
+   "Dice",
+   "Science Fiction"
+  ],
+  "mechanics": [
+   "Connections",
+   "Dice Rolling",
+   "Grid Coverage",
+   "Network and Route Building",
+   "Open Drafting",
+   "Paper-and-Pencil",
+   "Worker Placement with Dice Workers"
+  ],
+  "designers": [
+   "Brian Lewis",
+   "David McGregor",
+   "Marissa Misura"
+  ],
+  "publishers": [
+   "Pandasaurus Games",
+   "Catch Up Games",
+   "MINDOK",
+   "Skellig Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/xRP9jo5gfwhfFkgxQBgWTw__itemrep/img/1HA068DMDuzajRY0s_5PDc1BDhg=/fit-in/246x300/filters:strip_icc()/pic5622932.png",
+  "thumb": "https://cf.geekdo-images.com/xRP9jo5gfwhfFkgxQBgWTw__small/img/Ax_lCMYmPvnu1qYP0-nRAjcVBO8=/fit-in/200x150/filters:strip_icc()/pic5622932.png",
+  "rating": 7.6462,
+  "weight": 2.8607,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "92"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-300905": {
+  "bgstatsId": null,
+  "name": "Top Ten",
+  "bggId": 300905,
+  "isExpansion": false,
+  "bggName": "Top Ten",
+  "year": 2020,
+  "minPlayers": 4,
+  "maxPlayers": 9,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 14,
+  "shortDescription": "Answer a question based on your number (1-10) so the Cap'ten can get the order right!",
+  "description": "<p>Your goal in <em><strong>Top Ten</strong></em> is to survive five rounds, so you and your fellow players need to figure out how to get things in order!</p>\n\n<p>To start the game, place a number of unicorn tokens on the game board. Choose one player to be the round's chief. That player gives all players a random card numbered 1-10, then they read one of the five hundred theme cards included in the game, e.g., &quot;Batman wants to replace Robin to fight the bad guys. Create a new duo 'Batman and ...' from the worst to the best.&quot; The chief looks at their number, then gives an answer based on their number. If they have a 1, they want to give the worst possible suggestion; if a 10, the best; if a 5-7, somewhere in the middle.</p>\n\n<p>Each other player then gives an answer to this theme based on the number they were dealt, then the chief needs to decide who has the lowest number, then the next lowest, and so on. For each mistake, the chief flips a unicorn token over to its poop side.</p>\n\n<p>If all the unicorns have left by the end of the fifth round, leaving you with nothing but poop, then you lose. Otherwise you win!</p>\n\n",
+  "categories": [
+   "Party Game"
+  ],
+  "mechanics": [
+   "Cooperative Game",
+   "Deduction",
+   "Ordering",
+   "Player Judge",
+   "Targeted Clues"
+  ],
+  "designers": [
+   "Aurélien Picolet"
+  ],
+  "publishers": [
+   "Cocktail Games",
+   "asmodee",
+   "Broadway Toys LTD",
+   "Ghenos Games",
+   "Happy Baobab"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__itemrep/img/vfGYy9y2mobyuZvN_XCTMAHNsJo=/fit-in/246x300/filters:strip_icc()/pic5212719.jpg",
+  "thumb": "https://cf.geekdo-images.com/0LVOOyXtNNyFhyj7tFaKCQ__small/img/a-klyIgrojswCIe3KKOmJrCOgOw=/fit-in/200x150/filters:strip_icc()/pic5212719.jpg",
+  "rating": 7.35537,
+  "weight": 1.0806,
+  "polls": {
+   "best": [
+    {
+     "min": 6,
+     "max": 7
+    }
+   ],
+   "recommended": [
+    {
+     "min": 4,
+     "max": 9
+    }
+   ],
+   "totalvotes": "95"
+  },
+  "languageDependence": "Extensive use of text - massive conversion needed to be playable"
+ },
+ "bgg-245377": {
+  "bgstatsId": null,
+  "name": "Clank! – La Malédiction de la Momie",
+  "bggId": 245377,
+  "isExpansion": true,
+  "bggName": "Clank!: The Mummy's Curse",
+  "year": 2018,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 60,
+  "minAge": 12,
+  "shortDescription": "Adds a mummy to clank that can curse you, and ways to get rid of curses.",
+  "description": "<p>Untold riches await inside the pyramids of the Ancients &mdash; but they are well protected. An undying Mummy guardian spreads a vile curse to those who would rob its tomb. And, inevitably, the treasure has attracted a dragon. Can you escape the fearsome Croxobek?</p>\n\n<p><em><strong>Clank! The Mummy's Curse</strong></em>, an expansion for <em>Clank!: A Deck-Building Adventure</em>, adds a wandering mummy to the pathways that players will explore as well as new artifacts to acquire in the depths of the pyramid!</p>\n\n",
+  "categories": [
+   "Adventure",
+   "Ancient",
+   "Expansion for Base-game",
+   "Fantasy"
+  ],
+  "mechanics": [
+   "Deck, Bag, and Pool Building",
+   "Delayed Purchase",
+   "Dice Rolling",
+   "End Game Bonuses",
+   "Movement Points",
+   "Open Drafting",
+   "Pick-up and Deliver",
+   "Player Elimination",
+   "Point to Point Movement",
+   "Push Your Luck",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Andy Clautice"
+  ],
+  "publishers": [
+   "Dire Wolf",
+   "Renegade Game Studios",
+   "Devir",
+   "Lavka Games",
+   "Lucrum Games"
+  ],
+  "expands": [
+   201808
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/v1aPqYQ17zExx8CttISS2w__itemrep/img/S6ZP2DN6Ioiswt5bODGqhytdCO4=/fit-in/246x300/filters:strip_icc()/pic3949764.jpg",
+  "thumb": "https://cf.geekdo-images.com/v1aPqYQ17zExx8CttISS2w__small/img/Z9fXSFxPO9nRo1-mhDR0ufzmWj0=/fit-in/200x150/filters:strip_icc()/pic3949764.jpg",
+  "rating": 7.85886,
+  "weight": 2.2647,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "15"
+  },
+  "languageDependence": "Extensive use of text - massive conversion needed to be playable"
+ },
+ "bgg-446519": {
+  "bgstatsId": null,
+  "name": "Miams",
+  "bggId": 446519,
+  "isExpansion": false,
+  "bggName": "Miams",
+  "year": 2025,
+  "minPlayers": 1,
+  "maxPlayers": 5,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Roll your dice to make the most beautiful fruit skewers.",
+  "description": "<p>Roll your dice to make the most beautiful fruit skewers, and fill your Hearts track before your opponents!</p>\n\n<p>Combine powerful Yums cards to skew probabilities in your favor and create unique game situations!</p>\n\n",
+  "categories": [
+   "Dice"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Paper-and-Pencil",
+   "Push Your Luck",
+   "Re-rolling and Locking",
+   "Set Collection",
+   "Victory Points as a Resource"
+  ],
+  "designers": [
+   "Jules Messaud"
+  ],
+  "publishers": [
+   "KYF Edition",
+   "Mandoo Games",
+   "MINDOK",
+   "Pegasus Spiele"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/udNqqRInQRK0lfFaaqVw8w__itemrep/img/dREPr_ek-N9igzgcOeVyacf3A7g=/fit-in/246x300/filters:strip_icc()/pic8902039.jpg",
+  "thumb": "https://cf.geekdo-images.com/udNqqRInQRK0lfFaaqVw8w__small/img/Fc9UpPd7rvoRy4cFTG0RRphKNdc=/fit-in/200x150/filters:strip_icc()/pic8902039.jpg",
+  "rating": 6.78571,
+  "weight": 1.5,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 5
+    }
+   ],
+   "totalvotes": "16"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-204583": {
+  "bgstatsId": null,
+  "name": "Kingdomino",
+  "bggId": 204583,
+  "isExpansion": false,
+  "bggName": "Kingdomino",
+  "year": 2016,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 15,
+  "maxTime": 25,
+  "minAge": 8,
+  "shortDescription": "Build a kingdom with varied terrains on domino-shaped tiles in this fast family game.",
+  "description": "<p><em><strong>Kingdomino</strong></em> is a tile-laying game in which players take the role of monarchs expanding their kingdoms by claiming and arranging lands. Over the course of the game, players build a compact kingdom from forests, lakes, wheat fields, grasslands, swamps, and mines, carefully connecting matching terrain types while planning for valuable crown symbols that increase the prestige of their territories.</p>\n\n<p>Each round, players place the domino they selected on the previous turn, following placement rules that require at least one matching terrain connection (or connection to the starting castle tile). After placing a domino, they choose a new one from the available row for a future turn. The order in which dominoes are chosen also determines the turn order for the next round, creating a balance between claiming the most desirable tiles and securing an earlier turn.</p>\n\n<p>At the end of the game, players score each connected territory by multiplying its number of squares by the number of crowns within that territory. Territories without crowns score no points. The player with the highest total score wins, with ties broken first by the size of the largest territory, then by the total number of crowns.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Abstract Strategy",
+   "Medieval",
+   "Puzzle",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "Enclosure",
+   "Matching",
+   "Open Drafting",
+   "Tile Placement",
+   "Turn Order: Claim Action"
+  ],
+  "designers": [
+   "Bruno Cathala"
+  ],
+  "publishers": [
+   "Blue Orange (EU)",
+   "Blue Orange Games",
+   "(Unknown)",
+   "Buró",
+   "Coiledspring Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/c0m3gwZTcfKoLI63ASio8g__itemrep/img/HBQW09mf1nlYLGF4jmB9jfm4_EI=/fit-in/246x300/filters:strip_icc()/pic8443569.png",
+  "thumb": "https://cf.geekdo-images.com/c0m3gwZTcfKoLI63ASio8g__small/img/4p4Xydg0tze9UFcd6oUbCnVyxCw=/fit-in/200x150/filters:strip_icc()/pic8443569.png",
+  "rating": 7.28581,
+  "weight": 1.2419,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    },
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "805"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-458424": {
+  "bgstatsId": null,
+  "name": "Captain Flip – Isla Bomba",
+  "bggId": 458424,
+  "isExpansion": true,
+  "bggName": "Captain Flip: Isla Bomba",
+  "year": 2026,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 25,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "No new rules! Just fun and replay value.",
+  "description": "<p>Set sail to find Isla Bomba!<br />\nEquip your submarine. Free your crew from prison. Raid the observatory, and chart the course leading to Isla Bomba. Once anchored, will you be able to resist the different temptations on this explosive, mythical island?</p>\n\n<p>This expansion for Captain Flip adds 4 new Adventure boards and 5 new Treasure Maps.</p>\n\n<p>Your games will never be the same.</p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Pirates"
+  ],
+  "mechanics": [
+   "Advantage Token",
+   "End Game Bonuses",
+   "Grid Coverage",
+   "Multiple Maps",
+   "Push Your Luck",
+   "Tile Placement"
+  ],
+  "designers": [
+   "Remo Conzadori",
+   "Paolo Mori"
+  ],
+  "publishers": [
+   "PlayPunk"
+  ],
+  "expands": [
+   393325
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/TuslIfzI4rKgMwkC3vJnHA__itemrep/img/MFmmGi2xL5m3jllE4-JN3FQ-XPA=/fit-in/246x300/filters:strip_icc()/pic9235521.jpg",
+  "thumb": "https://cf.geekdo-images.com/TuslIfzI4rKgMwkC3vJnHA__small/img/6uqMRTWcTEmtwFbWfpe1u76DzGs=/fit-in/200x150/filters:strip_icc()/pic9235521.jpg",
+  "rating": 8.0018,
+  "weight": 1.0,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "5"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-218103": {
+  "bgstatsId": null,
+  "name": "Clank! – Trésors engloutis",
+  "bggId": 218103,
+  "isExpansion": true,
+  "bggName": "Clank!: Sunken Treasures",
+  "year": 2017,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 60,
+  "maxTime": 60,
+  "minAge": 13,
+  "shortDescription": "Adds a new Clank board with underwater rooms and ways to navigate them.",
+  "description": "<p>In <em><strong>Clank! Sunken Treasures</strong></em>, an expansion for <em>Clank! A Deck-Building Adventure</em>, players explore two partially flooded maps with new dungeon deck cards, a new persistent monster to defeat, new environmental challenges, and more as they venture in the watery depths!</p>\n\n<p>The challenge to prove your thieving skills has moved to new environments. You&rsquo;d better know how to swim as several rooms you'll face have been completely flooded with water. Plus, of course, there's always an angry dragon to avoid...</p>\n\n",
+  "categories": [
+   "Adventure",
+   "Expansion for Base-game",
+   "Fantasy"
+  ],
+  "mechanics": [
+   "Deck, Bag, and Pool Building",
+   "Delayed Purchase",
+   "End Game Bonuses",
+   "Movement Points",
+   "Open Drafting",
+   "Pick-up and Deliver",
+   "Player Elimination",
+   "Point to Point Movement",
+   "Push Your Luck",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Paul Dennen"
+  ],
+  "publishers": [
+   "Dire Wolf",
+   "Renegade Game Studios",
+   "Conclave Editora",
+   "Devir",
+   "Lavka Games"
+  ],
+  "expands": [
+   201808
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/vnPRRrEtY0erOXrTiK4PEg__itemrep/img/I2aSV0-4yFGwi72THYDjrS0U-2M=/fit-in/246x300/filters:strip_icc()/pic3489154.jpg",
+  "thumb": "https://cf.geekdo-images.com/vnPRRrEtY0erOXrTiK4PEg__small/img/6sfDYSlXIA79iotjVvG7eXSdv4o=/fit-in/200x150/filters:strip_icc()/pic3489154.jpg",
+  "rating": 7.96631,
+  "weight": 2.2143,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "28"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-443297": {
+  "bgstatsId": null,
+  "name": "Map Masters",
+  "bggId": 443297,
+  "isExpansion": false,
+  "bggName": "Map Masters",
+  "year": 2025,
+  "minPlayers": 1,
+  "maxPlayers": 5,
+  "minTime": 30,
+  "maxTime": 60,
+  "minAge": 10,
+  "shortDescription": "Choose to compete—or to co-operate—to discover the most wonderful treasures.",
+  "description": "<p>Map Masters is a dungeon-crawling card game in which you must create your path, card by card, through the dark rooms of your dungeon in search of legendary treasures.</p>\n\n<p>Dive into Map Masters, a thrilling adventure in Solo, Cooperative, or Competitive mode.</p>\n\n<p>In Map Masters Versus Mode, each player builds their own Dungeon using 5 cards. Once their Dungeon is created, each player draws their Path to collect as many Discoveries as possible that match the round&rsquo;s Objective. Next, players count the points of Discoveries along their Path that match the Primary and Secondary Objectives in order to earn Victory Points (VP). Along the way, players also collect Coins, which they can use to purchase new Cards or Tokens from the Market. Each turn player will also chose to use the Optimizers they encountered and improve their deck.</p>\n\n<p>In Map Masters Co-op Mode, Players will jointly manage groups of adventurers. In order to accomplish a mission, players should discuss strategy both before and during the game. After the setup and the market phase, players will explore the dungeon.Clockwise, each player will place a card on an empty space of the tableau and draw a new card. Once a group mini can be connected to an objective, players should trace its path. When the mission requirements have been fulfilled, the game is won!</p>\n\n<p>Every game is a new challenge to overcome, every card a crucial decision.</p>\n\n<p>Map Masters is a game for 1 to 5 players when played Co-op and for 2 to 5 players when played Versus.</p>\n\n",
+  "categories": [
+   "Fantasy",
+   "Maze",
+   "Puzzle"
+  ],
+  "mechanics": [
+   "Connections",
+   "Cooperative Game",
+   "Deck Construction",
+   "Market",
+   "Minimap Resolution",
+   "Modular Board",
+   "Multiple Maps",
+   "Network and Route Building",
+   "Scenario / Mission / Campaign Game",
+   "Tile Placement"
+  ],
+  "designers": [
+   "Ian Sebastian Bach",
+   "Cédrick Caumont"
+  ],
+  "publishers": [
+   "Captain Games SRL"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/p_Q8OivmCEq19lcIEoiAQw__itemrep/img/VepG0sTijMf2v6_t_OdybLSIMmE=/fit-in/246x300/filters:strip_icc()/pic9012802.png",
+  "thumb": "https://cf.geekdo-images.com/p_Q8OivmCEq19lcIEoiAQw__small/img/4HXiEcWVoXtTVMN9ezPcIAtWF60=/fit-in/200x150/filters:strip_icc()/pic9012802.png",
+  "rating": 6.88041,
+  "weight": 2.4286,
+  "polls": {
+   "best": [
+    {
+     "min": 1,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "7"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-414317": {
+  "bgstatsId": null,
+  "name": "Harmonies",
+  "bggId": 414317,
+  "isExpansion": false,
+  "bggName": "Harmonies",
+  "year": 2024,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 45,
+  "minAge": 10,
+  "shortDescription": "Create your own landscape and habitats to welcome animals.",
+  "description": "<p>In <em><strong>Harmonies</strong></em>, build landscapes by placing colored tokens and create habitats for your animals. To earn the most points and win the game, incorporate the habitats in your landscapes wisely and have as many animals as you can settle there.</p>\n\n<p>Starting with the first player and proceeding clockwise, each player will choose a set of 3 terrain tokens from the central area to place on their personal board. They may optionally choose an Animal card from the 5 displayed and/or place an Animal cube from their Animal card(s) on any completed patterns on their board that match their personal Animal cards. There is a 4-card limit per player. After their turn, refill with a new set of 3 tokens and a new Animal card if needed.</p>\n\n<p>Placement of the terrain tokens will depend on the personal Animal card goals, and scoring rules for the various terrain types (mountain, field, forest, etc). For example, mountain tiles score based on how high they are (1 tile scores 1, while 3 tiles stacked score 7), but the mountain scores zero if it is not adjacent to at least one other mountain. If all the cubes on a given Animal card have been placed, the card is set aside and a new card can be drawn. The cards are scored at game end based on the highest number that isn't covered by a cube.</p>\n\n<p>The games ends when there are no tokens left in the bag to refill the central area, or at least one players has 2 or fewer empty spaces on their player board. Play continues until all players have had an equal turn that round. The player with the highest points is the winner.</p>\n\n<p>Optionally, you can use Nature's Spirit cards for richer gameplay. During setup, each player chooses 1 of 2 spirit cards and places a Spirit cube on the card. They follow the same placement rules as Animal cards, but tend to have an ongoing effect once completed. The spirit card does count towards the 4-card hand limit.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Animals",
+   "Environmental",
+   "Puzzle"
+  ],
+  "mechanics": [
+   "Chaining",
+   "Hexagon Grid",
+   "Open Drafting",
+   "Pattern Building",
+   "Set Collection",
+   "Solo / Solitaire Game",
+   "Tile Placement",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Johan Benvenuto"
+  ],
+  "publishers": [
+   "Libellud",
+   "ADC Blackfire Entertainment",
+   "CoolPlay",
+   "CrowD Games",
+   "Fjórir Ásar"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__itemrep/img/wGng6fVAYRI5NKBX6x-pksZKJGI=/fit-in/246x300/filters:strip_icc()/pic8026369.png",
+  "thumb": "https://cf.geekdo-images.com/A_XP2_VN3ugyqPhezowB_w__small/img/ln5eKAzhse2PIHvWn7bu-jiW_uk=/fit-in/200x150/filters:strip_icc()/pic8026369.png",
+  "rating": 8.03431,
+  "weight": 2.009,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "627"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-369258": {
+  "bgstatsId": null,
+  "name": "Isle of Skye – Big Box",
+  "bggId": 369258,
+  "isExpansion": false,
+  "bggName": "Isle of Skye: Big Box",
+  "year": 2022,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 60,
+  "maxTime": 60,
+  "minAge": 8,
+  "shortDescription": "Build your kingdom as Chieftain one tile at a time and rule all of Scotland!",
+  "description": "<p>Get the full load (minus 4 expansions) of the modern classic tile-laying game with the <em><strong>Isle of Skye Big Box</strong></em>! The Big Box contains the award-winning <em>Isle of Skye</em> base game (Kennerspiel des Jahres 2016), the <em>Druids</em> expansion, and additional scoring and tunnel tiles. A new addition is the mini-expansion <em>Randgebiete</em>.</p>\n\n<p>In the game, you embody one leader of each of the five traditional Scottish clans. You create your own small empire in order to gain the necessary victory points. But in each game only four of the included 24 score cards are in play. This makes each game different and requires different tactics and strategies.</p>\n\n<p>In each round you can buy one of the tiles of a fellow player. Face down, all players simultaneously set the prices of the pieces they offer. A high price can lead to prosperity and much needed money. However, if no buyer can be found, the seller must add the tile to his empire himself and give up the money he has invested. In the end, the player who has scored the most victory points wins.</p>\n\n<p><em>&mdash;description from the publisher (translated)</em></p>\n\n<p>The &quot;Randgebiete&quot;/ borderland expansion is a module that can be added to any game, alone or together with the expansions.</p>\n\n<p>Every player starts with the same 6 borderland tiles in their supply. There are two tiles each of water, mountain, and land.<br />\nEach of them has only two sides for connections and two already closed borders.<br />\nIn each round, when you place your other tiles, you may also place one borderland tile connected to at least one other tile. If it&rsquo;s connected to other tiles on both sides, it gets flipped to the better side with more scoring symbols (like cows, sheep) on it.<br />\nNo tile may be placed touching one of the other two sides with closed borders.</p>\n\n",
+  "categories": [
+   "Economic",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "Auction / Bidding",
+   "Catch the Leader",
+   "I Cut, You Choose",
+   "Set Collection",
+   "Tile Placement",
+   "Turn Order: Progressive"
+  ],
+  "designers": [
+   "Andreas Pelikan",
+   "Alexander Pfister"
+  ],
+  "publishers": [
+   "Lookout Games",
+   "Hobby Game Mall"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/yppfyHm2fcjPnEE3JPma4g__itemrep/img/dthHrXuObsLTORRhPiyRXDhcHe4=/fit-in/246x300/filters:strip_icc()/pic7244974.jpg",
+  "thumb": "https://cf.geekdo-images.com/yppfyHm2fcjPnEE3JPma4g__small/img/zoIlkS-6YRd7iSgNWBS3EEiK7QU=/fit-in/200x150/filters:strip_icc()/pic7244974.jpg",
+  "rating": 7.92641,
+  "weight": 2.1111,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "14"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-413556": {
+  "bgstatsId": null,
+  "name": "Captain Flip – Dans la gueule du Kraken",
+  "bggId": 413556,
+  "isExpansion": true,
+  "bggName": "Captain Flip: In the Jaws of the Kraken",
+  "year": 2024,
+  "minPlayers": 1,
+  "maxPlayers": 5,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Brave the Kraken’s fury in this Captain Flip expansion with new boards and solo mode.",
+  "description": "<p><strong>Captain Flip: In the Jaws of the Kraken</strong></p>\n\n<p>The seas are no longer safe&mdash;especially when the Kraken lurks beneath the waves!</p>\n\n<p><em><strong>Captain Flip: In the Jaws of the Kraken</strong></em> is a mini-expansion for the award-nominated game <em><strong><a  href=\"/boardgame/393325/captain-flip\"   >Captain Flip</a></strong></em> (Spiel des Jahres 2024 nominee). This expansion introduces a new set of <strong>5 Adventure Boards</strong> featuring the deadly Kraken, challenging players to gather treasure while avoiding the monster&rsquo;s grasp.</p>\n\n<p><strong>Theme and Gameplay</strong></p>\n\n<p>The Kraken&rsquo;s presence adds tension and tactical twists. Players must balance risk and reward as they race to fill their columns with crew members, earning coins and potentially claiming the Treasure Map. Completing identical or diverse crew columns triggers new bonuses, allowing for more daring strategies.</p>\n\n<p>For those who want to sail alone, <strong>Solo Mode</strong> offers a scoring challenge:</p>\n\n<p>Earn as many coins as possible to climb the ranks from <strong>Landlubber</strong> to the legendary <strong>Legend of the Sea</strong>.</p>\n\n<p>The expansion tweaks how columns are scored and introduces a race against time, as the Kraken&rsquo;s shadow grows with every move.</p>\n\n<p>This mini-expansion requires the <em><strong><a  href=\"/boardgame/393325/captain-flip\"   >Captain Flip</a></strong></em> base game to play.</p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Pirates"
+  ],
+  "mechanics": [
+   "Memory",
+   "Push Your Luck",
+   "Tile Placement"
+  ],
+  "designers": [
+   "Remo Conzadori",
+   "Paolo Mori"
+  ],
+  "publishers": [
+   "PlayPunk",
+   "Game Harbor"
+  ],
+  "expands": [
+   393325
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/6RpmlW8B9kBfzdg0Xbl6Rg__itemrep/img/mBFxm1wT2yxxriWhOEyepRYrqYk=/fit-in/246x300/filters:strip_icc()/pic8083931.jpg",
+  "thumb": "https://cf.geekdo-images.com/6RpmlW8B9kBfzdg0Xbl6Rg__small/img/0O7H5EwczE1yPkWth1cJUsHhVYI=/fit-in/200x150/filters:strip_icc()/pic8083931.jpg",
+  "rating": 7.2965,
+  "weight": 1.0909,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "9"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-396545": {
+  "bgstatsId": null,
+  "name": "Sea Salt & Paper – Extra Salt",
+  "bggId": 396545,
+  "isExpansion": true,
+  "bggName": "Sea Salt & Paper: Extra Salt",
+  "year": 2023,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 45,
+  "minAge": 8,
+  "shortDescription": "Eight new cards with five new effects to spice up your game.",
+  "description": "<p>A mini-expansion for Sea Salt &amp; Paper, presented as a booster pack: 8 new cards with 5 new effects.</p>\n\n",
+  "categories": [
+   "Animals",
+   "Card Game",
+   "Expansion for Base-game"
+  ],
+  "mechanics": [
+   "Hand Management",
+   "Melding and Splaying",
+   "Open Drafting",
+   "Push Your Luck",
+   "Score-and-Reset Game",
+   "Set Collection",
+   "Sudden Death Ending"
+  ],
+  "designers": [
+   "Bruno Cathala",
+   "Théo Rivière"
+  ],
+  "publishers": [
+   "Bombyx",
+   "Cranio Creations",
+   "Dice&Bones",
+   "Fabrika Igr",
+   "Gam'inBIZ"
+  ],
+  "expands": [
+   367220
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/9jDNDtPC0s-eATSWly8oEg__itemrep/img/Y8e8Reo9viHl4_T-S8pPUs9PwxI=/fit-in/246x300/filters:strip_icc()/pic7731597.jpg",
+  "thumb": "https://cf.geekdo-images.com/9jDNDtPC0s-eATSWly8oEg__small/img/qGTssy-U4rf5zTilJPd3nl3c1Nk=/fit-in/200x150/filters:strip_icc()/pic7731597.jpg",
+  "rating": 7.78052,
+  "weight": 1.4355,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "42"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-448906": {
+  "bgstatsId": null,
+  "name": "Osmosis",
+  "bggId": 448906,
+  "isExpansion": false,
+  "bggName": "Osmosis",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 8,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 10,
+  "shortDescription": "A cooperative association game with limited communication.",
+  "description": "<p>The cooperative card-association game where you (almost) talk freely.<br />\nDiscuss the combination of cards you think you're about to create together.<br />\nMake your associations.<br />\nReveal your choices.<br />\nIf most of you are in sync, you win!<br />\nYou can describe your combination or the connections between cards &mdash;<br />\nbut not anything that would clearly point to one or more specific cards.<br />\nGet in sync&hellip; and prepare to be surprised!</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Deduction",
+   "Party Game"
+  ],
+  "mechanics": [
+   "Communication Limits",
+   "Connections",
+   "Cooperative Game",
+   "Deduction",
+   "Voting"
+  ],
+  "designers": [
+   "Agnès Largeaud"
+  ],
+  "publishers": [
+   "Jeux Opla"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/CEdhJPtMYv7OuWvEffCLnA__itemrep/img/KaUMFDrCD6K8V5TXPLt0CnvhHQQ=/fit-in/246x300/filters:strip_icc()/pic8956499.png",
+  "thumb": "https://cf.geekdo-images.com/CEdhJPtMYv7OuWvEffCLnA__small/img/mkeHCapMw1MtHRLCFMk3addTYFw=/fit-in/200x150/filters:strip_icc()/pic8956499.png",
+  "rating": 7.02353,
+  "weight": 2.3333,
+  "polls": {
+   "best": [
+    {
+     "min": 5,
+     "max": 5
+    },
+    {
+     "min": 7,
+     "max": 7
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 8
+    }
+   ],
+   "totalvotes": "1"
+  },
+  "languageDependence": "(no votes)"
+ },
+ "bgg-446231": {
+  "bgstatsId": null,
+  "name": "7 Wonders Dice",
+  "bggId": 446231,
+  "isExpansion": false,
+  "bggName": "7 Wonders Dice",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 7,
+  "minTime": 25,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Manage your resources to develop your city.",
+  "description": "<p>Guide one of the seven largest cities of antiquity to prosperity in <em><strong>7 Wonders Dice</strong></em>. During the game, you will construct a wonder that defies time, make scientific advances, develop commerce, manage your resources, and handle your gold reserve prudently &mdash; all while keeping an eye on neighboring cities since ignoring them has a heavy price!</p>\n\n<p>A game plays over a series of turns during which you will use dice to construct your city. At the end of the game, count up all of your points to see who has the highest score.</p>\n\n",
+  "categories": [
+   "Ancient",
+   "City Building",
+   "Dice"
+  ],
+  "mechanics": [
+   "Bingo",
+   "Dice Rolling",
+   "Die Icon Resolution",
+   "Paper-and-Pencil",
+   "Simultaneous Action Selection"
+  ],
+  "designers": [
+   "Antoine Bauza"
+  ],
+  "publishers": [
+   "Repos Production",
+   "Gémklub",
+   "Hobby Japan",
+   "Rebel Sp. z o.o."
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/FJtnBtuDIkRO95pGLSd5aA__itemrep/img/sUKjV6URXEdsONQLcEN3qdtSzSI=/fit-in/246x300/filters:strip_icc()/pic8871909.jpg",
+  "thumb": "https://cf.geekdo-images.com/FJtnBtuDIkRO95pGLSd5aA__small/img/T65TI1JX8FsVSIT_VvmSGKC_B2U=/fit-in/200x150/filters:strip_icc()/pic8871909.jpg",
+  "rating": 6.41737,
+  "weight": 2.5106,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 7
+    }
+   ],
+   "totalvotes": "13"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-440540": {
+  "bgstatsId": null,
+  "name": "Take Time",
+  "bggId": 440540,
+  "isExpansion": false,
+  "bggName": "Take Time",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Time beckons you to discover a multitude of challenging universes.",
+  "description": "<p><em><strong>Take Time</strong></em> is a cooperative game where players either win or lose together.</p>\n\n<p>To succeed, you must strategically play 12 cards facedown around a Clock, following specific rules for each Test. You can work together through a series of games to pass all 40 Tests available in the game.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Puzzle"
+  ],
+  "mechanics": [
+   "Communication Limits",
+   "Cooperative Game",
+   "Deduction",
+   "Scenario / Mission / Campaign Game"
+  ],
+  "designers": [
+   "Alexi Piovesan",
+   "Julien Prothière"
+  ],
+  "publishers": [
+   "Libellud",
+   "ADC Blackfire Entertainment",
+   "asmodee",
+   "BoardM Factory",
+   "CMON Global Limited"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/h6Bg4PZkapMB-fYfugoBrw__itemrep/img/ii1q3jq2kviBNqQYMqm6x8dl2ko=/fit-in/246x300/filters:strip_icc()/pic8751380.png",
+  "thumb": "https://cf.geekdo-images.com/h6Bg4PZkapMB-fYfugoBrw__small/img/VZJFm572UpCvVpityT6iywOmlQU=/fit-in/200x150/filters:strip_icc()/pic8751380.png",
+  "rating": 7.7281,
+  "weight": 1.7576,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "122"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-434906": {
+  "bgstatsId": null,
+  "name": "Tag Team",
+  "bggId": 434906,
+  "isExpansion": false,
+  "bggName": "Tag Team",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 10,
+  "shortDescription": "Classic arcade fighting two-on-two action.",
+  "description": "<p>Inspired by classic arcade-fighting games, <em><strong>Tag Team</strong></em> is an auto battler combined with a deck-building game. Make your team of two fighters from the twelve available &mdash; each with their own techniques and special moves &mdash; and build an unbeatable synergy by combining their two unique decks!</p>\n\n<p>In more detail, you start with a deck of only two cards, and the fight unfolds automatically: Flip your cards one at a time and apply their effects. At the end of each round, you get to turn up the heat on the opposing team by strategically adding new cards to program your deck &mdash; but without reordering the cards already present. Determine what makes your tag team tick, play devastating combos, and dominate your opponent by deftly blocking their attacks. Timing is everything if you want to emerge victorious and knock out your foe!</p>\n\n<p>AWARDS -<br />\n2026 - Dice Tower - Best 2-Player Game<br />\n2025 - Best of Gen Con 2025</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Fantasy",
+   "Fighting"
+  ],
+  "mechanics": [
+   "Action Queue",
+   "Card Play Conflict Resolution",
+   "Deck, Bag, and Pool Building",
+   "Programmed Movement",
+   "Simultaneous Action Selection",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Gricha German",
+   "Corentin Lebrat"
+  ],
+  "publishers": [
+   "Scorpion Masqué",
+   "asmodee",
+   "Geekach LLC",
+   "KOSMOS",
+   "Lavka Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/sLSlzWRe8Ixnksqawkzb3Q__itemrep/img/luzF2-CV3u0OeHVNrnF3zwhMRNg=/fit-in/246x300/filters:strip_icc()/pic8805857.jpg",
+  "thumb": "https://cf.geekdo-images.com/sLSlzWRe8Ixnksqawkzb3Q__small/img/O9Kg90i8kSi8N2ndrOKXaTTrQXE=/fit-in/200x150/filters:strip_icc()/pic8805857.jpg",
+  "rating": 7.5955,
+  "weight": 2.1204,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "53"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-417197": {
+  "bgstatsId": null,
+  "name": "Rebirth",
+  "bggId": 417197,
+  "isExpansion": false,
+  "bggName": "Rebirth",
+  "year": 2024,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 45,
+  "maxTime": 60,
+  "minAge": 10,
+  "shortDescription": "Rebuild old lands in a lush, hopeful future.",
+  "description": "<p><em>Following a series of calamities that left civilization in shambles, societies around the world are being rebuilt anew in harmony with nature. Scotland lies in ruins, and the ancient clans have taken it upon themselves to restore the land. As clan leaders, you will compete for strategic control of the land by rebuilding its prestigious castles.</em></p>\n\n<p><em><strong>Rebirth</strong></em> is a new tile-laying game from Reiner Knizia. The game revitalizes this classic genre by combining Knizia&rsquo;s elegant mechanics with Mighty Boards&rsquo; evocative world building. The result is a eurogame with smooth gameplay set in a lush and hopeful future.</p>\n\n<p>Each turn, players draw a tile from their supply and place it strategically on the board. These tiles represent your clan&rsquo;s contribution to rebuilding the land. <em>Rebirth</em> rewards strategic foresight and clever tactical play, with tougher decisions emerging over the course of the game.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Environmental",
+   "Fantasy",
+   "Farming",
+   "Science Fiction"
+  ],
+  "mechanics": [
+   "Area Majority / Influence",
+   "Contracts",
+   "End Game Bonuses",
+   "Hexagon Grid",
+   "Tile Placement"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "publishers": [
+   "Mighty Boards",
+   "Cranio Creations",
+   "Devir",
+   "DSV Games",
+   "Fabrika Igr"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__itemrep/img/7qPhO29xGCDYplRJUZcxZxnn9yw=/fit-in/246x300/filters:strip_icc()/pic8587890.png",
+  "thumb": "https://cf.geekdo-images.com/tyv6lPMlyU7YIUztlILQYQ__small/img/_CXQQbXsewUlde4R22XCRApxZ5k=/fit-in/200x150/filters:strip_icc()/pic8587890.png",
+  "rating": 7.76758,
+  "weight": 1.9742,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "181"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-424219": {
+  "bgstatsId": null,
+  "name": "Zenith",
+  "bggId": 424219,
+  "isExpansion": false,
+  "bggName": "Zenith",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 25,
+  "maxTime": 35,
+  "minAge": 12,
+  "shortDescription": "Players struggle to get control of the Solar System.",
+  "description": "<p>In the far-off future, the solar system is inhabited by 3 races: Humans, Robots, and Animods. <br />\nCivilization runs off of Zenithium, a clean and renewable energy source, but coexistence is a struggle. <br />\nYour goal: unite the planets to gain control of the senate!</p>\n\n<p>Players will struggle to gain Influence on the 5 planets: Mercury, Venus, Earth, Mars, and Jupiter. This Influence is represented by discs in different colors.</p>\n\nIn Zenith, there are 3 victory conditions:<br />\n<ul>\n    <li> Absolute victory: Gain 3 Influence discs from the same planet.</li>\n    <li> Democratic victory: Gain 4 Influence discs from strictly different planets.</li>\n    <li> Popular victory: Gain 5 Influence discs (from any planets).</li>\n</ul>\n\n<p>The game ends immediately as soon as one player meets 1 of these three conditions.</p>\n\n<p>&mdash;<em>description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Science Fiction"
+  ],
+  "mechanics": [
+   "Area Majority / Influence",
+   "Hand Management",
+   "Modular Board",
+   "Multi-Use Cards",
+   "Team-Based Game",
+   "Tech Trees / Tech Tracks",
+   "Track Movement",
+   "Tug of War",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Grégory Grard",
+   "Mathieu Roussel"
+  ],
+  "publishers": [
+   "PlayPunk",
+   "Awaken Realms",
+   "Game Harbor",
+   "Gémklub",
+   "Lavka Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/NvE9BcCiYXhYT2iV61C6kA__itemrep/img/38YqzkDXL_BpV9T5VNh_wjm2Hs4=/fit-in/246x300/filters:strip_icc()/pic8855575.jpg",
+  "thumb": "https://cf.geekdo-images.com/NvE9BcCiYXhYT2iV61C6kA__small/img/_AyGGL7XIk3fuC6czOG5LN1G6ik=/fit-in/200x150/filters:strip_icc()/pic8855575.jpg",
+  "rating": 7.96975,
+  "weight": 2.3231,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    },
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "totalvotes": "98"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-400366": {
+  "bgstatsId": null,
+  "name": "Wondrous Creatures",
+  "bggId": 400366,
+  "isExpansion": false,
+  "bggName": "Wondrous Creatures",
+  "year": 2024,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 40,
+  "maxTime": 80,
+  "minAge": 14,
+  "shortDescription": "Build the best reserve in the world for 100+ fantastic creatures!",
+  "description": "<p>Welcome to the world full of fantastic creatures! You are an admirer, a creature enthusiast who will join the journey of forming the world&rsquo;s leading creature reserve.</p>\n\n<p>To win <em><strong>Wondrous Creatures</strong></em>, you must create the most harmonious reserve. To do this, you will need to collect various Creature Cards and Eggs in your reserve. As each Creature Card holds its own unique ability, it's important to bring cards into your reserve that fit and synergize with your strategy. Additionally, it is very important to create a reserve that helps complete the Achievements faster than other players.</p>\n\n<ul>\n    <li>The worker placement mechanism provides an intriguing Hex Puzzle experience. Your deployed worker interacts with surrounding icons to bring in resources or cards, and activate special effects! </li>\n    <li> Your workers hold their own unique abilities. As you progress through the game, unlock their abilities and strengthen your workers!</li>\n    <li> As the game progresses, powerful special effects are newly placed on the map. Get creative and use these special effects to unleash your very own powerful combos! </li>\n    <li> Collect and combine 100+ different creature cards. Every creature holds its own distinctive ability and provides a deep strategic tableau building experience. </li>\n</ul>\n\n<p>The goal of <em>Wondrous Creatures</em> is to be the player with the highest Victory Points (VPs) at the end of the game.</p>\n\n<p><em>--description from the publisher</em></p>\n\n",
+  "categories": [
+   "Fantasy"
+  ],
+  "mechanics": [
+   "End Game Bonuses",
+   "Hand Management",
+   "Hexagon Grid",
+   "Open Drafting",
+   "Set Collection",
+   "Tags",
+   "Variable Player Powers",
+   "Worker Placement",
+   "Worker Placement, Different Worker Types"
+  ],
+  "designers": [
+   "Yeom.C.W"
+  ],
+  "publishers": [
+   "Bad Comet",
+   "DSV Games",
+   "GaGa Games",
+   "Gémklub",
+   "MTS Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__itemrep/img/SBdWrFMuJXSKwnnnr-gKH6AXDek=/fit-in/246x300/filters:strip_icc()/pic8389014.jpg",
+  "thumb": "https://cf.geekdo-images.com/3ue_3La0WYopTSDER3shUA__small/img/4SreytxNoZL435EkTriKB08W5W0=/fit-in/200x150/filters:strip_icc()/pic8389014.jpg",
+  "rating": 8.02671,
+  "weight": 3.0217,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 3
+    }
+   ],
+   "totalvotes": "209"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-442250": {
+  "bgstatsId": null,
+  "name": "Sea Salt & Paper – Extra Pepper",
+  "bggId": 442250,
+  "isExpansion": true,
+  "bggName": "Sea Salt & Paper: Extra Pepper",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 45,
+  "minAge": 8,
+  "shortDescription": "Twelve new cards with twelve effects (1/round) to spice up your game. ",
+  "description": "<p>Each round, new cards add a new game condition.<br />\nAt the end of each round, this condition (bonus or malus) will be kept by the player with the highest or lowest score.</p>\n\n<p><em>&mdash;description from the designer</em></p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Animals",
+   "Card Game"
+  ],
+  "mechanics": [
+   "Catch the Leader",
+   "Events",
+   "Hand Management",
+   "Melding and Splaying",
+   "Open Drafting",
+   "Push Your Luck",
+   "Score-and-Reset Game",
+   "Set Collection",
+   "Sudden Death Ending",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Bruno Cathala",
+   "Théo Rivière"
+  ],
+  "publishers": [
+   "Bombyx",
+   "Cranio Creations",
+   "Gam'inBIZ",
+   "IGAMES",
+   "MINDOK"
+  ],
+  "expands": [
+   367220
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/cJNYlNxgzUOj59rYOKUC8g__itemrep/img/dUcSbC2Ab7LKKFbHST27c7B2Kqs=/fit-in/246x300/filters:strip_icc()/pic8822830.png",
+  "thumb": "https://cf.geekdo-images.com/cJNYlNxgzUOj59rYOKUC8g__small/img/uQwYaaNlYpC51BLyuL95u5FhYKo=/fit-in/200x150/filters:strip_icc()/pic8822830.png",
+  "rating": 8.01253,
+  "weight": 1.4167,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "21"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-441696": {
+  "bgstatsId": null,
+  "name": "Sanctuary",
+  "bggId": 441696,
+  "isExpansion": false,
+  "bggName": "Sanctuary",
+  "year": 2025,
+  "minPlayers": 1,
+  "maxPlayers": 5,
+  "minTime": 40,
+  "maxTime": 100,
+  "minAge": 12,
+  "shortDescription": "Build a modern zoo for animals and achieve conservation goals.",
+  "description": "<p>In <em><strong>Sanctuary</strong></em>, you will plan and design a modern, scientifically-managed zoo for animals and visitors. A supply of 135 unique zoo tiles provides you with animals, buildings, and projects. In every game, you want to find the best mix from those available to build the most successful zoological establishment. Different effects on the tiles will help you to achieve conservation goals and to increase the attraction of your zoo.</p>\n\n<p>Each player has a set of four action cards to manage their gameplay, and the power of an action is determined by the slot the card currently occupies. One of those cards will let you play projects, and the other three cards will let you play animals of a specific habitat: forest, rock, or water.</p>\n\n<p><em>Sanctuary</em> is based on its predecessor <em>Ark Nova</em>, but modifies and simplifies many of the mechanisms of that game in an elegant and surprising manner. Your goal to find the best way to puzzle together your animals, buildings, and projects on your zoo map is an ongoing pleasure!</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Animals",
+   "Environmental",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "Action Queue",
+   "Hand Management",
+   "Hexagon Grid",
+   "Open Drafting",
+   "Set Collection",
+   "Solo / Solitaire Game",
+   "Tile Placement",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Mathias Wigge"
+  ],
+  "publishers": [
+   "Feuerland Spiele",
+   "Capstone Games",
+   "Cranio Creations",
+   "Game Harbor",
+   "Gémklub"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/C6V2VCtf1_7cavenn7Is3A__itemrep/img/0BtyX__4Bfd0y3dam3aqPtE3bjw=/fit-in/246x300/filters:strip_icc()/pic8932906.jpg",
+  "thumb": "https://cf.geekdo-images.com/C6V2VCtf1_7cavenn7Is3A__small/img/ZJJOWNSKk81xpvNkMpGd5T0ybLo=/fit-in/200x150/filters:strip_icc()/pic8932906.jpg",
+  "rating": 7.64544,
+  "weight": 2.8294,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "135"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-367150": {
+  "bgstatsId": null,
+  "name": "Dune : La Guerre sur Arrakis",
+  "bggId": 367150,
+  "isExpansion": false,
+  "bggName": "Dune: War for Arrakis",
+  "year": 2024,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 120,
+  "maxTime": 120,
+  "minAge": 14,
+  "shortDescription": "Fight for control of Arrakis and its precious Spice.",
+  "description": "<p>Arrakis is a desert world seemingly dead and barren, yet here lies the most important resource in the galaxy: Spice. Without Spice, space travel is impossible, and humans become little clusters on isolated planets. The noble House that controls Arrakis and the production of Spice wields great power. The Emperor gave Arrakis to House Atreides, but then he conspired to replace them with their old rivals, House Harkonnen. Baron Harkonnen crushed the Atreides in a treasonous attack, and now rules the planet with an iron fist. But Paul and Jessica, heirs to House Atreides, are alive, and are mounting a rebellion with the aid of the formidable Fremen, the mysterious inhabitants of the barren expanses of Arrakis.</p>\n\n<p>Only one House will emerge victorious from the coming struggle, while the other will be lost in the desert sands. It's into this grim reality that players will be thrust in <em><strong>Dune: War for Arrakis</strong></em>.</p>\n\n<p>In this asymmetrical strategy game, players fight for control of the planet, maneuvering troops like the Fremen, the Fedaykin, and the fearsome Sardaukar, while sending Spice harvesters into the deep desert, daring to challenge the great Sandworms. The game features an action dice system with numerous event cards that will enable players to retell the <em>Dune</em> saga differently with each playthrough.</p>\n\n<p>&mdash;<em>description from the publisher</em></p>\n\n",
+  "categories": [
+   "Dice",
+   "Movies / TV / Radio theme",
+   "Novel-based",
+   "Science Fiction",
+   "Wargame"
+  ],
+  "mechanics": [
+   "Action Drafting",
+   "Area Movement",
+   "Dice Rolling",
+   "Die Icon Resolution",
+   "Events",
+   "Hand Management",
+   "Simulation",
+   "Solo / Solitaire Game",
+   "Team-Based Game",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Marco Maggi",
+   "Francesco Nepitello"
+  ],
+  "publishers": [
+   "CMON Global Limited",
+   "ADC Blackfire Entertainment",
+   "asmodee",
+   "Gale Force Nine, LLC",
+   "Geekach LLC"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/b_Uo-x3szhupSWeQdw5bdg__itemrep/img/ZIaZScbDNd0UxHCeTRaMvbtoT0o=/fit-in/246x300/filters:strip_icc()/pic7088918.jpg",
+  "thumb": "https://cf.geekdo-images.com/b_Uo-x3szhupSWeQdw5bdg__small/img/890K-CXqdcJoNgICyOlpnru48v4=/fit-in/200x150/filters:strip_icc()/pic7088918.jpg",
+  "rating": 8.47962,
+  "weight": 3.6494,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    },
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "totalvotes": "127"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-245064": {
+  "bgstatsId": null,
+  "name": "Dice Town – Pour une poignée de cartes",
+  "bggId": 245064,
+  "isExpansion": true,
+  "bggName": "Dice Town: A Fistful of Cards",
+  "year": 2018,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "minTime": 45,
+  "maxTime": 45,
+  "minAge": 10,
+  "shortDescription": "Add a fistful of mini-expansions and new cards for Dice Town.",
+  "description": "<p>Dice Town is in full effervescence, the first derricks make their appearance around the city. Will you be ready for this new adventure? The titles of exploitation are rare and only the smartest or luckiest, will become the new baron of the black gold.</p>\n\n<p>The <em><strong>Dice Town: A Fistful of Cards</strong></em> offers a new mechanism centered around the titles of property. Only the player in possession of the greatest number of derricks will be able to claim the title of Baron of the black gold.</p>\n\n",
+  "categories": [
+   "American West",
+   "Dice",
+   "Expansion for Base-game"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Set Collection",
+   "Simultaneous Action Selection"
+  ],
+  "designers": [
+   "Bruno Cathala",
+   "Ludovic Maublanc"
+  ],
+  "publishers": [
+   "Matagot",
+   "Game Harbor",
+   "RollinGames"
+  ],
+  "expands": [
+   40793
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/z7tXGdYLaWuUTBcFM7x-Ww__itemrep/img/BR2PdrvaH-T1T04cQQUGNHIvADU=/fit-in/246x300/filters:strip_icc()/pic6545424.jpg",
+  "thumb": "https://cf.geekdo-images.com/z7tXGdYLaWuUTBcFM7x-Ww__small/img/JzwJTFfpkACLacgpiPYHQPVNlvs=/fit-in/200x150/filters:strip_icc()/pic6545424.jpg",
+  "rating": 7.4129,
+  "weight": 1.5,
+  "polls": {
+   "best": [],
+   "recommended": [],
+   "totalvotes": "0"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-434654": {
+  "bgstatsId": null,
+  "name": "Toy Battle",
+  "bggId": 434654,
+  "isExpansion": false,
+  "bggName": "Toy Battle",
+  "year": 2025,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 8,
+  "shortDescription": "Send forth an army of toys to conquer territories.",
+  "description": "<p>On land, on sea, in clouds, and even in space, battles are breaking out between toys. Your troops need your tactical talent to lead them to victory. Your mission? Be the first to reach the enemy headquarters or control more territories than your opponent.</p>\n\n<p>On your turn in <em><strong>Toy Battle</strong></em>, you either draw two toy troops or place a troop on the board and apply its effect. When you place a troop, you can place it on an empty base, a base that you control, a base that the enemy controls with a lower-valued troop than the one you're placing, or the enemy's headquarters; however, in all cases you must place on a location that has a continuous path to your own headquarters through bases that you <em>occupy</em>, that is, that have your troop on top. If you occupy bases that form a continuous path around a region, you claim the medals within this region. (You don't lose these medals if the enemy later occupies one of these bases.)</p>\n\n<p>The game ends as soon as you occupy your opponent's headquarters or win the required number of medals based on the current game board. If a player cannot draw or place a troop, the game ends, and whoever has the most medals wins.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Wargame"
+  ],
+  "mechanics": [
+   "Area Majority / Influence",
+   "Multiple Maps",
+   "Sudden Death Ending",
+   "Zone of Control"
+  ],
+  "designers": [
+   "Paolo Mori",
+   "Alessandro Zucchini"
+  ],
+  "publishers": [
+   "Repos Production",
+   "ADC Blackfire Entertainment",
+   "Choo Choo Games",
+   "Gémklub",
+   "Korea Boardgames"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__itemrep/img/43JVI-JvLuIGMNHK2bek9ANZlz8=/fit-in/246x300/filters:strip_icc()/pic8589750.jpg",
+  "thumb": "https://cf.geekdo-images.com/GuhpuTKFteZEIhPTFvEpJw__small/img/2Gft8rEmdaQW1YJX5DyPX0uWyoM=/fit-in/200x150/filters:strip_icc()/pic8589750.jpg",
+  "rating": 7.83677,
+  "weight": 1.4921,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "83"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-377470": {
+  "bgstatsId": null,
+  "name": "Sail",
+  "bggId": 377470,
+  "isExpansion": false,
+  "bggName": "Sail",
+  "year": 2023,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 11,
+  "shortDescription": "Navigate your pirate ship together through tricky waters and avoid the Kraken!",
+  "description": "<p>Strap up your piratical boots, and navigate your ship through turbulent waters in <em><strong>Sail</strong></em>, a co-operative trick-taking game for two players. Reach the end of this dangerous deep end, and avoid taking damage from the Kraken to win the game together...or your crew will be sleeping with the fish!</p>\n\n<p>Before each round begins, players exchange cards, then play a series of tricks. Different game actions will be triggered depending on who wins each trick in combination with the unique character skills. However, the crashing sea water and the roaring Kraken make for a deafening situation, and players are unable to communicate about tactics and card information from the moment cards are dealt to the end of the action phase.</p>\n\n<p>Players win the game as a team if they sail their ship into the final token before the Kraken reaches the Death tile or the Kraken deck is exhausted.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Nautical",
+   "Pirates"
+  ],
+  "mechanics": [
+   "Communication Limits",
+   "Cooperative Game",
+   "Hand Management",
+   "Modular Board",
+   "Scenario / Mission / Campaign Game",
+   "Track Movement",
+   "Trick-taking",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Akiyama Koryo",
+   "Kozu Yusei"
+  ],
+  "publishers": [
+   "Allplay",
+   "BoardM Factory",
+   "CMON Global Limited",
+   "Crowd",
+   "Devir"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/WdYRHQ_ILHTV_ECMGF27Gw__itemrep/img/1c7zshiWMvra-pEdBUnD0Lf0BPE=/fit-in/246x300/filters:strip_icc()/pic7267575.jpg",
+  "thumb": "https://cf.geekdo-images.com/WdYRHQ_ILHTV_ECMGF27Gw__small/img/y8Hlu0-CQDQAO6d6zM8YJ3dVevI=/fit-in/200x150/filters:strip_icc()/pic7267575.jpg",
+  "rating": 7.24304,
+  "weight": 2.21,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "43"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-320777": {
+  "bgstatsId": null,
+  "name": "Draftosaurus – Marina",
+  "bggId": 320777,
+  "isExpansion": true,
+  "bggName": "Draftosaurus: Marina",
+  "year": 2020,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 15,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Your river will swell up considerably to accommodate its new residents.",
+  "description": "<p><em><strong>Draftosaurus: Marina</strong></em> expands the boundaries of your park and adds a new species to draft: plesiosauruses!</p>\n\n<p>This expansion for <em>Draftosaurus</em> adds a new double-sided board that each player can combine with their existing park to add a new river zone. Plesiosauruses are the only dino-meeples that can be placed in this part of the river, granting points at the end of the game. To move your plesiosaurus further down the river and earn more points, you must place specific other species in your park to unlock the dams one by one!</p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Animals"
+  ],
+  "mechanics": [
+   "Closed Drafting",
+   "Dice Rolling",
+   "Set Collection",
+   "Simultaneous Action Selection"
+  ],
+  "designers": [
+   "Antoine Bauza",
+   "Corentin Lebrat",
+   "Ludovic Maublanc",
+   "Théo Rivière"
+  ],
+  "publishers": [
+   "Ankama",
+   "Board Game Box",
+   "Brain Picnic",
+   "Fractal Juegos",
+   "GaGa Games"
+  ],
+  "expands": [
+   264055
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/8GhdbqkSMeVJRw0EOn2QUg__itemrep/img/PuUiQaEQBfgZnxp_eOSdBsCOrTg=/fit-in/246x300/filters:strip_icc()/pic5685952.png",
+  "thumb": "https://cf.geekdo-images.com/8GhdbqkSMeVJRw0EOn2QUg__small/img/uB2l7SU2Iz2MKgCeCnIHP2S53vI=/fit-in/200x150/filters:strip_icc()/pic5685952.png",
+  "rating": 7.24756,
+  "weight": 1.45,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "13"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-320778": {
+  "bgstatsId": null,
+  "name": "Draftosaurus – Aerial Show",
+  "bggId": 320778,
+  "isExpansion": true,
+  "bggName": "Draftosaurus: Aerial Show",
+  "year": 2020,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 15,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Pterodactyls will nest on top of the mountains that are now part of your park.",
+  "description": "<p><em><strong>Draftosaurus: Aerial Show</strong></em> expands the boundaries of your park and adds a new species to draft: pterodactyls!</p>\n\n<p>This expansion for <em>Draftosaurus</em> adds a double-sided board that each player can combine with their existing park to add a new mountain zone. Pterodactyls are the only dino-meeples that can be placed on this part of the board, and each of their nests offers you a specific bonus in return, ranging from extra points to immunity to the placement die!</p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Animals"
+  ],
+  "mechanics": [
+   "Closed Drafting",
+   "Dice Rolling",
+   "Set Collection",
+   "Simultaneous Action Selection"
+  ],
+  "designers": [
+   "Antoine Bauza",
+   "Corentin Lebrat",
+   "Ludovic Maublanc",
+   "Théo Rivière"
+  ],
+  "publishers": [
+   "Ankama",
+   "Board Game Box",
+   "Brain Picnic",
+   "Fractal Juegos",
+   "GaGa Games"
+  ],
+  "expands": [
+   264055
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/x5LSE9eaoxNI00bKoZGDwg__itemrep/img/2-JxzodSHxz4E4gf-pUpwds25mg=/fit-in/246x300/filters:strip_icc()/pic5685940.png",
+  "thumb": "https://cf.geekdo-images.com/x5LSE9eaoxNI00bKoZGDwg__small/img/Ipjg1zHf7S0-T7Jg1kxEZs0vcxg=/fit-in/200x150/filters:strip_icc()/pic5685940.png",
+  "rating": 7.03995,
+  "weight": 1.3571,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "9"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-386368": {
+  "bgstatsId": null,
+  "name": "Esdras et Néhémie",
+  "bggId": 386368,
+  "isExpansion": false,
+  "bggName": "Ezra and Nehemiah",
+  "year": 2024,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 90,
+  "maxTime": 120,
+  "minAge": 13,
+  "shortDescription": "Rebuild the walls and temple for the returning exiles of ancient Jerusalem.",
+  "description": "<p>In his first year as king of Persia, Cyrus the Great issued a decree in writing to the Israelite exiles living under his rule:</p>\n\n<p><em>The God of heaven has given me all the kingdoms of the earth and has appointed me to build a temple for Him in Jerusalem. Any of his people may go up to Jerusalem in Judah to build the temple of the Lord, the God of Israel. And in any place where survivors may now be living, the people of Persia are to provide them with silver, gold, goods, livestock, and offerings for the temple of God in Jerusalem.</em> - Ezra 1:2-4 (paraphrased).</p>\n\n<p>Decades later, in the twentieth year of Artaxerxes reign, the king noticed a sadness in his cupbearer, Nehemiah. When asked why he looked so ill, Nehemiah replied:</p>\n\n<p><em>May the king live forever! Why should I not look sad when the city of my ancestors lies in ruins, and its gates have been destroyed by fire? If it pleases you, and if I have found favor in your sight, let me go to the city in Judah where my ancestors are buried so that I may rebuild it.</em> - Nehemiah 2:3-5 (paraphrased).</p>\n\n<p>The aim of <em><strong>Ezra and Nehemiah</strong></em> is to be the player with the most victory points (VP) at game's end. Points are gained primarily by building the temple, rebuilding the city walls and gates, and by teaching the Torah to the returning exiles. Players may also seek to develop their land, travel to settlements outside the city walls, or stoke the altar's fire to keep it burning day and night. The prophets Haggai and Zechariah will be doing their part to keep the people focused on what is most important.</p>\n\n<p>Over three weeks (rounds), players will use their hand of cards, workers, and resources to do their part in rebuilding the great city of Jerusalem. After six days of work comes a Sabbath day of rest when food will be needed, and the week's work will be reflected upon. The game ends after the third Sabbath has been completed.</p>\n\n<p><em>&mdash;description from the designer</em></p>\n\n",
+  "categories": [
+   "Ancient",
+   "City Building",
+   "Religious"
+  ],
+  "mechanics": [
+   "Chaining",
+   "Hand Management",
+   "Multi-Use Cards",
+   "Solo / Solitaire Game",
+   "Tech Trees / Tech Tracks",
+   "Track Movement",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "S J Macdonald",
+   "Shem Phillips"
+  ],
+  "publishers": [
+   "Garphill Games",
+   "CHUR GAMES",
+   "CMON Global Limited",
+   "Mosaico Jogos",
+   "Pixie Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/MVflz8gmtK1DZy49E-Llog__itemrep/img/E7FqRZRmScZQYSL29nlUYyD3Avs=/fit-in/246x300/filters:strip_icc()/pic7474410.jpg",
+  "thumb": "https://cf.geekdo-images.com/MVflz8gmtK1DZy49E-Llog__small/img/o7kbhWms7CO3dbgncofPaS4-hwg=/fit-in/200x150/filters:strip_icc()/pic7474410.jpg",
+  "rating": 8.12219,
+  "weight": 3.8489,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "135"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-397385": {
+  "bgstatsId": null,
+  "name": "Pirates de Maracaibo",
+  "bggId": 397385,
+  "isExpansion": false,
+  "bggName": "Pirates of Maracaibo",
+  "year": 2023,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 40,
+  "maxTime": 100,
+  "minAge": 12,
+  "shortDescription": "Set sail for an adventurous raid…for perhaps it will be your last!",
+  "description": "<p>Set sail for an adventurous raid...for perhaps it will be your last! Face danger and adventure once more while you search high and low for the most valuable treasures the Caribbean has to offer, then quickly find a safe harbor to stash priceless gold, rare emeralds, and iridescent pearls. Explore, stockpile cargo, hire crew, and commandeer rival ships, but don't forget to bury your loot. As you sail, be on the lookout for a place to settle after your life on the high seas has come to an end, but before you do that, you must outpace your opponents as one trip around the Caribbean won't be enough. You must make three trips in order to retire as the richest and greatest buccaneer of all time.</p>\n\n<p><em><strong>Pirates of Maracaibo</strong></em> is a standalone game in the same franchise as 2019's <em><a  href=\"/boardgame/276025/maracaibo\"   >Maracaibo</a></em>, and players who are familiar with that game will recognize some beloved concepts from the original. However, new players can jump right in with no prior knowledge of the original game as <em>Pirates of Maracaibo</em> is an independent game with a more accessible rule set. The game plays over three rounds in which you sail the Caribbean, hire crew, ally with other ships, explore the shore, amass the most treasure, and (ideally) retire to a secluded island as the most revered pirate in history. Cast off sailors and swashbucklers, cast off!</p>\n\n<p><em>&mdash;description from the designer</em></p>\n\n<hr />\n<p>Microbadge: <a href=\"/microbadge/57881\"><img alt='Microbadge: Pirates of Maracaibo' onmouseover=\"return overlib('Pirates of Maracaibo', WRAP );\" onmouseout=\"return nd();\" title=''class='mbimg'loading=\"lazy\"src=\"https://cf.geekdo-static.com/mbs/mb_57881_0.png\"></a></p>\n\n",
+  "categories": [
+   "Adventure",
+   "Exploration",
+   "Nautical",
+   "Pirates"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Increase Value of Unchosen Resources",
+   "Multi-Use Cards",
+   "Pieces as Map",
+   "Race",
+   "Stock Holding",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Ralph Bienert",
+   "Ryan Hendrickson",
+   "Alexander Pfister"
+  ],
+  "publishers": [
+   "dlp games",
+   "Game's Up",
+   "BoardBros",
+   "Capstone Games",
+   "Cranio Creations"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/ReKfHkfzGWZHZ5nxDnldhA__itemrep/img/3VIo8u7hgrLyEN5GMId2xMu6s2s=/fit-in/246x300/filters:strip_icc()/pic8063260.png",
+  "thumb": "https://cf.geekdo-images.com/ReKfHkfzGWZHZ5nxDnldhA__small/img/RqU2U0XzHvOTf_jdVFHLk5wEYB8=/fit-in/200x150/filters:strip_icc()/pic8063260.png",
+  "rating": 7.9245,
+  "weight": 2.8861,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "111"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-380135": {
+  "bgstatsId": null,
+  "name": "Dead Cells",
+  "bggId": 380135,
+  "isExpansion": false,
+  "bggName": "Dead Cells: The Rogue-Lite Board Game",
+  "year": 2024,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 45,
+  "maxTime": 45,
+  "minAge": 14,
+  "shortDescription": "Explore. Kill. Die. Mutate. Repeat.",
+  "description": "<p><em><strong>Dead Cells: The Rogue-Lite Board Game</strong></em> is a dungeon-crawler that offers a cooperative rogue-lite experience inspired by the Metroidvania genre, playable with 1-4 players, and with a gameplay of around 45 minutes. Explore the ever-changing island of Dead Cells in this ruthless dungeon crawler. Explore. Kill. Die. Mutate. Repeat.</p>\n\n<p>Choose one of the four Beheaded (Woah, hold on... Isn't it supposed to be only one of these guys? Is this one of those stupid time-loop plots?) As you resurrect with very little clue of what&rsquo;s going on, you will...</p>\n\n<p>&bull; Explore Biomes. Choose your path wisely within a sprawling, ever-changing castle! Will you upgrade one of the character powers with a scroll? Or will you choose a chest to equip a new weapon? Will you find the hidden runes that will open new paths and access new biomes? This won&rsquo;t be a walk in the park, though. Because the island is infested with the abominations born from the Malaise, be ready to&hellip;</p>\n\n<p>&bull; Kill Enemies. Each character class has unique power sets and a deck of action cards. For each enemy encounter, you will only need to pick one action card to cover all three phases of a fight. Loot equipment, gold, scrolls, and Cells from the corpses of your enemies and get stronger, but beware... Your health pool is limited and sooner or later you will...</p>\n\n<p>&bull; Die. Wandering through enemy-infested dungeons isn't the safest activity, even for your beheaded heroes. There will eventually be one monster too many, or you could step on a fatal trap and lose all your scrolls, equipment, and accumulated gold. But this is far from the end for you! Even in death you will be able to keep your precious Cells to&hellip;</p>\n\n<p>&bull; Mutate. The Collector will let you spend your Cells to buy permanent mutations that will give you more power... forever! Choose cards to buy from three different decks: Brutality, Survival, or Tactics. Get action cards to enhance your card deck. Find blueprints to grow your loot deck. Increase your health pool. Unlock additional item slots, and much more&hellip; Unless you prefer to throw your Cells into this mysterious well... It seems like a pretty stupid thing to do with your hard-earned Cells, but hey, you do you, bud... Death is no excuse to take a nap, so...</p>\n\n<p>&bull; Repeat. Death is not the end either! You&rsquo;ve already lost your head, remember!? As the day starts again in a new loop, use your new permanent mutations to exact revenge on whatever killed you last time. Go further and deeper into the island and kill the bosses to access new starting biomes. Previously-played biomes keep changing as stronger monstrosities spawn in them, along with powerful new items. (Damn! Will this game ever end?)</p>\n\n<p>Official Dead Cells page for FAQ / Rules / Player Aids downloads: <a rel=\"nofollow\" href=\"https://deadcellstheboardgame.com/FAQ/\" onclick=\"window.open(this.href, '_blank'); return false;\">https://deadcellstheboardgame.com/FAQ/</a></p>\n\n",
+  "categories": [
+   "Adventure",
+   "Card Game",
+   "Exploration",
+   "Fantasy",
+   "Video Game Theme"
+  ],
+  "mechanics": [
+   "Action Queue",
+   "Communication Limits",
+   "Cooperative Game",
+   "Deck, Bag, and Pool Building",
+   "Delayed Purchase",
+   "Legacy Game",
+   "Market",
+   "Minimap Resolution",
+   "Multi-Use Cards",
+   "Multiple Maps",
+   "Point to Point Movement",
+   "Push Your Luck",
+   "Role Playing",
+   "Scenario / Mission / Campaign Game",
+   "Simultaneous Action Selection",
+   "Solo / Solitaire Game",
+   "Stat Check Resolution",
+   "Tags",
+   "Track Movement",
+   "Variable Phase Order",
+   "Variable Player Powers",
+   "Variable Set-up",
+   "Victory Points as a Resource"
+  ],
+  "designers": [
+   "Antoine Bauza",
+   "Corentin Lebrat",
+   "Ludovic Maublanc",
+   "Théo Rivière"
+  ],
+  "publishers": [
+   "Scorpion Masqué",
+   "Devir",
+   "Frosted Games",
+   "Lavka Games",
+   "Rexhry"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/N_5Dz0GeI5dGBzSrBMEqrg__itemrep/img/q0ixchTo16f5g_SA1wGGGDaNLZE=/fit-in/246x300/filters:strip_icc()/pic7336034.jpg",
+  "thumb": "https://cf.geekdo-images.com/N_5Dz0GeI5dGBzSrBMEqrg__small/img/EJO1Ct-5NWBGHk29ilMv1fwpncQ=/fit-in/200x150/filters:strip_icc()/pic7336034.jpg",
+  "rating": 7.57243,
+  "weight": 2.3676,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 3
+    }
+   ],
+   "totalvotes": "95"
+  },
+  "languageDependence": "Extensive use of text - massive conversion needed to be playable"
+ },
+ "bgg-70323": {
+  "bgstatsId": null,
+  "name": "King of Tokyo",
+  "bggId": 70323,
+  "isExpansion": false,
+  "bggName": "King of Tokyo",
+  "year": 2011,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "Prove your dominance by destroying Tokyo or by being the last monster left standing.",
+  "description": "<p>In <em><strong>King of Tokyo</strong></em>, you play mutant monsters, gigantic robots, and strange aliens&mdash;all of whom are destroying Tokyo and whacking each other in order to become the one and only King of Tokyo.</p>\n\n<p>At the start of each turn, you roll six dice, which show the following six symbols: 1, 2, or 3 Victory Points, Energy, Heal, and Attack. Over three successive throws, choose whether to keep or discard each die in order to win victory points, gain energy, restore health, or attack other players into understanding that Tokyo is YOUR territory.</p>\n\n<p>The fiercest player will occupy Tokyo, and earn extra victory points, but that player can't heal and must face all the other monsters alone!</p>\n\n<p>Top this off with special cards purchased with energy that have a permanent or temporary effect, such as the growing of a second head which grants you an additional die, body armor, nova death ray, and more.... and it's one of the most explosive games of the year!</p>\n\n<p>In order to win the game, one must either destroy Tokyo by accumulating 20 victory points, or be the only surviving monster once the fighting has ended.</p>\n\n<p>First Game in the <a class=\"\" href=\"/wiki/page/King_of_Tokyo_series#\">King of Tokyo series</a></p>\n\n",
+  "categories": [
+   "Dice",
+   "Fighting",
+   "Movies / TV / Radio theme",
+   "Science Fiction"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Die Icon Resolution",
+   "King of the Hill",
+   "Open Drafting",
+   "Player Elimination",
+   "Push Your Luck",
+   "Re-rolling and Locking",
+   "Take That"
+  ],
+  "designers": [
+   "Richard Garfield"
+  ],
+  "publishers": [
+   "IELLO",
+   "Boardgame Space",
+   "Brädspel.se",
+   "Brain Games",
+   "Bureau de Juegos"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/m_RzXpHURC0_xLkvRSR_sw__itemrep/img/HVllMOifrnS8P1Ygzj7Teo_rwA4=/fit-in/246x300/filters:strip_icc()/pic3043734.jpg",
+  "thumb": "https://cf.geekdo-images.com/m_RzXpHURC0_xLkvRSR_sw__small/img/OfgWmkGJj5BgOO0zFHEtP5CHfbU=/fit-in/200x150/filters:strip_icc()/pic3043734.jpg",
+  "rating": 7.10967,
+  "weight": 1.4838,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 6
+    }
+   ],
+   "totalvotes": "1121"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-368158": {
+  "bgstatsId": null,
+  "name": "Ark Nova – Plateaux recto verso (Zoo Map Pack 1)",
+  "bggId": 368158,
+  "isExpansion": true,
+  "bggName": "Ark Nova: Zoo Map Pack 1",
+  "year": 2022,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 90,
+  "maxTime": 150,
+  "minAge": 14,
+  "shortDescription": "Different zoo layouts challenge your abilities in Ark Nova.",
+  "description": "<p><em><strong>Ark Nova: Zoo Map Pack 1</strong></em> contains the two new zoo maps #9 (Geographical Zoo) and #10 (Rescue Station).</p>\n\n",
+  "categories": [
+   "Expansion for Base-game",
+   "Animals",
+   "Environmental"
+  ],
+  "mechanics": [
+   "End Game Bonuses",
+   "Hand Management",
+   "Hexagon Grid",
+   "Income",
+   "Open Drafting",
+   "Set Collection",
+   "Solo / Solitaire Game",
+   "Tile Placement",
+   "Variable Player Powers",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Mathias Wigge"
+  ],
+  "publishers": [
+   "Feuerland Spiele",
+   "Capstone Games",
+   "Cranio Creations",
+   "Game Harbor",
+   "Gémklub"
+  ],
+  "expands": [
+   342942
+  ],
+  "isExpansionBgg": true,
+  "image": "https://cf.geekdo-images.com/XtY99AlaiCKEClca1ShawA__itemrep/img/WcDRMKT5C2AfzgMIBj-0JmbcXwY=/fit-in/246x300/filters:strip_icc()/pic6991687.jpg",
+  "thumb": "https://cf.geekdo-images.com/XtY99AlaiCKEClca1ShawA__small/img/JJJ-tXfmudn-xCJvkfyFjnURs-Q=/fit-in/200x150/filters:strip_icc()/pic6991687.jpg",
+  "rating": 8.2255,
+  "weight": 3.1,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "8"
+  },
+  "languageDependence": "(no votes)"
+ },
+ "bgg-363289": {
+  "bgstatsId": null,
+  "name": "Fantasy Realms – Deluxe",
+  "bggId": 363289,
+  "isExpansion": false,
+  "bggName": "Fantasy Realms: Deluxe Edition",
+  "year": 2022,
+  "minPlayers": 2,
+  "maxPlayers": 7,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 14,
+  "shortDescription": "Monarchs compete to construct the most prosperous kingdom in the realm!",
+  "description": "<p>Bruce Glassco&rsquo;s <em>Fantasy Realms</em> is a modern classic, and this new <em><strong>Deluxe Edition</strong></em> has updated every card with a sleek, intuitive graphic design. The base game cards have also been updated to include new art from Anthony Cournoyer to match his beloved work on The Cursed Hoard expansion, giving the entire game a fresh look!</p>\n\n<p>It includes:</p>\n\n<ul>\n    <li> The original base game with all new art and graphic design!</li>\n    <li> The Cursed Hoard, which includes two expansion modules, also with new graphic design!</li>\n    <li> The Jester and Phoenix cards, previously only available as promo cards!</li>\n    <li> 100+ art sleeves to protect all the included cards, plus some extras!</li>\n</ul>\n\n<p>In <em>Fantasy Realms</em>, you build your Realm, one card at a time, as you collect Beasts, Armies, Wizards, and more! Each card is unique and scores points based on the other cards in your hand. You start with seven cards, and each turn you&rsquo;ll draw a new card from the deck or discard, and discard one card from your hand, always trying to improve your Realm! Whoever&rsquo;s realm scores the most points is the winner!</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Card Game",
+   "Fantasy"
+  ],
+  "mechanics": [
+   "End Game Bonuses",
+   "Hand Management",
+   "Open Drafting",
+   "Set Collection"
+  ],
+  "designers": [
+   "Bruce Glassco"
+  ],
+  "publishers": [
+   "WizKids (I)",
+   "Broadway Toys LTD",
+   "Don't Panic Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/qPDpO-FbdhpD-CMIR6TtyQ__itemrep/img/Zq9DHnss2cr6Q28jHk-dql3YoYo=/fit-in/246x300/filters:strip_icc()/pic6936185.jpg",
+  "thumb": "https://cf.geekdo-images.com/qPDpO-FbdhpD-CMIR6TtyQ__small/img/vmv_21hstpLTJIv5zIpFuV564kI=/fit-in/200x150/filters:strip_icc()/pic6936185.jpg",
+  "rating": 7.69354,
+  "weight": 2.0385,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 6
+    }
+   ],
+   "totalvotes": "39"
+  },
+  "languageDependence": "Extensive use of text - massive conversion needed to be playable"
+ },
+ "bgg-148228": {
+  "bgstatsId": null,
+  "name": "Splendor",
+  "bggId": 148228,
+  "isExpansion": false,
+  "bggName": "Splendor",
+  "year": 2014,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Renaissance merchants race to grab gems, acquire property, and please nobility.",
+  "description": "<p><em><strong>Splendor</strong></em> is a game of chip-collecting and card development. Players are merchants of the Renaissance trying to buy gem mines, means of transportation, shops&mdash;all in order to acquire the most prestige points. If you're wealthy enough, you might even receive a visit from a noble at some point, which of course will further increase your prestige.</p>\n\n<p>On your turn, you may (1) collect chips (gems), or (2) buy and build a card, or (3) reserve one card. If you collect chips, you take either three different kinds of chips or two chips of the same kind. If you buy a card, you pay its price in chips and add it to your playing area. To reserve a card&mdash;in order to make sure you get it, or, why not, your opponents don't get it&mdash;you place it in front of you face down for later building; this costs you a round, but you also get gold in the form of a joker chip, which you can use as any gem.</p>\n\n<p>All of the cards you buy increase your wealth as they give you a permanent gem bonus for later buys; some of the cards also give you prestige points. In order to win the game, you must reach 15 prestige points before your opponents do.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Economic",
+   "Renaissance"
+  ],
+  "mechanics": [
+   "Contracts",
+   "Open Drafting",
+   "Race",
+   "Set Collection"
+  ],
+  "designers": [
+   "Marc André"
+  ],
+  "publishers": [
+   "Space Cowboys",
+   "Asterion Press",
+   "Belleville (Бельвіль)",
+   "Board Game VN",
+   "Boardgame Space"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/vNFe4JkhKAERzi4T0Ntwpw__itemrep/img/OoBoVLPl4ZYiNioNIKlV_0HLEYQ=/fit-in/246x300/filters:strip_icc()/pic8234167.png",
+  "thumb": "https://cf.geekdo-images.com/vNFe4JkhKAERzi4T0Ntwpw__small/img/KKU_42Uswt4tKCpf1zY5kTzgr-g=/fit-in/200x150/filters:strip_icc()/pic8234167.png",
+  "rating": 7.42147,
+  "weight": 1.7737,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 4
+    }
+   ],
+   "totalvotes": "1274"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-129622": {
+  "bgstatsId": null,
+  "name": "Love Letter",
+  "bggId": 129622,
+  "isExpansion": false,
+  "bggName": "Love Letter",
+  "year": 2012,
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 10,
+  "shortDescription": "Can you get a letter to the princess or remove all your rivals? You win either way!",
+  "description": "<p>All of the eligible young men (and many of the not-so-young) seek to woo the princess of Tempest. Unfortunately, she has locked herself in the palace, and you must rely on others to take your romantic letters to her. Will yours reach her first?</p>\n\n<p><em><strong>Love Letter</strong></em> is a game of risk, deduction, and luck for 2&ndash;4 players. Your goal is to get your love letter into Princess Annette's hands while deflecting the letters from competing suitors. From a deck with only sixteen cards, each player starts with only one card in hand; one card is removed from play. On a turn, you draw one card, and play one card, trying to expose others and knock them from the game. Powerful cards lead to early gains, but make you a target. Rely on weaker cards for too long, however, and your letter may be tossed in the fire!</p>\n\n<p>Number 4 in the <a  href=\"/boardgamefamily/17960/setting-tempest-shared-world\"   >Setting: Tempest Shared World</a> Game Series</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Deduction",
+   "Renaissance"
+  ],
+  "mechanics": [
+   "Deduction",
+   "Hand Management",
+   "Player Elimination",
+   "Score-and-Reset Game",
+   "Take That"
+  ],
+  "designers": [
+   "Seiji Kanai"
+  ],
+  "publishers": [
+   "Alderac Entertainment Group",
+   "Kanai Factory",
+   "(Web published)",
+   "963.com",
+   "999 Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/JT_06u5Eung6jueDM3kvpA__itemrep/img/Lupc_gStSPgga6nj2G4jQn17Ie8=/fit-in/246x300/filters:strip_icc()/pic9868049.jpg",
+  "thumb": "https://cf.geekdo-images.com/JT_06u5Eung6jueDM3kvpA__small/img/VUGQpV9kneYLvkYYk24dxWWxtjI=/fit-in/200x150/filters:strip_icc()/pic9868049.jpg",
+  "rating": 7.22623,
+  "weight": 1.1841,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 4
+    }
+   ],
+   "totalvotes": "1195"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-307002": {
+  "bgstatsId": null,
+  "name": "Regicide",
+  "bggId": 307002,
+  "isExpansion": false,
+  "bggName": "Regicide",
+  "year": 2020,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 10,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Work together as brave adventurers to defeat the corrupted monarchy.",
+  "description": "<p><em><strong>Regicide</strong></em> is a cooperative, fantasy card game for 1 to 4 players, played using a standard deck of cards.</p>\n\n<p>Players work together to defeat 12 powerful enemies. On their turn a player plays a card to the table to attack the enemy and once enough damage is dealt, the enemy is defeated. The players win when the last King is defeated. But beware! Each turn the enemy strikes back. Players will discard cards to satisfy the damage and if they can't discard enough, everyone loses.</p>\n\n<p>Rich with tactical decisions and a deep heuristic tree, <em>Regicide</em> is a huge challenge for anyone who is brave enough to take it on.</p>\n\n<p><em>&mdash;description from the designer</em></p>\n\n<p>For a dice-based, typo-inspired, April 1st-announced game from the same designers, try <a  href=\"/boardgame/350604/regidice\"   >Regidice</a>!</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Fantasy",
+   "Fighting"
+  ],
+  "mechanics": [
+   "Card Play Conflict Resolution",
+   "Communication Limits",
+   "Cooperative Game",
+   "Hand Management",
+   "Solo / Solitaire Game",
+   "Sudden Death Ending",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Paul Abrahams",
+   "Luke Badger",
+   "Andy Richdale"
+  ],
+  "publishers": [
+   "Badgers from Mars",
+   "BoardM Factory",
+   "Devir",
+   "Gameplay Publishing ApS",
+   "Hobby Japan"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/C9U2E51tkzLljewFEGQ74g__itemrep/img/gMi_9WcTU5PYLxfyrSDTch7rDMI=/fit-in/246x300/filters:strip_icc()/pic5837347.jpg",
+  "thumb": "https://cf.geekdo-images.com/C9U2E51tkzLljewFEGQ74g__small/img/4KV3wj3NiJDgGTh3zmW0_8Ph3Zc=/fit-in/200x150/filters:strip_icc()/pic5837347.jpg",
+  "rating": 7.39015,
+  "weight": 1.9784,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "209"
+  },
+  "languageDependence": "No necessary in-game text"
  }
 }

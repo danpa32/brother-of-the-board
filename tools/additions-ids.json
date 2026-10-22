@@ -1,0 +1,346 @@
+[
+ {
+  "n": 1,
+  "nom": "Boreal",
+  "bggId": 400266,
+  "bggName": "Boreal",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 2,
+  "nom": "Looot",
+  "bggId": 410991,
+  "bggName": "Looot",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 3,
+  "nom": "Munchkin: Trésors cachés",
+  "bggId": 187049,
+  "bggName": "Munchkin Hidden Treasures",
+  "expansionOf": 1927,
+  "doute": "Munchkin Hidden Treasures (2015 expansion compilation; French edition has 65 cards). Alternative: Munchkin Treasure Hunt 166026 (standalone board game)"
+ },
+ {
+  "n": 4,
+  "nom": "Dice Throne Marvel – Scarlet Witch, Thor, Loki, Spider-Man",
+  "bggId": 360153,
+  "bggName": "Marvel Dice Throne: Scarlet Witch v. Thor v. Loki v. Spider-Man",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 5,
+  "nom": "Dice Throne Marvel – Black Panther, Captain Marvel, Black Widow, Dr Strange",
+  "bggId": 418801,
+  "bggName": "Marvel Dice Throne: Captain Marvel v. Black Panther v. Doctor Strange v. Black Widow",
+  "expansionOf": null,
+  "doute": "2024 box; alt 2-hero Black Widow v. Doctor Strange 360152"
+ },
+ {
+  "n": 6,
+  "nom": "Dice Throne Adventures – L'atelier du Père Noël",
+  "bggId": 373288,
+  "bggName": "Dice Throne: Santa's Workshop Promo Pack",
+  "expansionOf": 281332,
+  "doute": "Santa's Workshop Promo Pack (expands Dice Throne 268201, Adventures 281332, Santa v. Krampus 366310); expansionOf set to Adventures"
+ },
+ {
+  "n": 7,
+  "nom": "5 Minutes Donjon extension – Malédiction ! Encore raté !",
+  "bggId": 253170,
+  "bggName": "5-Minute Dungeon: Curses! Foiled Again!",
+  "expansionOf": 207830,
+  "doute": ""
+ },
+ {
+  "n": 8,
+  "nom": "Dinosaur Island: Rawr 'n Write",
+  "bggId": 318009,
+  "bggName": "Dinosaur Island: Rawr 'n Write",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 9,
+  "nom": "Top Ten",
+  "bggId": 300905,
+  "bggName": "Top Ten",
+  "expansionOf": null,
+  "doute": "Cocktail Games 2020; alt Top Ten 18+ 334137"
+ },
+ {
+  "n": 10,
+  "nom": "Clank! extension – La malédiction de la momie",
+  "bggId": 245377,
+  "bggName": "Clank!: The Mummy's Curse",
+  "expansionOf": 201808,
+  "doute": "alt Mummy Hunters mini-exp 250994"
+ },
+ {
+  "n": 11,
+  "nom": "Miams",
+  "bggId": 446519,
+  "bggName": "Miams",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 12,
+  "nom": "Kingdomino",
+  "bggId": 204583,
+  "bggName": "Kingdomino",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 13,
+  "nom": "Captain Flip extension – Isla Bomba",
+  "bggId": 458424,
+  "bggName": "Captain Flip: Isla Bomba",
+  "expansionOf": 393325,
+  "doute": "alt Isla Bomba – Message in a Bottle 466703"
+ },
+ {
+  "n": 14,
+  "nom": "Clank! extension – Trésors engloutis",
+  "bggId": 218103,
+  "bggName": "Clank!: Sunken Treasures",
+  "expansionOf": 201808,
+  "doute": ""
+ },
+ {
+  "n": 15,
+  "nom": "Map Masters",
+  "bggId": 443297,
+  "bggName": "Map Masters",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 16,
+  "nom": "Harmonies",
+  "bggId": 414317,
+  "bggName": "Harmonies",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 17,
+  "nom": "Isle of Skye Big Box",
+  "bggId": 369258,
+  "bggName": "Isle of Skye: Big Box",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 18,
+  "nom": "Captain Flip extension – Dans la gueule du kraken",
+  "bggId": 413556,
+  "bggName": "Captain Flip: In the Jaws of the Kraken",
+  "expansionOf": 393325,
+  "doute": ""
+ },
+ {
+  "n": 19,
+  "nom": "Sea Salt & Paper extension – Extra Salt",
+  "bggId": 396545,
+  "bggName": "Sea Salt & Paper: Extra Salt",
+  "expansionOf": 367220,
+  "doute": ""
+ },
+ {
+  "n": 20,
+  "nom": "Osmosis",
+  "bggId": 448906,
+  "bggName": "Osmosis",
+  "expansionOf": null,
+  "doute": "Jeux Opla 2025"
+ },
+ {
+  "n": 21,
+  "nom": "7 Wonders Dice",
+  "bggId": 446231,
+  "bggName": "7 Wonders Dice",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 22,
+  "nom": "Take Time",
+  "bggId": 440540,
+  "bggName": "Take Time",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 23,
+  "nom": "Tag Team",
+  "bggId": 434906,
+  "bggName": "Tag Team",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 24,
+  "nom": "Rebirth",
+  "bggId": 417197,
+  "bggName": "Rebirth",
+  "expansionOf": null,
+  "doute": "Knizia/Mighty Boards 2024; other Rebirth games exist (Black Rose Wars: Rebirth)"
+ },
+ {
+  "n": 25,
+  "nom": "Zenith",
+  "bggId": 424219,
+  "bggName": "Zenith",
+  "expansionOf": null,
+  "doute": "PlayPunk 2025"
+ },
+ {
+  "n": 26,
+  "nom": "Wondrous Creatures",
+  "bggId": 400366,
+  "bggName": "Wondrous Creatures",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 27,
+  "nom": "Sea Salt & Paper extension – Extra Pepper",
+  "bggId": 442250,
+  "bggName": "Sea Salt & Paper: Extra Pepper",
+  "expansionOf": 367220,
+  "doute": ""
+ },
+ {
+  "n": 28,
+  "nom": "Sanctuary",
+  "bggId": 441696,
+  "bggName": "Sanctuary",
+  "expansionOf": null,
+  "doute": "Mathias Wigge 2025 board game (Feuerland/Capstone). Alt: Sanctuary: The Keepers Era (Tabula Games card game) not identified"
+ },
+ {
+  "n": 29,
+  "nom": "Dune : la guerre sur Arrakis",
+  "bggId": 367150,
+  "bggName": "Dune: War for Arrakis",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 30,
+  "nom": "Dice Town : pour une poignée de cartes",
+  "bggId": 245064,
+  "bggName": "Dice Town: A Fistful of Cards",
+  "expansionOf": 40793,
+  "doute": "A Fistful of Cards"
+ },
+ {
+  "n": 31,
+  "nom": "Toy Battle",
+  "bggId": 434654,
+  "bggName": "Toy Battle",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 32,
+  "nom": "Sail",
+  "bggId": 377470,
+  "bggName": "Sail",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 33,
+  "nom": "Draftosaurus extension – Marina",
+  "bggId": 320777,
+  "bggName": "Draftosaurus: Marina",
+  "expansionOf": 264055,
+  "doute": ""
+ },
+ {
+  "n": 34,
+  "nom": "Draftosaurus extension – Aerial Show",
+  "bggId": 320778,
+  "bggName": "Draftosaurus: Aerial Show",
+  "expansionOf": 264055,
+  "doute": ""
+ },
+ {
+  "n": 35,
+  "nom": "Esdras et Néhémie",
+  "bggId": 386368,
+  "bggName": "Ezra and Nehemiah",
+  "expansionOf": null,
+  "doute": "Ezra and Nehemiah (Garphill)"
+ },
+ {
+  "n": 36,
+  "nom": "Pirates de Maracaibo",
+  "bggId": 397385,
+  "bggName": "Pirates of Maracaibo",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 37,
+  "nom": "Dead Cells",
+  "bggId": 380135,
+  "bggName": "Dead Cells: The Rogue-Lite Board Game",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 38,
+  "nom": "King of Tokyo",
+  "bggId": 70323,
+  "bggName": "King of Tokyo",
+  "expansionOf": null,
+  "doute": "BGG has one entry for 1st and 2nd (2016) edition; no separate id found"
+ },
+ {
+  "n": 39,
+  "nom": "Ark Nova plateau recto verso",
+  "bggId": 368158,
+  "bggName": "Ark Nova: Zoo Map Pack 1",
+  "expansionOf": 342942,
+  "doute": "Guess: Zoo Map Pack 1 (two double-sided maps); alt Zoo Map Pack 2 426978"
+ },
+ {
+  "n": 40,
+  "nom": "Fantasy Realms Deluxe",
+  "bggId": 363289,
+  "bggName": "Fantasy Realms: Deluxe Edition",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 41,
+  "nom": "Splendor",
+  "bggId": 148228,
+  "bggName": "Splendor",
+  "expansionOf": null,
+  "doute": ""
+ },
+ {
+  "n": 42,
+  "nom": "Love Letter",
+  "bggId": 129622,
+  "bggName": "Love Letter",
+  "expansionOf": null,
+  "doute": "BGG main entry 2012; 2019 edition not a separate entry found"
+ },
+ {
+  "n": 43,
+  "nom": "Regicide",
+  "bggId": 307002,
+  "bggName": "Regicide",
+  "expansionOf": null,
+  "doute": ""
+ }
+]

@@ -11,7 +11,12 @@ entries = json.load(open("tools/entries.json"))
 vocab = json.load(open("tools/vocab_fr.json"))
 fr = {}
 for path in sorted(glob.glob("tools/fr/*.json")):
-    fr.update(json.load(open(path)))
+    for key, t in json.load(open(path)).items():
+        # Un lot peut ne compléter que les extensions et règles d'un jeu déjà traduit.
+        old = fr.setdefault(key, {})
+        exts = {**old.get("expansions", {}), **t.get("expansions", {})}
+        regles = old.get("regles", []) + t.get("regles", [])
+        old.update(t, expansions=exts, regles=regles)
 
 
 def game_id(key):
@@ -38,6 +43,27 @@ def best_at_two(polls):
     return None
 
 
+# Catégories du site, déduites des données BGG ; tools/genres.json permet de corriger
+# un jeu à la main : { "<nom BGG Stats ou nom FR>": ["Coopératif", ...] }.
+GENRES = ["Coopératif", "Réflexion & stratégie", "Ambiance & déconnade", "Familial & léger"]
+corrections = json.load(open("tools/genres.json"))
+
+
+def genres(e, nom_fr):
+    for n in (e["name"], nom_fr):
+        if n in corrections:
+            return corrections[n]
+    cats, mecs, w = set(e.get("categories", [])), set(e.get("mechanics", [])), e.get("weight") or 0
+    g = []
+    if "Cooperative Game" in mecs:
+        g.append("Coopératif")
+    if cats & {"Party Game", "Humor"} or (mecs & {"Real-Time", "Speed Matching", "Acting", "Hidden Roles", "Traitor Game"} and w < 2):
+        g.append("Ambiance & déconnade")
+    if w >= 2.0 and "Ambiance & déconnade" not in g:
+        g.append("Réflexion & stratégie")
+    return g or ["Familial & léger"]
+
+
 games = []
 for key, ent in entries.items():
     e, t = raw[key], fr.get(key, {})
@@ -57,6 +83,7 @@ for key, ent in entries.items():
         "age": e.get("minAge") or info.get("minAge"),
         "difficulte": round(e["weight"], 1) if e.get("weight") else None,
         "noteBgg": round(e["rating"], 1) if e.get("rating") else None,
+        "genres": genres(e, t.get("nomFr") or e["name"]),
         "categories": translate(e.get("categories") or info.get("categories", []), vocab["categories"]),
         "mecaniques": translate(e.get("mechanics", []), vocab["mechanics"], 8),
         "auteurs": e.get("designers", []),
