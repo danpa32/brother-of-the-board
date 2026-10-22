@@ -1,10 +1,10 @@
-import { JOUEURS } from "./config.js?v=2";
-import * as store from "./store.js?v=2";
+import { JOUEURS } from "./config.js?v=3";
+import * as store from "./store.js?v=3";
 
 const PERS = Object.keys(JOUEURS);           // ["daniel", "mathieu"]
 const JOURS_APPRENTISSAGE = 75;              // un nouveau jeu reste « à se remettre en tête » ce temps-là…
 const PARTIES_APPRENTISSAGE = 3;             // …jusqu'à ce nombre de parties
-const RAPPEL_JOURS = 21;                     // 2e partie proposée 3 semaines après la première
+const RAPPEL_PLACE = 3;                      // 2e partie proposée environ 3 jeux plus loin dans la liste
 
 let jeux = [], parId = {}, st = { avis: {}, soirees: [], joueur: null };
 const GENRES = ["Coopératif", "Réflexion & stratégie", "Ambiance & déconnade", "Familial & léger"];
@@ -16,12 +16,9 @@ const vue = $("#vue");
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const auj = () => new Date().toISOString().slice(0, 10);
-const plusJours = (iso, n) => { const d = new Date(iso + "T12:00"); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
-const plusMois = iso => { const d = new Date(iso + "T12:00"); d.setMonth(d.getMonth() + 1); return d.toISOString().slice(0, 10); };
 const ecartJours = (a, b) => Math.round((new Date(b + "T12:00") - new Date(a + "T12:00")) / 864e5);
 const fmtDate = (iso, opts = { weekday: "short", day: "numeric", month: "short" }) =>
   new Intl.DateTimeFormat("fr-CH", opts).format(new Date(iso + "T12:00"));
-const fmtMois = iso => fmtDate(iso, { month: "long", year: "numeric" });
 
 const plage = (a, b, unite) => !a && !b ? "?" : (!b || a === b ? `${a || b}` : `${a}–${b}`) + unite;
 const joueursTxt = g => plage(g.joueurs.min, g.joueurs.max, " j.");
@@ -30,6 +27,10 @@ function niveau(w) {
   if (!w) return null;
   return w < 1.8 ? "Facile" : w < 2.6 ? "Moyen" : w < 3.4 ? "Exigeant" : "Expert";
 }
+// { deux: bien à 2, plus: mieux à 3+ }, les deux peuvent être vrais. Notre choix, sinon l'avis des joueurs BGG.
+const idealBgg = g => ({ deux: !!g.aDeux, plus: (g.joueurs.max || 0) >= 3 && g.aDeux !== "meilleur" });
+const idealChoisi = g => typeof st.avis[g.id]?.ideal === "object";
+const ideal = g => idealChoisi(g) ? st.avis[g.id].ideal : idealBgg(g);
 const jouableADeux = g => !g.joueurs.min || (g.joueurs.min <= 2 && (g.joueurs.max || 9) >= 2);
 
 /* ---------- avis & historique ---------- */
@@ -43,8 +44,19 @@ const moyenne = (g, cle) => {
   return v.length ? v.reduce((a, b) => a + b, 0) / v.length : 0;
 };
 const jouees = id => st.soirees.filter(s => s.jeu === id && s.statut === "jouee").sort((a, b) => a.date.localeCompare(b.date));
-const prevues = () => st.soirees.filter(s => s.statut !== "jouee").sort((a, b) => a.date.localeCompare(b.date));
-const prochaine = id => prevues().find(s => s.jeu === id);
+// Les prochains jeux forment une liste ordonnée (champ `ordre`) ; la date est facultative.
+const ordre = s => s.ordre ?? 0;
+const prevues = () => st.soirees.filter(s => s.statut !== "jouee")
+  .sort((a, b) => ordre(a) - ordre(b) || (a.date || "").localeCompare(b.date || ""));
+const rang = id => prevues().findIndex(s => s.jeu === id) + 1;   // 0 = pas dans la liste
+// Valeur d'ordre pour insérer à la position `i` (0 = en tête) ; au-delà de la liste = à la fin.
+function ordrePour(i = Infinity) {
+  const l = prevues();
+  if (!l.length) return 1;
+  if (i >= l.length) return ordre(l.at(-1)) + 1;
+  if (i <= 0) return ordre(l[0]) - 1;
+  return (ordre(l[i - 1]) + ordre(l[i])) / 2;
+}
 // Les dates BG Stats ne sont plus à jour : seules les soirées du site comptent.
 function derniereFois(g) {
   const j = jouees(g.id).at(-1)?.date;
@@ -64,7 +76,7 @@ function enApprentissage(g) {
 function suggestions(nombre = 8) {
   const dejaPrevus = new Set(prevues().map(s => s.jeu));
   return jeux
-    .filter(g => !dejaPrevus.has(g.id) && !st.prets[g.id] && (!ui.aDeux || jouableADeux(g)))
+    .filter(g => !dejaPrevus.has(g.id) && !st.prets[g.id] && (!ui.aDeux || (jouableADeux(g) && ideal(g).deux)))
     .map(g => {
       const raisons = [];
       const envie = moyenne(g, "envie"), rejouer = moyenne(g, "rejouer");
@@ -78,7 +90,8 @@ function suggestions(nombre = 8) {
       const der = derniereFois(g);
       if (der && !n && ecartJours(der, auj()) < 21) score -= 3;
       else if (der && ecartJours(der, auj()) > 365 && rejouer >= 3) { score += 1; raisons.push("Pas joué depuis plus d'un an"); }
-      if (ui.aDeux && g.aDeux === "meilleur") { score += 0.5; raisons.push("Top à 2"); }
+      if (ui.aDeux && g.aDeux === "meilleur") { score += 0.5; raisons.push("Très bien à 2"); }
+      if (!ui.aDeux && ideal(g).plus) { score += 1; raisons.push("Mieux à 3+"); }
       return { g, score, raisons };
     })
     .sort((a, b) => b.score - a.score)
@@ -106,9 +119,9 @@ function badges(g) {
   const n = enApprentissage(g);
   if (n) b.push(`<span class="badge chaud">À rejouer</span>`);
   else if (aDecouvrir(g)) b.push(`<span class="badge neuf">À découvrir</span>`);
-  if (g.aDeux === "meilleur") b.push(`<span class="badge deux">Top à 2</span>`);
-  const pr = prochaine(g.id);
-  if (pr) b.push(`<span class="badge prevu">📅 ${esc(fmtDate(pr.date))}</span>`);
+  if (ideal(g).plus && !ideal(g).deux) b.push(`<span class="badge plus">Mieux à 3+</span>`);
+  const r = rang(g.id);
+  if (r) b.push(`<span class="badge prevu">${r === 1 ? "▶ Prochain jeu" : `▶ N° ${r}`}</span>`);
   if (st.prets[g.id]) b.push(`<span class="badge prete">Prêté</span>`);
   return b.join("");
 }
@@ -126,38 +139,37 @@ function vuePlanning() {
   if (ui.proposition) {
     const g = parId[ui.proposition.jeu];
     html += `<div class="callout">
-      <p><b>Première partie de ${esc(g.nom)} !</b> Une 2<sup>e</sup> partie d'ici trois semaines aide à bien retenir les règles.</p>
-      <div><button class="btn" data-action="rappel">Planifier le ${esc(fmtDate(ui.proposition.date))}</button>
+      <p><b>Première partie de ${esc(g.nom)} !</b> Le rejouer d'ici quelques semaines aide à bien retenir les règles.</p>
+      <div><button class="btn" data-action="rappel">Le remettre en ${Math.min(RAPPEL_PLACE, liste.length + 1)}<sup>e</sup> position</button>
       <button class="btn ghost" data-action="pas-rappel">Non merci</button></div></div>`;
   }
 
-  html += `<section class="bloc"><div class="bloc-tete"><h1>Prochaines soirées</h1>
+  html += `<section class="bloc"><div class="bloc-tete"><h1>Prochains jeux</h1>
     <div class="boutons">
-      <button class="btn" data-action="planifier" ${besoinJoueur()}>+ Planifier</button>
-      <button class="btn ghost" data-action="serie" ${besoinJoueur()}>Planifier plusieurs</button>
+      <button class="btn" data-action="planifier" ${besoinJoueur()}>+ Ajouter un jeu</button>
+      <button class="btn ghost" data-action="serie" ${besoinJoueur()}>Ajouter plusieurs</button>
       ${liste.length ? `<button class="btn ghost" data-action="tout-effacer" ${besoinJoueur()}>Tout effacer</button>` : ""}
     </div></div>`;
   if (!liste.length) {
-    html += `<p class="vide-txt">Rien de prévu pour l'instant. Choisis une idée ci-dessous ou planifie un jeu depuis la ludothèque.</p>`;
+    html += `<p class="vide-txt">Rien de prévu pour l'instant. Ajoute une idée ci-dessous ou un jeu depuis la ludothèque.</p>`;
   } else {
-    let mois = "";
-    for (const s of liste) {
+    liste.forEach((s, i) => {
       const g = parId[s.jeu];
-      if (!g) continue;
-      const m = fmtMois(s.date);
-      if (m !== mois) { html += `<h3 class="mois">${esc(m)}</h3>`; mois = m; }
-      const passe = s.date < auj();
-      html += `<div class="soiree${passe ? " passee" : ""}">
-        <div class="date"><b>${new Date(s.date + "T12:00").getDate()}</b><span>${esc(fmtDate(s.date, { weekday: "short" }))}</span></div>
+      if (!g) return;
+      html += `<div class="soiree${i === 0 ? " premier" : ""}">
+        <div class="rang" ${i === 0 ? `title="Prochain jeu"` : ""}><b>${i + 1}</b></div>
         <a href="#/jeu/${g.id}" class="soiree-jeu">${vignette(g)}<span><b>${esc(g.nom)}</b>
-          <small>${esc(joueursTxt(g))} · ${esc(dureeTxt(g))}${s.extensions?.length ? ` · ${esc(avecExt(s))}` : ""}${s.note ? ` · ${esc(s.note)}` : ""}</small></span></a>
+          <small>${esc(joueursTxt(g))} · ${esc(dureeTxt(g))}${s.extensions?.length ? ` · ${esc(avecExt(s))}` : ""}${s.note ? ` · ${esc(s.note)}` : ""}</small>
+          ${s.date ? `<small class="quand">📅 ${esc(fmtDate(s.date))}</small>` : ""}</span></a>
         <div class="soiree-act">
+          <button class="btn petit ghost" data-action="monter" data-id="${s.id}" ${i === 0 ? "disabled" : besoinJoueur()} aria-label="Monter">↑</button>
+          <button class="btn petit ghost" data-action="descendre" data-id="${s.id}" ${i === liste.length - 1 ? "disabled" : besoinJoueur()} aria-label="Descendre">↓</button>
           <button class="btn petit" data-action="jouee" data-id="${s.id}" ${besoinJoueur()}>Jouée ✓</button>
           <button class="btn petit ghost" data-action="changer" data-id="${s.id}" ${besoinJoueur()} title="Remplacer par une autre idée" aria-label="Changer de jeu">↻</button>
           <button class="btn petit ghost" data-action="modifier" data-id="${s.id}" ${besoinJoueur()} aria-label="Modifier">✎</button>
           <button class="btn petit ghost" data-action="supprimer" data-id="${s.id}" ${besoinJoueur()} aria-label="Supprimer">✕</button>
         </div></div>`;
-    }
+    });
   }
   html += `</section>`;
 
@@ -175,7 +187,7 @@ function vuePlanning() {
         <div class="raisons">${raisons.map(r => `<span>${esc(r)}</span>`).join("")}</div>
         <div class="envies">${PERS.map(p => `<span title="Envie de ${JOUEURS[p].nom}">${JOUEURS[p].nom[0]} ${pastilles(avis(g, p).envie)}</span>`).join("")}</div>
       </div>
-      <button class="btn petit" data-action="planifier" data-jeu="${g.id}" ${besoinJoueur()}>Planifier</button>
+      <button class="btn petit" data-action="ajouter" data-jeu="${g.id}" ${besoinJoueur()}>+ Ajouter</button>
     </div>`;
   }
   html += `</div></section>`;
@@ -211,8 +223,8 @@ const FILTRES = {
   anoter: ["À noter", aNoter],
   prete: ["Prêtés", g => !!st.prets[g.id]],
   decouvrir: ["À découvrir", g => aDecouvrir(g)],
-  deux: ["Jouable à 2", g => jouableADeux(g)],
-  top2: ["Top à 2", g => g.aDeux === "meilleur"],
+  deux: ["Bien à 2", g => ideal(g).deux],
+  plus: ["Mieux à 3+", g => ideal(g).plus],
   court: ["≤ 45 min", g => (g.duree.max || g.duree.min || 0) <= 45],
   envie: ["Envie ≥ 4", g => PERS.some(p => avis(g, p).envie >= 4)],
 };
@@ -298,7 +310,7 @@ function vueFiche(id) {
         ${g.nomOriginal !== g.nom ? `<p class="sous">${esc(g.nomOriginal)}</p>` : ""}
         <p class="resume-grand">${esc(g.resume)}</p>
         <dl class="infos">
-          <div><dt>Joueurs</dt><dd>${esc(joueursTxt(g))}${g.aDeux === "meilleur" ? " <span class='badge deux'>Top à 2</span>" : g.aDeux === "recommande" ? " <small>(bien à 2)</small>" : ""}</dd></div>
+          <div><dt>Joueurs</dt><dd>${esc(joueursTxt(g))}</dd></div>
           <div><dt>Durée</dt><dd>${esc(dureeTxt(g))}</dd></div>
           ${g.age ? `<div><dt>Âge</dt><dd>${g.age}+</dd></div>` : ""}
           ${g.difficulte ? `<div><dt>Difficulté</dt><dd>${niveau(g.difficulte)} <small>(${String(g.difficulte).replace(".", ",")}/5)</small></dd></div>` : ""}
@@ -316,6 +328,10 @@ function vueFiche(id) {
     <section class="bloc">
       <h2>Nos avis</h2>
       ${st.joueur ? "" : `<p class="aide">Identifie-toi en haut à droite pour noter.</p>`}
+      <div class="ideal"><span>À combien ?</span>
+        ${[["deux", "Bien à 2"], ["plus", "Mieux à 3+"]].map(([v, l]) =>
+          `<button class="chip${ideal(g)[v] ? " on" : ""}" data-action="ideal" data-jeu="${g.id}" data-v="${v}" aria-pressed="${ideal(g)[v]}" ${besoinJoueur()}>${ideal(g)[v] ? "✓ " : ""}${l}</button>`).join("")}
+        ${idealChoisi(g) ? "" : `<small>avis BGG${g.aDeux === "meilleur" ? " : excellent à 2" : ""}</small>`}</div>
       <table class="avis">
         <thead><tr><th></th>${PERS.map(p => `<th class="${p === st.joueur ? "moi-col" : ""}">${JOUEURS[p].nom}</th>`).join("")}</tr></thead>
         <tbody>
@@ -398,12 +414,6 @@ function rendre() {
 
 /* ---------- dialogue soirée ---------- */
 const dlg = $("#dlgSoiree"), form = $("#formSoiree");
-function prochainVendrediLibre() {
-  const pris = new Set(st.soirees.map(s => s.date));
-  let d = auj();
-  while (new Date(d + "T12:00").getDay() !== 5 || pris.has(d)) d = plusJours(d, 1);
-  return d;
-}
 // Cases à cocher des extensions du jeu choisi dans le dialogue.
 function rendreExtDialogue(g, coches = []) {
   const p = g && st.prets[g.id];
@@ -419,9 +429,9 @@ form.jeu.addEventListener("input", () => rendreExtDialogue(jeuSaisi()));
 function ouvrirDialogue({ jeu, soiree, ext } = {}) {
   form.reset();
   $("#dlgErreur").textContent = "";
-  $("#dlgTitre").textContent = soiree ? "Modifier la soirée" : "Planifier une soirée";
+  $("#dlgTitre").textContent = soiree ? "Modifier" : "Ajouter un prochain jeu";
   form.dataset.id = soiree?.id || "";
-  form.date.value = soiree?.date || prochainVendrediLibre();
+  form.date.value = soiree?.date || "";
   form.jeu.value = parId[soiree?.jeu || jeu]?.nom || "";
   form.note.value = soiree?.note || "";
   rendreExtDialogue(parId[soiree?.jeu || jeu], soiree?.extensions || (ext ? [ext] : []));
@@ -434,10 +444,10 @@ form.addEventListener("submit", async e => {
   const g = jeuSaisi();
   if (!g) { $("#dlgErreur").textContent = "Choisis un jeu de la liste."; return; }
   const extensions = [...form.querySelectorAll("#dlgExt input:checked")].map(c => c.value);
-  const data = { date: form.date.value, jeu: g.id, extensions, note: form.note.value.trim() };
+  const data = { date: form.date.value || null, jeu: g.id, extensions, note: form.note.value.trim() };
   try {
     if (form.dataset.id) await store.majSoiree(form.dataset.id, data);
-    else await store.ajouterSoiree(data);
+    else await store.ajouterSoiree({ ...data, ordre: ordrePour() });
     dlg.close();
   } catch (err) {
     $("#dlgErreur").textContent = "Enregistrement impossible : " + err.message;
@@ -449,9 +459,10 @@ async function marquerJouee(id) {
   const s = st.soirees.find(x => x.id === id);
   const g = parId[s.jeu];
   const premiere = aDecouvrir(g);
-  await store.majSoiree(id, { statut: "jouee", decouverte: premiere });
+  const date = s.date && s.date <= auj() ? s.date : auj();
+  await store.majSoiree(id, { statut: "jouee", decouverte: premiere, date });
   for (const p of PERS) if (avis(g, p).decouvrir) await store.majAvis(g.id, p, { decouvrir: false });
-  if (premiere) ui.proposition = { jeu: g.id, date: plusJours(s.date < auj() ? auj() : s.date, RAPPEL_JOURS) };
+  if (premiere) ui.proposition = { jeu: g.id };
   rendre();
 }
 
@@ -485,10 +496,17 @@ document.addEventListener("click", async e => {
   const { action, id, jeu } = el.dataset;
   try {
     if (action === "planifier") ouvrirDialogue({ jeu, ext: el.dataset.ext });
+    else if (action === "ajouter") await store.ajouterSoiree({ jeu, ordre: ordrePour() });
+    else if (action === "monter" || action === "descendre") {
+      const l = prevues(), i = l.findIndex(s => s.id === id), j = action === "monter" ? i - 1 : i + 1;
+      // On renumérote toute la liste pour que l'échange reste net même avec d'anciens ordres égaux.
+      [l[i], l[j]] = [l[j], l[i]];
+      for (const [k, s] of l.entries()) if (ordre(s) !== k + 1) await store.majSoiree(s.id, { ordre: k + 1 });
+    }
     else if (action === "serie") ouvrirSerie();
     else if (action === "tout-effacer") {
       const liste = prevues();
-      if (confirm(`Supprimer les ${liste.length} soirées prévues ? Les soirées jouées sont gardées.`))
+      if (confirm(`Vider la liste des ${liste.length} prochains jeux ? Les parties déjà jouées sont gardées.`))
         for (const s of liste) await store.supprimerSoiree(s.id);
     }
     else if (action === "changer") {
@@ -496,13 +514,17 @@ document.addEventListener("click", async e => {
       if (autre) await store.majSoiree(id, { jeu: autre.g.id, extensions: [], note: "" });
     }
     else if (action === "rendu") await store.rendu(jeu);
+    else if (action === "ideal") {
+      const actuel = ideal(parId[jeu]);
+      await store.majIdeal(jeu, { ...actuel, [el.dataset.v]: !actuel[el.dataset.v] });
+    }
     else if (action === "modifier") ouvrirDialogue({ soiree: st.soirees.find(s => s.id === id) });
-    else if (action === "supprimer") { if (confirm("Supprimer cette soirée ?")) await store.supprimerSoiree(id); }
+    else if (action === "supprimer") await store.supprimerSoiree(id);
     else if (action === "jouee") await marquerJouee(id);
     else if (action === "rappel") {
-      const { jeu: j, date } = ui.proposition;
+      const { jeu: j } = ui.proposition;
       ui.proposition = null;
-      await store.ajouterSoiree({ jeu: j, date, note: "2e partie pour s'en souvenir" });
+      await store.ajouterSoiree({ jeu: j, ordre: ordrePour(RAPPEL_PLACE - 1), note: "pour s'en souvenir" });
     }
     else if (action === "pas-rappel") { ui.proposition = null; rendre(); }
     else if (action === "adeux") { ui.aDeux = el.dataset.v === "1"; rendre(); }
@@ -526,22 +548,14 @@ document.addEventListener("submit", async e => {
 const dlgSerie = $("#dlgSerie"), formSerie = $("#formSerie");
 function ouvrirSerie() {
   $("#serieErreur").textContent = "";
-  formSerie.debut.value = prochainVendrediLibre();
   dlgSerie.showModal();
 }
 $("#serieAnnuler").onclick = () => dlgSerie.close();
 formSerie.addEventListener("submit", async e => {
   e.preventDefault();
-  const n = Number(formSerie.nombre.value), pas = Number(formSerie.rythme.value);
-  const idees = suggestions(n);
-  const prises = new Set(st.soirees.map(s => s.date));
-  let date = formSerie.debut.value;
   try {
-    for (const { g } of idees) {
-      while (prises.has(date)) date = pas === 30 ? plusMois(date) : plusJours(date, pas);
-      await store.ajouterSoiree({ date, jeu: g.id });
-      prises.add(date);
-    }
+    let o = ordrePour();
+    for (const { g } of suggestions(Number(formSerie.nombre.value))) await store.ajouterSoiree({ jeu: g.id, ordre: o++ });
     dlgSerie.close();
   } catch (err) {
     $("#serieErreur").textContent = "Enregistrement impossible : " + err.message;
@@ -557,7 +571,7 @@ document.addEventListener("change", e => {
 window.addEventListener("hashchange", rendre);
 
 /* ---------- démarrage ---------- */
-jeux = await fetch("data/games.json?v=2").then(r => r.json());
+jeux = await fetch("data/games.json?v=3").then(r => r.json());
 parId = Object.fromEntries(jeux.map(g => [g.id, g]));
 $("#listeJeux").innerHTML = jeux.map(g => `<option value="${esc(g.nom)}">`).join("");
 store.ecouter(s => { st = s; rendre(); });

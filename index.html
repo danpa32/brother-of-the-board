@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
@@ -31,10 +31,7 @@
 
 <dialog id="dlgSoiree" class="dlg">
   <form method="dialog" id="formSoiree">
-    <h2 id="dlgTitre">Planifier une soirée</h2>
-    <label>Date
-      <input type="date" name="date" required>
-    </label>
+    <h2 id="dlgTitre">Ajouter un prochain jeu</h2>
     <label>Jeu
       <input type="text" name="jeu" list="listeJeux" required autocomplete="off" placeholder="Tape le nom du jeu…">
       <datalist id="listeJeux"></datalist>
@@ -43,6 +40,9 @@
       <legend>Avec les extensions</legend>
       <div></div>
     </fieldset>
+    <label>Date <small>(facultatif)</small>
+      <input type="date" name="date">
+    </label>
     <label>Note <small>(facultatif)</small>
       <input type="text" name="note" maxlength="120" placeholder="ex. chez Mathieu, variante solo…">
     </label>
@@ -57,20 +57,10 @@
 
 <dialog id="dlgSerie" class="dlg">
   <form method="dialog" id="formSerie">
-    <h2>Planifier plusieurs soirées</h2>
-    <p class="aide">Les dates sont remplies avec les meilleures idées du moment. Tu pourras ensuite changer (↻) ou supprimer (✕) chaque soirée.</p>
-    <label>Nombre de soirées
+    <h2>Ajouter plusieurs jeux</h2>
+    <p class="aide">La liste est complétée avec les meilleures idées du moment. Tu pourras ensuite changer (↻), déplacer (↑ ↓) ou retirer (✕) chaque jeu.</p>
+    <label>Nombre de jeux
       <input type="number" name="nombre" min="1" max="12" value="4" required>
-    </label>
-    <label>Première soirée
-      <input type="date" name="debut" required>
-    </label>
-    <label>Rythme
-      <select name="rythme">
-        <option value="7">Chaque semaine</option>
-        <option value="14">Toutes les 2 semaines</option>
-        <option value="30">Une fois par mois</option>
-      </select>
     </label>
     <p class="erreur" id="serieErreur"></p>
     <div class="actions">
@@ -80,6 +70,6 @@
   </form>
 </dialog>
 
-<script type="module" src="js/app.js?v=2"></script>
+<script type="module" src="js/app.js?v=3"></script>
 </body>
 </html>

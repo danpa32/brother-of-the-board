@@ -1,6 +1,6 @@
 // Données partagées : avis (notes par jeu et par joueur) et soirées planifiées.
 // Deux implémentations avec la même interface : Firebase (partagé) ou local (navigateur).
-import { JOUEURS, FIREBASE } from "./config.js?v=2";
+import { JOUEURS, FIREBASE } from "./config.js?v=3";
 
 const SDK = "https://www.gstatic.com/firebasejs/10.12.2";
 
@@ -98,7 +98,7 @@ export async function majAvis(jeu, joueur, patch) {
 }
 
 export async function ajouterSoiree(s) {
-  const soiree = { statut: "prevue", note: "", ...s, creePar: etat.joueur };
+  const soiree = { statut: "prevue", note: "", date: null, extensions: [], ...s, creePar: etat.joueur };
   if (modeLocal) {
     etat.soirees.push({ id: crypto.randomUUID(), ...soiree });
     ecrireLocal(); notifier(); return;
@@ -112,6 +112,12 @@ export async function majSoiree(id, patch) {
     ecrireLocal(); notifier(); return;
   }
   await fb.fs.updateDoc(fb.fs.doc(fb.db, "soirees", id), patch);
+}
+
+// Nombre de joueurs idéal, commun à nous deux : { deux: bien à 2, plus: mieux à 3+ } (les deux possibles).
+export async function majIdeal(jeu, ideal) {
+  if (modeLocal) { etat.avis[jeu] = { ...etat.avis[jeu], ideal }; ecrireLocal(); notifier(); return; }
+  await fb.fs.setDoc(fb.fs.doc(fb.db, "avis", jeu), { ideal }, { merge: true });
 }
 
 // pret = { prenom, nom, tel, depuis } ; un seul prêt en cours par jeu.

@@ -103,7 +103,6 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
 .bloc-tete { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .aide { color: var(--texte-doux); font-size: .9rem; margin: 0 0 12px; }
 .vide-txt { color: var(--texte-doux); padding: 24px; text-align: center; background: var(--surface); border: 1px dashed var(--bord); border-radius: var(--rayon); }
-.mois { font: 600 .8rem Inter, sans-serif; text-transform: uppercase; letter-spacing: .08em; color: var(--texte-doux); margin: 16px 0 8px; }
 
 .callout {
   display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
@@ -118,14 +117,14 @@ main { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
   display: flex; align-items: center; gap: 14px; padding: 10px 14px; margin-bottom: 8px;
   background: var(--surface); border: 1px solid var(--bord); border-radius: var(--rayon); box-shadow: var(--ombre);
 }
-.soiree.passee { border-color: var(--or); }
-.soiree.passee .date { background: var(--or-clair); }
-.date {
-  flex: none; width: 52px; text-align: center; padding: 6px 0; border-radius: 10px;
+.soiree.premier { border-color: var(--accent); border-width: 2px; }
+.rang {
+  flex: none; width: 44px; text-align: center; padding: 6px 0; border-radius: 10px;
   background: var(--surface-2); line-height: 1.1;
 }
-.date b { display: block; font: 800 1.35rem Fraunces, serif; }
-.date span { font-size: .75rem; color: var(--texte-doux); text-transform: uppercase; }
+.rang b { display: block; font: 800 1.35rem Fraunces, serif; }
+.premier .rang { background: var(--accent); color: var(--accent-texte); }
+.soiree-jeu .quand { color: var(--texte); }
 .soiree-jeu { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; color: var(--texte); }
 .soiree-jeu:hover { text-decoration: none; }
 .soiree-jeu:hover b { color: var(--accent); }
@@ -288,6 +287,11 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
 .genre.on { background: var(--accent); border-color: var(--accent); color: var(--accent-texte); }
 .genres-fiche { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
 .badge.genre { background: var(--or-clair); border-color: transparent; font-size: .78rem; padding: 3px 10px; }
+.badge.plus { background: var(--bleu-clair); color: var(--bleu); border-color: transparent; }
+.ideal { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.ideal > span { font-weight: 500; }
+.ideal small { color: var(--texte-doux); }
+.seg button:disabled { cursor: not-allowed; }
 .badge.prete { background: var(--texte); color: var(--fond); border-color: transparent; }
 .pret { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
   padding: 12px 16px; background: var(--surface); border: 1px solid var(--bord); border-radius: var(--rayon); max-width: 640px; }
@@ -322,8 +326,16 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
   .carte-txt { padding: 10px 12px; min-width: 0; gap: 3px; }
   .carte-txt h3 { font-size: 1rem; }
   .resume { font-size: .82rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .genres { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
-  .genre { flex: none; }
+  /* Catégories sur deux colonnes : tout reste visible sans défiler. */
+  .genres { display: grid; grid-template-columns: 1fr 1fr; }
+  .genre { padding: 8px 6px; }
+  .genre:first-child { grid-column: 1 / -1; }
+  /* Avis : intitulé sur sa ligne, puis Daniel | Mathieu côte à côte. */
+  .avis, .avis thead, .avis tbody { display: block; }
+  .avis tr { display: grid; grid-template-columns: 1fr 1fr; }
+  .avis thead th:first-child { display: none; }
+  .avis tbody th { grid-column: 1 / -1; width: auto; border-bottom: 0; padding-bottom: 0; }
+  .soiree-act .btn.petit { padding: 5px 10px; }
   .boutons { width: 100%; }
   .boutons .btn { flex: 1 1 auto; justify-content: center; }
   .form-pret .btn { flex: 1 1 100%; justify-content: center; }
