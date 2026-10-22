@@ -341,11 +341,11 @@ function vueFiche(id) {
       <table class="avis">
         <thead><tr><th></th>${PERS.map(p => `<th class="${p === st.joueur ? "moi-col" : ""}">${JOUEURS[p].nom}</th>`).join("")}</tr></thead>
         <tbody>
-          ${ligne("Envie d'y jouer bientôt", "envie")}
-          ${ligne("Plaisir à y rejouer", "rejouer")}
+          ${ligne("J'ai envie d'y jouer bientôt", "envie")}
+          ${ligne("J'ai du plaisir à y jouer", "rejouer")}
           ${ligneOuiNon("Bien à 2", p => idealDe(g, p).deux, "ideal", "deux")}
           ${ligneOuiNon("Mieux à 3+", p => idealDe(g, p).plus, "ideal", "plus")}
-          ${ligneOuiNon("À découvrir <small>(pas encore joué)</small>", p => avis(g, p).decouvrir, "decouvrir")}
+          ${ligneOuiNon("À découvrir / Redécouvrir", p => avis(g, p).decouvrir, "decouvrir")}
         </tbody>
       </table>
     </section>
