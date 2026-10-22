@@ -573,7 +573,7 @@ document.addEventListener("change", e => {
 window.addEventListener("hashchange", rendre);
 
 /* ---------- démarrage ---------- */
-jeux = await fetch("data/games.json?v=6").then(r => r.json());
+jeux = await fetch("data/games.json?v=7").then(r => r.json());
 parId = Object.fromEntries(jeux.map(g => [g.id, g]));
 $("#listeJeux").innerHTML = jeux.map(g => `<option value="${esc(g.nom)}">`).join("");
 store.ecouter(s => { st = s; rendre(); });
