@@ -17,6 +17,7 @@ by_bgg = {e["bggId"]: k for k, e in raw.items() if e["bggId"]}
 EXCLUS = {
     "Exit: Calendrier de l'Avent – La Grotte Glacée",
     "UNDO: Prisonnier du Passé",
+    "Cortex Challenge: Print & Play Demo",   # remplacée par la vraie boîte (achats.json)
 }
 # Extensions qui forment presque un jeu à part : gardées comme fiche séparée,
 # avec un lien vers le jeu de base.

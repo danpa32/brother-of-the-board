@@ -59,7 +59,7 @@ tout = "--tout" in sys.argv
 out = {} if tout or not os.path.exists(RAW) else json.load(open(RAW))
 
 # Jeux à avoir : possédés dans l'export, ou rachetés depuis (achats.json).
-achat_ids = {a["bggId"] for a in achats}
+achat_ids = {a["bggId"] for a in achats if a["bggId"]}
 voulus = {}
 for g in export["games"]:
     owned = any(c.get("statusOwned") for c in g.get("copies") or [])
@@ -69,7 +69,10 @@ for g in export["games"]:
                                 "_img": (g.get("urlImage"), g.get("urlThumb"))}
 dans_export = {v["bggId"] for v in voulus.values()}
 for a in achats:
-    if a["bggId"] not in dans_export:
+    if not a["bggId"]:   # jeu absent de BGG : infos à donner dans tools/fr (« infos »)
+        voulus[f"perso-{a['nom'].lower().replace(' ', '-')}"] = {"bgstatsId": None, "name": a["nom"], "bggId": 0,
+                                                                 "isExpansion": False, "_img": (None, None)}
+    elif a["bggId"] not in dans_export:
         voulus[f"bgg-{a['bggId']}"] = {"bgstatsId": None, "name": a["nom"], "bggId": a["bggId"],
                                        "isExpansion": bool(a.get("parent")), "_img": (None, None)}
 

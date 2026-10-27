@@ -185,11 +185,6 @@
   "parent": null
  },
  {
-  "bggId": 70323,
-  "nom": "King of Tokyo",
-  "parent": null
- },
- {
   "bggId": 368158,
   "nom": "Ark Nova – Plateaux recto verso (Zoo Map Pack 1)",
   "parent": 342942
@@ -242,6 +237,111 @@
  {
   "bggId": 199792,
   "nom": "Everdell (2e édition)",
+  "parent": null
+ },
+ {
+  "bggId": 29138,
+  "nom": "Gagne ton papa !",
+  "parent": null
+ },
+ {
+  "bggId": 300908,
+  "nom": "Imagine Famille",
+  "parent": null
+ },
+ {
+  "bggId": 333539,
+  "nom": "Le Siège de Runedar",
+  "parent": null
+ },
+ {
+  "bggId": 274533,
+  "nom": "Aïe Aïe Burrito",
+  "parent": null
+ },
+ {
+  "bggId": 150145,
+  "nom": "Skull King",
+  "parent": null
+ },
+ {
+  "bggId": 344114,
+  "nom": "Paquet de Chips",
+  "parent": null
+ },
+ {
+  "bggId": 422484,
+  "nom": "King of Tokyo : Duel",
+  "parent": null
+ },
+ {
+  "bggId": 275215,
+  "nom": "Namiji",
+  "parent": null
+ },
+ {
+  "bggId": 13,
+  "nom": "Catan",
+  "parent": null
+ },
+ {
+  "bggId": 278,
+  "nom": "Catan – Le jeu de cartes",
+  "parent": null
+ },
+ {
+  "bggId": 287655,
+  "nom": "Code",
+  "parent": null
+ },
+ {
+  "bggId": 191894,
+  "nom": "Imagine",
+  "parent": null
+ },
+ {
+  "bggId": 347505,
+  "nom": "Nouvelles Contrées",
+  "parent": null
+ },
+ {
+  "bggId": null,
+  "nom": "Les Rescapés du déluge",
+  "parent": null
+ },
+ {
+  "bggId": 301242,
+  "nom": "Skyjo Action",
+  "parent": null
+ },
+ {
+  "bggId": 284083,
+  "nom": "The Crew : La Quête de la planète Neuf",
+  "parent": null
+ },
+ {
+  "bggId": 319793,
+  "nom": "Happy City",
+  "parent": null
+ },
+ {
+  "bggId": 178900,
+  "nom": "Codenames",
+  "parent": null
+ },
+ {
+  "bggId": 25821,
+  "nom": "Les Loups-Garous de Thiercelieux",
+  "parent": null
+ },
+ {
+  "bggId": 352515,
+  "nom": "Trio",
+  "parent": null
+ },
+ {
+  "bggId": 206175,
+  "nom": "Cortex Challenge",
   "parent": null
  }
 ]

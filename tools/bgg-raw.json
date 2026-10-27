@@ -8766,69 +8766,6 @@
   },
   "languageDependence": "Extensive use of text - massive conversion needed to be playable"
  },
- "bgg-70323": {
-  "bgstatsId": null,
-  "name": "King of Tokyo",
-  "bggId": 70323,
-  "isExpansion": false,
-  "bggName": "King of Tokyo",
-  "year": 2011,
-  "minPlayers": 2,
-  "maxPlayers": 6,
-  "minTime": 30,
-  "maxTime": 30,
-  "minAge": 8,
-  "shortDescription": "Prove your dominance by destroying Tokyo or by being the last monster left standing.",
-  "description": "<p>In <em><strong>King of Tokyo</strong></em>, you play mutant monsters, gigantic robots, and strange aliens&mdash;all of whom are destroying Tokyo and whacking each other in order to become the one and only King of Tokyo.</p>\n\n<p>At the start of each turn, you roll six dice, which show the following six symbols: 1, 2, or 3 Victory Points, Energy, Heal, and Attack. Over three successive throws, choose whether to keep or discard each die in order to win victory points, gain energy, restore health, or attack other players into understanding that Tokyo is YOUR territory.</p>\n\n<p>The fiercest player will occupy Tokyo, and earn extra victory points, but that player can't heal and must face all the other monsters alone!</p>\n\n<p>Top this off with special cards purchased with energy that have a permanent or temporary effect, such as the growing of a second head which grants you an additional die, body armor, nova death ray, and more.... and it's one of the most explosive games of the year!</p>\n\n<p>In order to win the game, one must either destroy Tokyo by accumulating 20 victory points, or be the only surviving monster once the fighting has ended.</p>\n\n<p>First Game in the <a class=\"\" href=\"/wiki/page/King_of_Tokyo_series#\">King of Tokyo series</a></p>\n\n",
-  "categories": [
-   "Dice",
-   "Fighting",
-   "Movies / TV / Radio theme",
-   "Science Fiction"
-  ],
-  "mechanics": [
-   "Dice Rolling",
-   "Die Icon Resolution",
-   "King of the Hill",
-   "Open Drafting",
-   "Player Elimination",
-   "Push Your Luck",
-   "Re-rolling and Locking",
-   "Take That"
-  ],
-  "designers": [
-   "Richard Garfield"
-  ],
-  "publishers": [
-   "IELLO",
-   "Boardgame Space",
-   "Brädspel.se",
-   "Brain Games",
-   "Bureau de Juegos"
-  ],
-  "expands": [],
-  "isExpansionBgg": false,
-  "image": "https://cf.geekdo-images.com/m_RzXpHURC0_xLkvRSR_sw__itemrep/img/HVllMOifrnS8P1Ygzj7Teo_rwA4=/fit-in/246x300/filters:strip_icc()/pic3043734.jpg",
-  "thumb": "https://cf.geekdo-images.com/m_RzXpHURC0_xLkvRSR_sw__small/img/OfgWmkGJj5BgOO0zFHEtP5CHfbU=/fit-in/200x150/filters:strip_icc()/pic3043734.jpg",
-  "rating": 7.10967,
-  "weight": 1.4838,
-  "polls": {
-   "best": [
-    {
-     "min": 4,
-     "max": 5
-    }
-   ],
-   "recommended": [
-    {
-     "min": 3,
-     "max": 6
-    }
-   ],
-   "totalvotes": "1121"
-  },
-  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
- },
  "bgg-368158": {
   "bgstatsId": null,
   "name": "Ark Nova – Plateaux recto verso (Zoo Map Pack 1)",
@@ -9129,5 +9066,1211 @@
    "totalvotes": "209"
   },
   "languageDependence": "No necessary in-game text"
+ },
+ "127": {
+  "bgstatsId": 127,
+  "name": "Happy City",
+  "bggId": 319793,
+  "isExpansion": false,
+  "bggName": "Happy City",
+  "year": 2021,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 20,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Build your own cute city with one goal: happiness.",
+  "description": "<p>Do you have what it takes to grow a city from a humble market to a thriving mini-metropolis? Collect 10 buildings and make sure your citizens are happy with the place they live in!</p>\n\n<p><strong>Gameplay</strong></p>\n\n<p>1. <em><strong>Income Phase</strong></em> &mdash; At the start of each round, every player receives coins equal to the sum of the income symbols shown on the bottom of their cards.</p>\n\n<p>2. <em><strong>Action Phase</strong></em> &mdash; Resolved in turn order:</p>\n\n<p>a. (optional) Discard 1 of the available Buildings from the market.<br />\nb. Reveal up to 3 cards from any of the three Building decks and add them to the supply.<br />\nc. Then, you have a choice: either purchase a card from the supply or purchase nothing and take a coin from the bank. <strong>Note:</strong> your city may not contain any duplicate cards.<br />\nd. (optional) If your city meets the conditions for an available Bonus Building, you may claim it.</p>\n\n<p>Once any player adds a 10th card to their city, the game-end is triggered and every player multiplies the number of citizens by the total number of hearts on their cards, and whoever has the highest result wins the game!</p>\n\n<p><em>Happy City</em> includes rules for two ways to play: a family version and an &quot;expert version&quot; that features more interaction and strategy.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Children's Game",
+   "City Building",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "Contracts",
+   "Deck, Bag, and Pool Building",
+   "Income",
+   "Market",
+   "Open Drafting",
+   "Set Collection",
+   "Tile Placement"
+  ],
+  "designers": [
+   "Toshiki Sato",
+   "Airu Sato"
+  ],
+  "publishers": [
+   "Cocktail Games",
+   "ADC Blackfire Entertainment",
+   "Broadway Toys LTD",
+   "Coiledspring Games",
+   "Game Factory"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/LKCjDd_tqDPpUdCOM6i9Qg__itemrep/img/rta9VNshHsvSWX7tbvC3HIzkqLI=/fit-in/246x300/filters:strip_icc()/pic6256486.jpg",
+  "thumb": "https://cf.geekdo-images.com/LKCjDd_tqDPpUdCOM6i9Qg__thumb/img/Un5-NmBFbY3wo9IpUy-oNYoq1Qg=/fit-in/200x150/filters:strip_icc()/pic6256486.jpg",
+  "rating": 6.57215,
+  "weight": 1.2576,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "33"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "126": {
+  "bgstatsId": 126,
+  "name": "Namiji",
+  "bggId": 275215,
+  "isExpansion": false,
+  "bggName": "Namiji",
+  "year": 2022,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 30,
+  "maxTime": 45,
+  "minAge": 8,
+  "shortDescription": "Take to the sea and discover the hidden marvels of the Japanese coast.",
+  "description": "<p>In <em><strong>Namiji</strong></em>, you are fishers from the Japan of yesteryear, navigating south of the Japanese archipelago, a few kilometers from the famous Tokaido road. You will need to have a fruitful day at sea to win the game.</p>\n\n<p>To do this, you will have the opportunity to contemplate magnificent marine species, to fish with a line or a net to fill your racks with colorful fish, and haul in your crustacean traps.</p>\n\n<p>You can benefit from stops to improve your fishing equipment, and you will also have to contend with the gods of the sea by setting offerings afloat, or by fulfilling their wishes that they express during your contemplation with the Sacred Rocks, for which they will reward you.</p>\n\n<p><em>Namiji</em> features gameplay similar to <em>Tokaido</em>. The action spaces are laid out on the game board in a linear track, with players advancing down this track to take actions. The player who is currently last on the track takes a turn by advancing forward on the track to their desired action and taking that action, so players must choose whether to advance slowly in order to get more turns, or to travel more rapidly to beat other players to their desired action spaces. What players are doing on the track differs from what they do in <em>Tokaido</em>.</p>\n\n",
+  "categories": [
+   "Travel"
+  ],
+  "mechanics": [
+   "Push Your Luck",
+   "Set Collection",
+   "Track Movement",
+   "Turn Order: Time Track",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Antoine Bauza"
+  ],
+  "publishers": [
+   "Funforge",
+   "ADC Blackfire Entertainment",
+   "Hobby Japan",
+   "Pegasus Spiele",
+   "Stonemaier Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/PEev2iUxBTrTHDTN_SsW5Q__itemrep/img/5XCEA3Z0D0ZPRhkHFyCJyHgLY3c=/fit-in/246x300/filters:strip_icc()/pic9835044.jpg",
+  "thumb": "https://cf.geekdo-images.com/AW6IWjNVwOOLxVHepkQk1g__thumb/img/pDLMyt8zz2ga13wKW0ayyjVRkOw=/fit-in/200x150/filters:strip_icc()/pic4629265.jpg",
+  "rating": 7.1039,
+  "weight": 1.75,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "27"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "125": {
+  "bgstatsId": 125,
+  "name": "Trio",
+  "bggId": 352515,
+  "isExpansion": false,
+  "bggName": "Trio",
+  "year": 2021,
+  "minPlayers": 3,
+  "maxPlayers": 6,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 6,
+  "shortDescription": "Reveal anyone's lowest or highest card and aim to collect three of a kind.",
+  "description": "<p><em><strong>nana</strong></em>, which was later reprinted as <em><strong>Trio</strong></em>, is a card game in which players are looking for three of a kind.</p>\n\n<p>The deck consists of 36 cards, numbered 1-12 three times. Players receive some cards in hand, which they are required to sort from low to high, and the remaining cards are placed face down on the table.</p>\n\n<p>On your turn, choose any single card to reveal, either the low or high card from a player's hand (including your own) or any face-down card from the table. Then, do this again. If the two cards show the same number, continue your turn; if they do not, return the cards to where they came from and end your turn.</p>\n\n<p>If you reveal three cards showing the same number, take these cards as a set in front of you. If you are the first player to collect three sets, you win &mdash; except that a player wins immediately if they collect the set of 7s or two sets that add or subtract to 7, e.g., 4s and 11s.</p>\n\n<p>Note that <em>nana</em> and <em>Trio</em> contain identical components, but <em>nana</em> is labeled for 2-5 players, while <em>Trio</em> is labeled for 3-6 players. <em>Trio</em> has slight changes to the rules, with players using all cards no matter the player count. Additionally, you play in normal mode &mdash; winning with three sets or the 7s &mdash; or &quot;spicy&quot; mode, winning with two linked sets or the 7s. Finally, <em>Trio</em> includes rules for playing in teams with four or six players.</p>\n\n",
+  "categories": [
+   "Animals",
+   "Card Game",
+   "Memory"
+  ],
+  "mechanics": [
+   "Matching",
+   "Memory",
+   "Questions and Answers",
+   "Set Collection",
+   "Team-Based Game"
+  ],
+  "designers": [
+   "宮野 華也 (Kaya Miyano)"
+  ],
+  "publishers": [
+   "Cocktail Games",
+   "Mob+ (Mob Plus)",
+   "Brain Games",
+   "Broadway Toys LTD",
+   "CMON Global Limited"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/d9F0ZDqcN3J7J92WckyraQ__itemrep/img/PM9irc2PPSp1oV7lVKuXhmMUlsI=/fit-in/246x300/filters:strip_icc()/pic7605785.jpg",
+  "thumb": "https://cf.geekdo-images.com/d9F0ZDqcN3J7J92WckyraQ__thumb/img/8d663Cj-RQy8pA8gZOcO80xYI5I=/fit-in/200x150/filters:strip_icc()/pic7605785.jpg",
+  "rating": 7.38172,
+  "weight": 1.073,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 6
+    }
+   ],
+   "totalvotes": "213"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-29138": {
+  "bgstatsId": null,
+  "name": "Gagne ton papa !",
+  "bggId": 29138,
+  "isExpansion": false,
+  "bggName": "Katamino Duo",
+  "year": 2006,
+  "minPlayers": 1,
+  "maxPlayers": 2,
+  "minTime": 10,
+  "maxTime": 10,
+  "minAge": 3,
+  "shortDescription": "Fill your grid faster than your opponent!",
+  "description": "<p><em><strong>Katamino Duo</strong></em> &ndash; a.k.a., <em>Katamini</em> &ndash; is a junior version of <em>Katamino</em>, with two players competing on one game board divided into smaller spaces to fill all of the empty spaces first. The game is played over a number of rounds, with each round becoming progressively harder.</p>\n\n<p><em>Katamino Duo</em> also works as a solitaire puzzle, with the solver trying to fit the pieces onto the playing area in different ways.</p>\n\n",
+  "categories": [
+   "Abstract Strategy",
+   "Action / Dexterity",
+   "Children's Game",
+   "Puzzle",
+   "Real-time"
+  ],
+  "mechanics": [
+   "Pattern Building",
+   "Pattern Recognition",
+   "Race",
+   "Real-Time"
+  ],
+  "designers": [
+   "André Perriolat",
+   "John Perriolat"
+  ],
+  "publishers": [
+   "Broadway Toys LTD",
+   "DJ Games",
+   "Fairplay",
+   "FoxGames",
+   "Gémklub"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/yGNRVus_B7ECPoqpYTJjew__itemrep/img/qWwuD9O-19JOhrpgwOlCG5iE99k=/fit-in/246x300/filters:strip_icc()/pic1546114.jpg",
+  "thumb": "https://cf.geekdo-images.com/yGNRVus_B7ECPoqpYTJjew__small/img/F1Z4zO1rGtmiOFSlAubtX3_8Vmc=/fit-in/200x150/filters:strip_icc()/pic1546114.jpg",
+  "rating": 6.61177,
+  "weight": 1.2857,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 2
+    }
+   ],
+   "totalvotes": "2"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-300908": {
+  "bgstatsId": null,
+  "name": "Imagine Famille",
+  "bggId": 300908,
+  "isExpansion": false,
+  "bggName": "Imagine Famille",
+  "year": 2020,
+  "minPlayers": 3,
+  "maxPlayers": 8,
+  "minTime": 15,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "Can you make everyone guess a word by using your imagination (and transparent cards)?",
+  "description": "<p>Hundreds of things from all walks of life can be guessed through the use of 60 transparent cards in <em><strong>Imagine Famille</strong></em>, whether they're placed next to one another or superimposed. Almost everything in the world can be represented by a simplified concept &mdash; just don't speak while you're playing...</p>\n\n<p><em>Imagine Famille</em> features the same gameplay as in <em>Imagine</em>, but with concepts aimed at somewhat younger players.</p>\n\n",
+  "categories": [
+   "Deduction",
+   "Party Game",
+   "Puzzle"
+  ],
+  "mechanics": [
+   "Acting",
+   "Team-Based Game"
+  ],
+  "designers": [
+   "Vincent Bonnard",
+   "藤田 真吾 (Shingo Fujita)",
+   "Shotaro Nakashima",
+   "大木基至 (Motoyuki Ohki)",
+   "Hiromi Oikawa"
+  ],
+  "publishers": [
+   "Broadway Toys LTD",
+   "Cocktail Games",
+   "Ghenos Games",
+   "Happy Baobab",
+   "Oliphante"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/rRAklC3-QJh9tduFrwOPuA__itemrep/img/dmfP-Q9G9nzja2ITJLDMFc47bd8=/fit-in/246x300/filters:strip_icc()/pic5212721.jpg",
+  "thumb": "https://cf.geekdo-images.com/rRAklC3-QJh9tduFrwOPuA__small/img/iuG1tn1t-GeseiyU8kLwEiB1RT0=/fit-in/200x150/filters:strip_icc()/pic5212721.jpg",
+  "rating": 7.12225,
+  "weight": 1.0,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 8
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 8
+    },
+    {
+     "min": 9,
+     "max": null
+    }
+   ],
+   "totalvotes": "3"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-333539": {
+  "bgstatsId": null,
+  "name": "Le Siège de Runedar",
+  "bggId": 333539,
+  "isExpansion": false,
+  "bggName": "The Siege of Runedar",
+  "year": 2021,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "minTime": 60,
+  "maxTime": 90,
+  "minAge": 10,
+  "shortDescription": "Defend the walls of Runedar while digging a tunnel to escape with your Dwarven gold.",
+  "description": "<p>Since time immemorial, the mines of Runedar have supplied gold to generations of dwarves. Today, only a handful of them remain, guarding the fortress surrounding the entrance to the old, depleted mine... or so it was thought. This group of dwarves have been fortunate enough to accidently stumble upon a new vein of the purest gold and have managed to extract a small treasure. Unfortunately, just as they were about to set off to the safety of the nearest stronghold, they discover that the old fortress of Runedar is surrounded by orcs who are willing to do anything to get their hands on the precious metal. Now, the dwarves not only need to defend the fortress, they also must dig a tunnel under the mountain to escape and get their hard-earned gold to safety.</p>\n\n<p><em><strong>The Siege of Runedar</strong></em> is a co-operative game for 1-4 players who take on the role of dwarves charged with defending the walls of Runedar and the treasure they keep within. They will have to face orcs, goblins, and trolls, fighting in hand-to-hand combat against those who manage to get past the walls and shooting from a distance at those who try to enter. A deck-building system allows players to upgrade their weapons and tools as they must hold off the raiders long enough to build a tunnel to escape the terrible siege they have been subjected to and get the treasure to safety.</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Fantasy",
+   "Fighting"
+  ],
+  "mechanics": [
+   "Area Movement",
+   "Cooperative Game",
+   "Deck, Bag, and Pool Building",
+   "Dice Rolling",
+   "Once-Per-Game Abilities",
+   "Open Drafting",
+   "Solo / Solitaire Game"
+  ],
+  "designers": [
+   "Reiner Knizia"
+  ],
+  "publishers": [
+   "Ludonova",
+   "Conclave Editora",
+   "Ghenos Games",
+   "Lucrum Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/dMP3JPqWVhHS-iWfENB1TQ__itemrep/img/-9H8ib9J6CczJhY92LQ00UL9cwc=/fit-in/246x300/filters:strip_icc()/pic6082249.jpg",
+  "thumb": "https://cf.geekdo-images.com/dMP3JPqWVhHS-iWfENB1TQ__small/img/YYAATMCEulYjMBudRoa3M_RzwbA=/fit-in/200x150/filters:strip_icc()/pic6082249.jpg",
+  "rating": 6.99217,
+  "weight": 2.3725,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 3
+    }
+   ],
+   "recommended": [
+    {
+     "min": 1,
+     "max": 4
+    }
+   ],
+   "totalvotes": "40"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-274533": {
+  "bgstatsId": null,
+  "name": "Aïe Aïe Burrito",
+  "bggId": 274533,
+  "isExpansion": false,
+  "bggName": "Throw Throw Burrito",
+  "year": 2019,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 7,
+  "shortDescription": "Throw, dodge, rage in this exciting party game!",
+  "description": "<p>The world's first dodgeball card game. Collect cards. Play your hand. Throw things at your friends.</p>\n\n<p><em><strong>Throw Throw Burrito</strong></em> is what you get when you cross a card game with dodgeball. Try to collect matching sets of cards faster than your opponents while simultaneously ducking, dodging, and throwing squishy airborne burritos. The cards you collect earn points, but getting hit by flying burritos loses them. So clear some space and put away the antiques, because you&rsquo;ve never played a card game quite like this before.</p>\n\n<p>How it works: Place a pair of burritos on a table and draw cards. Keep your cards a secret. Rack up points by finding sets of three in the deck. Find matches before anyone else does. If someone plays Burrito Cards, a Battle ensues. Steal points from your opponents by hitting them with squishy toy burritos. Declare war on your friends. Some battles only involve a handful of players. Others force the entire table to engage in a Burrito War. Duel to determine the winner. During a Burrito Duel, two players must stand back to back, walk three paces, and FIRE.</p>\n\n<p><em>&mdash;description from the designer</em></p>\n\n",
+  "categories": [
+   "Action / Dexterity",
+   "Card Game",
+   "Party Game"
+  ],
+  "mechanics": [
+   "Real-Time",
+   "Set Collection",
+   "Take That"
+  ],
+  "designers": [
+   "Matthew Inman",
+   "Elan Lee",
+   "Brian S. Spence"
+  ],
+  "publishers": [
+   "Exploding Kittens",
+   "ADC Blackfire Entertainment",
+   "Cardinal",
+   "Geekach LLC",
+   "Gémklub"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/5ClVKrQcLkzRdBGiEfjevQ__itemrep/img/dYq9z1LZxdI90c_RvHPiqA9mgu8=/fit-in/246x300/filters:strip_icc()/pic7073068.jpg",
+  "thumb": "https://cf.geekdo-images.com/5ClVKrQcLkzRdBGiEfjevQ__small/img/FJa46kpICy-6AF4n7W-v9ICP_yo=/fit-in/200x150/filters:strip_icc()/pic7073068.jpg",
+  "rating": 6.21127,
+  "weight": 1.1011,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 6
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 6
+    },
+    {
+     "min": 7,
+     "max": null
+    }
+   ],
+   "totalvotes": "39"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-150145": {
+  "bgstatsId": null,
+  "name": "Skull King",
+  "bggId": 150145,
+  "isExpansion": false,
+  "bggName": "Skull King",
+  "year": 2013,
+  "minPlayers": 2,
+  "maxPlayers": 8,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "Trick-taking on the high seas. Meet your bid to please the Skull King.",
+  "description": "<p><em><strong>Skull King</strong></em> is a trick-taking game similar to <a  href=\"/boardgame/1116/oh-hell\"   >Oh Hell!</a>, <a  href=\"/boardgame/1465/wizard\"   >Wizard</a>, <a  href=\"/boardgame/6901/euchre\"   >Euchre</a> and <a  href=\"/boardgame/592/spades\"   >Spades</a>, with players needing to state how many tricks they think they'll win each round. A unique element of this game is that bidding takes place simultaneously, leading to rounds that are sometimes over, or under-bid. As players must win the exact number of tricks that they bid to earn points, winning too many tricks is just as bad as winning too few and this leads to intense competition where losing a trick can be as exciting as winning one.</p>\n\n<p><em>Skull King</em> uses a 66-card deck that consists of five Escape cards, four suits numbered 1-13, two Mermaids, five Pirate cards, 1 Tigress card, and 1 Skull King card. The game lasts ten rounds, and in each round, each player is dealt as many cards as the number of the round. All players simultaneously bid on the number of tricks they think they'll take by holding out a fist and on the count of three revealing a certain number of fingers (or possibly a closed fist for a bid of zero tricks).</p>\n\n<p>Standard rules apply for the playing of cards, with one player leading off a card and other players following suit, if possible, and playing something else if not; however, a player may always choose to play one of the special, unnumbered cards &mdash; and the power of those cards might let you win a trick that otherwise would have gotten away. In more detail, the black Jolly Roger suit trumps the other three suits, a Mermaid trumps all numbered cards, a Pirate trumps the Mermaid, and the Skull King trumps everything &mdash; except if he appears in the same trick with a Mermaid, in which case she captures him and wins instead. An Escape card loses to any other card, and the Tigress card serves as either a pirate or escape card as desired by the player. Whoever wins a trick leads in the next trick.</p>\n\n<p>If a player makes their bid exactly, they score 20 points per trick; if they collect more or fewer tricks, they lose 10 points per trick they are off. If a player makes a bid of zero tricks, they win points equal to ten times the current round number &mdash; but if they take even a single trick, they lose this many points instead. If a player catches pirates with the Skull King, or the King with a mermaid, they score bonus points. Whoever has the most points after ten rounds wins.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Nautical",
+   "Pirates"
+  ],
+  "mechanics": [
+   "Hand Management",
+   "Predictive Bid",
+   "Rock-Paper-Scissors",
+   "Trick-taking"
+  ],
+  "designers": [
+   "Brent Beck",
+   "Jeffrey Beck"
+  ],
+  "publishers": [
+   "Grandpa Beck's Games",
+   "Broadway Toys LTD",
+   "Devir",
+   "Ghenos Games",
+   "OPEN'N PLAY"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/1qvA21HdRaPYwrn4tGDNaQ__itemrep/img/duwIufYC4mHrAqmv9Wp2qCg_jVI=/fit-in/246x300/filters:strip_icc()/pic8689185.jpg",
+  "thumb": "https://cf.geekdo-images.com/1qvA21HdRaPYwrn4tGDNaQ__small/img/3tBwuRBxhDuhcTvA1g-IjVuUXqY=/fit-in/200x150/filters:strip_icc()/pic8689185.jpg",
+  "rating": 7.52764,
+  "weight": 1.7306,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 6
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 6
+    }
+   ],
+   "totalvotes": "283"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-344114": {
+  "bgstatsId": null,
+  "name": "Paquet de Chips",
+  "bggId": 344114,
+  "isExpansion": false,
+  "bggName": "Bag of Chips",
+  "year": 2021,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 15,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Gamble on which chips are coming out of the bag.",
+  "description": "<p><em><strong>Bag of Chips</strong></em> is a party game in which you will face crucial choices to score as many points as possible at the end of each round. Be careful, though, because if you're too greedy, you will lose a lot!</p>\n\n<p>At the start of a round, each player is dealt six objective cards and the 25 chips &mdash; in five colors, ranging from 7 yellow potato chips to 3 orange chicken chips &mdash; are placed in the bag. Someone draws five chips from the bag and places them on the table, then everyone discards two of their objective cards. The player draws four more chips, then everyone discards another objective card. The player draws three more chips, after which everyone places two of their cards on the positive scoring side of their playing area and the final card on the negative scoring side. The player then draws two more chips, one by one, both for increased drama and for some of the objective cards.</p>\n\n<p>If a played objective card has not been completed, discard it. Add the points from your completed positive objective cards (if any), then subtract points from your negative objective card (if any). The player with the highest score wins two reward tokens, and the player with the second highest score wins one reward tokens. Complete rounds until someone has four or more reward tokens and wins. (In a two-player game, only the player with the higher score receives a reward token, and whoever first collects three tokens wins.)</p>\n\n",
+  "categories": [
+   "Abstract Strategy"
+  ],
+  "mechanics": [
+   "Bids As Wagers",
+   "Hand Management",
+   "Push Your Luck",
+   "Score-and-Reset Game",
+   "Simultaneous Action Selection"
+  ],
+  "designers": [
+   "Mathieu Aubert",
+   "Théo Rivière"
+  ],
+  "publishers": [
+   "Mixlore",
+   "asmodee",
+   "Blue Orange Games",
+   "Fjórir Ásar",
+   "Geekach LLC"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/kzc_9tBQELXG8H25TTcCKw__itemrep/img/WOq26CxzCdhM44O-LzOz6LePpD4=/fit-in/246x300/filters:strip_icc()/pic9328596.png",
+  "thumb": "https://cf.geekdo-images.com/kzc_9tBQELXG8H25TTcCKw__small/img/UHgmRA_ffKCyVbs6Yxn9Goc-sjc=/fit-in/200x150/filters:strip_icc()/pic9328596.png",
+  "rating": 6.40281,
+  "weight": 1.1154,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "46"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-422484": {
+  "bgstatsId": null,
+  "name": "King of Tokyo : Duel",
+  "bggId": 422484,
+  "isExpansion": false,
+  "bggName": "King of Tokyo: Duel",
+  "year": 2024,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 8,
+  "shortDescription": "Monsters go head-to-head in Tokyo to prove their ferocity and media skills.",
+  "description": "<p>As night falls on Tokyo, two massive silhouettes rise from the smoke snaking up from destroyed skyscrapers. There can be only one who will be crowned King of Tokyo, either by annihilating their rival or by inspiring terror and awe from the crowds.</p>\n\n<p><em><strong>King of Tokyo Duel</strong></em> is a two-player tug-of-war dice game in the <em>King of Tokyo</em> line. Choose your uniquely-powered monster and roll new dice to draw the fame and destruction tokens toward you...or smash your rival with new special power cards to become the ultimate King of Tokyo!</p>\n\n<p><em>&mdash;description from the publisher</em></p>\n\n",
+  "categories": [
+   "Dice",
+   "Fighting",
+   "Movies / TV / Radio theme",
+   "Science Fiction"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Die Icon Resolution",
+   "Open Drafting",
+   "Push Your Luck",
+   "Re-rolling and Locking",
+   "Sudden Death Ending",
+   "Tug of War",
+   "Variable Player Powers"
+  ],
+  "designers": [
+   "Richard Garfield"
+  ],
+  "publishers": [
+   "IELLO",
+   "CMON Global Limited",
+   "Devir",
+   "GaGa Games",
+   "Hobby Japan"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/Mv8h6f50NWlxqKSmyxIOIw__itemrep/img/D_NvmFxbs7_1fjj_ftqDQKMzOE8=/fit-in/246x300/filters:strip_icc()/pic8243567.jpg",
+  "thumb": "https://cf.geekdo-images.com/Mv8h6f50NWlxqKSmyxIOIw__small/img/E6eIbcdSIhaqgCFbo9GR6YfO-ps=/fit-in/200x150/filters:strip_icc()/pic8243567.jpg",
+  "rating": 7.12676,
+  "weight": 2.023,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "40"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-13": {
+  "bgstatsId": null,
+  "name": "Catan",
+  "bggId": 13,
+  "isExpansion": false,
+  "bggName": "Catan",
+  "year": 1995,
+  "minPlayers": 3,
+  "maxPlayers": 4,
+  "minTime": 60,
+  "maxTime": 120,
+  "minAge": 10,
+  "shortDescription": "Collect and trade resources to build up the island of Catan in this modern classic.",
+  "description": "<p>In <em><strong>CATAN</strong></em> (formerly <em><strong>The Settlers of Catan</strong></em>), players try to be the dominant force on the island of Catan by building settlements, cities and roads. On each turn dice are rolled to determine which resources the island produces. Players build structures by 'spending' resources (sheep, wheat, wood, brick and ore) which are represented by the relevant resource cards; each land type, with the exception of the unproductive desert, produces a specific resource: hills produce brick, forests produce wood, mountains produce ore, fields produce wheat, and pastures produce sheep.</p>\n\n<p>Set-up includes randomly placing large hexagonal tiles (each depicting one of the five resource-producing terrain types--or the desert) in a honeycomb shape and surrounding them with water tiles, some of which contain ports of exchange. A number disk, the value of which will correspond to the roll of two 6-sided dice, are placed on each terrain tile. Each player is given two settlements (think: houses) and roads (sticks) which are placed on intersections and borders of the terrain tiles. Players collect a hand of resource cards based on which terrain tiles their last-placed settlement is adjacent to. A robber pawn is placed on the desert tile.</p>\n\n<p>A turn consists of rolling the dice, collecting resource cards based on this dice roll and the position of settlements (or upgraded cities&mdash;think: hotels), turning in resource cards (if possible and desired) for improvements, trading cards at a port, possibly playing a development card, or trading resource cards with other players. If the dice roll is a 7, the active player moves the robber to a new terrain tile and steals a resource card from another player who has a settlement adjacent to that tile.</p>\n\n<p>Points are accumulated by building settlements and cities, having the longest road or the largest army (from some of the development cards), and gathering certain development cards that simply award victory points. When a player has gathered 10 points (some of which may be held in secret), s/he announces this and claims the win.</p>\n\n",
+  "categories": [
+   "Economic",
+   "Negotiation"
+  ],
+  "mechanics": [
+   "Chaining",
+   "Dice Rolling",
+   "Hand Management",
+   "Hexagon Grid",
+   "Hidden Victory Points",
+   "Income",
+   "Market",
+   "Modular Board",
+   "Negotiation",
+   "Network and Route Building",
+   "Race",
+   "Random Production",
+   "Take That",
+   "Trading",
+   "Variable Set-up"
+  ],
+  "designers": [
+   "Klaus Teuber"
+  ],
+  "publishers": [
+   "KOSMOS",
+   "64 Ounce Games",
+   "999 Games",
+   "Albi",
+   "Astrel Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/0XODRpReiZBFUffEcqT5-Q__itemrep/img/6Jf5G-bSvdOIMUSwxsJfZXl29B8=/fit-in/246x300/filters:strip_icc()/pic9156909.png",
+  "thumb": "https://cf.geekdo-images.com/0XODRpReiZBFUffEcqT5-Q__small/img/SNVfF23OQafv3u8xdFolJnMkBoM=/fit-in/200x150/filters:strip_icc()/pic9156909.png",
+  "rating": 7.09012,
+  "weight": 2.2796,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 4
+    }
+   ],
+   "totalvotes": "2204"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
+ },
+ "bgg-278": {
+  "bgstatsId": null,
+  "name": "Catan – Le jeu de cartes",
+  "bggId": 278,
+  "isExpansion": false,
+  "bggName": "Catan Card Game",
+  "year": 1996,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "minTime": 60,
+  "maxTime": 120,
+  "minAge": 10,
+  "shortDescription": "Build buildings with special abilities, hire helpers, and more in this 2-player game.",
+  "description": "<p><em><strong>Catan Card Game</strong></em> bears only a slight resemblance to <em>The Settlers of Catan,</em> the original game in the <em>Catan</em> series.  There are six resources: wool, wood, bricks, grain, ore, and gold. Before beginning the game, the players receive six square cards showing the resources, with a different die number on each card. In addition, the players start the game with two village cards and a road card connecting them. There are card stacks of more roads and villages, as well as cities, to be purchased during the game. With each new village or city comes two new resource cards. Villages and cities give victory points.</p>\n\n<p>When the number die is rolled, instead of collecting more cards, the players rotate the corresponding card 90 degrees to indicate a gain of one more of that resource; i.e., the brick card shows a picture of one brick on one edge of the card, two bricks on the next clockwise edge, three bricks along the third edge, and zero bricks on the fourth edge. There is also an event die, with five possible outcomes:</p>\n\n<ul>\n    <li> a reward for the player with more knight points or more 'windmill' points (a picture of a windmill on some cards),</li>\n    <li> a bonus resource,</li>\n    <li> an attack if a player has too many resources, and</li>\n    <li> one of six special events - civil war, conflict, master builder, plague, productive year, or progress.     </li>\n</ul>\n\n<p>There are 62 expansion cards in six stacks in the center of the table. Before beginning the game, players choose one stack, go through it, and choose three cards to hold in their hands. Forty-two of the expansion cards require spending resources to be put into play, gaining civic improvements or knights. Every civic improvement serves some useful function or adds victory points or both. Twenty of the cards are actions benefiting one of the players or harming the other. After a player pays to put a card down or uses an action card, he blindly draws a replacement. Unwanted or unusable cards can be traded in future turns. Some of the cards have flags on them, indicating victory points.</p>\n\n<p>Whoever first has twelve victory points wins the game!</p>\n\n<p>The Anniversary edition of this game (Jubil&auml;umsausgabe, tin box edition) can be found under a separate game entry due to some differences in content: <a  href=\"/boardgame/22766/die-siedler-von-catan-das-kartenspiel-10th-anniver\"   >Die Siedler von Catan: Das Kartenspiel – 10th Anniversary Special Edition Tin Box</a>.</p>\n\n<p>Belongs to the <a class=\"\" href=\"/wiki/page/Catan_Series#\">Catan Series</a>.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "City Building",
+   "Territory Building"
+  ],
+  "mechanics": [
+   "Dice Rolling",
+   "Hand Management",
+   "Map Addition",
+   "Open Drafting",
+   "Race",
+   "Random Production",
+   "Trading"
+  ],
+  "designers": [
+   "Klaus Teuber"
+  ],
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Albi",
+   "Competo / Marektoy",
+   "Devir"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/CRCOv0p4FgZaze_3fGuhIA__itemrep/img/zZeelTiuKFsV54Iph3ntUvtQL8Q=/fit-in/246x300/filters:strip_icc()/pic706443.jpg",
+  "thumb": "https://cf.geekdo-images.com/CRCOv0p4FgZaze_3fGuhIA__small/img/m3u-LAThaaVm0fBYatEMsbrl_bk=/fit-in/200x150/filters:strip_icc()/pic706443.jpg",
+  "rating": 6.69647,
+  "weight": 2.4377,
+  "polls": {
+   "best": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 2
+    }
+   ],
+   "totalvotes": "120"
+  },
+  "languageDependence": "Extensive use of text - massive conversion needed to be playable"
+ },
+ "bgg-287655": {
+  "bgstatsId": null,
+  "name": "Code",
+  "bggId": 287655,
+  "isExpansion": false,
+  "bggName": "Cracked",
+  "year": 2019,
+  "minPlayers": 2,
+  "maxPlayers": 8,
+  "minTime": 5,
+  "maxTime": 15,
+  "minAge": 8,
+  "shortDescription": "",
+  "description": "<p>Have you ever needed to crack a code, say to a new phone you bought second hand? If so (or even if you&rsquo;ve just seen all that goes into it from movies like Mission Impossible and The Da Vinci Code), then you know how incredibly important&mdash;and difficult&mdash;it can be.</p>\n\n<p>Welcome to <em><strong>Cracked</strong></em>, the fast and furious strategic card game for 2-8 players. In <em>Cracked</em>, players race to be the first to end the game by having four cards in their hand that matches their unique code card. Sound simple? It is. Yet&hellip;it&rsquo;s not. In fact, Cracked was designed to be welcoming to beginning gamers, but still competitive and tactical enough for the more serious gamer in your life.</p>\n\n<p>To play, players take turns playing one or more cards from their hand in order to match the color or number value on the central card (i.e. the card in the middle of the table). If the central card is a green 6, then you could play a green card, a 6 card, or two cards equaling 6 (i.e. a 5 and a 1). Action cards spice things up a notch, as they can swap hands, force a player to miss a turn, and more. Collect the numbers required by your code card&mdash;and discard anything that doesn&rsquo;t match&mdash;and you win!</p>\n\n<p>With a fast playtime and high player count, <em>Cracked</em> can be brought out for nearly any social situation. This 2-8 player strategic card game is filled with innovative and unique game mechanics that make every game tense and exciting, perfect for any occasion. The game was designed to be casual and streamlined enough to welcome beginning gamers, but tactical enough to keep the hard-core players challenged. A fine balance between the two will introduce a new gaming experience that has not been felt in this genre of gaming for a while. Do you have what it takes to crack the code and emerge as the best code-cracker around?</p>\n\n<p><em>&mdash;description from the designer</em></p>\n\n",
+  "categories": [
+   "Card Game"
+  ],
+  "mechanics": [
+   "Hand Management"
+  ],
+  "designers": [
+   "Patrick Atieh"
+  ],
+  "publishers": [
+   "(Self-Published)",
+   "Game Factory"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/Id0oqQ8eTK4ilrNB51UN-A__itemrep/img/V95Yd-6Yy6biVCZFuugfR8q-YaU=/fit-in/246x300/filters:strip_icc()/pic4953267.jpg",
+  "thumb": "https://cf.geekdo-images.com/Id0oqQ8eTK4ilrNB51UN-A__small/img/-fnR2W99CmeSK1mshgiKLRVx-CY=/fit-in/200x150/filters:strip_icc()/pic4953267.jpg",
+  "rating": 5.23354,
+  "weight": 1.0,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 5
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 8
+    }
+   ],
+   "totalvotes": "3"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-191894": {
+  "bgstatsId": null,
+  "name": "Imagine",
+  "bggId": 191894,
+  "isExpansion": false,
+  "bggName": "Imagine",
+  "year": 2015,
+  "minPlayers": 3,
+  "maxPlayers": 8,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 12,
+  "shortDescription": "Overlay & animate transparent cards in this creative party game.",
+  "description": "<p>More than one thousand items from all walks of life can be guessed through the use of 61 transparent cards in <em><strong>Imagine</strong></em>, whether they're placed next to one another or superimposed. Almost everything in the world can be represented by a simplified concept &mdash; just don't speak while you're playing...</p>\n\n",
+  "categories": [
+   "Deduction",
+   "Party Game"
+  ],
+  "mechanics": [
+   "Acting",
+   "Team-Based Game"
+  ],
+  "designers": [
+   "藤田 真吾 (Shingo Fujita)",
+   "Shotaro Nakashima",
+   "大木基至 (Motoyuki Ohki)",
+   "Hiromi Oikawa"
+  ],
+  "publishers": [
+   "ボドゲイム (Bodogeimu)",
+   "Cocktail Games",
+   "asmodee",
+   "Broadway Toys LTD",
+   "Galápagos Jogos"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/K-Hp2v5Bc_UKMGlBF2oIEQ__itemrep/img/9FaUpJOAZWfbnj5D4xxHvuA1LGI=/fit-in/246x300/filters:strip_icc()/pic3061260.jpg",
+  "thumb": "https://cf.geekdo-images.com/K-Hp2v5Bc_UKMGlBF2oIEQ__small/img/7iWqJ6jHsgKCTcNs41nEgT7_NzA=/fit-in/200x150/filters:strip_icc()/pic3061260.jpg",
+  "rating": 6.80517,
+  "weight": 1.06,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 6
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 8
+    }
+   ],
+   "totalvotes": "51"
+  },
+  "languageDependence": "Moderate in-game text - needs crib sheet or paste ups"
+ },
+ "bgg-347505": {
+  "bgstatsId": null,
+  "name": "Nouvelles Contrées",
+  "bggId": 347505,
+  "isExpansion": false,
+  "bggName": "Nouvelles ContRées",
+  "year": 2021,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "minTime": 60,
+  "maxTime": 60,
+  "minAge": 10,
+  "shortDescription": "Go scouting in your library.",
+  "description": "<p>What if you could explore books, browse the texts of novels, cross literary landscapes and their imaginations, surprise yourself with a few incredible sentences.</p>\n\n<p><em><strong>Nouvelles ContR&eacute;es</strong></em> is a cooperative game that invites you on this dreamlike journey. You become novel explorers, navigating your best through the jungle of words, until you find, at the heart of the novel, the incredible hidden meaning of the book.</p>\n\n<p>At the start of the game, players set up their Camp, represented by a bookmark, somewhere in the book. During the game, they will advance the Camp to a Lost City bookmark located further away.</p>\n\n<p>One player plays as the pathfinder (&quot;Pagefinder&quot;): they read the first six lines of one page of any book in your library (as long as it has at least 60 pages). The other players have to guess which fully-illustrated bookmarks among 4 <em>Dixit</em> like bookmarks face up is the one chosen by the pathfinder. If the other players find the good bookmark, all the players succeed: they travel through the jungle of words by the same path (they advance pages in the book.).</p>\n\n<p>At the same time, each player can try to accomplish an individual mission like &quot;I guess the text contains 5 words with a X&quot;, &quot;I guess it contains 3 words related to the nature&quot;, ...</p>\n\n<p>To win, players will need to successfully explore this city and gain access to the Hidden Meaning of the book.</p>\n\n",
+  "categories": [
+   "Novel-based",
+   "Party Game"
+  ],
+  "mechanics": [
+   "Cooperative Game",
+   "Storytelling",
+   "Turn Order: Progressive"
+  ],
+  "designers": [
+   "Germain Winzenschtark"
+  ],
+  "publishers": [
+   "Olibrius Editions",
+   "ADC Blackfire Entertainment",
+   "Rebel Sp. z o.o."
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/ZPeslc38F_R4oz94jJlEzA__itemrep/img/POJxeS2aRo0tKujP11_09hbMLwA=/fit-in/246x300/filters:strip_icc()/pic6653334.jpg",
+  "thumb": "https://cf.geekdo-images.com/ZPeslc38F_R4oz94jJlEzA__small/img/K_vZYzm3zTwb4F10gRjHQRwuoK0=/fit-in/200x150/filters:strip_icc()/pic6653334.jpg",
+  "rating": 7.02784,
+  "weight": 2.0769,
+  "polls": {
+   "best": [
+    {
+     "min": 3,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 6
+    }
+   ],
+   "totalvotes": "6"
+  },
+  "languageDependence": "Unplayable in another language"
+ },
+ "perso-les-rescapés-du-déluge": {
+  "bgstatsId": null,
+  "name": "Les Rescapés du déluge",
+  "bggId": 0,
+  "isExpansion": false
+ },
+ "bgg-301242": {
+  "bgstatsId": null,
+  "name": "Skyjo Action",
+  "bggId": 301242,
+  "isExpansion": false,
+  "bggName": "Skyjo Action",
+  "year": 2019,
+  "minPlayers": 2,
+  "maxPlayers": 8,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 8,
+  "shortDescription": "Action and joker cards are added for a surprising twist to this classic game.",
+  "description": "<p>New version of <em><strong>Skyjo</strong></em> which adds Action Cards and Joker Cards.</p>\n\n<p>In <em>Skyjo</em>, each player 12 cards in a 3x4 pattern, two of them face up, all others hidden. On your turn you can take the top card from the discard or draw pile. You can exchange one card (hidden or open) from your display with it or discard the drawn card to turn one card face up. The round ends when one player has only open cards. All cards will be revealed, and the points added for each player (Cards are ranked from -2 to 12). The game ends when one player reaches 100 points or more. Whoever has the lowest score wins.<br />\nThe trick is: Whenever one column of 3 cards all have the same value, the whole column is discarded, so if you are feeling lucky, you can try to collect sets of high cards (which everyone else will likely discard, so you can take them from the discard pile).</p>\n\n<p><em>Skyjo Action</em> adds (as the name suggests) Action Cards, which allow for special moves: Exchange cards in your tableau, Exchange cards between players, Steal an action card, Take two turns in a row etc. You get an action card whenever you put or reveal a Joker in your tableau, or you can take an Action Card instead of a normal move. Jokers allow for easier set collection and make very valuable sets in themselves (-10 or -15 points). <br />\nAs a new rule, rows of identical cards are now also discarded.</p>\n\n",
+  "categories": [
+   "Card Game"
+  ],
+  "mechanics": [
+   "Set Collection"
+  ],
+  "designers": [
+   "Alexander Bernhardt"
+  ],
+  "publishers": [
+   "Magilano"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/-Aw4bfAV98SHuadTDR4soQ__itemrep/img/rWX1haIk6bQd6yS46x26Pv-AEnU=/fit-in/246x300/filters:strip_icc()/pic5224945.jpg",
+  "thumb": "https://cf.geekdo-images.com/-Aw4bfAV98SHuadTDR4soQ__small/img/43MBOMTfQckHOGc6j_EQghfmxOk=/fit-in/200x150/filters:strip_icc()/pic5224945.jpg",
+  "rating": 6.19104,
+  "weight": 1.1667,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 5
+    }
+   ],
+   "totalvotes": "6"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-284083": {
+  "bgstatsId": null,
+  "name": "The Crew : La Quête de la planète Neuf",
+  "bggId": 284083,
+  "isExpansion": false,
+  "bggName": "The Crew: The Quest for Planet Nine",
+  "year": 2019,
+  "minPlayers": 2,
+  "maxPlayers": 5,
+  "minTime": 20,
+  "maxTime": 20,
+  "minAge": 10,
+  "shortDescription": "Cooperate with your fellow astronauts as you explore the outer solar system.",
+  "description": "<p>In the co-operative trick-taking game <em><strong>The Crew: The Quest for Planet Nine</strong></em>, the players set out as astronauts on an uncertain space adventure. What are the rumors regarding the unknown planet about? The eventful journey through space extends over 50 exciting missions. But this game can only be defeated by meeting common individual tasks of each player. In order to meet the varied challenges communication is essential in the team. But this is more difficult than expected in space.</p>\n\n<p>With each mission the game becomes more difficult. After each mission the game can be paused and continued later. During each mission it is not the number of tricks but the right tricks at the right time that count.</p>\n\n<p>The team completes a mission only if every single player is successful in fulfilling their tasks.</p>\n\n<p>The game comes with 50 missions, with three additional missions published in <em>spielbox</em> 2/2020.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Science Fiction",
+   "Space Exploration"
+  ],
+  "mechanics": [
+   "Communication Limits",
+   "Cooperative Game",
+   "Deduction",
+   "Scenario / Mission / Campaign Game",
+   "Trick-taking"
+  ],
+  "designers": [
+   "Thomas Sing"
+  ],
+  "publishers": [
+   "KOSMOS",
+   "999 Games",
+   "Black Sea Games",
+   "Brain Games",
+   "CoolPlay"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__itemrep/img/etVRTXdF6IDsnGKQe77FRFP4H7M=/fit-in/246x300/filters:strip_icc()/pic5687013.jpg",
+  "thumb": "https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__small/img/et-fnuozyOdBOVL-5kSS3_7I8fw=/fit-in/200x150/filters:strip_icc()/pic5687013.jpg",
+  "rating": 7.74711,
+  "weight": 1.9705,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 3,
+     "max": 5
+    }
+   ],
+   "totalvotes": "830"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-178900": {
+  "bgstatsId": null,
+  "name": "Codenames",
+  "bggId": 178900,
+  "isExpansion": false,
+  "bggName": "Codenames",
+  "year": 2015,
+  "minPlayers": 2,
+  "maxPlayers": 8,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 10,
+  "shortDescription": "Give your team clever one-word clues to help them spot their agents in the field.",
+  "description": "<p>Two rival spymasters know the secret identities of 25 agents. Their teammates know the agents only by their codenames &mdash; single-word labels like &quot;disease&quot;, &quot;Germany&quot;, and &quot;carrot&quot;. Yes, carrot. It's a legitimate codename. Each spymaster wants their team to identify their agents first...without uncovering the assassin by mistake.</p>\n\n<p>In <em><strong>Codenames</strong></em>, two teams compete to see who can make contact with all of their agents first. Lay out 25 cards, each bearing a single word. The spymasters look at a card showing the identity of each card, then take turns clueing their teammates. A clue consists of a single word and a number, with the number suggesting how many cards in play have some association to the given clue word. The teammates then identify one agent they think is on their team; if they're correct, they can keep guessing up to one more than the stated number of times; if the agent belongs to the opposing team or is an innocent bystander, the team's turn ends; and if they fingered the assassin, they lose the game.</p>\n\n<p>Spymasters continue giving clues until one team has identified all of their agents or the assassin has removed one team from play.</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Deduction",
+   "Party Game",
+   "Spies / Secret Agents",
+   "Word Game"
+  ],
+  "mechanics": [
+   "Communication Limits",
+   "Deduction",
+   "Memory",
+   "Race",
+   "Team-Based Game"
+  ],
+  "designers": [
+   "Vlaada Chvátil"
+  ],
+  "publishers": [
+   "Czech Games Edition (CGE)",
+   "asmodee",
+   "Boardgame Space",
+   "Brädspel.se",
+   "Brain Games"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/nC6ifPCDnAItwoKSKXVrnw__itemrep/img/iM9m6bb1zTCzDzkXhiKE5V1gomc=/fit-in/246x300/filters:strip_icc()/pic8907965.jpg",
+  "thumb": "https://cf.geekdo-images.com/nC6ifPCDnAItwoKSKXVrnw__small/img/1iZav_8ZqurrDbvkZA9GcFhB5x0=/fit-in/200x150/filters:strip_icc()/pic8907965.jpg",
+  "rating": 7.52221,
+  "weight": 1.2511,
+  "polls": {
+   "best": [
+    {
+     "min": 6,
+     "max": 6
+    },
+    {
+     "min": 8,
+     "max": 8
+    }
+   ],
+   "recommended": [
+    {
+     "min": 4,
+     "max": 8
+    },
+    {
+     "min": 9,
+     "max": null
+    }
+   ],
+   "totalvotes": "1466"
+  },
+  "languageDependence": "Unplayable in another language"
+ },
+ "bgg-25821": {
+  "bgstatsId": null,
+  "name": "Les Loups-Garous de Thiercelieux",
+  "bggId": 25821,
+  "isExpansion": false,
+  "bggName": "The Werewolves of Miller's Hollow",
+  "year": 2001,
+  "minPlayers": 8,
+  "maxPlayers": 18,
+  "minTime": 30,
+  "maxTime": 30,
+  "minAge": 10,
+  "shortDescription": "Be a villager and lynch the werewolves... unless you are a werewolf yourself.",
+  "description": "<p><strong>Werewolves of Miller's Hollow</strong> is a game that takes place in a small village which is haunted by werewolves. Each player is secretly assigned a role - Werewolf, Ordinary Townsfolk, or special character such as The Sheriff, The Hunter, the Witch, the Little Girl, The Fortune Teller and so on... There is also a Moderator player who controls the flow of the game. The game alternates between night and day phases. At night, the Werewolves secretly choose a Villager to kill. During the day, the Villager who was killed is revealed and is out of the game. The remaining Villagers (normal and special villagers alike) then deliberate and vote on a player they suspect is a Werewolf, helped (or hindered) by the clues the special characters add to the general deliberation. The chosen player is &quot;lynched&quot;, reveals their role, and is out of the game. Werewolf is a social game that requires no equipment to play, and can accommodate almost any large group of players.</p>\n\n<p><strong>The Werewolves of Miller's Hollow</strong>/<em><strong>les Loups-Garous de Thiercelieux</strong></em>/<em><strong>Die Werw&ouml;lfe von D&uuml;sterwald</strong></em> is a published version arranged by <a  href=\"/boardgamedesigner/1318/herve-marly\"   >Hervé Marly</a> and <a  href=\"/boardgamedesigner/219/philippe-des-pallieres\"   >Philippe des Pallières</a> and published by <a  href=\"/boardgamepublisher/2024/lui-meme\"   >Lui-même</a>, 2001 for 8-23 players. This has been nominated for the 2003 <a class=\"\" href=\"/wiki/page/Spiel_des_Jahres#\">Spiel des Jahres</a> award.</p>\n\n<p><strong>Werewolves of Miller's Hollow</strong> is a separate game from <a  href=\"/boardgame/925/werewolf\"   >Werewolf</a>, and was split from that entry at the request of <a  href=\"/boardgamepublisher/157/asmodee\"   >asmodee</a>.</p>\n\n",
+  "categories": [
+   "Bluffing",
+   "Deduction",
+   "Horror",
+   "Murder / Mystery",
+   "Party Game"
+  ],
+  "mechanics": [
+   "Hidden Roles",
+   "Player Elimination",
+   "Role Playing",
+   "Team-Based Game",
+   "Variable Player Powers",
+   "Voting"
+  ],
+  "designers": [
+   "Philippe des Pallières",
+   "Hervé Marly"
+  ],
+  "publishers": [
+   "Lui-même",
+   "999 Games",
+   "ADC Blackfire Entertainment",
+   "asmodee",
+   "Asterion Press"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/rZ0tOafAt1oue_7NKqELsg__itemrep/img/8Ku8ENBwf0oH1uWnMMoXKkRIRe0=/fit-in/246x300/filters:strip_icc()/pic7203269.jpg",
+  "thumb": "https://cf.geekdo-images.com/rZ0tOafAt1oue_7NKqELsg__small/img/jqycRUhCBZjq1E87oQVIFb1_j0A=/fit-in/200x150/filters:strip_icc()/pic7203269.jpg",
+  "rating": 6.66857,
+  "weight": 1.312,
+  "polls": {
+   "best": [
+    {
+     "min": 10,
+     "max": 14
+    }
+   ],
+   "recommended": [
+    {
+     "min": 8,
+     "max": 18
+    },
+    {
+     "min": 19,
+     "max": null
+    }
+   ],
+   "totalvotes": "127"
+  },
+  "languageDependence": "No necessary in-game text"
+ },
+ "bgg-206175": {
+  "bgstatsId": null,
+  "name": "Cortex Challenge",
+  "bggId": 206175,
+  "isExpansion": false,
+  "bggName": "Braintopia",
+  "year": 2016,
+  "minPlayers": 2,
+  "maxPlayers": 6,
+  "minTime": 15,
+  "maxTime": 15,
+  "minAge": 8,
+  "shortDescription": "Compete with others in the quick brain challenging tasks.",
+  "description": "<p><em>Description from the publisher:</em></p>\n\n<p><em><strong>Cortex Challenge</strong></em> is the exciting new brain-busting card game by Esdevium Games, which uses the same fast-paced approach to family fun popularised by <em>Dobble</em> and <em>Jungle Speed</em>! <em>Cortex Challenge</em> tests up to six players&rsquo;memory, cognition, and sensory perception. It even includes texture cards that are used during &lsquo;Touch Challenges&rsquo;, where players must guess what they are feeling, adding a unique element that is often neglected in games.</p>\n\n<p>Players&rsquo; brain powers are stretched to the max as they race to be the first to match symbols, correctly remember all objects on a card or find the route out of mazes, amongst many other tests!</p>\n\n<p>Winning challenges allows players to add pieces to their brain puzzle which they must complete before their opponents in order to win the game. <em>Cortex Challenge</em> is sure to tax the mental abilities of players both young and old!</p>\n\n",
+  "categories": [
+   "Card Game",
+   "Educational",
+   "Memory",
+   "Party Game",
+   "Puzzle"
+  ],
+  "mechanics": [
+   "Memory",
+   "Pattern Recognition"
+  ],
+  "designers": [
+   "Johan Benvenuto",
+   "Nicolas Bourgoin"
+  ],
+  "publishers": [
+   "Albi",
+   "asmodee",
+   "Asterion Press",
+   "Brain Games",
+   "Broadway Toys LTD"
+  ],
+  "expands": [],
+  "isExpansionBgg": false,
+  "image": "https://cf.geekdo-images.com/cOKyWfTL7Wb9ECC-34gsdQ__itemrep/img/wPEM-N5Zpxr0SeQA0RNzW4gM6Rg=/fit-in/246x300/filters:strip_icc()/pic3539828.jpg",
+  "thumb": "https://cf.geekdo-images.com/cOKyWfTL7Wb9ECC-34gsdQ__small/img/OuvwUUpVIiJgRQMpw9ePyzdAnG4=/fit-in/200x150/filters:strip_icc()/pic3539828.jpg",
+  "rating": 6.19822,
+  "weight": 1.0571,
+  "polls": {
+   "best": [
+    {
+     "min": 4,
+     "max": 4
+    }
+   ],
+   "recommended": [
+    {
+     "min": 2,
+     "max": 6
+    }
+   ],
+   "totalvotes": "14"
+  },
+  "languageDependence": "Some necessary text - easily memorized or small crib sheet"
  }
 }

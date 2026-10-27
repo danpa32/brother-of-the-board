@@ -1,7 +1,7 @@
 """Assemble data/games.json (en français) pour le site.
 
 Sources : tools/bgg-raw.json (BGG), tools/entries.json (regroupements),
-tools/fr/*.json (traductions et règles), tools/vocab_fr.json.
+tools/fr/*.json (traductions et règles), tools/vocab_fr.json, tools/proprietaires.json.
 Usage : python3 tools/build_data.py
 """
 import glob, json
@@ -68,6 +68,8 @@ def genres(e, nom_fr):
 top2 = set(json.load(open("tools/top2.json")))
 # « Bien à 2 » / « Mieux à 3+ » par défaut, quand on n'est pas d'accord avec BGG : { nom: {deux, plus} }.
 joueurs = json.load(open("tools/joueurs.json"))
+# À qui appartient chaque jeu ou extension : { nom BG Stats : ["daniel", "mathieu"] } ; absent = non renseigné.
+proprietaires = json.load(open("tools/proprietaires.json"))
 
 games = []
 for key, ent in entries.items():
@@ -94,6 +96,7 @@ for key, ent in entries.items():
         "mecaniques": translate(e.get("mechanics", []), vocab["mechanics"], 8),
         "auteurs": e.get("designers", []),
         "editeurs": e.get("publishers", [])[:3],
+        "proprietaires": proprietaires.get(e["name"], []),
         "resume": t.get("resume", ""),
         "description": t.get("description", ""),
         "extensions": [{
@@ -101,6 +104,7 @@ for key, ent in entries.items():
             "resume": t.get("expansions", {}).get(x, {}).get("resume", ""),
             "vignette": raw[x].get("thumb"),
             "bgg": raw[x]["bggId"] or None,
+            "proprietaires": proprietaires.get(raw[x]["name"], []),
         } for x in ent["expansions"]],
         "regles": t.get("regles", []),
         "bgg": e["bggId"] or None,

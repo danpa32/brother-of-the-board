@@ -22,6 +22,7 @@ const fmtDate = (iso, opts = { weekday: "short", day: "numeric", month: "short" 
 
 const plage = (a, b, unite) => !a && !b ? "?" : (!b || a === b ? `${a || b}` : `${a}–${b}`) + unite;
 const joueursTxt = g => plage(g.joueurs.min, g.joueurs.max, " j.");
+const proprioTxt = liste => liste.map(p => JOUEURS[p]?.nom || p).join(" et ");
 const dureeTxt = g => plage(g.duree.min, g.duree.max, " min");
 function niveau(w) {
   if (!w) return null;
@@ -326,6 +327,7 @@ function vueFiche(id) {
           ${g.difficulte ? `<div><dt>Difficulté</dt><dd>${niveau(g.difficulte)} <small>(${String(g.difficulte).replace(".", ",")}/5)</small></dd></div>` : ""}
           ${g.noteBgg ? `<div><dt>Note BGG</dt><dd>${String(g.noteBgg).replace(".", ",")}/10</dd></div>` : ""}
           ${g.annee ? `<div><dt>Année</dt><dd>${g.annee}</dd></div>` : ""}
+          ${g.proprietaires.length ? `<div><dt>Appartient à</dt><dd>${esc(proprioTxt(g.proprietaires))}</dd></div>` : ""}
         </dl>
         <div class="genres-fiche">${g.genres.map(x => `<a class="badge genre" href="#/jeux" data-genre="${esc(x)}">${esc(x)}</a>`).join("")}</div>
         <div class="fiche-act">
@@ -363,7 +365,8 @@ function vueFiche(id) {
     </section>
 
     ${g.extensions.length ? `<section class="bloc"><h2>Extensions (${g.extensions.length})</h2><ul class="extensions">
-      ${g.extensions.map(x => `<li>${x.vignette ? `<img src="${esc(x.vignette)}" alt="" loading="lazy">` : ""}<div><b>${esc(x.nom)}</b><p>${esc(x.resume)}</p></div>
+      ${g.extensions.map(x => `<li>${x.vignette ? `<img src="${esc(x.vignette)}" alt="" loading="lazy">` : ""}<div><b>${esc(x.nom)}</b>${x.proprietaires.length && proprioTxt(x.proprietaires) !== proprioTxt(g.proprietaires)
+        ? ` <small class="proprio">à ${esc(proprioTxt(x.proprietaires))}</small>` : ""}<p>${esc(x.resume)}</p></div>
         <button class="btn petit ghost" data-action="planifier" data-jeu="${g.id}" data-ext="${esc(x.nom)}" ${besoinJoueur()}>Planifier avec</button></li>`).join("")}
     </ul></section>` : ""}
 
@@ -580,7 +583,7 @@ document.addEventListener("change", e => {
 window.addEventListener("hashchange", rendre);
 
 /* ---------- démarrage ---------- */
-jeux = await fetch("data/games.json?v=8").then(r => r.json());
+jeux = await fetch("data/games.json?v=9").then(r => r.json());
 parId = Object.fromEntries(jeux.map(g => [g.id, g]));
 $("#listeJeux").innerHTML = jeux.map(g => `<option value="${esc(g.nom)}">`).join("");
 store.ecouter(s => { st = s; rendre(); });

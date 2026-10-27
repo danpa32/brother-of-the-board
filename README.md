@@ -31,6 +31,9 @@ python3 tools/build_data.py                            # assemble le tout en fra
 
 - `tools/fr/*.json` : résumés, descriptions et liens vers les règles en français.
 - `tools/vocab_fr.json` : traduction des catégories et mécaniques BGG.
+- `tools/achats.json` : jeux achetés après l'export BG Stats (`bggId`, `nom`, `parent` pour une extension).
+  Un jeu absent de BGG prend `"bggId": null` ; ses joueurs, durée et âge vont alors dans `infos` de son lot `tools/fr`.
+- `tools/proprietaires.json` : à qui appartient chaque jeu ou extension (`["daniel"]`, `["mathieu"]` ou les deux).
 - Après une mise à jour, augmenter le `?v=` dans `index.html` et `js/app.js` pour que les téléphones rechargent.
 
 ## Tester en local
