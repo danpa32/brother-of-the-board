@@ -8,7 +8,7 @@ const RAPPEL_PLACE = 3;                      // 2e partie proposée environ 3 je
 
 let jeux = [], parId = {}, st = { avis: {}, soirees: [], joueur: null };
 const GENRES = ["Coopératif", "Réflexion & stratégie", "Ambiance & déconnade", "Familial & léger"];
-const ui = { q: "", genre: "", tri: "envie", filtres: new Set(), aDeux: true, proposition: null };
+const ui = { qHisto: "", q: "", genre: "", tri: "envie", filtres: new Set(), aDeux: true, proposition: null };
 const $ = (s, el = document) => el.querySelector(s);
 const vue = $("#vue");
 
@@ -46,6 +46,8 @@ const moyenne = (g, cle) => {
   const v = PERS.map(p => avis(g, p)[cle]).filter(Boolean);
   return v.length ? v.reduce((a, b) => a + b, 0) / v.length : 0;
 };
+const toutesJouees = () => st.soirees.filter(s => s.statut === "jouee" && s.date)
+  .sort((a, b) => b.date.localeCompare(a.date));
 const jouees = id => st.soirees.filter(s => s.jeu === id && s.statut === "jouee").sort((a, b) => a.date.localeCompare(b.date));
 // Les prochains jeux forment une liste ordonnée (champ `ordre`) ; la date est facultative.
 const ordre = s => s.ordre ?? 0;
@@ -206,14 +208,15 @@ function vuePlanning() {
     html += `</ul></section>`;
   }
 
-  const histo = st.soirees.filter(s => s.statut === "jouee").sort((a, b) => b.date.localeCompare(a.date));
+  const histo = toutesJouees();
   if (histo.length) {
-    html += `<section class="bloc"><details><summary><h2>Soirées passées (${histo.length})</h2></summary><ul class="histo">`;
-    for (const s of histo) {
+    html += `<section class="bloc"><div class="bloc-tete"><h2>Dernières parties</h2>
+      <a href="#/historique">Tout l'historique (${histo.length}) →</a></div><ul class="histo">`;
+    for (const s of histo.slice(0, 5)) {
       const g = parId[s.jeu];
       if (g) html += `<li><span>${esc(fmtDate(s.date, { day: "numeric", month: "short", year: "numeric" }))}</span> <a href="#/jeu/${g.id}">${esc(g.nom)}</a> <small>${esc(avecExt(s))}${s.note ? ` ${esc(s.note)}` : ""}</small></li>`;
     }
-    html += `</ul></details></section>`;
+    html += `</ul></section>`;
   }
   vue.innerHTML = html;
 }
@@ -377,10 +380,61 @@ function vueFiche(id) {
     </section>
 
     <section class="bloc"><h2>Historique</h2>
-      ${histo.length ? `<ul class="histo">${histo.map(s => `<li><span>${esc(fmtDate(s.date, { day: "numeric", month: "short", year: "numeric" }))}</span> Soirée jouée <small>${esc(avecExt(s))}${s.note ? ` ${esc(s.note)}` : ""}</small></li>`).join("")}</ul>`
-        : `<p class="aide">Aucune soirée jouée pour l'instant.</p>`}
+      ${histo.length ? `<div class="parties">${[...histo].reverse().map(s => lignePartie(s, { sansJeu: true })).join("")}</div>`
+        : `<p class="aide">Aucune partie jouée pour l'instant.</p>`}
+      <p><button class="btn petit ghost" data-action="ajout-partie" data-jeu="${g.id}" ${besoinJoueur()}>+ Ajouter une partie jouée</button></p>
     </section>
   </article>`;
+}
+
+/* ---------- vue : historique ---------- */
+const MOIS = new Intl.DateTimeFormat("fr-CH", { month: "long", year: "numeric" });
+const moisDe = iso => MOIS.format(new Date(iso.slice(0, 7) + "-15T12:00"));
+const majuscule = t => t.charAt(0).toUpperCase() + t.slice(1);
+
+function lignePartie(s, { sansJeu = false } = {}) {
+  const g = parId[s.jeu];
+  const detail = [avecExt(s), s.note].filter(Boolean).join(" · ");
+  const titre = sansJeu ? "" : g ? `<a href="#/jeu/${g.id}"><b>${esc(g.nom)}</b></a>` : `<b>Jeu inconnu (${esc(s.jeu)})</b>`;
+  return `<div class="partie">
+    <span class="partie-date">${esc(fmtDate(s.date, { weekday: "short", day: "numeric", month: "short", year: "numeric" }))}</span>
+    ${sansJeu ? "" : g ? vignette(g) : `<span class="vign vide" aria-hidden="true">🎲</span>`}
+    <span class="partie-txt">${titre}${s.decouverte ? ` <span class="badge neuf">Découverte</span>` : ""}
+      ${detail ? `<small>${esc(detail)}</small>` : ""}</span>
+    <span class="partie-act">
+      <button class="btn petit ghost" data-action="modifier-partie" data-id="${s.id}" ${besoinJoueur()} aria-label="Modifier">✎</button>
+      <button class="btn petit ghost" data-action="supprimer-partie" data-id="${s.id}" ${besoinJoueur()} aria-label="Supprimer">✕</button>
+    </span></div>`;
+}
+
+function vueHistorique() {
+  if (!store.modeLocal && !st.joueur) {
+    vue.innerHTML = `<p class="vide-txt">Connecte-toi pour voir l'historique de nos parties.</p>`;
+    return;
+  }
+  const q = norm(ui.qHisto);
+  const liste = toutesJouees().filter(s => !q || norm(parId[s.jeu]?.nom).includes(q));
+  let html = `<section class="bloc"><div class="bloc-tete"><h1>Historique</h1>
+    <button class="btn" data-action="ajout-partie" ${besoinJoueur()}>+ Ajouter une partie jouée</button></div>
+    <p class="aide">Toutes les parties marquées « Jouée ✓ ». Corrige une date, un jeu ou une note avec ✎, retire une partie de test avec ✕.</p>
+    <div class="outils"><input type="search" id="qHisto" placeholder="Filtrer par jeu…" value="${esc(ui.qHisto)}" autocomplete="off">
+      <span class="compte">${liste.length} partie${liste.length > 1 ? "s" : ""}</span></div>`;
+  if (!liste.length) html += `<p class="vide-txt">${q ? "Aucune partie pour ce jeu." : "Aucune partie jouée pour l'instant."}</p>`;
+  let mois = "";
+  for (const s of liste) {
+    const m = s.date.slice(0, 7);
+    if (m !== mois) {
+      if (mois) html += `</div>`;
+      const n = liste.filter(x => x.date.startsWith(m)).length;
+      html += `<h2 class="mois">${esc(majuscule(moisDe(s.date)))} <small>${n}</small></h2><div class="parties">`;
+      mois = m;
+    }
+    html += lignePartie(s);
+  }
+  if (mois) html += `</div>`;
+  vue.innerHTML = html + `</section>`;
+  const champ = $("#qHisto");
+  if (ui.focusHisto) { champ.focus(); champ.setSelectionRange(champ.value.length, champ.value.length); ui.focusHisto = false; }
 }
 
 /* ---------- en-tête : identité ---------- */
@@ -419,6 +473,7 @@ function rendre() {
   document.querySelectorAll(".tabs a").forEach(a => a.classList.toggle("on", a.dataset.tab === (page === "jeu" ? "jeux" : page)));
   rendreMoi();
   if (page === "jeux") vueJeux();
+  else if (page === "historique") vueHistorique();
   else if (page === "jeu") vueFiche(id);
   else vuePlanning();
 }
@@ -437,12 +492,19 @@ function rendreExtDialogue(g, coches = []) {
 const jeuSaisi = () => jeux.find(x => norm(x.nom) === norm(form.jeu.value.trim()));
 form.jeu.addEventListener("input", () => rendreExtDialogue(jeuSaisi()));
 
-function ouvrirDialogue({ jeu, soiree, ext } = {}) {
+// partie = true : une partie déjà jouée (date obligatoire, case « découverte »).
+function ouvrirDialogue({ jeu, soiree, ext, partie = soiree?.statut === "jouee" } = {}) {
   form.reset();
   $("#dlgErreur").textContent = "";
-  $("#dlgTitre").textContent = soiree ? "Modifier" : "Ajouter un prochain jeu";
+  $("#dlgTitre").textContent = partie ? (soiree ? "Modifier la partie" : "Ajouter une partie jouée") : soiree ? "Modifier" : "Ajouter un prochain jeu";
   form.dataset.id = soiree?.id || "";
-  form.date.value = soiree?.date || "";
+  form.dataset.partie = partie ? "1" : "";
+  form.date.required = partie;
+  form.date.max = partie ? auj() : "";
+  $("#dlgDateAide").hidden = partie;
+  $("#dlgDecouverte").hidden = !partie;
+  form.decouverte.checked = !!soiree?.decouverte;
+  form.date.value = soiree?.date || (partie ? auj() : "");
   form.jeu.value = parId[soiree?.jeu || jeu]?.nom || "";
   form.note.value = soiree?.note || "";
   rendreExtDialogue(parId[soiree?.jeu || jeu], soiree?.extensions || (ext ? [ext] : []));
@@ -456,8 +518,14 @@ form.addEventListener("submit", async e => {
   if (!g) { $("#dlgErreur").textContent = "Choisis un jeu de la liste."; return; }
   const extensions = [...form.querySelectorAll("#dlgExt input:checked")].map(c => c.value);
   const data = { date: form.date.value || null, jeu: g.id, extensions, note: form.note.value.trim() };
+  const partie = !!form.dataset.partie;
+  if (partie) {
+    if (!data.date) { $("#dlgErreur").textContent = "Indique la date de la partie."; return; }
+    data.decouverte = form.decouverte.checked;
+  }
   try {
     if (form.dataset.id) await store.majSoiree(form.dataset.id, data);
+    else if (partie) await store.ajouterSoiree({ ...data, statut: "jouee" });
     else await store.ajouterSoiree({ ...data, ordre: ordrePour() });
     dlg.close();
   } catch (err) {
@@ -531,6 +599,13 @@ document.addEventListener("click", async e => {
     }
     else if (action === "modifier") ouvrirDialogue({ soiree: st.soirees.find(s => s.id === id) });
     else if (action === "supprimer") await store.supprimerSoiree(id);
+    else if (action === "ajout-partie") ouvrirDialogue({ jeu, partie: true });
+    else if (action === "modifier-partie") ouvrirDialogue({ soiree: st.soirees.find(s => s.id === id) });
+    else if (action === "supprimer-partie") {
+      const s = st.soirees.find(x => x.id === id);
+      const nom = parId[s?.jeu]?.nom || "ce jeu";
+      if (s && confirm(`Supprimer la partie de ${nom} du ${fmtDate(s.date, { day: "numeric", month: "long", year: "numeric" })} ?`)) await store.supprimerSoiree(id);
+    }
     else if (action === "jouee") await marquerJouee(id);
     else if (action === "rappel") {
       const { jeu: j } = ui.proposition;
@@ -576,6 +651,7 @@ formSerie.addEventListener("submit", async e => {
 
 document.addEventListener("input", e => {
   if (e.target.id === "q") { ui.q = e.target.value; vueJeux(); }
+  if (e.target.id === "qHisto") { ui.qHisto = e.target.value; ui.focusHisto = true; vueHistorique(); }
 });
 document.addEventListener("change", e => {
   if (e.target.id === "tri") { ui.tri = e.target.value; vueJeux(); }

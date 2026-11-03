@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=11">
+<link rel="stylesheet" href="css/style.css?v=12">
 </head>
 <body>
 
@@ -21,6 +21,7 @@
   <nav class="tabs">
     <a href="#/planning" data-tab="planning">Planning</a>
     <a href="#/jeux" data-tab="jeux">Ludothèque</a>
+    <a href="#/historique" data-tab="historique">Historique</a>
   </nav>
   <div class="moi" id="moi"></div>
 </header>
@@ -40,9 +41,10 @@
       <legend>Avec les extensions</legend>
       <div></div>
     </fieldset>
-    <label>Date <small>(facultatif)</small>
+    <label>Date <small id="dlgDateAide">(facultatif)</small>
       <input type="date" name="date">
     </label>
+    <label class="case" id="dlgDecouverte" hidden><input type="checkbox" name="decouverte"> Première partie (découverte du jeu)</label>
     <label>Note <small>(facultatif)</small>
       <input type="text" name="note" maxlength="120" placeholder="ex. chez Mathieu, variante solo…">
     </label>
@@ -70,6 +72,6 @@
   </form>
 </dialog>
 
-<script type="module" src="js/app.js?v=14"></script>
+<script type="module" src="js/app.js?v=15"></script>
 </body>
 </html>

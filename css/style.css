@@ -299,6 +299,25 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
 .form-pret input { flex: 1 1 140px; font: inherit; color: var(--texte); background: var(--surface); border: 1px solid var(--bord); border-radius: 10px; padding: 8px 12px; }
 .erreur { color: var(--accent); font-size: .85rem; min-height: 1em; margin: 0; }
 
+
+/* ---------- historique ---------- */
+.mois { font-size: 1.05rem; margin: 22px 0 8px; }
+.mois small { font: 500 .8rem Inter, sans-serif; color: var(--texte-doux); margin-left: 6px; }
+.parties { display: flex; flex-direction: column; gap: 6px; }
+.partie {
+  display: flex; align-items: center; gap: 12px; padding: 8px 10px;
+  background: var(--surface); border: 1px solid var(--bord); border-radius: 12px;
+}
+.partie-date { flex: none; width: 120px; color: var(--texte-doux); font-size: .85rem; }
+.partie .vign { width: 40px; height: 40px; }
+.partie-txt { flex: 1; min-width: 0; }
+.partie-txt a { color: var(--texte); }
+.partie-txt small { display: block; color: var(--texte-doux); font-size: .82rem; }
+.partie-act { display: flex; gap: 6px; flex: none; }
+.dlg .case[hidden] { display: none; }
+
+.tag:hover { text-decoration: none; filter: brightness(.96); }
+
 /* ---------- mobile ---------- */
 @media (max-width: 640px) {
   .top { gap: 8px 12px; }
@@ -340,4 +359,8 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
   .avis th, .avis td { padding: 8px; }
   .pips.edit { gap: 4px; }
   .pips.edit .pip { width: 22px; height: 22px; }
+  .tabs { width: 100%; overflow-x: auto; }
+  .tabs a { padding: 6px 10px; }
+  .partie { flex-wrap: wrap; gap: 6px 10px; }
+  .partie-date { width: 100%; }
 }
