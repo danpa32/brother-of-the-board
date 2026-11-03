@@ -4,11 +4,12 @@ import * as store from "./store.js?v=12";
 const PERS = Object.keys(JOUEURS);           // ["daniel", "mathieu"]
 const JOURS_APPRENTISSAGE = 75;              // un nouveau jeu reste « à se remettre en tête » ce temps-là…
 const PARTIES_APPRENTISSAGE = 3;             // …jusqu'à ce nombre de parties
+const JOURS_OUBLI = 90;                     // stats : « pas rejoués depuis longtemps » au-delà de 3 mois
 const RAPPEL_PLACE = 3;                      // 2e partie proposée environ 3 jeux plus loin dans la liste
 
 let jeux = [], parId = {}, st = { avis: {}, soirees: [], joueur: null };
 const GENRES = ["Coopératif", "Réflexion & stratégie", "Ambiance & déconnade", "Familial & léger"];
-const ui = { qHisto: "", q: "", genre: "", tri: "envie", filtres: new Set(), aDeux: true, proposition: null };
+const ui = { qHisto: "", annee: "", q: "", genre: "", tri: "envie", filtres: new Set(), aDeux: true, proposition: null };
 const $ = (s, el = document) => el.querySelector(s);
 const vue = $("#vue");
 
@@ -437,6 +438,97 @@ function vueHistorique() {
   if (ui.focusHisto) { champ.focus(); champ.setSelectionRange(champ.value.length, champ.value.length); ui.focusHisto = false; }
 }
 
+/* ---------- vue : stats ---------- */
+// Barres horizontales : une seule série, valeur écrite au bout, info-bulle au survol.
+function barres(lignes, { lien = true } = {}) {
+  const max = Math.max(1, ...lignes.map(l => l.n));
+  return `<div class="barres">${lignes.map(l => `<div class="barre" title="${esc(l.titre || `${l.nom} : ${l.n}`)}">
+    <span class="barre-nom">${l.id && lien ? `<a href="#/jeu/${l.id}">${esc(l.nom)}</a>` : esc(l.nom)}</span>
+    <span class="barre-piste"><i style="width:${(l.n / max) * 100}%"></i></span>
+    <span class="barre-n">${l.n}</span></div>`).join("")}</div>`;
+}
+
+function vueStats() {
+  if (!store.modeLocal && !st.joueur) {
+    vue.innerHTML = `<p class="vide-txt">Connecte-toi pour voir nos statistiques.</p>`;
+    return;
+  }
+  const toutes = toutesJouees().filter(s => parId[s.jeu]);
+  const annees = [...new Set(toutes.map(s => s.date.slice(0, 4)))].sort().reverse();
+  if (ui.annee && !annees.includes(ui.annee)) ui.annee = "";
+  const parties = toutes.filter(s => !ui.annee || s.date.startsWith(ui.annee));
+  const fois = s => parId[s.jeu];
+  let html = `<section class="bloc"><div class="bloc-tete"><h1>Stats</h1>
+    ${annees.length > 1 ? `<div class="seg" role="group" aria-label="Période">
+      <button class="${ui.annee ? "" : "on"}" data-action="annee" data-v="">Tout</button>
+      ${annees.map(a => `<button class="${ui.annee === a ? "on" : ""}" data-action="annee" data-v="${a}">${a}</button>`).join("")}</div>` : ""}</div>`;
+  if (!parties.length) {
+    vue.innerHTML = html + `<p class="vide-txt">Pas encore de partie jouée : les stats arriveront avec la première « Jouée ✓ ».</p></section>`;
+    return;
+  }
+
+  // Comptes par jeu
+  const parJeu = {};
+  for (const s of parties) parJeu[s.jeu] = (parJeu[s.jeu] || 0) + 1;
+  const differents = Object.keys(parJeu).length;
+  const decouvertes = parties.filter(s => s.decouverte).length;
+  const minutes = parties.reduce((t, s) => { const d = fois(s).duree; return t + (d.max && d.min ? (d.min + d.max) / 2 : d.max || d.min || 0); }, 0);
+  const premiere = parties.at(-1).date;
+  const jamais = jeux.filter(g => !toutes.some(s => s.jeu === g.id));
+
+  html += `<div class="tuiles">
+    <div class="tuile"><b>${parties.length}</b><span>partie${parties.length > 1 ? "s" : ""} jouée${parties.length > 1 ? "s" : ""}</span></div>
+    <div class="tuile"><b>${differents}</b><span>jeu${differents > 1 ? "x" : ""} différent${differents > 1 ? "s" : ""}</span></div>
+    <div class="tuile"><b>${decouvertes}</b><span>découverte${decouvertes > 1 ? "s" : ""}</span></div>
+    <div class="tuile"><b>≈ ${Math.round(minutes / 60)} h</b><span>de jeu (durée moyenne de la boîte)</span></div>
+  </div>
+  <p class="aide">Depuis le ${esc(fmtDate(premiere, { day: "numeric", month: "long", year: "numeric" }))}.</p></section>`;
+
+  // Par mois (12 derniers mois de la période, en colonnes)
+  const fin = ui.annee ? `${ui.annee}-12` : auj().slice(0, 7);
+  const listeMois = [];
+  for (let d = new Date(fin + "-15T12:00"), i = 0; i < 12; i++, d.setMonth(d.getMonth() - 1)) listeMois.unshift(d.toISOString().slice(0, 7));
+  const parMois = listeMois.map(m => ({ m, n: parties.filter(s => s.date.startsWith(m)).length }));
+  const maxMois = Math.max(1, ...parMois.map(x => x.n));
+  html += `<section class="bloc"><h2>Parties par mois <small class="aide">${ui.annee || "12 derniers mois"}</small></h2><div class="colonnes">${parMois.map(({ m, n }) =>
+    `<div class="colonne" title="${esc(majuscule(moisDe(m)))} : ${n} partie${n > 1 ? "s" : ""}">
+      <span class="colonne-n">${n || ""}</span><span class="colonne-piste"><i style="height:${(n / maxMois) * 100}%"></i></span>
+      <span class="colonne-nom">${esc(new Intl.DateTimeFormat("fr-CH", { month: "short" }).format(new Date(m + "-15T12:00")).replace(".", ""))}</span></div>`).join("")}</div></section>`;
+
+  // Jeux les plus joués
+  const top = Object.entries(parJeu).sort((a, b) => b[1] - a[1] || norm(parId[a[0]].nom).localeCompare(norm(parId[b[0]].nom)));
+  html += `<div class="stats-duo"><section class="bloc"><h2>Les plus joués</h2>${barres(top.slice(0, 10).map(([id, n]) => ({ id, nom: parId[id].nom, n })))}</section>`;
+
+  // Par genre
+  const parGenre = GENRES.map(x => ({ nom: x, n: parties.filter(s => fois(s).genres.includes(x)).length }));
+  html += `<section class="bloc"><h2>Par genre</h2>${barres(parGenre.sort((a, b) => b.n - a.n), { lien: false })}
+    <p class="aide">Un jeu peut compter dans plusieurs genres.</p>`;
+
+  // Par propriétaire
+  const proprios = [...PERS.map(p => [p]), PERS].map(l => ({
+    nom: l.length > 1 ? "À nous deux" : `À ${JOUEURS[l[0]].nom}`,
+    n: parties.filter(s => { const pr = fois(s).proprietaires; return pr.length === l.length && l.every(p => pr.includes(p)); }).length,
+  }));
+  html += `<h2 class="sous-titre">Jeux de qui ?</h2>${barres(proprios, { lien: false })}</section></div>`;
+
+  // Pas joués depuis longtemps (parmi ceux déjà joués)
+  // Seulement les jeux dont la dernière partie (toutes périodes confondues) date d'au moins JOURS_OUBLI jours.
+  const dernieres = Object.keys(parJeu).map(id => ({ id, d: jouees(id).at(-1).date }))
+    .filter(({ d }) => ecartJours(d, auj()) >= JOURS_OUBLI)
+    .sort((a, b) => a.d.localeCompare(b.d)).slice(0, 8);
+  html += `<div class="stats-duo"><section class="bloc"><h2>Pas rejoués depuis longtemps</h2>
+    <p class="aide">Jeux déjà joués dont la dernière partie date de plus de ${JOURS_OUBLI / 30} mois.</p>
+    ${dernieres.length ? `<ul class="histo">${dernieres.map(({ id, d }) =>
+    `<li><span>${esc(fmtDate(d, { day: "numeric", month: "short", year: "numeric" }))}</span> <a href="#/jeu/${id}">${esc(parId[id].nom)}</a>
+      <small>il y a ${ecartJours(d, auj())} j</small></li>`).join("")}</ul>`
+      : `<p class="vide-txt">Aucun : tous les jeux joués l'ont été ces ${JOURS_OUBLI / 30} derniers mois.</p>`}</section>`;
+  html += `<section class="bloc"><h2>Jamais joués ici (${jamais.length})</h2>
+    <p class="aide">Jeux de la ludothèque sans aucune partie enregistrée sur le site.</p>
+    <div class="tags">${jamais.sort((a, b) => norm(a.nom).localeCompare(norm(b.nom))).map(g => `<a class="tag" href="#/jeu/${g.id}">${esc(g.nom)}</a>`).join("")}</div></section></div>`;
+
+  vue.innerHTML = html;
+}
+
 /* ---------- en-tête : identité ---------- */
 function rendreMoi() {
   const el = $("#moi");
@@ -474,6 +566,7 @@ function rendre() {
   rendreMoi();
   if (page === "jeux") vueJeux();
   else if (page === "historique") vueHistorique();
+  else if (page === "stats") vueStats();
   else if (page === "jeu") vueFiche(id);
   else vuePlanning();
 }
@@ -606,6 +699,7 @@ document.addEventListener("click", async e => {
       const nom = parId[s?.jeu]?.nom || "ce jeu";
       if (s && confirm(`Supprimer la partie de ${nom} du ${fmtDate(s.date, { day: "numeric", month: "long", year: "numeric" })} ?`)) await store.supprimerSoiree(id);
     }
+    else if (action === "annee") { ui.annee = el.dataset.v; rendre(); }
     else if (action === "jouee") await marquerJouee(id);
     else if (action === "rappel") {
       const { jeu: j } = ui.proposition;

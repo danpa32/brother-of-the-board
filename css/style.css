@@ -316,6 +316,28 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
 .partie-act { display: flex; gap: 6px; flex: none; }
 .dlg .case[hidden] { display: none; }
 
+/* ---------- stats ---------- */
+.tuiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 10px; }
+.tuile { background: var(--surface); border: 1px solid var(--bord); border-radius: var(--rayon); padding: 14px 16px; }
+.tuile b { display: block; font: 800 2rem Fraunces, serif; line-height: 1.1; }
+.tuile span { color: var(--texte-doux); font-size: .85rem; }
+.stats-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.sous-titre { margin-top: 20px; }
+.barres { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+.barre { display: grid; grid-template-columns: minmax(0, 11rem) 1fr 2.2rem; align-items: center; gap: 10px; font-size: .88rem; }
+.barre-nom { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.barre-nom a { color: var(--texte); }
+.barre-piste { height: 14px; }
+.barre-piste i { display: block; height: 100%; min-width: 2px; background: var(--accent); border-radius: 0 4px 4px 0; }
+.barre:hover .barre-piste i { filter: brightness(1.12); }
+.barre-n { text-align: right; font-variant-numeric: tabular-nums; color: var(--texte-doux); }
+.colonnes { display: grid; grid-template-columns: repeat(12, 1fr); gap: 6px; height: 190px; margin-top: 10px; }
+.colonne { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 0; }
+.colonne-n { font-size: .78rem; color: var(--texte-doux); min-height: 1.1em; font-variant-numeric: tabular-nums; }
+.colonne-piste { flex: 1; width: 100%; display: flex; justify-content: center; align-items: flex-end; border-bottom: 1px solid var(--bord); }
+.colonne-piste i { display: block; width: 100%; max-width: 34px; background: var(--accent); border-radius: 4px 4px 0 0; }
+.colonne:hover .colonne-piste i { filter: brightness(1.12); }
+.colonne-nom { font-size: .72rem; color: var(--texte-doux); padding-top: 4px; }
 .tag:hover { text-decoration: none; filter: brightness(.96); }
 
 /* ---------- mobile ---------- */
@@ -363,4 +385,6 @@ details summary::after { content: " ▾"; color: var(--texte-doux); }
   .tabs a { padding: 6px 10px; }
   .partie { flex-wrap: wrap; gap: 6px 10px; }
   .partie-date { width: 100%; }
+  .stats-duo { grid-template-columns: 1fr; }
+  .barre { grid-template-columns: minmax(0, 8rem) 1fr 2rem; }
 }
