@@ -70,6 +70,8 @@ top2 = set(json.load(open("tools/top2.json")))
 joueurs = json.load(open("tools/joueurs.json"))
 # À qui appartient chaque jeu ou extension : { nom BG Stats : ["daniel", "mathieu"] } ; absent = non renseigné.
 proprietaires = json.load(open("tools/proprietaires.json"))
+# Nombre de joueurs corrigé quand l'entrée BGG ne correspond pas à notre édition : { nom BG Stats : {min, max} }.
+nb_joueurs = json.load(open("tools/nb-joueurs.json"))
 
 games = []
 for key, ent in entries.items():
@@ -82,7 +84,8 @@ for key, ent in entries.items():
         "annee": e.get("year") or None,
         "image": e.get("image"),
         "vignette": e.get("thumb"),
-        "joueurs": {"min": e.get("minPlayers") or info.get("minPlayers"),
+        "joueurs": nb_joueurs.get(e["name"]) or
+                   {"min": e.get("minPlayers") or info.get("minPlayers"),
                     "max": e.get("maxPlayers") or info.get("maxPlayers")},
         "ideal": joueurs.get(e["name"]) or joueurs.get(t.get("nomFr")),
         "aDeux": "meilleur" if {e["name"], t.get("nomFr")} & top2 else best_at_two(e.get("polls")),
